@@ -8,7 +8,7 @@ Repository: **https://github.com/EkodeckStephane/TracePolicy**
 
 Intrusion detection increasingly relies on high-volume system, network, and provenance data. Provenance-based IDS can reconstruct attack paths and causal dependencies, while specification- and policy-based IDS provide explicit decision logic. A practical gap appears when these two properties are needed simultaneously: an operational alert should be linked to the trace events and policy elements that actually determine the decision, and any optimization used for streaming evaluation should preserve that same decision semantics.
 
-TracePolicy addresses this gap with a formally specified, versioned trace--policy model. The repository accompanies the study **“Trace--Policy Causal Provenance for Explainable Intrusion Detection: Minimal Explanations and Semantics-Preserving Evaluation”**. The repository contains the reproducibility materials associated with that study and is maintained independently of journal-specific submission metadata.
+TracePolicy addresses this gap with a formally specified, versioned trace--policy model. The repository accompanies the study **“Minimal Trace--Policy Explanations for Explainable Intrusion Detection”**. The repository contains the reproducibility materials associated with that study and is maintained independently of journal-specific submission metadata.
 
 ## 2. Problem
 
@@ -358,7 +358,17 @@ The test script enforces a single frozen test opening. Review `phase5b/config/ph
 
 ## 10. Integrity and provenance
 
-The repository retains frozen hashes and result manifests from the validated campaign. When regenerating data:
+The repository separates the unchanged historical freeze from the current publication protocol. `provenance/FROZEN_PROTOCOL_SHA256_ORIGINAL.txt` records the original 40-file freeze and is retained as historical provenance; it is not rewritten to make later disclosure/scaling revisions appear pre-specified. `FROZEN_PUBLICATION_SHA256.txt` freezes the current executable/configuration layer. See `provenance/README.md` for the two superseded paths and the revision rationale.
+
+Verify the publication state with:
+
+```bash
+python scripts/verify_frozen_protocol_v2.py
+python scripts/corrective_gate_v2.py
+pytest -q
+```
+
+Git commit/tree object IDs provide repository-wide content integrity for each published revision. When regenerating data:
 
 - keep the original seeds;
 - preserve train/validation/test boundaries;
@@ -388,8 +398,8 @@ Citation metadata are provided in `CITATION.cff`. Until the journal article rece
 
 ## 15. Authors
 
-- Nicolas Nkondock Mi Bahanag — University of Yaounde I
 - Jacques Narcisse Bayem — University of Yaounde I
+- Nicolas Nkondock Mi Bahanag — University of Yaounde I
 - Stéphane Gaël R. Ekodeck — University of Yaounde I; UMMISCO, IRD France Nord; Sorbonne Université
 - Serge Alain Ebele — University of Yaounde I; UMMISCO, IRD France Nord; Sorbonne Université
 - Roger Atsa Etoundi — University of Yaounde I (corresponding author)
