@@ -1,0 +1,5 @@
+scenario,cases,n_units_mean,intrinsic_core_size_mean,intrinsic_us_mean,shap_us_mean,lime_us_mean,shap_jaccard_mean,lime_jaccard_mean
+admin_probe,25,6.0,2.0,693.06068,4192.5080800000005,,1.0,
+bruteforce,25,7.0,5.0,399.80888,6136.19036,,1.0,
+command_probe,25,6.0,2.0,678.87712,4088.13588,,1.0,
+path_traversal,25,5.88,2.0,656.8582799999999,4139.2660399999995,,1.0,
