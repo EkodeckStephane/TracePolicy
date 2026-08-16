@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use TracePolicy, please cite the software repository and the associated manuscript when bibliographic metadata are available."
+title: "TracePolicy: Trace--Policy Causal Provenance for Explainable Intrusion Detection"
+type: software
+authors:
+  - family-names: "Nkondock Mi Bahanag"
+    given-names: "Nicolas"
+  - family-names: "Bayem"
+    given-names: "Jacques Narcisse"
+  - family-names: "Ekodeck"
+    given-names: "Stéphane Gaël R."
+    orcid: "https://orcid.org/0000-0002-8094-8832"
+  - family-names: "Ebele"
+    given-names: "Serge Alain"
+    orcid: "https://orcid.org/0000-0001-7036-7068"
+  - family-names: "Atsa Etoundi"
+    given-names: "Roger"
+repository-code: "https://github.com/EkodeckStephane/TracePolicy"
+license: "NOASSERTION"
