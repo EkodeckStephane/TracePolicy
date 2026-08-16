@@ -9,13 +9,13 @@ def rows(name):
     try:return len(pd.read_csv(p))
     except:return -1
 
-# Frozen original protocol hash verification.
+# Current publication protocol hash verification.
 bad=0
-for line in (ROOT/'FROZEN_PROTOCOL_SHA256.txt').read_text().splitlines():
+for line in (ROOT/'FROZEN_PUBLICATION_SHA256.txt').read_text().splitlines():
     if not line.strip():continue
     exp,rel=line.split(None,1);p=ROOT/rel.strip()
     if not p.exists() or hashlib.sha256(p.read_bytes()).hexdigest()!=exp:bad+=1
-ck('FROZEN_PROTOCOL_40',bad==0,f'mismatches={bad}')
+ck('PUBLICATION_PROTOCOL',bad==0,f'mismatches={bad}')
 
 # Original mandatory artifacts.
 for name,n in [
