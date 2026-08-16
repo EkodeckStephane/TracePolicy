@@ -1,0 +1,27 @@
+<group name="projecta,localbench,">
+  <rule id="100001" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="path" type="pcre2">^/admin</field>
+    <description>PROJECTA admin sensitive access</description>
+  </rule>
+  <rule id="100002" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="path" type="pcre2">etc/passwd|\.\.</field>
+    <description>PROJECTA path traversal</description>
+  </rule>
+  <rule id="100003" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="path" type="pcre2">^/cmd</field>
+    <description>PROJECTA command probe</description>
+  </rule>
+  <rule id="100010" level="1">
+    <decoded_as>json</decoded_as>
+    <field name="path" type="pcre2">^/login</field>
+    <status>401</status>
+    <description>PROJECTA failed authentication base event</description>
+  </rule>
+  <rule id="100014" level="10" frequency="4" timeframe="5">
+    <if_matched_sid>100010</if_matched_sid>
+    <description>PROJECTA brute force threshold</description>
+  </rule>
+</group>

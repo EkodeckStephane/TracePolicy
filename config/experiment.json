@@ -1,0 +1,13 @@
+{
+  "mode": "final",
+  "repetitions": 30,
+  "local_lab_requests_per_seed": 300,
+  "darpa_dataset": "CADETS_E3",
+  "darpa_train_pattern": "ta1-cadets-e3-official.json*",
+  "darpa_test_pattern": "ta1-cadets-e3-official-2.json*",
+  "darpa_min_support": 20,
+  "darpa_max_allow_rules": 500,
+  "darpa_explanation_cases": 32,
+  "suricata_image": "jasonish/suricata:8.0.5",
+  "wazuh_image": "wazuh/wazuh-manager:4.14.7"
+}

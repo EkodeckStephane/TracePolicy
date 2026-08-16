@@ -1,0 +1,24 @@
+{
+  "dataset": "DARPA_CADETS_E3",
+  "train_members": [
+    "ta1-cadets-e3-official.json",
+    "ta1-cadets-e3-official.json.1"
+  ],
+  "validation_members": [
+    "ta1-cadets-e3-official.json.2"
+  ],
+  "test_members": [
+    "ta1-cadets-e3-official-2.json",
+    "ta1-cadets-e3-official-2.json.1"
+  ],
+  "min_current_support": 20,
+  "max_current_rules": 500,
+  "sequence_lengths": [2, 3, 4],
+  "min_sequence_support_grid": [5, 20, 50, 100],
+  "max_sequences_per_selector": 128,
+  "validation_extra_alert_budget_schedule": [0.005, 0.01, 0.02],
+  "primary_extra_alert_budget": 0.005,
+  "groundtruth_role": "test-only ThreaTrace-derived malicious entity mapping",
+  "test_policy": "open official-2 only after P1_FROZEN_BEFORE_TEST.json is written",
+  "phase5b_version": "1.0"
+}

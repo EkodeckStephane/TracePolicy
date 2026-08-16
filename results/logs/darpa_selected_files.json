@@ -1,0 +1,13 @@
+{
+  "train": [
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json",
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.1",
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.2",
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.tar.gz.extracted.ok"
+  ],
+  "test": [
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json",
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json.1",
+    "/work/datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json.tar.gz.extracted.ok"
+  ]
+}

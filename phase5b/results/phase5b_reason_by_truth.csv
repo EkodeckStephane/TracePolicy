@@ -1,0 +1,9 @@
+reason,truth_proxy,count
+known_nonsensitive_context,0,6538287
+known_nonsensitive_context,1,906514
+known_sensitive_trace,0,335532
+known_sensitive_trace,1,30
+unknown_sensitive_trace,0,7703
+unknown_sensitive_trace,1,164
+unseen_current_selector,0,82
+unseen_current_selector,1,40070

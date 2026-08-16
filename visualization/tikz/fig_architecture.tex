@@ -1,0 +1,38 @@
+
+\begin{figure*}[!t]
+\centering
+\begin{tikzpicture}[
+  node distance=6mm and 9mm,
+  box/.style={draw,rounded corners,align=center,minimum height=8mm,minimum width=25mm,inner sep=4pt},
+  small/.style={draw,rounded corners,align=center,minimum height=7mm,minimum width=21mm,inner sep=3pt},
+  arr/.style={-{Latex[length=2mm]},thick},
+  note/.style={align=center,font=\footnotesize}
+]
+\node[box] (trace) {Versioned\\event trace $\pi_t$};
+\node[box, right=of trace] (state) {System state\\$\sigma_t$};
+\node[box, right=of state] (policy) {Immutable policy\\$P^v$};
+
+\node[box, below=10mm of state, minimum width=45mm] (eval) {Reference / indexed / incremental\\trace--policy evaluator};
+\node[small, below left=8mm and -1mm of eval] (class) {Decision +\\alert class};
+\node[small, below=8mm of eval] (diag) {Policy-defect\\diagnosis};
+\node[small, below right=8mm and -1mm of eval] (expl) {Minimal causal\\trace--policy core};
+
+\draw[arr] (trace) -- (eval);
+\draw[arr] (state) -- (eval);
+\draw[arr] (policy) -- (eval);
+\draw[arr] (eval) -- (class);
+\draw[arr] (eval) -- (diag);
+\draw[arr] (eval) -- (expl);
+
+\node[note, below=5mm of class] {Gap / Conflict /\\Violation / NoAlert};
+\node[note, below=5mm of diag] {Conflict, gap,\\shadowing, redundancy};
+\node[note, below=5mm of expl] {$\langle T_c,R_c,B,W\rangle$\\with formal guarantees};
+
+\node[draw,dashed,rounded corners,fit=(trace)(policy)(expl),inner sep=6mm,
+      label={[font=\footnotesize]above:Version-bound analysis pipeline}] {};
+\end{tikzpicture}
+\caption{Trace--policy analysis pipeline. The same canonical semantics feeds alert classification,
+policy diagnosis, and intrinsic explanation. Indexing and incremental monitors optimize evaluation
+while preserving the reference decision semantics.}
+\label{fig:architecture}
+\end{figure*}

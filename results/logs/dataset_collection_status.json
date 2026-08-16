@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED_MISSING_DARPA",
+  "missing": [
+    "datasets\\raw\\darpa_e3\\ground_truth\\tc_ground_truth_report_e3_update.pdf",
+    "ta1-cadets-e3-official.json.tar.gz",
+    "ta1-cadets-e3-official-2.json.tar.gz"
+  ]
+}

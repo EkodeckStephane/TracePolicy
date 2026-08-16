@@ -1,0 +1,12 @@
+FINAL RETAINED PIPELINE STATUS
+==============================
+
+The earlier `real_local_lab_capture / returncode=1` marker is preserved under
+`archive_20260816_superseded/PIPELINE_STOPPED_AT_pre_retry.txt`. It belongs to a
+superseded attempt. The retained local-lab retry completed successfully for 30
+seeded workloads, and the corrected Wazuh/analysisd execution is represented by
+the final retained result files and manifests.
+
+Revision validation added 2026-08-16:
+- explanation scaling, m=5..18;
+- 100 true-positive explanations from already-collected Docker alerts.

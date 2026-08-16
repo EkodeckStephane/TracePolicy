@@ -1,0 +1,27 @@
+
+\begin{center}
+\begin{minipage}{\columnwidth}
+\centering
+\resizebox{0.97\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+width=\columnwidth,height=0.75\columnwidth,
+ybar,bar width=12pt,ymin=0,ymax=1.05,
+ylabel={Coverage},
+symbolic x coords={Benign,Malicious-linked},
+xtick=data,
+legend style={font=\scriptsize,at={(0.5,1.02)},anchor=south,legend columns=2},
+grid=major
+]
+\addplot coordinates {(Benign,0.9999880842) (Malicious-linked,0.9576775126)};
+\addlegendentry{Current selector}
+\addplot coordinates {(Benign,0.9775576500) (Malicious-linked,0.1546391753)};
+\addlegendentry{Sensitive trace}
+\end{axis}
+\end{tikzpicture}%
+}
+\captionof{figure}{Trace-aware policy-quality analysis on CADETS. Trace-aware coverage separates the targeted
+sensitive-event subspace, while the prevalence of that subspace determines its contribution to node attribution.}
+\label{fig:p5bcoverage}
+\end{minipage}
+\end{center}

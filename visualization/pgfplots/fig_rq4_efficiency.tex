@@ -1,0 +1,44 @@
+\begin{figure*}[!t]
+\centering
+\begin{subfigure}[t]{0.96\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+width=0.92\linewidth,height=0.28\textwidth,
+title={Selective candidate distribution},
+xlabel={Policy size $P$},ylabel={Mean latency ($\mu$s)},
+xmode=log,ymode=log,grid=major,
+legend style={font=\small,at={(0.50,0.98)},anchor=north,legend columns=3,fill=white,fill opacity=0.88,text opacity=1}
+]
+\addplot+[mark=*] table[x=P,y=mean_us,col sep=comma] {figures/data/rq4_selective_reference.csv};\addlegendentry{Reference}
+\addplot+[mark=square*] table[x=P,y=mean_us,col sep=comma] {figures/data/rq4_selective_indexed.csv};\addlegendentry{Indexed}
+\addplot+[mark=triangle*] table[x=P,y=mean_us,col sep=comma] {figures/data/rq4_selective_incremental.csv};\addlegendentry{Incremental}
+\end{axis}
+\end{tikzpicture}
+\caption{Selectors substantially reduce the candidate set.}
+\label{fig:efficiency-selective}
+\end{subfigure}
+
+\vspace{6mm}
+
+\begin{subfigure}[t]{0.96\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+width=0.92\linewidth,height=0.28\textwidth,
+title={Collision-heavy candidate distribution},
+xlabel={Policy size $P$},ylabel={Mean latency ($\mu$s)},
+xmode=log,ymode=log,grid=major,
+legend style={font=\small,at={(0.50,0.98)},anchor=north,legend columns=3,fill=white,fill opacity=0.88,text opacity=1}
+]
+\addplot+[mark=*] table[x=P,y=mean_us,col sep=comma] {figures/data/rq4_collision_reference.csv};\addlegendentry{Reference}
+\addplot+[mark=square*] table[x=P,y=mean_us,col sep=comma] {figures/data/rq4_collision_indexed.csv};\addlegendentry{Indexed}
+\addplot+[mark=triangle*] table[x=P,y=mean_us,col sep=comma] {figures/data/rq4_collision_incremental.csv};\addlegendentry{Incremental}
+\end{axis}
+\end{tikzpicture}
+\caption{Candidate collisions expose index-management overhead as $C$ approaches $P$.}
+\label{fig:efficiency-collision}
+\end{subfigure}
+\caption{Reference, static-indexed, and incremental evaluation across policy size under two candidate distributions. The policy-update experiment uses five updates per run and reports update cost separately in Table~\ref{tab:updates}.}
+\label{fig:efficiency}
+\end{figure*}

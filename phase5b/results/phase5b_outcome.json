@@ -1,0 +1,24 @@
+{
+  "outcome": "TRADEOFF",
+  "node_delta": {
+    "precision": 9.582730933499982e-06,
+    "recall": 0.00015555728396989986,
+    "f1": 2.909156405149992e-05,
+    "fpr": 0.004240632201445799,
+    "mcc": -0.001259290855833206
+  },
+  "node_transitions": {
+    "rescued_tp": 2,
+    "lost_tp": 0,
+    "removed_fp": 0,
+    "new_fp": 2418,
+    "unchanged_tp": 26,
+    "unchanged_fp": 39300
+  },
+  "selected_config": {
+    "extra_validation_alert_budget": 0.005,
+    "max_sequences_per_selector": 128,
+    "min_sequence_support": 100,
+    "sequence_length": 4
+  }
+}

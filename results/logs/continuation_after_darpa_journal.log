@@ -1,0 +1,12 @@
+[2026-08-15T15:17:23.2506753+01:00] Supervisor started. Waiting for DARPA container 69d6615d20d8.
+[2026-08-15T23:04:45.4522490+01:00] docker wait finished with launcher exit=0.
+[2026-08-15T23:04:45.5782327+01:00] Found C:\Users\User\Documents\Articles\Bayem-Nkondock Help-Mission\Projet-A\Project_A_Phase5_Local_Codex_Kit\results\raw\rq5_darpa_cadets_metrics.csv. Running remaining DARPA steps.
+[2026-08-15T23:04:45.6137483+01:00] START darpa_rq1_degradation: docker run --rm -v C:\Users\User\Documents\Articles\Bayem-Nkondock Help-Mission\Projet-A\Project_A_Phase5_Local_Codex_Kit:/work -v /var/run/docker.sock:/var/run/docker.sock -w /work projecta-phase5-runner:2026-08-14 python experiments/run_darpa_rq1_degradation.py
+[2026-08-15T23:22:33.4351078+01:00] END darpa_rq1_degradation: exit=0
+[2026-08-15T23:22:33.4514243+01:00] START darpa_rq2_explanations: docker run --rm -v C:\Users\User\Documents\Articles\Bayem-Nkondock Help-Mission\Projet-A\Project_A_Phase5_Local_Codex_Kit:/work -v /var/run/docker.sock:/var/run/docker.sock -w /work projecta-phase5-runner:2026-08-14 python experiments/run_darpa_rq2_explanations.py
+[2026-08-15T23:22:40.8312877+01:00] END darpa_rq2_explanations: exit=0
+[2026-08-15T23:22:40.8350255+01:00] START darpa_rq4_performance: docker run --rm -v C:\Users\User\Documents\Articles\Bayem-Nkondock Help-Mission\Projet-A\Project_A_Phase5_Local_Codex_Kit:/work -v /var/run/docker.sock:/var/run/docker.sock -w /work projecta-phase5-runner:2026-08-14 python experiments/run_darpa_rq4_perf.py
+[2026-08-15T23:36:16.4485785+01:00] END darpa_rq4_performance: exit=0
+[2026-08-15T23:36:16.4532641+01:00] START consolidate: docker run --rm -v C:\Users\User\Documents\Articles\Bayem-Nkondock Help-Mission\Projet-A\Project_A_Phase5_Local_Codex_Kit:/work -v /var/run/docker.sock:/var/run/docker.sock -w /work projecta-phase5-runner:2026-08-14 python scripts/consolidate_results.py
+[2026-08-15T23:38:15.3740124+01:00] END consolidate: exit=0
+[2026-08-15T23:38:15.3778213+01:00] Supervisor finished.

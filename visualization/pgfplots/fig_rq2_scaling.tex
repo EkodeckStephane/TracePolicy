@@ -1,0 +1,17 @@
+\begin{figure*}[!t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+width=0.94\textwidth,height=0.34\textwidth,
+xlabel={Explanatory units $m$},ylabel={Median explanation time ($\mu$s)},
+ymode=log,grid=major,
+xtick={5,6,7,8,9,10,11,12,13,14,15,16,17,18},
+legend style={font=\small,at={(0.50,0.98)},anchor=north,legend columns=3,fill=white,fill opacity=0.88,text opacity=1}
+]
+\addplot+[mark=*] table[x=n_units,y=intrinsic_us_median,col sep=comma] {figures/data/rq2_scaling_summary.csv};\addlegendentry{Exact intrinsic}
+\addplot+[mark=square*] table[x=n_units,y=shap_us_median,col sep=comma] {figures/data/rq2_scaling_summary.csv};\addlegendentry{SHAP}
+\end{axis}
+\end{tikzpicture}
+\caption{Explanation-cost scaling under a fixed same-oracle construction. The exact intrinsic procedure enumerates admissible neutralizations and is explicitly bounded to $m\le18$. The crossover observed in this environment occurs at approximately $m=12$; absolute runtimes are machine-dependent, while the exponential growth in exact checks is structural.}
+\label{fig:rq2scaling}
+\end{figure*}

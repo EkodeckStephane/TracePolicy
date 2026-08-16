@@ -1,0 +1,48 @@
+{
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+  "python": "3.11.16 (main, Aug 13 2026, 19:40:50) [GCC 14.2.0]",
+  "disk_free_bytes": 24382828544,
+  "docker": {
+    "cmd": [
+      "docker",
+      "version"
+    ],
+    "returncode": 0,
+    "stdout": "Client:\n Version:           27.5.1\n API version:       1.47\n Go version:        go1.22.11\n Git commit:        9f9e405\n Built:             Wed Jan 22 13:40:02 2025\n OS/Arch:           linux/amd64\n Context:           default\n\nServer: Docker Desktop 4.80.0 (232116)\n Engine:\n  Version:          29.6.1\n  API version:      1.55 (minimum version 1.40)\n  Go version:       go1.26.4\n  Git commit:       8ec5ab3\n  Built:            Fri Jun 26 11:41:04 2026\n  OS/Arch:          linux/amd64\n  Experimental:     false\n containerd:\n  Version:          v2.2.5\n  GitCommit:        e53c7c1516c3b2bff98eb76f1f4117477e6f4e66\n runc:\n  Version:          1.3.6\n  GitCommit:        v1.3.6-0-g491b69ba\n docker-init:\n  Version:          0.19.0\n  GitCommit:        de40ad0\n",
+    "stderr": ""
+  },
+  "compose": {
+    "cmd": [
+      "docker",
+      "compose",
+      "version"
+    ],
+    "returncode": 0,
+    "stdout": "Docker Compose version v2.33.0\n",
+    "stderr": ""
+  },
+  "images": {
+    "jasonish/suricata:8.0.5": {
+      "cmd": [
+        "docker",
+        "image",
+        "inspect",
+        "jasonish/suricata:8.0.5"
+      ],
+      "returncode": 0,
+      "stdout": "[\n    {\n        \"Architecture\": \"amd64\",\n        \"Author\": \"\",\n        \"Comment\": \"buildkit.dockerfile.v0\",\n        \"Config\": {\n            \"ArgsEscaped\": true,\n            \"AttachStderr\": false,\n            \"AttachStdin\": false,\n            \"AttachStdout\": false,\n            \"Cmd\": null,\n            \"Domainname\": \"\",\n            \"Entrypoint\": [\n                \"/docker-entrypoint.sh\"\n            ],\n            \"Env\": [\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.utf8\"\n            ],\n            \"Hostname\": \"\",\n            \"Image\": \"\",\n            \"Labels\": null,\n            \"OnBuild\": null,\n            \"OpenStdin\": false,\n            \"StdinOnce\": false,\n            \"Tty\": false,\n            \"User\": \"\",\n            \"Volumes\": {\n                \"/etc/suricata\": {},\n                \"/var/lib/suricata\": {},\n                \"/var/log/suricata\": {},\n                \"/var/run/suricata\": {}\n            },\n            \"WorkingDir\": \"/\"\n        },\n        \"Created\": \"2026-07-05T22:15:10.793535151Z\",\n        \"DockerVersion\": \"\",\n        \"GraphDriver\": {\n            \"Data\": null,\n            \"Name\": \"overlayfs\"\n        },\n        \"Id\": \"sha256:93fadbb0771d0003d32c627069bc8bf26ebced13f2748e9cd7cf958dd1802f7e\",\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-08-14T19:01:45.787883944Z\"\n        },\n        \"Os\": \"linux\",\n        \"Parent\": \"\",\n        \"RepoDigests\": [\n            \"jasonish/suricata@sha256:93fadbb0771d0003d32c627069bc8bf26ebced13f2748e9cd7cf958dd1802f7e\"\n        ],\n        \"RepoTags\": [\n            \"jasonish/suricata:8.0.5\"\n        ],\n        \"RootFS\": {\n            \"Layers\": [\n                \"sha256:d32b47abc077149321aef805fa1f55bd04c90b6e76bcc19482fdea770329ff4c\",\n                \"sha256:ec427463f968c42dc4d84a013eddcc3b09e3636ff6548195c4cab9e7b5cf4584\",\n                \"sha256:abe96b646e77093f5738702273da769b8075cddf66c811851393998cade3b1d7\",\n                \"sha256:581dbefa36fabd8fd2e32141cd3458de38d2f2305a95ae5935ef7bcaa9e5d213\",\n                \"sha256:c163830029ccf5aa3fef8becd56178239aeb47fecf5232c27222065590eb30d0\",\n                \"sha256:92a4b2024e8828bcca9080ddf5e9337ad36ae36cbbb9e0e1d0bd9355d22207a0\",\n                \"sha256:206343de845cbe7361e9bd58356ca25f25f91a50c779e96eb4d4ce8a240b770e\",\n                \"sha256:571e8939f5248602f6bbc4007851d79ab74a5423919dbd75a96a1945ab2df8ea\",\n                \"sha256:08828261e3b12b362de305c5e0e0fc2b4f5e8ad68426697bbbe5098b5a9624b0\",\n                \"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\"\n            ],\n            \"Type\": \"layers\"\n        },\n        \"Size\": 157834440\n    }\n]\n",
+      "stderr": ""
+    },
+    "wazuh/wazuh-manager:4.14.7": {
+      "cmd": [
+        "docker",
+        "image",
+        "inspect",
+        "wazuh/wazuh-manager:4.14.7"
+      ],
+      "returncode": 0,
+      "stdout": "[\n    {\n        \"Architecture\": \"amd64\",\n        \"Author\": \"\",\n        \"Comment\": \"buildkit.dockerfile.v0\",\n        \"Config\": {\n            \"AttachStderr\": false,\n            \"AttachStdin\": false,\n            \"AttachStdout\": false,\n            \"Cmd\": null,\n            \"Domainname\": \"\",\n            \"Entrypoint\": [\n                \"/init\"\n            ],\n            \"Env\": [\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"\n            ],\n            \"ExposedPorts\": {\n                \"1514/tcp\": {},\n                \"1515/tcp\": {},\n                \"1516/tcp\": {},\n                \"514/udp\": {},\n                \"55000/tcp\": {}\n            },\n            \"Hostname\": \"\",\n            \"Image\": \"\",\n            \"Labels\": null,\n            \"OnBuild\": null,\n            \"OpenStdin\": false,\n            \"StdinOnce\": false,\n            \"Tty\": false,\n            \"User\": \"\",\n            \"Volumes\": null,\n            \"WorkingDir\": \"/\"\n        },\n        \"Created\": \"2026-08-04T08:37:19.093033504Z\",\n        \"DockerVersion\": \"\",\n        \"GraphDriver\": {\n            \"Data\": null,\n            \"Name\": \"overlayfs\"\n        },\n        \"Id\": \"sha256:c364ef100ba40d501537b1668a5a72bba4c4fbcf39bbef6a02123ff221fc40d0\",\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-08-14T19:01:49.475965693Z\"\n        },\n        \"Os\": \"linux\",\n        \"Parent\": \"\",\n        \"RepoDigests\": [\n            \"wazuh/wazuh-manager@sha256:c364ef100ba40d501537b1668a5a72bba4c4fbcf39bbef6a02123ff221fc40d0\"\n        ],\n        \"RepoTags\": [\n            \"wazuh/wazuh-manager:4.14.7\"\n        ],\n        \"RootFS\": {\n            \"Layers\": [\n                \"sha256:317b6fe7c2e1777925335bc0705d6f73f56927bf2a46bad44efca2dbc0420892\",\n                \"sha256:22058cafb9f1c043f5cc2aed9c9081efe9ac5e6ed17b080f4e0462a2598149e4\",\n                \"sha256:274366794512e21b17628e42da34e22b1ce98cbe5f580180a6009be27ecd0361\",\n                \"sha256:07286d15f69ce482428ece97004d2acff0bfcfd0d8ebf6d6b24532ba4b3fa8fa\",\n                \"sha256:9e339df2586782166b809db7d3602f696b55040b36c36ba8cd63b953e32b554a\",\n                \"sha256:93b05cd734866eb10c10b72654b1d4f878b3aa4bb385d77c169eff0c58d87f95\",\n                \"sha256:cd18fc6a5c3dcdae8202c5296b2c12b5d36ba1cb68c7b699d5a6543ad199501f\",\n                \"sha256:c9152554103e7fc78868b53f37872a43a1a911715d23fe1b83af637b75070d7b\",\n                \"sha256:f855b92efa6bb2963d0b554139a24a568d5a5004bc08d60e73998a5d828d4eeb\",\n                \"sha256:a43a6cea5dafb35200300eea133bffdbe13c665b925726e75c75a560da860590\",\n                \"sha256:94b46f4a6385cde9e3a79f33b0162e3c5ad4700d4680e11867fabe858aa5e13a\",\n                \"sha256:a8979146b94b268bfa731e6c22b42f3b916eaf92d6661524b8d6cb6fcbcd8c2f\",\n                \"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\",\n                \"sha256:e6d6263aaf4ca7fd86acddcc528dc8a6adc040a0d3c7d314004e183af5773f42\",\n                \"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\",\n                \"sha256:36aca56ba91007a2a58f1c7b71e62126f13d5a389ce1566346fecac16299b389\",\n                \"sha256:1db818902243ec92799347865d906cbb2670a9e3fab03fe326a17ec42b7b2e1c\"\n            ],\n            \"Type\": \"layers\"\n        },\n        \"Size\": 906194834\n    }\n]\n",
+      "stderr": ""
+    }
+  }
+}

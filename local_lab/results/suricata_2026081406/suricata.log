@@ -1,0 +1,19 @@
+[1 - Suricata-Main] 2026-08-15 12:44:26 Notice: suricata: This is Suricata version 8.0.5 RELEASE running in USER mode
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: cpu: CPUs/cores online: 12
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2026-08-15 12:44:26 Warning: detect: duplicate instance for http_uri in 'alert http any any -> any any (msg:"PROJECTA BRUTE FORCE THRESHOLD"; flow:established,to_server; http.uri; content:"/login"; nocase; http.uri; content:"ok=0"; nocase; detection_filter:track by_src,count 4,seconds 5; classtype:attempted-user; sid:9100004; rev:1;)'
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: detect: 1 rule files processed. 4 rules successfully loaded, 0 rules failed, 0 rules skipped
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: detect: 4 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 4 inspect application layer, 0 are decoder event only
+[16 - RX#01] 2026-08-15 12:44:26 Info: pcap: Starting file run for /input.pcap
+[1 - Suricata-Main] 2026-08-15 12:44:26 Notice: threads: Threads created -> RX: 1 W: 12 FM: 1 FR: 1   Engine started.
+[16 - RX#01] 2026-08-15 12:44:26 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[16 - RX#01] 2026-08-15 12:44:26 Info: pcap: pcap file /input.pcap end of file reached (pcap err code 0)
+[1 - Suricata-Main] 2026-08-15 12:44:26 Notice: suricata: Signal Received.  Stopping engine.
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: suricata: time elapsed 0.109s
+[16 - RX#01] 2026-08-15 12:44:26 Notice: pcap: read 1 file, 3398 packets, 348733 bytes
+[1 - Suricata-Main] 2026-08-15 12:44:26 Info: counters: Alerts: 121

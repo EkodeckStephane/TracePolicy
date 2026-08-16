@@ -254,7 +254,7 @@ cd TracePolicy
 ```bash
 python -m venv .venv
 source .venv/bin/activate        # Linux/macOS
-# .venv\Scripts\Activate.ps1   # PowerShell
+# .venv\\Scripts\\Activate.ps1   # PowerShell
 pip install --upgrade pip
 pip install -r requirements.txt
 pip install -r requirements-lime.txt
@@ -262,7 +262,31 @@ pip install -r requirements-lime.txt
 
 ### 9.4 Obtain datasets
 
-Read `datasets/DATASETS.md`. For CADETS E3, obtain the official files linked from the DARPA Transparent Computing E3 documentation, then use `scripts/collect_datasets.py`. The acquisition script records SHA-256 hashes and validates required filenames. Large DARPA files are intentionally excluded from Git history.
+Read:
+
+```text
+datasets/DATASETS.md
+```
+
+For CADETS E3, obtain the official files linked from the DARPA Transparent Computing E3 documentation and either place them at the target paths documented in `datasets/DATASETS.md` or provide the acquisition URLs as environment variables:
+
+```bash
+export DARPA_CADETS_TRAIN_URL='...'
+export DARPA_CADETS_TEST_URL='...'
+export DARPA_E3_GT_PDF_URL='...'
+python scripts/collect_datasets.py
+```
+
+On PowerShell:
+
+```powershell
+$env:DARPA_CADETS_TRAIN_URL='...'
+$env:DARPA_CADETS_TEST_URL='...'
+$env:DARPA_E3_GT_PDF_URL='...'
+python scripts/collect_datasets.py
+```
+
+The acquisition script records SHA-256 hashes and validates required filenames. Large DARPA files are intentionally excluded from Git history.
 
 ### 9.5 Run semantic tests first
 
@@ -272,7 +296,23 @@ pytest -q
 
 The retained baseline test suite should pass before experimental results are regenerated.
 
-### 9.6 Run components
+### 9.6 Build the experiment runner
+
+The full original workflow can be launched through Docker:
+
+```bash
+docker build -t tracepolicy-runner -f docker/runner/Dockerfile docker/runner
+```
+
+or with the existing orchestrator:
+
+```bash
+bash run_all.sh
+```
+
+`run_all.sh` mounts the repository into the runner and executes the controlled experiments, local bench, security baselines, TON_IoT, CADETS, consolidation, and result generation.
+
+### 9.7 Run components individually
 
 Useful entry points include:
 
@@ -281,28 +321,22 @@ python experiments/run_local_core.py
 python experiments/run_rq2_explanations.py
 python experiments/run_rq2_lime.py
 python experiments/run_rq2_stability.py
-python experiments/run_rq2_scaling.py --min-units 5 --max-units 18 --repeats 3
-python experiments/run_rq2_local_lab_explanations.py
 python scripts/run_local_lab.py
 python experiments/run_local_lab_tracepolicy.py
 python scripts/run_suricata.py
 python scripts/run_wazuh.py
 python experiments/run_toniot_local.py
 python experiments/run_darpa_cadets.py
+python experiments/run_darpa_rq1_degradation.py
+python experiments/run_darpa_rq2_explanations.py
+python experiments/run_darpa_rq4_perf.py
 ```
 
-### 9.7 Explanation-scope validation
+### 9.8 Wazuh
 
-The exact explainer is intentionally bounded at 18 explanatory units. Run:
+For the validated Wazuh baseline, start an actual Wazuh 4.14.7 manager and confirm `wazuh-analysisd` is running. The corrective helper scripts are retained under `scripts/` and `experiments/`. The experiment aborts on analysisd connection errors rather than converting an execution failure into a zero-alert score.
 
-```bash
-python experiments/run_rq2_scaling.py --min-units 5 --max-units 18 --repeats 3
-python experiments/run_rq2_local_lab_explanations.py
-```
-
-These commands regenerate `results/raw/rq2_scaling.csv`, `results/summary/rq2_scaling_summary.csv`, `results/raw/rq2_local_lab_explanations.csv`, and `results/summary/rq2_local_lab_explanations_summary.csv`.
-
-### 9.8 Statistical consolidation
+### 9.9 Statistical consolidation
 
 ```bash
 python scripts/compute_phase5_statistics_v2.py
@@ -310,11 +344,29 @@ python scripts/compute_phase5_statistics_v2.py
 
 This produces bootstrap 95% confidence intervals, paired Wilcoxon tests, Holm correction within comparison families, effect-direction measures, and a distinct deterministic CADETS point estimate so repeated timing runs are not treated as independent detection observations.
 
+### 9.10 Trace-aware CADETS ablation
+
+The source for the frozen P0/P1 trace-aware expressiveness study is under `phase5b/`.
+
+```bash
+python phase5b/tests/test_phase5b_semantics.py
+python phase5b/experiments/01_phase5b_train_select.py
+python phase5b/experiments/02_phase5b_test_once.py
+```
+
+The test script enforces a single frozen test opening. Review `phase5b/config/phase5b.json` before execution.
+
 ## 10. Integrity and provenance
 
-The repository retains frozen hashes and result manifests from the validated campaign. When regenerating data, preserve the original seeds, train/validation/test boundaries, policy configurations, Docker versions/digests, semantic-divergence files, and the distinction between the derived ThreaTrace entity mapping and the narrative official DARPA report.
+The repository retains frozen hashes and result manifests from the validated campaign. When regenerating data:
 
-The 30 retained binary packet captures are distributed as `local_lab/results/pcaps_30runs.tar.xz`; extract that archive in `local_lab/results/` when direct `.pcap` access is required.
+- keep the original seeds;
+- preserve train/validation/test boundaries;
+- freeze policy/rule configurations before final test evaluation;
+- record Docker image versions/digests;
+- keep reference/indexed/incremental divergence files, including zero-row files;
+- treat the ThreaTrace CADETS UUID mapping as a **derived entity mapping**, distinct from the narrative official DARPA report;
+- keep deterministic CADETS detection as one point estimate; use repeated runs for timing variation rather than pseudo-replicated detection statistics.
 
 ## 11. Visualization
 
@@ -322,7 +374,9 @@ The 30 retained binary packet captures are distributed as `local_lab/results/pca
 
 ## 12. Known scope conditions
 
-TracePolicy is an explicit-policy IDS. Its detection surface follows the observables and semantic coverage encoded in the active policy. The experiments therefore interpret policy quality as a measurable deployment variable. The current exact explanation implementation is intentionally bounded to at most 18 units and exhibits exponential worst-case scaling; the retained experiments expose this boundary directly.
+TracePolicy is an explicit-policy IDS. Its detection surface follows the observables and semantic coverage encoded in the active policy. The experiments therefore interpret policy quality as a measurable deployment variable. The CADETS experiments are especially useful as a transfer stress test: they quantify the relationship between a policy specified in one behavioral context and attribution in a different provenance environment.
+
+The trace-aware P1 ablation demonstrates that additional temporal expressiveness creates strong discrimination when the targeted sensitive-event subspace aligns with attack activity. Its global contribution depends on the prevalence of that subspace, which motivates future policy induction/refinement on fresh held-out provenance environments.
 
 ## 13. Security and responsible use
 

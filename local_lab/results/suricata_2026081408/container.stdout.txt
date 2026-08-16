@@ -1,0 +1,9 @@
+Checking for capability sys_nice: no
+Warning: no sys_nice capability, use --cap-add sys_nice
+Checking for capability net_admin: no
+Warning: no net_admin capability, use --cap-add net_admin
+i: suricata: This is Suricata version 8.0.5 RELEASE running in USER mode
+W: detect: duplicate instance for http_uri in 'alert http any any -> any any (msg:"PROJECTA BRUTE FORCE THRESHOLD"; flow:established,to_server; http.uri; content:"/login"; nocase; http.uri; content:"ok=0"; nocase; detection_filter:track by_src,count 4,seconds 5; classtype:attempted-user; sid:9100004; rev:1;)'
+i: threads: Threads created -> RX: 1 W: 12 FM: 1 FR: 1   Engine started.
+i: suricata: Signal Received.  Stopping engine.
+i: pcap: read 1 file, 3419 packets, 349981 bytes

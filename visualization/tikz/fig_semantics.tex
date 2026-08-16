@@ -1,0 +1,31 @@
+\begin{figure*}[!t]
+\centering
+\resizebox{0.82\textwidth}{!}{%
+\begin{tikzpicture}[
+node distance=4.5mm,
+b/.style={draw,rounded corners,align=center,minimum width=34mm,minimum height=7mm,inner sep=2pt},
+t/.style={draw,rounded corners,align=center,minimum width=30mm,minimum height=9mm,inner sep=2pt},
+a/.style={-{Latex[length=2mm]},thick},
+yes/.style={font=\scriptsize,fill=white,inner sep=1pt}
+]
+\node[b] (app) {Compute applicable rules $\App(x)$};
+\node[b,below=of app] (empty) {$\App(x)=\varnothing$?};
+\node[t,below left=7mm and 18mm of empty] (gap) {Gap\\fail-safe deny};
+\node[b,below right=7mm and 2mm of empty] (top) {Select maximal priority\\stratum $\Top(x)$};
+\node[b,below=of top] (eff) {Effects in $\Top(x)$};
+\node[t,below left=7mm and 25mm of eff] (allow) {Allow only\\NoAlert};
+\node[t,below=7mm of eff] (deny) {Deny only\\Violation};
+\node[t,below right=7mm and 25mm of eff] (conf) {Allow + deny\\Conflict / deny};
+\draw[a] (app)--(empty);
+\draw[a] (empty)-- node[yes,left]{yes} (gap);
+\draw[a] (empty)-- node[yes,right]{no} (top);
+\draw[a] (top)--(eff);
+\draw[a] (eff)--(allow);
+\draw[a] (eff)--(deny);
+\draw[a] (eff)--(conf);
+\end{tikzpicture}%
+}
+\caption{Deterministic ordered-cumulative policy semantics. Rules at the maximal applicable priority
+are evaluated together, making same-priority contradictions explicit.}
+\label{fig:semantics}
+\end{figure*}

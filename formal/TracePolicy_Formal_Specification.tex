@@ -1,0 +1,703 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{natbib}
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{assumption}{Assumption}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+\newcommand{\Events}{\mathcal{E}}
+\newcommand{\Rules}{\mathcal{R}}
+\newcommand{\Policy}{\mathcal{P}}
+\newcommand{\Trace}{\tau}
+\newcommand{\State}{\sigma}
+\newcommand{\Prefix}{\pi}
+\newcommand{\Top}{\operatorname{Top}}
+\newcommand{\App}{\operatorname{App}}
+\newcommand{\Class}{\operatorname{Class}}
+\newcommand{\Decide}{\operatorname{Decide}}
+\newcommand{\Diagnose}{\operatorname{Diagnose}}
+\newcommand{\Expl}{\operatorname{Expl}}
+\newcommand{\Suff}{\operatorname{Suff}}
+\newcommand{\Core}{\operatorname{Core}}
+\newcommand{\Adm}{\operatorname{Adm}}
+\newcommand{\Ret}{\rho}
+\newcommand{\Bool}{\mathbb{B}}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\stutter}{\varepsilon_{\mathrm{st}}}
+\newcommand{\NoAlert}{\mathsf{NoAlert}}
+\newcommand{\Violation}{\mathsf{Violation}}
+\newcommand{\Conflict}{\mathsf{Conflict}}
+\newcommand{\Gap}{\mathsf{Gap}}
+\newcommand{\Allow}{\mathsf{Allow}}
+\newcommand{\Deny}{\mathsf{Deny}}
+
+\title{Phase 4 Formal Artifact\\
+Trace--Policy Causal Provenance for Explainable Intrusion Detection}
+\author{Project A -- clean-room formal specification}
+\date{14 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This technical artifact defines the formal core of Project A independently of the prior IJCA implementation. It specifies a versioned trace--policy semantics, a deterministic ordered cumulative policy evaluator, a retention-abductive definition of causal alert explanations, complete proofs of soundness, existence/completeness and inclusion-minimality, contingency-aware counterfactual witnesses, bounded policy-defect diagnostics, and semantics-preserving reference, indexed and incremental evaluators. The construction deliberately does not claim novelty for rule-based intrusion detection, provenance analysis, minimal or abductive explanations in general, causal access-control explanations, access-control policy repair, or verifiable causality. Those areas are occupied by prior work. The intended novelty to be tested empirically is the specific integration of versioned execution traces and declarative security policies into a minimal causal explanation and exact incremental evaluation framework.
+\end{abstract}
+
+\section{Scope, epistemic status, and non-claims}
+
+This document is a \emph{formal design artifact}, not an experimental result report. Consequently, statements about runtime speedups, false-positive reduction, explanation cost, or cross-dataset generalization are not made here. Those claims remain subject to Phase~5 measurements.
+
+\paragraph{Verified positioning.}
+Rule-based provenance IDSs already exist and can be adaptive and interpretable, as exemplified by CAPTAIN~\citep{Wang2025Captain}. Recent PIDS studies emphasize deployment and evaluation limitations~\citep{Bilot2025Simpler}, while ORTHRUS explicitly targets attribution quality~\citep{Jiang2025Orthrus}. SecTracer constructs network-level security provenance for root-cause analysis~\citep{Lee2026SecTracer}. Formal minimal explanations have an established abductive lineage~\citep{Ignatiev2019Abduction,MarquesSilvaHuang2024}, and causal explanations of access-control decisions are explicitly studied by Hasel Mehri et al.~\citep{HaselMehri2026Causal}. Policy repair and privilege reduction also predate this project~\citep{Eiers2023Repair,DAntoni2024Privilege}. Finally, vCause already addresses verifiable causality analysis over versioned provenance graphs~\citep{Song2026VCause}. We therefore make none of these generic claims as novelty claims.
+
+\paragraph{Targeted contribution.}
+The formal object studied here is narrower: an alert produced by a declarative security policy over a versioned execution trace is explained by an inclusion-minimal set of \emph{factual event units and policy-rule units} whose retention suffices to guarantee the same alert class under an explicitly bounded family of admissible suppressions. The policy evaluator is then optimized without changing that semantics.
+
+\section{Typed universe and algebraic signatures}
+
+\subsection{Base sorts}
+We assume pairwise distinct identifier sorts
+\[
+\mathsf{TaskId},\ \mathsf{ResourceId},\ \mathsf{SubjectId},\ \mathsf{RuleId},\ \mathsf{PolicyId},\ \mathsf{VersionId},\ \mathsf{WorkflowId},\ \mathsf{ProcessId},
+\]
+a totally ordered time domain $\mathbb{T}$, a finite action alphabet $\mathsf{Act}$, a finite resource-class alphabet $\mathsf{RClass}$, a value domain $\mathsf{Val}$, and booleans $\Bool=\{\bot,\top\}$.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.6cm} p{4.2cm} p{6.5cm}}
+\caption{Core sorts and constructors.}\label{tab:sorts}\\
+\toprule
+Concept & Signature & Meaning \\
+\midrule
+\endfirsthead
+\toprule
+Concept & Signature & Meaning \\
+\midrule
+\endhead
+Task & $\mathsf{mkTask}:\mathsf{TaskId}\times\mathsf{Act}\to\mathsf{Task}$ & Atomic business/security-relevant operation.\\
+Resource & $\mathsf{mkRes}:\mathsf{ResourceId}\times\mathsf{RClass}\to\mathsf{Resource}$ & Protected object.\\
+QoS & $\mathsf{QoS}:\mathsf{MetricKey}\rightharpoonup\mathsf{Val}$ & Partial map of measurable operational attributes.\\
+Event & $\mathsf{mkEvent}:\mathsf{SubjectId}\times\mathsf{Task}\times\mathsf{Resource}\times\mathbb{T}\times\mathsf{AttrMap}\to\mathsf{Event}$ & Immutable observed event record.\\
+SystemState & $\mathsf{Store}\times\mathsf{QoS}\to\mathsf{SystemState}$ & Security-relevant state at a trace position.\\
+Trace & $\mathsf{Event}^{*}\to\mathsf{Trace}$ & Finite ordered event sequence.\\
+TracePrefix & $\mathsf{prefix}:\mathsf{Trace}\times\Nat\to\mathsf{TracePrefix}$ & First $i$ positions of a trace.\\
+Log & $\mathsf{mkLog}:\mathsf{LogId}\times\mathsf{Trace}\times\mathsf{SourceId}\to\mathsf{Log}$ & Recorded trace with source metadata.\\
+Workflow & $\mathsf{mkWF}:\mathsf{WorkflowId}\times 2^{\mathsf{Task}}\times 2^{\mathsf{Task}\times\mathsf{Task}}\to\mathsf{Workflow}$ & Tasks plus precedence relation.\\
+BusinessProcess & $\mathsf{mkBP}:\mathsf{ProcessId}\times 2^{\mathsf{Workflow}}\to\mathsf{BusinessProcess}$ & Finite workflow composition.\\
+Rule & $\mathsf{mkRule}:\mathsf{RuleId}\times\mathbb{Z}\times\mathsf{Effect}\times\mathsf{Selector}\times\mathsf{Guard}\to\mathsf{Rule}$ & Ordered declarative security rule.\\
+Policy & $\mathsf{mkPolicy}:\mathsf{PolicyId}\times\mathsf{Rule}^{*}\to\mathsf{Policy}$ & Finite rule sequence sorted by priority and stable source order.\\
+PolicyVersion & $\mathsf{mkPV}:\mathsf{Policy}\times\mathsf{VersionId}\times\mathbb{T}\to\mathsf{PolicyVersion}$ & Immutable policy snapshot.\\
+Alert & $\mathsf{mkAlert}:\mathsf{AlertClass}\times\Nat\times\mathsf{VersionId}\times\mathsf{Evidence}\to\mathsf{Alert}$ & Security decision emitted at a trace position.\\
+Explanation & $\mathsf{mkExpl}:2^{\mathsf{EventUnit}}\times2^{\mathsf{RuleUnit}}\times\mathsf{Background}\times\mathsf{WitnessSet}\to\mathsf{Explanation}$ & Minimal trace--policy explanation object.\\
+Diagnosis & $\mathsf{mkDiag}:\mathsf{CauseClass}\times2^{\mathsf{Defect}}\times2^{\mathsf{Warning}}\to\mathsf{Diagnosis}$ & Runtime cause classification and structural warnings.\\
+InformationSystem & $\mathsf{mkIS}:2^{\mathsf{Resource}}\times2^{\mathsf{Workflow}}\times\mathsf{PolicyVersion}\times\mathsf{LogSet}\to\mathsf{InformationSystem}$ & Aggregate system object.\\
+\bottomrule
+\end{longtable}
+
+No predicate is used below before being declared. The previous ``Event versus QoS'' typing ambiguity is eliminated: event predicates have domain $\mathsf{Event}$ or $\mathsf{TracePrefix}\times\mathsf{SystemState}$; QoS is merely a component of state.
+
+\subsection{State transition and prefix consistency}
+
+\begin{definition}[State transition]
+A deterministic total function
+\[
+\delta:\mathsf{SystemState}\times\mathsf{Event}\to\mathsf{SystemState}
+\]
+updates system state. A distinguished stutter event $\stutter$ satisfies
+\[
+\delta(\sigma,\stutter)=\sigma.
+\]
+For initial state $\sigma_0$ and prefix $\pi=\langle e_1,\ldots,e_i\rangle$, define
+\[
+\mathsf{Fold}(\sigma_0,\pi)=\delta(\cdots\delta(\delta(\sigma_0,e_1),e_2)\cdots,e_i).
+\]
+A pair $(\pi,\sigma)$ is \emph{state-consistent} iff $\sigma=\mathsf{Fold}(\sigma_0,\pi)$ for the fixed background initial state $\sigma_0$.
+\end{definition}
+
+\begin{assumption}[A1: finite observation]
+Every decision is made on a finite trace prefix and a finite policy version.
+\end{assumption}
+
+\begin{assumption}[A2: deterministic state]
+The transition function $\delta$ is deterministic on well-formed events. This assumption is used only to make the decision function mathematically single-valued.
+\end{assumption}
+
+\section{Rule language and versioned trace--policy semantics}
+
+\subsection{Monitorable guard language}
+To support exact streaming evaluation, temporal guards are deliberately restricted to finite-memory operators.
+
+An event atom $a$ is a comparison over a current-event field (subject, task/action, resource identifier/class, time bucket, or attribute). A state atom $b$ is a comparison over a state/QoS key. Temporal atoms are
+\[
+\mathsf{Seen}(a,h),\qquad
+\mathsf{Count}(a,h)\ \theta\ n,\qquad
+\mathsf{Seq}(a_1,\ldots,a_m,h),
+\]
+where $h$ is a finite horizon and $\theta\in\{=,\neq,<,\leq,>,\geq\}$. Guards are Boolean combinations
+\[
+\varphi ::= a \mid b \mid t \mid \neg\varphi \mid (\varphi\land\varphi) \mid (\varphi\lor\varphi).
+\]
+Each guard is interpreted on a state-consistent pair $(\pi,\sigma)$.
+
+\begin{assumption}[A3: decidable guard theory]
+All non-temporal comparisons belong to a decidable quantifier-free theory used by the implementation (finite enumerations, bit-vectors, strings restricted to decidable operators, and/or quantifier-free linear arithmetic). Temporal horizons are finite.
+\end{assumption}
+
+\subsection{Rules, selectors, and priorities}
+
+A rule is
+\[
+r=\langle id(r),p(r),eff(r),sel(r),guard(r)\rangle,
+\]
+where $p(r)\in\mathbb{Z}$ and $eff(r)\in\{\Allow,\Deny\}$. A selector is a conjunction of exact or wildcard tests over the current event's task/action, resource class, and optional subject class. The full applicability predicate is declared as
+\[
+\mathsf{applies}:\mathsf{Rule}\times\mathsf{TracePrefix}\times\mathsf{SystemState}\to\Bool.
+\]
+For state-consistent $(\pi,\sigma)$,
+\[
+\mathsf{applies}(r,\pi,\sigma)\iff sel(r)\text{ matches the current event and }(\pi,\sigma)\models guard(r).
+\]
+
+A policy version $P^v$ is immutable once used to classify an event. Its rule list is sorted by non-increasing priority; stable source order is used only for deterministic enumeration, not for resolving opposite effects at the same priority.
+
+\subsection{Ordered cumulative decision semantics}
+
+\begin{definition}[Applicable and top strata]
+For input $x=(\pi,\sigma,P^v)$ define
+\[
+\App(x)=\{r\in P^v\mid \mathsf{applies}(r,\pi,\sigma)\}.
+\]
+If $\App(x)\neq\varnothing$, let
+\[
+p^*(x)=\max\{p(r):r\in\App(x)\},\qquad
+\Top(x)=\{r\in\App(x):p(r)=p^*(x)\}.
+\]
+If $\App(x)=\varnothing$, then $\Top(x)=\varnothing$.
+\end{definition}
+
+\begin{definition}[Decision and alert class]
+The cumulative effect of the maximal-priority stratum is
+\[
+\Decide(x)=
+\begin{cases}
+\Deny, & \App(x)=\varnothing,\\
+\Allow, & \{eff(r):r\in\Top(x)\}=\{\Allow\},\\
+\Deny, & \{eff(r):r\in\Top(x)\}=\{\Deny\},\\
+\Deny, & \{eff(r):r\in\Top(x)\}=\{\Allow,\Deny\}.
+\end{cases}
+\]
+The last case is fail-safe conflict resolution. The externally visible classification is
+\[
+\Class(x)=
+\begin{cases}
+\Gap, & \App(x)=\varnothing,\\
+\Conflict, & \exists r_a,r_d\in\Top(x): eff(r_a)=\Allow\land eff(r_d)=\Deny,\\
+\Violation, & \Top(x)\neq\varnothing\land \forall r\in\Top(x),\ eff(r)=\Deny,\\
+\NoAlert, & \Top(x)\neq\varnothing\land \forall r\in\Top(x),\ eff(r)=\Allow.
+\end{cases}
+\]
+An alert is emitted iff $\Class(x)\neq\NoAlert$.
+\end{definition}
+
+\paragraph{Why order is meaningful.}
+Priority induces the policy order. All rules at the highest applicable priority are evaluated cumulatively, so a same-priority allow/deny contradiction is not silently hidden. Lower-priority applicable rules are semantically shadowed for the current decision but remain available to structural diagnosis.
+
+\subsection{Policy-version changes}
+A policy update creates a new immutable version $P^{v+1}$; it never mutates $P^v$. An event at position $i$ is evaluated against exactly one version $\nu(i)$. Thus historical alerts and explanations are version-bound. Re-evaluating old events under a newer version is a separate explicit analysis operation, not a silent mutation of history.
+
+\begin{assumption}[A4: version binding]
+The evaluator receives an unambiguous mapping from each decision point to the policy version in force at that point.
+\end{assumption}
+
+\section{Retention-abductive causal explanations}
+
+\subsection{Causal units and intervention domain}
+The definition follows the logic-based/abductive idea that an explanation is a minimal set of factual conditions sufficient for a decision~\citep{Ignatiev2019Abduction}, but the mutable units here are trace events and policy rules rather than ML features.
+
+For an alerting input $x=(\pi,\sigma,P^v)$, let
+\[
+U(x)=U_E(x)\uplus U_R(x)
+\]
+be a finite set of units, where $U_E$ contains one unit for each event position in the bounded explanatory horizon and $U_R$ contains one unit for each explicit policy rule in $P^v$. A retention assignment is
+\[
+\rho:U(x)\to\{0,1\}.
+\]
+If an event unit is set to $0$, its event is replaced by $\stutter$, preserving position and time ordering while producing no state change. If a rule unit is set to $0$, the rule is disabled. Unit value $1$ retains the factual object unchanged.
+
+The background $B$ fixes the event contents, rule contents, initial state, schemas, policy-version identifier, neutralization semantics, and any immutable environmental facts. It does \emph{not} force non-core units to be retained.
+
+\begin{definition}[Admissible retention]
+$\Adm_B(x)$ is the set of retention assignments whose neutralized instance $x\downarrow\rho$ remains well formed and state-consistent after the retained/stuttered trace is folded from $\sigma_0$.
+\end{definition}
+
+\begin{remark}
+The intervention domain is intentionally bounded to factual retention versus neutralization. It does not claim to represent every physically possible counterfactual modification of an event or policy. This makes the causal statement precise and auditable instead of universal and vague.
+\end{remark}
+
+\subsection{Sufficiency and minimal core}
+Let $y=\Class(x)\neq\NoAlert$.
+
+\begin{definition}[Sufficiency]
+For $E\subseteq U(x)$,
+\[
+\Suff_B(E;x,y)\iff
+\forall\rho\in\Adm_B(x):
+\Bigl(\forall u\in E,\rho(u)=1\Bigr)\Rightarrow \Class(x\downarrow\rho)=y.
+\]
+Thus fixing the units in $E$ to their factual presence guarantees the \emph{same alert class} for every admissible suppression/retention choice of the remaining units.
+\end{definition}
+
+\begin{definition}[Minimal causal trace--policy core]
+$E$ is an explanation core iff $\Suff_B(E;x,y)$ and no strict subset of $E$ is sufficient. Its event and policy projections are
+\[
+T_c=E\cap U_E(x),\qquad R_c=E\cap U_R(x).
+\]
+The explanation object is
+\[
+\Expl(x)=\langle T_c,R_c,B,W\rangle,
+\]
+where $W$ is the witness set defined below.
+\end{definition}
+
+\begin{lemma}[Upward monotonicity of sufficiency]\label{lem:upward}
+If $E\subseteq E'\subseteq U(x)$ and $\Suff_B(E;x,y)$, then $\Suff_B(E';x,y)$.
+\end{lemma}
+\begin{proof}
+Every retention assignment that fixes all units of $E'$ to $1$ also fixes all units of $E$ to $1$. The universal condition defining $\Suff_B(E;x,y)$ therefore applies, so the target class remains $y$.
+\end{proof}
+
+\subsection{Exact minimization by a decision oracle}
+Under A1--A3, each counterexample query can be reduced to SAT/SMT over the bounded trace/policy encoding. Define
+\[
+\mathsf{CE}(E)\iff
+\exists\rho\in\Adm_B(x):
+\Bigl(\bigwedge_{u\in E}\rho(u)=1\Bigr)\land \Class(x\downarrow\rho)\neq y.
+\]
+Then $\Suff_B(E;x,y)$ iff $\mathsf{CE}(E)$ is unsatisfiable.
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwIn{Alerting instance $x$, background $B$, deterministic unit order $\prec$}
+\KwOut{One inclusion-minimal core $E$ and witness set $W$}
+$y\leftarrow\Class(x)$; $E\leftarrow U(x)$; $W\leftarrow\varnothing$\;
+\ForEach{$u\in U(x)$ in order $\prec$}{
+  $Q\leftarrow \mathsf{SAT}(B\land\bigwedge_{v\in E\setminus\{u\}}\rho(v)=1\land\Class(x\downarrow\rho)\neq y)$\;
+  \eIf{$Q=\mathsf{UNSAT}$}{
+     $E\leftarrow E\setminus\{u\}$\;
+  }{
+     store one satisfying assignment $\rho_u$ returned by $Q$\;
+  }
+}
+\ForEach{$u\in E$}{
+  recompute/store a satisfying witness $\rho_u$ for $E\setminus\{u\}$; $W\leftarrow W\cup\{(u,\rho_u)\}$\;
+}
+\Return{$(E,W)$}\;
+\caption{\textsc{MinExplain}: exact retention-abductive core extraction.}\label{alg:minexplain}
+\end{algorithm}
+
+The second pass is deliberate: a witness obtained before later deletions need not satisfy the final $E\setminus\{u\}$ constraints.
+
+\subsection{Formal guarantees}
+
+\begin{theorem}[Soundness / correction]\label{thm:sound}
+Every core returned by \textsc{MinExplain} is sufficient for the alert class actually emitted on $x$.
+\end{theorem}
+\begin{proof}
+Initially $E=U(x)$. Any retention assignment fixing every unit in $U(x)$ to $1$ is the factual assignment, hence $x\downarrow\rho=x$ and $\Class(x\downarrow\rho)=y$. Therefore $E$ is sufficient initially. The algorithm removes $u$ only when the counterexample query for $E\setminus\{u\}$ is unsatisfiable, which is equivalent to sufficiency of that smaller set. Thus sufficiency is an invariant of the loop. The returned $E$ is sufficient.
+\end{proof}
+
+\begin{theorem}[Completeness / existence]\label{thm:complete}
+For every emitted alert on a finite well-formed instance satisfying A1--A4, at least one minimal causal trace--policy core exists, and \textsc{MinExplain} returns one.
+\end{theorem}
+\begin{proof}
+As shown in the proof of \cref{thm:sound}, the finite set $U(x)$ is sufficient. Hence the family
+\[
+\mathcal{S}=\{E\subseteq U(x):\Suff_B(E;x,y)\}
+\]
+is nonempty. Because $U(x)$ is finite, the finite partially ordered set $(\mathcal{S},\subseteq)$ contains at least one inclusion-minimal element. \textsc{MinExplain} starts from a member of $\mathcal{S}$ and preserves membership while deleting units, so it terminates after at most $|U(x)|$ deletion attempts and returns a member of $\mathcal{S}$.
+\end{proof}
+
+\begin{theorem}[Inclusion-minimality]\label{thm:min}
+The core $E$ returned by \textsc{MinExplain} is inclusion-minimal: no strict subset $E'\subset E$ is sufficient.
+\end{theorem}
+\begin{proof}
+At termination, for every $u\in E$, the query for $E\setminus\{u\}$ is satisfiable; hence $E\setminus\{u\}$ is not sufficient. Suppose for contradiction that some strict subset $E'\subset E$ were sufficient. Choose $u\in E\setminus E'$. Then $E'\subseteq E\setminus\{u\}$. By upward monotonicity (\cref{lem:upward}), sufficiency of $E'$ would imply sufficiency of $E\setminus\{u\}$, a contradiction. Therefore no strict subset is sufficient.
+\end{proof}
+
+\begin{proposition}[Contingency-aware counterfactual witnesses]\label{prop:witness}
+For each unit $u$ in a returned minimal core $E$, there exists an admissible retention assignment $\rho_u$ such that every unit in $E\setminus\{u\}$ is retained and the target alert class changes:
+\[
+\Class(x\downarrow\rho_u)\neq y.
+\]
+\end{proposition}
+\begin{proof}
+By \cref{thm:min}, $E\setminus\{u\}$ is not sufficient. Negating the universal definition of sufficiency yields exactly the existence of such an admissible $\rho_u$. The second pass of \textsc{MinExplain} stores one witness.
+\end{proof}
+
+\begin{remark}[Direct but-for causality is stronger]
+\Cref{prop:witness} permits a contingency: non-core units may also be suppressed by $\rho_u$. It does not imply that suppressing \emph{only} $u$ changes the alert. A direct but-for claim is made only when that stronger one-unit intervention is explicitly checked.
+\end{remark}
+
+\begin{corollary}[Precisely scoped semantic fidelity]\label{cor:fidelity}
+Define retention-domain semantic fidelity by
+\[
+\mathsf{RFid}_B(E;x,y)=
+\begin{cases}
+1,&\Suff_B(E;x,y),\\
+0,&\text{otherwise}.
+\end{cases}
+\]
+Then every returned explanation has $\mathsf{RFid}_B=1$ by \cref{thm:sound}. This statement is restricted to the declared retention intervention domain, target alert class, background assumptions, and exact decision function; it is not a universal claim about explanation fidelity.
+\end{corollary}
+
+\subsection{Multiple sufficient causes}
+Let
+\[
+\mathsf{MEC}(x)=\{E\subseteq U(x): E\text{ is a minimal sufficient core}\}.
+\]
+The set may contain multiple elements. \textsc{MinExplain} returns one deterministic element given a fixed unit order $\prec$; it does not claim uniqueness. If all minimal cores are required, repeated solving with blocking constraints can enumerate them, at potentially exponential cost.
+
+\subsection{Theorem utilization map}
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{p{3.4cm}X}
+\toprule
+Result & Concrete use later in the project \\
+\midrule
+Soundness (\cref{thm:sound}) & Defines the Phase~5 non-contradiction oracle: every emitted explanation must pass the same sufficiency query.\\
+Completeness (\cref{thm:complete}) & Defines explanation coverage: every alert in RQ2 must receive a core unless the implementation violates assumptions and reports an explicit failure.\\
+Minimality (\cref{thm:min}) & Defines the minimality test and the core-size metrics; every retained unit must have a witness.\\
+Counterfactual witness (\cref{prop:witness}) & Produces executable witness tests and prevents unsupported ``counterfactual'' wording.\\
+Semantic fidelity (\cref{cor:fidelity}) & Separates a proved binary property under the formal domain from empirical SHAP/LIME fidelity metrics.\\
+\bottomrule
+\end{tabularx}
+\caption{Every formal result has an algorithmic or experimental role.}\label{tab:theorem-use}
+\end{table}
+
+\section{Policy-defect-aware diagnosis}
+
+Policy defects are defined relative to a bounded analysis domain $D_B$ of well-formed state-consistent inputs. Boundedness is explicit; no claim of universal decidability for arbitrary policy languages is made.
+
+\begin{definition}[Runtime conflict]
+$\mathsf{ConflictAt}(x,P^v)$ holds iff $\Top(x)$ contains at least one allow rule and at least one deny rule.
+\end{definition}
+
+\begin{definition}[Runtime policy gap]
+$\mathsf{GapAt}(x,P^v)$ holds iff no explicit rule applies: $\App(x)=\varnothing$.
+\end{definition}
+
+\begin{definition}[Shadowing over $D_B$]
+A rule $r\in P^v$ is shadowed over $D_B$ iff
+\[
+\forall x\in D_B:\ \mathsf{applies}(r,x)\Rightarrow
+\exists r'\in P^v:\ p(r')>p(r)\land\mathsf{applies}(r',x).
+\]
+Thus $r$ can never belong to the maximal-priority stratum on that domain.
+\end{definition}
+
+\begin{definition}[Redundancy over $D_B$]
+A rule $r$ is decision-redundant over $D_B$ iff
+\[
+\forall x\in D_B:\ \Class(x,P^v)=\Class(x,P^v\setminus\{r\}).
+\]
+This is class-preserving redundancy, not mere syntactic duplication.
+\end{definition}
+
+\begin{definition}[Policy incompleteness over $D_B$]
+$P^v$ is incomplete over $D_B$ iff
+\[
+\exists x\in D_B:\ \App(x)=\varnothing.
+\]
+\end{definition}
+
+\begin{definition}[Diagnosis]
+For an alerting input $x$, define
+\[
+\Diagnose(x,P^v)=\langle c,D,W\rangle,
+\]
+where
+\[
+c=
+\begin{cases}
+\mathsf{PolicyDefectContribution},&\Class(x)\in\{\Conflict,\Gap\},\\
+\mathsf{OperationalViolation},&\Class(x)=\Violation,
+\end{cases}
+\]
+$D$ contains the runtime conflict/gap certificates when applicable, and $W$ contains bounded-domain structural warnings for shadowed or redundant rules. Shadowing/redundancy are not automatically labelled causes of the current alert.
+\end{definition}
+
+\paragraph{Repair boundary.}
+This phase deliberately does \emph{not} make automatic policy repair a core contribution. Quantitative repair and automatic privilege reduction already exist~\citep{Eiers2023Repair,DAntoni2024Privilege}. A future repair operator may only be added if an admissible edit space and preservation obligations are formally specified and evaluated in Phase~5.
+
+\section{Reference evaluator}
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwIn{State-consistent $(\pi,\sigma)$, immutable policy version $P^v$}
+\KwOut{$(d,c,Evid)$}
+$A\leftarrow\varnothing$\;
+\ForEach{$r\in P^v$ in policy order}{
+  \If{$\mathsf{applies}(r,\pi,\sigma)$}{$A\leftarrow A\cup\{r\}$\;}
+}
+\If{$A=\varnothing$}{\Return{$(\Deny,\Gap,\varnothing)$}\;}
+$p^*\leftarrow\max\{p(r):r\in A\}$; $T\leftarrow\{r\in A:p(r)=p^*\}$\;
+\If{$T$ contains allow and deny}{\Return{$(\Deny,\Conflict,T)$}\;}
+\If{all $r\in T$ are deny}{\Return{$(\Deny,\Violation,T)$}\;}
+\Return{$(\Allow,\NoAlert,T)$}\;
+\caption{Reference evaluator.}\label{alg:reference}
+\end{algorithm}
+
+If a guard contains $K$ temporal atoms each naively rescanning a prefix of length $N$, guard evaluation is $O(NK)$ and the reference worst-case cost is $O(PNK)$ for $P$ rules. This is a deliberately conservative bound. If trace summaries are precomputed, the bound becomes $O(PK)$ for the same semantics.
+
+\section{Static indexed evaluator}
+
+\subsection{Index structure}
+Selectors are restricted to exact/wildcard dimensions over a fixed tuple, for example
+\[
+\kappa=(\mathsf{task/action},\mathsf{resourceClass},\mathsf{subjectClass},\mathsf{timeBucket}).
+\]
+An inverted index
+\[
+I:\mathsf{SelectorKey}\to\mathsf{PriorityBuckets}(\mathsf{RuleId})
+\]
+stores each rule under its selector pattern. Querying the current event enumerates all compatible exact/wildcard patterns and returns a candidate set $C(x)$.
+
+\begin{assumption}[I1: cover invariant]
+For every valid input $x$,
+\[
+\App(x)\subseteq C(x).
+\]
+The index may return false positives, but never omit an applicable rule.
+\end{assumption}
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwIn{$(\pi,\sigma,P^v)$ and valid index $I_v$}
+\KwOut{Same tuple as \cref{alg:reference}}
+$C\leftarrow\mathsf{Lookup}(I_v,\kappa(\pi,\sigma))$\;
+$A\leftarrow\{r\in C:\mathsf{applies}(r,\pi,\sigma)\}$\;
+Apply the same top-stratum and class function as \cref{alg:reference}\;
+\Return{$(d,c,Evid)$}\;
+\caption{Static indexed evaluator.}\label{alg:indexed}
+\end{algorithm}
+
+\begin{theorem}[Static index semantic equivalence]\label{thm:indexeq}
+Under I1, \cref{alg:indexed} returns exactly the same decision, alert class, and maximal-priority evidence set as \cref{alg:reference} for every valid input.
+\end{theorem}
+\begin{proof}
+The reference applicable set is $\App(x)$. By I1, every applicable rule belongs to $C(x)$. The indexed evaluator re-evaluates the full guard for every candidate, so no non-applicable candidate enters $A$ and every applicable rule does. Hence its computed $A$ equals $\App(x)$ exactly. Both algorithms then apply the identical deterministic maximal-priority and cumulative-effect functions. Their decision, class, and evidence therefore coincide.
+\end{proof}
+
+With fixed selector dimension $d$, lookup enumerates at most $2^d$ wildcard combinations. Let $C=|C(x)|$. After temporal features are available, indexed decision cost is $O(2^d+CK)$ and index space is $O(dP)$ under a per-dimension inverted representation. In the worst case $C=P$, so no asymptotic worst-case scalability claim is made; the average reduction $C/P$ is an empirical Phase~5 question.
+
+\section{Incremental streaming evaluator}
+
+\subsection{Finite-memory temporal monitors}
+Each temporal atom is compiled to a deterministic finite-memory monitor. For example, $\mathsf{Seen}(a,h)$ stores enough recent positions/timestamps to decide whether a matching event exists in the horizon; $\mathsf{Count}$ maintains a bounded deque/counter; $\mathsf{Seq}$ maintains a bounded sequence automaton.
+
+Let $M_t$ denote the monitor state after processing prefix $\pi_t$.
+
+\begin{lemma}[Monitor invariant]\label{lem:monitor}
+After each processed event, every monitor value in $M_t$ equals the denotational truth value of its temporal atom on the complete prefix $\pi_t$.
+\end{lemma}
+\begin{proof}
+By induction on $t$. At $t=0$, monitor initial states are defined to equal each atom's empty-prefix semantics. Assume the invariant at $t$. Each monitor transition consumes exactly event $e_{t+1}$, expires entries outside its finite horizon, and updates its counter/automaton according to the operator definition. These operations are a direct incremental implementation of the denotational semantics, so the resulting state equals the semantics on $\pi_{t+1}$. Therefore the invariant holds for all $t$.
+\end{proof}
+
+\subsection{Policy updates}
+Insertion, deletion, or modification of a rule creates version $v+1$, updates its selector buckets, and creates/removes the corresponding guard monitors. Historical explanations remain attached to $v$. No historical alert is silently recomputed.
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwIn{Event stream and versioned policy-update stream}
+\KwOut{Version-bound decisions, diagnoses, and explanations}
+Initialize state $\sigma_0$, monitors $M_0$, and index $I_v$\;
+\ForEach{next timestamped item in order}{
+ \uIf{item is a policy update}{
+   construct immutable $P^{v+1}$; update $I_{v+1}$ and affected monitors; $v\leftarrow v+1$\;
+ }
+ \ElseIf{item is event $e_t$}{
+   append $e_t$; update $\sigma_t$ and all affected temporal monitors\;
+   $(d,c,Evid)\leftarrow\textsc{IndexedEval}(\pi_t,\sigma_t,P^v,I_v)$\;
+   \If{$c\neq\NoAlert$}{
+      $D\leftarrow\Diagnose(\pi_t,\sigma_t,P^v)$\;
+      $E\leftarrow\textsc{MinExplain}(\pi_t,\sigma_t,P^v,B)$\;
+      emit immutable version-bound $(d,c,D,E,v,t)$\;
+   }
+ }
+}
+\caption{Versioned incremental evaluator.}\label{alg:incremental}
+\end{algorithm}
+
+\begin{theorem}[Incremental decision equivalence]\label{thm:inceq}
+Assume A1--A4, I1, and exact monitor transitions as in \cref{lem:monitor}. At every event position $t$, \cref{alg:incremental} returns the same decision, alert class, and evidence as running the reference evaluator from scratch on the complete prefix $\pi_t$, reconstructed state $\sigma_t$, and policy version active at $t$.
+\end{theorem}
+\begin{proof}
+By \cref{lem:monitor}, each temporal atom presented to a guard has the same truth value as full-prefix denotational evaluation. Non-temporal event/state atoms are evaluated directly on the same current event and state. Thus every rule's applicability equals reference applicability. By I1 and \cref{thm:indexeq}, indexed candidate selection does not alter the applicable set or top stratum. Policy updates are immutable version changes, and both compared evaluators use the same version active at $t$. Hence decision, class, and evidence coincide.
+\end{proof}
+
+\begin{theorem}[Explanation and diagnosis equivalence]\label{thm:expleq}
+If reference and incremental evaluators are given the same canonical instance $(\pi_t,\sigma_t,P^v)$, the deterministic \textsc{MinExplain} procedure with the same unit order returns the same explanation core and witnesses, and $\Diagnose$ returns the same diagnosis.
+\end{theorem}
+\begin{proof}
+By \cref{thm:inceq}, both evaluators induce the same canonical trace, state, policy version, target class, and rule semantics. \textsc{MinExplain} is defined only by that canonical instance, $B$, the fixed unit order, and deterministic SAT/SMT answers (with deterministic witness tie-breaking when needed); it does not depend on whether the decision was obtained by a scan or index. Therefore the sequence of sufficiency queries is identical and the returned core is identical. The diagnosis predicates are functions of the same applicability/top-stratum semantics and the same bounded domain, so their outputs coincide.
+\end{proof}
+
+\subsection{Complexity accounting}
+Let $P$ be the number of rules, $K$ the maximum number of guard atoms, $M$ the number of active temporal monitors, $C$ the candidate set size, $d$ the fixed selector dimension, and $m=|U(x)|$ the number of causal units considered for an alert.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{p{4.2cm}X}
+\toprule
+Operation & Bound / qualification \\
+\midrule
+Reference decision, naive temporal scan & $O(PNK)$ worst case for prefix length $N$.\\
+Reference decision with precomputed temporal features & $O(PK)$.\\
+Static indexed decision & $O(2^d+CK)$; worst case $C=P$.\\
+Index space & $O(dP)$ for fixed-dimensional inverted lists, excluding compiled monitor state.\\
+Event monitor update & $O(M_e)$ where $M_e\le M$ are monitors affected by the event; worst case $O(M)$.\\
+Rule insertion/deletion & $O(d+K+\log P)$ plus monitor allocation/deallocation under standard bucket structures; implementation-dependent constants measured in Phase~5.\\
+Policy modification & deletion + insertion under a new version.\\
+Explanation extraction in the current prototype & Each sufficiency/minimality check enumerates assignments of free units. A check fixing $c$ units costs $O(2^{m-c}T_{\mathrm{eval}})$ and deletion-based extraction has worst-case $O(m2^mT_{\mathrm{eval}})$. The implementation caps $m$ at 18. A SAT/SMT backend is a compatible future realization of the same formal query.\\
+Historical explanation maintenance & $O(1)$ archival metadata per alert because explanations are immutable and version-bound; policy updates create new versions rather than rewriting history.\\
+\bottomrule
+\end{tabularx}
+\caption{Complexity claims that can be established before experimentation.}\label{tab:complexity}
+\end{table}
+
+\section{Threat model and security assumptions}
+
+\subsection{Adversary capabilities}
+The attacker may:
+\begin{enumerate}[label=(A\arabic*)]
+\item generate arbitrary network/system actions available through compromised or legitimate credentials;
+\item sequence actions to exploit temporal dependencies and attempt mimicry/evasion;
+\item know the algorithms and, in the strongest disclosure case, know the declarative policy;
+\item observe alerts or a role-authorized projection of explanations;
+\item attempt to trigger policy gaps, conflicts, or benign-looking event sequences.
+\end{enumerate}
+
+\subsection{Trusted computing base}
+The formal guarantees require:
+\begin{enumerate}[label=(T\arabic*)]
+\item the event collector to faithfully deliver the events inside the declared observation surface;
+\item the policy repository to bind each event decision to the intended immutable policy version;
+\item the evaluator, state transition implementation, and SAT/SMT backend to execute their specified semantics;
+\item the initial state/background assumptions used by the explanation to be correct.
+\end{enumerate}
+
+\begin{assumption}[A5: input integrity within the model]
+The core theorems are conditional on the trace and policy version supplied to the evaluator. If an attacker can silently alter or delete those inputs before evaluation, the system may produce a perfectly correct explanation of a falsified history. The present work does not claim to solve that integrity problem.
+\end{assumption}
+
+This limitation is explicit because verifiable provenance causality is already an active topic; vCause, for example, targets integrity of cloud-side causality analysis~\citep{Song2026VCause}. Adding authenticated data structures here would therefore require a separate, narrowly justified contribution and is not part of C1--C4.
+
+\subsection{Policy-author mistakes}
+The policy author/administrator is trusted not to act maliciously but may make configuration mistakes. Runtime conflicts and gaps are therefore within the model, and bounded structural shadowing/redundancy analyses are diagnostic features rather than adversary behaviors.
+
+\subsection{Explanation leakage}
+A full explanation may reveal rule identifiers, thresholds, resource scopes, temporal windows, or attack-detection logic. An attacker who receives such details may improve evasion. Therefore the security interface must enforce role-based access to explanation detail. This phase defines the leakage risk but does not claim a formally privacy-preserving redaction theorem. Any redaction function must not be described as preserving soundness unless that property is separately proved.
+
+\section{Boundary cases}
+
+\paragraph{Empty policy.}
+No explicit rule applies; every well-formed input is classified as $\Gap$ and denied by the fail-safe default. The explanation may contain only the event units needed to guarantee that no enabled factual rule can become applicable under allowed suppressions; $R_c$ may be empty.
+
+\paragraph{Contradictory rules.}
+Opposite effects at the same maximal applicable priority yield $\Conflict$ and fail-safe denial. Opposite lower-priority rules do not alter the current decision but may appear in structural warnings.
+
+\paragraph{Zero violated explicit rules.}
+This is a policy gap, not an operational violation. It is reported as $\Gap$ rather than silently mislabelled as an intrusion caused by a deny rule.
+
+\paragraph{Multiple independent sufficient causes.}
+$\mathsf{MEC}(x)$ may contain several cores. No uniqueness claim is made. The experimental protocol must report the chosen deterministic core and, when feasible, sensitivity to core enumeration/order.
+
+\paragraph{Policy update during a trace.}
+The event before the update is evaluated under $P^v$ and the event after it under $P^{v+1}$. Their explanations remain bound to their respective versions.
+
+\section{Positioning against the closest verified SOTA}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabularx}{\textwidth}{p{2.5cm}p{4cm}X}
+\toprule
+Work & What it already establishes & Boundary retained for Project A \\
+\midrule
+CAPTAIN~\citep{Wang2025Captain} & Adaptive, rule-based provenance IDS with interpretable procedures/results. & Do not claim rule-based/adaptive/explainable PIDS as generic novelty; focus on versioned trace--policy formal cores.\\
+Bilot et al.~\citep{Bilot2025Simpler} & Unified analysis of eight PIDS and practical shortcomings. & Require simple baselines, reproducibility, cost accounting, and no scalability claim without measurement.\\
+ORTHRUS~\citep{Jiang2025Orthrus} & High-quality attribution on provenance graphs and attack-path reconstruction. & Our object is not generic provenance attribution; it is policy-decision causality with formal sufficiency/minimality.\\
+SecTracer~\citep{Lee2026SecTracer} & Network-level security provenance and root-cause analysis across hosts. & Do not claim ``provenance + security state + root cause'' generically; distinguish policy-rule causal cores.\\
+SACMAT 2026~\citep{HaselMehri2026Causal} & Causal explanation of access decisions and minimal sufficient causes. & Move beyond static access decision explanation to bounded execution-trace plus versioned-policy alert semantics.\\
+Formal XAI~\citep{Ignatiev2019Abduction,MarquesSilvaHuang2024} & Abductive/minimal formal explanations and critique of heuristic importance explanations. & Reuse the formal principle honestly; novelty is the security-specific causal unit model and semantics, not abduction itself.\\
+Policy repair~\citep{Eiers2023Repair,DAntoni2024Privilege} & Quantitative repair / privilege reduction of access-control policies. & Repair is optional and not a core novelty claim.\\
+vCause~\citep{Song2026VCause} & Verifiable causality analysis over versioned provenance graphs. & Cryptographic/verifiable causality is outside the central novelty claim.\\
+\bottomrule
+\end{tabularx}
+\caption{Explicit novelty boundaries required by Phase 4.}\label{tab:positioning}
+\end{table}
+
+\section{Clean-room genealogy statement}
+
+The genealogy statement for adaptation in Related Work is:
+
+\begin{quote}
+Earlier work by members of the author group established a research trajectory spanning workflow-audit and process-mining formulations for intrusion detection and a hybrid policy-oriented architecture~\citep{Atsa2013Workflow,Nkondock2019Workflow,Nkondock2022Overview,Nkondock2026Hybrid}. The present project advances this trajectory through versioned trace--policy semantics, formally guaranteed minimal event--rule explanations, bounded policy-defect diagnosis, semantics-preserving indexed/incremental evaluation, and reproducible multi-environment validation.
+\end{quote}
+
+\section{Proof obligations transferred to implementation and Phase 5}
+
+The mathematical guarantees above become testable implementation obligations:
+\begin{enumerate}
+\item \textbf{Semantic oracle:} reference and indexed/incremental evaluators must agree exactly on decision, alert class, and evidence for every generated regression case.
+\item \textbf{Monitor oracle:} incremental temporal monitors must equal full-prefix recomputation on every test prefix.
+\item \textbf{Explanation soundness:} every returned core must make the counterexample query UNSAT.
+\item \textbf{Explanation minimality:} every retained unit must have a stored SAT witness after its removal.
+\item \textbf{Explanation completeness:} every emitted alert must obtain an explanation or fail loudly because a declared assumption/backend limit was violated; silent missing explanations are forbidden.
+\item \textbf{Policy-defect truth:} controlled policy mutations in Phase~5 provide ground truth for conflict, gap, shadowing, and redundancy tests.
+\item \textbf{Version integrity:} every raw result row must record the policy version used for the decision and explanation.
+\end{enumerate}
+
+\section{Phase-4 criterion audit}
+
+\begin{longtable}{p{8.0cm}p{2.4cm}p{3.2cm}}
+\toprule
+Criterion & Status & Evidence in this artifact \\
+\midrule
+Clean-room specification and coherent symbol table & SATISFIED & Sections 2--3, Table~\ref{tab:sorts}.\\
+Trace, state, prefix, policy version distinguished & SATISFIED & Sections 2.2 and 3.4.\\
+Trace--policy semantics, contradictions, updates & SATISFIED & Sections 3.2--3.4.\\
+Causal trace--policy explanation formally defined & SATISFIED & Section 4.\\
+Three core theorems fully proved & SATISFIED & Theorems~\ref{thm:sound}--\ref{thm:min}.\\
+Counterfactual result scoped and proved & SATISFIED & Proposition~\ref{prop:witness}; direct but-for explicitly not overclaimed.\\
+Policy-defect diagnosis formalized and bounded & SATISFIED & Section 5; repair excluded from core.\\
+Reference/static/incremental evaluators specified & SATISFIED & Sections 6--8.\\
+Semantic equivalence established & SATISFIED & Theorems~\ref{thm:indexeq}, \ref{thm:inceq}, \ref{thm:expleq}.\\
+Threat model, trace integrity, policy integrity, explanation leakage & SATISFIED & Section 9.\\
+CAPTAIN, SACMAT 2026, SecTracer, ORTHRUS, Bilot, vCause considered & SATISFIED & Section 11 and bibliography.\\
+Every theorem used & SATISFIED & Table~\ref{tab:theorem-use} and Section 13.\\
+\bottomrule
+\end{longtable}
+
+\section*{Conclusion of Phase 4}
+The formal core is internally complete under assumptions A1--A5 and the stated bounded intervention/analysis domains. No empirical claim is inferred from the proofs. In particular, the proofs do not establish superior detection accuracy, lower false-positive rate, lower explanation latency, or practical scalability; those remain Phase~5 questions.
+
+\bibliographystyle{plainnat}
+\bibliography{L5_Phase4_References}
+\end{document}

@@ -1,0 +1,5 @@
+truth,correct_rate,mean_extra_flags
+conflict,1.0,0.0
+gap,1.0,0.0
+redundancy,1.0,0.0
+shadowing,1.0,0.0

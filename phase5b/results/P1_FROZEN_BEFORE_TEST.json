@@ -1,0 +1,28 @@
+{
+  "created_unix": 1786896010.4285946,
+  "frozen_policy_file": "phase5b_p1_frozen.json.gz",
+  "frozen_policy_sha256": "a0bfe4c8a56c9f9ed747092660022329c420e5b7f08e6fbde4a39149d4d4956f",
+  "p0_rule_count": 79,
+  "p1_rule_count": 194,
+  "selected_config": {
+    "extra_validation_alert_budget": 0.005,
+    "max_sequences_per_selector": 128,
+    "min_sequence_support": 100,
+    "sequence_length": 4
+  },
+  "selection_opened_test_content": false,
+  "selection_used_test_labels": false,
+  "status": "FROZEN_BEFORE_TEST",
+  "test_members_names_only": [
+    "ta1-cadets-e3-official-2.json",
+    "ta1-cadets-e3-official-2.json.1"
+  ],
+  "training_events_seen": 9253178,
+  "training_malicious_link_events_excluded": 949593,
+  "training_sensitive_sequence_counts": {
+    "2": 63,
+    "3": 155,
+    "4": 261
+  },
+  "training_unique_current_selectors": 90
+}

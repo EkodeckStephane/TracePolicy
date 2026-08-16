@@ -1,0 +1,2 @@
+precision,recall,f1,fpr,tp,tn,fp,fn,n,policy_rules,note
+0.9979577605100618,0.0423224874257745,0.0812013010041239,1.1915826600891303e-05,40070,6881522,82,906708,7828382,79,"Single deterministic detection point estimate; 30 rows are timing repetitions, not independent detection replicates."

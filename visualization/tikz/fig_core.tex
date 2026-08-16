@@ -1,0 +1,45 @@
+\begin{figure*}[!t]
+\centering
+\resizebox{0.96\textwidth}{!}{%
+\begin{tikzpicture}[
+  ev/.style={draw,rounded corners,minimum width=15mm,minimum height=7mm,align=center},
+  rule/.style={draw,rectangle,minimum width=20mm,minimum height=7mm,align=center},
+  arr/.style={-{Latex[length=2mm]},thick},
+  keep/.style={line width=1.1pt},
+  dim/.style={densely dashed}
+]
+\node[ev] (e1) {$e_1$};
+\node[ev,right=7mm of e1] (e2) {$e_2$};
+\node[ev,right=7mm of e2,keep] (e3) {$e_3$};
+\node[ev,right=7mm of e3] (e4) {$e_4$};
+
+\node[rule,below=12mm of e2] (r1) {$r_{\mathrm{allow}}$};
+\node[rule,below=12mm of e4,keep] (r2) {$r_{\mathrm{deny}}$};
+
+\node[draw,rounded corners,align=center,minimum width=34mm,minimum height=11mm,
+      right=28mm of e4,yshift=-4mm] (decision) {Alert class\\$\Violation$};
+
+% Route event contributions above the event row.
+\draw[arr,dim] (e1.north) -- ++(0,20mm) -| ([xshift=-12mm]decision.north);
+\draw[arr,dim] (e2.north) -- ++(0,17mm) -| ([xshift=-4mm]decision.north);
+\draw[arr,keep] (e3.north) -- ++(0,14mm) -| ([xshift=4mm]decision.north);
+\draw[arr,dim] (e4.north) -- ++(0,11mm) -| ([xshift=12mm]decision.north);
+
+% Policy-rule contributions use a distinct lower routing corridor.
+\draw[arr,dim] (r1.south) -- ++(0,-10mm) -| ([xshift=-7mm]decision.south);
+\draw[arr,keep] (r2.south) -- ++(0,-7mm) -| ([xshift=7mm]decision.south);
+
+\node[draw,rounded corners,dashed,fit=(e3)(r2),inner sep=4mm,
+label={[font=\footnotesize]below:one inclusion-minimal sufficient core $E$}] {};
+
+\node[align=left,font=\footnotesize,text width=0.79\textwidth,
+      below=22mm of r1,anchor=west] (txt) {
+Retaining $E$ fixes the alert class for every admissible neutralization of the remaining units.\\
+For each $u\in E$, a witness assignment changes the class after $u$ is released under the final core.
+};
+\end{tikzpicture}%
+}
+\caption{Retention-abductive explanation principle. Event units and policy-rule units share one
+intervention domain, yielding an explanation with event projection $T_c$ and policy projection $R_c$.}
+\label{fig:core}
+\end{figure*}

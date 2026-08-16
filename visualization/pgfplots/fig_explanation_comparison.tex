@@ -1,0 +1,43 @@
+\begin{figure*}[!t]
+\centering
+\begin{subfigure}[t]{0.96\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+width=0.94\linewidth,height=0.28\textwidth,
+ybar,bar width=20pt,ymode=log,
+ylabel={Mean explanation time ($\mu$s)},
+symbolic x coords={Intrinsic,SHAP,LIME},
+xtick=data,grid=major
+]
+\addplot table[x=method,y=mean_us,col sep=comma] {figures/data/explanation_comparison.csv};
+\end{axis}
+\end{tikzpicture}
+\caption{Measured cost on the same 32 alert cases and the same policy-decision oracle.}
+\label{fig:expcomparison-cost}
+\end{subfigure}
+
+\vspace{4mm}
+
+\begin{subfigure}[t]{0.96\textwidth}
+\centering
+\resizebox{0.92\linewidth}{!}{%
+\begin{tikzpicture}[
+box/.style={draw,rounded corners,minimum width=35mm,minimum height=12mm,align=center,font=\small},
+arr/.style={-{Latex[length=2mm]},thick}
+]
+\node[box] (i) at (0,0) {Intrinsic explanation\\Jaccard $=1.0$\\formal sufficiency/minimality};
+\node[box] (s) at (5.3,0) {SHAP\\Jaccard $=1.0$\\empirical core agreement};
+\node[box] (l) at (10.6,0) {LIME\\Jaccard $=1.0$\\empirical core agreement};
+\node[box,minimum width=140mm] (o) at (5.3,-2.2) {Same policy-decision oracle and the same 32 alert cases};
+\draw[arr] (o.north west) -- (i.south);
+\draw[arr] (o.north) -- (s.south);
+\draw[arr] (o.north east) -- (l.south);
+\end{tikzpicture}%
+}
+\caption{Observed core agreement and the distinct formal status of the intrinsic explanation.}
+\label{fig:expcomparison-core}
+\end{subfigure}
+\caption{Same-oracle explanation analysis. The upper panel reports computational cost; the lower panel separates empirical core agreement from theorem-backed sufficiency and minimality.}
+\label{fig:expcomparison}
+\end{figure*}

@@ -1,0 +1,26 @@
+[
+  {
+    "step": "preflight",
+    "cmd": [
+      "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/preflight.py"
+    ],
+    "start_epoch": 1786729319.581398,
+    "duration_s": 647.9585506916046,
+    "returncode": 0,
+    "stdout_tail": "8.0.5: Pulling from jasonish/suricata\n4f4fb700ef54: Pulling fs layer\n9c6a9cbd500e: Pulling fs layer\n25486ddaa5df: Pulling fs layer\n7ac707a0c3a0: Pulling fs layer\ncf366b487c57: Pulling fs layer\nd8609859d0b4: Pulling fs layer\nc3a18738c61e: Pulling fs layer\nfc6ef2e24a25: Pulling fs layer\nf571be4479d0: Pulling fs layer\n77d752d24aeb: Pulling fs layer\n4f4fb700ef54: Already exists\n4f4fb700ef54: Pull complete\n25486ddaa5df: Download complete\n7ac707a0c3a0: Download complete\nd8609859d0b4: Download complete\nfc6ef2e24a25: Download complete\n77d752d24aeb: Download complete\nc3a18738c61e: Download complete\n9c6a9cbd500e: Download complete\nf571be4479d0: Download complete\ncf366b487c57: Download complete\nf571be4479d0: Pull complete\n9c6a9cbd500e: Pull complete\ncf366b487c57: Pull complete\n7ac707a0c3a0: Pull complete\nd8609859d0b4: Pull complete\nfc6ef2e24a25: Pull complete\nc3a18738c61e: Pull complete\n25486ddaa5df: Pull complete\n77d752d24aeb: Pull complete\nDigest: sha256:93fadbb0771d0003d32c627069bc8bf26ebced13f2748e9cd7cf958dd1802f7e\nStatus: Downloaded newer image for jasonish/suricata:8.0.5\ndocker.io/jasonish/suricata:8.0.5\n4.14.7: Pulling from wazuh/wazuh-manager\nd291494ae7c3: Pulling fs layer\n1c635d63e15b: Pulling fs layer\n4f4fb700ef54: Pulling fs layer\n32fce8817c81: Pulling fs layer\nf56ecc453705: Pulling fs layer\n96dd97d55dd5: Pulling fs layer\nb724dbc195dc: Pulling fs layer\ncb9d2b15e06e: Pulling fs layer\n4f4fb700ef54: Pulling fs layer\n4bbfe11c6abf: Pulling fs layer\n48ed0a64e9a8: Pulling fs layer\n19ee94e47680: Pulling fs layer\n3115bc3845e6: Pulling fs layer\na52ba5413759: Pulling fs layer\n7eac0d6ed58b: Pulling fs layer\na7429afd1b61: Pulling fs layer\n8da8fe852acb: Pulling fs layer\n4f4fb700ef54: Already exists\n6799590cbab6: Download complete\nd291494ae7c3: Download complete\nf56ecc453705: Download complete\n32fce8817c81: Download complete\nb724dbc195dc: Download complete\n96dd97d55dd5: Download complete\ncb9d2b15e06e: Download complete\n3115bc3845e6: Download complete\n48ed0a64e9a8: Download complete\n4bbfe11c6abf: Download complete\n8da8fe852acb: Download complete\n19ee94e47680: Download complete\na52ba5413759: Download complete\n7eac0d6ed58b: Download complete\n1c635d63e15b: Download complete\n1c635d63e15b: Pull complete\n32fce8817c81: Pull complete\n7eac0d6ed58b: Pull complete\n8da8fe852acb: Pull complete\nf56ecc453705: Pull complete\ncb9d2b15e06e: Pull complete\n48ed0a64e9a8: Pull complete\na52ba5413759: Pull complete\na7429afd1b61: Download complete\na7429afd1b61: Pull complete\nd291494ae7c3: Pull complete\n3115bc3845e6: Pull complete\n4bbfe11c6abf: Pull complete\n4f4fb700ef54: Pull complete\n96dd97d55dd5: Pull complete\nb724dbc195dc: Pull complete\n19ee94e47680: Pull complete\nDigest: sha256:c364ef100ba40d501537b1668a5a72bba4c4fbcf39bbef6a02123ff221fc40d0\nStatus: Downloaded newer image for wazuh/wazuh-manager:4.14.7\ndocker.io/wazuh/wazuh-manager:4.14.7\nPulling pinned image jasonish/suricata:8.0.5\nPulling pinned image wazuh/wazuh-manager:4.14.7\nPreflight OK\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "collect_datasets",
+    "cmd": [
+      "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "scripts/collect_datasets.py"
+    ],
+    "start_epoch": 1786729967.5419762,
+    "duration_s": 0.2685551643371582,
+    "returncode": 2,
+    "stdout_tail": "\nDARPA E3 CADETS raw archives are mandatory and were not found:\n  - datasets\\raw\\darpa_e3\\ground_truth\\tc_ground_truth_report_e3_update.pdf\n  - ta1-cadets-e3-official.json.tar.gz\n  - ta1-cadets-e3-official-2.json.tar.gz\n\nUse the official DARPA Transparent Computing E3 Google Drive linked from README-E3.md.\nPlace the exact archives above into: C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\datasets\\raw\\darpa_e3\\cadets\nOR set DARPA_CADETS_TRAIN_URL, DARPA_CADETS_TEST_URL, and DARPA_E3_GT_PDF_URL to direct/share URLs for those exact official files.\nDo not substitute mirrors or 100k subsets for the final run.\n",
+    "stderr_tail": ""
+  }
+]

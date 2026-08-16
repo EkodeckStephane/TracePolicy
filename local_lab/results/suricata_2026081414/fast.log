@@ -1,0 +1,121 @@
+08/15/2026-12:37:01.861991  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:57166 -> 172.22.0.2:8080
+08/15/2026-12:37:01.780788  [**] [1:9100002:1] PROJECTA PATH TRAVERSAL [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:57074 -> 172.22.0.2:8080
+08/15/2026-12:37:01.714371  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57020 -> 172.22.0.2:8080
+08/15/2026-12:37:01.963907  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57272 -> 172.22.0.2:8080
+08/15/2026-12:37:02.001252  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57282 -> 172.22.0.2:8080
+08/15/2026-12:37:02.321558  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57554 -> 172.22.0.2:8080
+08/15/2026-12:37:02.808045  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57976 -> 172.22.0.2:8080
+08/15/2026-12:37:02.010635  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57288 -> 172.22.0.2:8080
+08/15/2026-12:37:02.596459  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57796 -> 172.22.0.2:8080
+08/15/2026-12:37:01.988276  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57280 -> 172.22.0.2:8080
+08/15/2026-12:37:02.174241  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:57420 -> 172.22.0.2:8080
+08/15/2026-12:37:02.630628  [**] [1:9100001:1] PROJECTA ADMIN SENSITIVE ACCESS [**] [Classification: Attempted Administrator Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57826 -> 172.22.0.2:8080
+08/15/2026-12:37:01.977307  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57278 -> 172.22.0.2:8080
+08/15/2026-12:37:02.996992  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58154 -> 172.22.0.2:8080
+08/15/2026-12:37:02.458334  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57676 -> 172.22.0.2:8080
+08/15/2026-12:37:02.345192  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57570 -> 172.22.0.2:8080
+08/15/2026-12:37:02.105156  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:57374 -> 172.22.0.2:8080
+08/15/2026-12:37:02.560717  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57774 -> 172.22.0.2:8080
+08/15/2026-12:37:03.011888  [**] [1:9100001:1] PROJECTA ADMIN SENSITIVE ACCESS [**] [Classification: Attempted Administrator Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58170 -> 172.22.0.2:8080
+08/15/2026-12:37:02.210742  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57456 -> 172.22.0.2:8080
+08/15/2026-12:37:02.330320  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57562 -> 172.22.0.2:8080
+08/15/2026-12:37:02.241012  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57480 -> 172.22.0.2:8080
+08/15/2026-12:37:02.200146  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57450 -> 172.22.0.2:8080
+08/15/2026-12:37:02.368392  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57604 -> 172.22.0.2:8080
+08/15/2026-12:37:02.390734  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57628 -> 172.22.0.2:8080
+08/15/2026-12:37:03.079798  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58238 -> 172.22.0.2:8080
+08/15/2026-12:37:02.374717  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57620 -> 172.22.0.2:8080
+08/15/2026-12:37:02.665637  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:57862 -> 172.22.0.2:8080
+08/15/2026-12:37:02.298518  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57526 -> 172.22.0.2:8080
+08/15/2026-12:37:03.057855  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58212 -> 172.22.0.2:8080
+08/15/2026-12:37:02.257858  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57486 -> 172.22.0.2:8080
+08/15/2026-12:37:02.423862  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57650 -> 172.22.0.2:8080
+08/15/2026-12:37:02.413437  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57644 -> 172.22.0.2:8080
+08/15/2026-12:37:02.837346  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58002 -> 172.22.0.2:8080
+08/15/2026-12:37:02.797651  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57966 -> 172.22.0.2:8080
+08/15/2026-12:37:02.610491  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57808 -> 172.22.0.2:8080
+08/15/2026-12:37:02.581744  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57786 -> 172.22.0.2:8080
+08/15/2026-12:37:03.488161  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58668 -> 172.22.0.2:8080
+08/15/2026-12:37:02.440022  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57662 -> 172.22.0.2:8080
+08/15/2026-12:37:02.224938  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57466 -> 172.22.0.2:8080
+08/15/2026-12:37:02.862554  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58026 -> 172.22.0.2:8080
+08/15/2026-12:37:02.306277  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57542 -> 172.22.0.2:8080
+08/15/2026-12:37:02.878666  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58040 -> 172.22.0.2:8080
+08/15/2026-12:37:03.643793  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58800 -> 172.22.0.2:8080
+08/15/2026-12:37:02.383327  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57626 -> 172.22.0.2:8080
+08/15/2026-12:37:02.573964  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57782 -> 172.22.0.2:8080
+08/15/2026-12:37:03.083762  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58254 -> 172.22.0.2:8080
+08/15/2026-12:37:02.454338  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57670 -> 172.22.0.2:8080
+08/15/2026-12:37:02.407228  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57632 -> 172.22.0.2:8080
+08/15/2026-12:37:02.889081  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58050 -> 172.22.0.2:8080
+08/15/2026-12:37:03.731212  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58862 -> 172.22.0.2:8080
+08/15/2026-12:37:02.815834  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57980 -> 172.22.0.2:8080
+08/15/2026-12:37:02.829496  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:57990 -> 172.22.0.2:8080
+08/15/2026-12:37:03.471690  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58646 -> 172.22.0.2:8080
+08/15/2026-12:37:02.844710  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58008 -> 172.22.0.2:8080
+08/15/2026-12:37:02.956900  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58112 -> 172.22.0.2:8080
+08/15/2026-12:37:02.851577  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58022 -> 172.22.0.2:8080
+08/15/2026-12:37:03.891110  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58992 -> 172.22.0.2:8080
+08/15/2026-12:37:03.465122  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58630 -> 172.22.0.2:8080
+08/15/2026-12:37:02.989444  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58148 -> 172.22.0.2:8080
+08/15/2026-12:37:03.756328  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58882 -> 172.22.0.2:8080
+08/15/2026-12:37:02.978179  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58136 -> 172.22.0.2:8080
+08/15/2026-12:37:02.967102  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58124 -> 172.22.0.2:8080
+08/15/2026-12:37:04.075457  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59178 -> 172.22.0.2:8080
+08/15/2026-12:37:03.049161  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58202 -> 172.22.0.2:8080
+08/15/2026-12:37:03.064001  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58222 -> 172.22.0.2:8080
+08/15/2026-12:37:03.783371  [**] [1:9100001:1] PROJECTA ADMIN SENSITIVE ACCESS [**] [Classification: Attempted Administrator Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58888 -> 172.22.0.2:8080
+08/15/2026-12:37:03.703023  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:58846 -> 172.22.0.2:8080
+08/15/2026-12:37:04.065203  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59166 -> 172.22.0.2:8080
+08/15/2026-12:37:04.382441  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50920 -> 172.22.0.2:8080
+08/15/2026-12:37:03.657996  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58806 -> 172.22.0.2:8080
+08/15/2026-12:37:03.769733  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58886 -> 172.22.0.2:8080
+08/15/2026-12:37:03.453074  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58616 -> 172.22.0.2:8080
+08/15/2026-12:37:04.210182  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50778 -> 172.22.0.2:8080
+08/15/2026-12:37:03.908472  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59028 -> 172.22.0.2:8080
+08/15/2026-12:37:03.735027  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58872 -> 172.22.0.2:8080
+08/15/2026-12:37:04.040854  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59148 -> 172.22.0.2:8080
+08/15/2026-12:37:03.895039  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59000 -> 172.22.0.2:8080
+08/15/2026-12:37:03.475962  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58660 -> 172.22.0.2:8080
+08/15/2026-12:37:04.266357  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50806 -> 172.22.0.2:8080
+08/15/2026-12:37:03.430455  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:58588 -> 172.22.0.2:8080
+08/15/2026-12:37:03.183638  [**] [1:9100001:1] PROJECTA ADMIN SENSITIVE ACCESS [**] [Classification: Attempted Administrator Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58338 -> 172.22.0.2:8080
+08/15/2026-12:37:04.444984  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50994 -> 172.22.0.2:8080
+08/15/2026-12:37:04.108010  [**] [1:9100001:1] PROJECTA ADMIN SENSITIVE ACCESS [**] [Classification: Attempted Administrator Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59206 -> 172.22.0.2:8080
+08/15/2026-12:37:04.616048  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:51138 -> 172.22.0.2:8080
+08/15/2026-12:37:03.512957  [**] [1:9100002:1] PROJECTA PATH TRAVERSAL [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:58700 -> 172.22.0.2:8080
+08/15/2026-12:37:04.765629  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51264 -> 172.22.0.2:8080
+08/15/2026-12:37:04.433250  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50978 -> 172.22.0.2:8080
+08/15/2026-12:37:04.226968  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50782 -> 172.22.0.2:8080
+08/15/2026-12:37:04.704095  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51210 -> 172.22.0.2:8080
+08/15/2026-12:37:03.622401  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58784 -> 172.22.0.2:8080
+08/15/2026-12:37:04.251320  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50794 -> 172.22.0.2:8080
+08/15/2026-12:37:04.411040  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50940 -> 172.22.0.2:8080
+08/15/2026-12:37:04.314127  [**] [1:9100002:1] PROJECTA PATH TRAVERSAL [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:50862 -> 172.22.0.2:8080
+08/15/2026-12:37:04.654104  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51178 -> 172.22.0.2:8080
+08/15/2026-12:37:03.638031  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58792 -> 172.22.0.2:8080
+08/15/2026-12:37:04.749506  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51258 -> 172.22.0.2:8080
+08/15/2026-12:37:04.367102  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50910 -> 172.22.0.2:8080
+08/15/2026-12:37:03.900106  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59016 -> 172.22.0.2:8080
+08/15/2026-12:37:04.429099  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50966 -> 172.22.0.2:8080
+08/15/2026-12:37:04.847880  [**] [1:9100002:1] PROJECTA PATH TRAVERSAL [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:51328 -> 172.22.0.2:8080
+08/15/2026-12:37:03.665553  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58822 -> 172.22.0.2:8080
+08/15/2026-12:37:04.243589  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50786 -> 172.22.0.2:8080
+08/15/2026-12:37:04.605727  [**] [1:9100002:1] PROJECTA PATH TRAVERSAL [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:51122 -> 172.22.0.2:8080
+08/15/2026-12:37:04.351399  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50894 -> 172.22.0.2:8080
+08/15/2026-12:37:04.025690  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59138 -> 172.22.0.2:8080
+08/15/2026-12:37:04.740027  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51248 -> 172.22.0.2:8080
+08/15/2026-12:37:04.683019  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51198 -> 172.22.0.2:8080
+08/15/2026-12:37:04.297501  [**] [1:9100001:1] PROJECTA ADMIN SENSITIVE ACCESS [**] [Classification: Attempted Administrator Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50834 -> 172.22.0.2:8080
+08/15/2026-12:37:04.361492  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50906 -> 172.22.0.2:8080
+08/15/2026-12:37:03.741204  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:58876 -> 172.22.0.2:8080
+08/15/2026-12:37:04.398517  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50934 -> 172.22.0.2:8080
+08/15/2026-12:37:04.420369  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:50954 -> 172.22.0.2:8080
+08/15/2026-12:37:04.694365  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51200 -> 172.22.0.2:8080
+08/15/2026-12:37:04.863977  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:51342 -> 172.22.0.2:8080
+08/15/2026-12:37:04.729159  [**] [1:9100003:1] PROJECTA COMMAND PROBE [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 172.22.0.3:51234 -> 172.22.0.2:8080
+08/15/2026-12:37:03.922464  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59044 -> 172.22.0.2:8080
+08/15/2026-12:37:04.775381  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51270 -> 172.22.0.2:8080
+08/15/2026-12:37:04.780411  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51286 -> 172.22.0.2:8080
+08/15/2026-12:37:04.051177  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:59164 -> 172.22.0.2:8080
+08/15/2026-12:37:04.668641  [**] [1:9100004:1] PROJECTA BRUTE FORCE THRESHOLD [**] [Classification: Attempted User Privilege Gain] [Priority: 1] {TCP} 172.22.0.3:51192 -> 172.22.0.2:8080

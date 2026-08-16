@@ -1,0 +1,8 @@
+{
+  "opened_unix": 1786896011.420616,
+  "test_sha256": {
+    "ta1-cadets-e3-official-2.json": "936b876ca658cd9ba00a0a349b0c8f906b8d3407b88876ee7a7514ac261ae9eb",
+    "ta1-cadets-e3-official-2.json.1": "b0a2f8628da7654b0bd15e7a00ba4070dce8198a779b5f348e467f86bfbe380d"
+  },
+  "frozen_policy_sha256": "a0bfe4c8a56c9f9ed747092660022329c420e5b7f08e6fbde4a39149d4d4956f"
+}

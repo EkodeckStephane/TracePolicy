@@ -1,0 +1,11 @@
+{
+  "summary": "DARPA CADETS scoring uses derived ThreaTrace UUID node mapping expanded to event labels by node touch.",
+  "official_event_ground_truth_used": false,
+  "official_ground_truth_pdf_retained": true,
+  "derived_mapping_source": "datasets/seed/cadets_groundtruth_threatrace.txt",
+  "derived_mapping_unit": "uuid_node",
+  "event_label_transformation": "node_touch_expansion",
+  "event_positive_rule": "An event is labelled positive when its event UUID, subject UUID, predicate object UUID, or predicate object2 UUID intersects the derived ThreaTrace UUID set.",
+  "methodological_status": "defensible only as derived node-touch event scoring; it must not be described as official DARPA event ground truth.",
+  "required_companion_evaluation": "node_or_entity_level_evaluation"
+}

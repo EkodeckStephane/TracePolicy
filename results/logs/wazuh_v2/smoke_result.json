@@ -1,0 +1,16 @@
+{
+  "phase1": 6,
+  "phase3": 6,
+  "details": [
+    [
+      "smoke-admin",
+      "100001",
+      10
+    ],
+    [
+      "smoke-login-4",
+      "100014",
+      10
+    ]
+  ]
+}

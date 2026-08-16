@@ -1,0 +1,67 @@
+{
+  "toniot": {
+    "file": "datasets/seed/Train_Test_IoT_Modbus.csv",
+    "sha256": "78345a857244e671b0c255ca65aac619049632448fc5aa736f1cea255f308cbb",
+    "source": "UNSW TON_IoT project; seed copy frozen in kit"
+  },
+  "threatrace_groundtruth": {
+    "file": "datasets/seed/cadets_groundtruth_threatrace.txt",
+    "sha256": "19b367eec60d96c3b3063117fabac7a41eeaf226159c3c0668fd400363716f60",
+    "source": "threaTrace derived CADETS UUID mapping; NOT labelled as official DARPA ground truth"
+  },
+  "darpa_archives": [
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.tar.gz",
+      "size": 585737522,
+      "sha256": "e2a81cb467a3097ba09ebea60db47b2250bd2bb9413b562ed397a41fc871911e"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json.tar.gz",
+      "size": 358244121,
+      "sha256": "8d2f090d372cfb0d21bfb72dba6824884ce7870b5c8d24df34e9081b9b09c793"
+    }
+  ],
+  "official_darpa_groundtruth": {
+    "file": "datasets/raw/darpa_e3/ground_truth/tc_ground_truth_report_e3_update.pdf",
+    "size": 1258337,
+    "sha256": "021fc642e18544fdcc7bf0a79e2b5aae001f5717d3adbce16744b68934523599",
+    "source": "Official DARPA Transparent Computing E3 ground truth report"
+  },
+  "extracted_files": [
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json",
+      "size": 4299097329,
+      "sha256": "936b876ca658cd9ba00a0a349b0c8f906b8d3407b88876ee7a7514ac261ae9eb"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json.1",
+      "size": 2972926779,
+      "sha256": "b0a2f8628da7654b0bd15e7a00ba4070dce8198a779b5f348e467f86bfbe380d"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official-2.json.tar.gz.extracted.ok",
+      "size": 11,
+      "sha256": "70f6f9c49270aece8822db8b9c1a78e70913fed1c813b96b6e09eea00cf5621f"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json",
+      "size": 4306148302,
+      "sha256": "d50fae1939ea1ad9f0462a1126810c3ef76207eb76285c811dbd3138122ad745"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.1",
+      "size": 4304669199,
+      "sha256": "f4941b1f1a782529300980a38f88003550d01c33d7c313d6c997ec3b77a699b2"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.2",
+      "size": 3395907118,
+      "sha256": "9718cbe95191f2959afad3410cb7dbcd08ca9cac115f03373c0762762b30075f"
+    },
+    {
+      "file": "datasets/raw/darpa_e3/cadets/ta1-cadets-e3-official.json.tar.gz.extracted.ok",
+      "size": 11,
+      "sha256": "70f6f9c49270aece8822db8b9c1a78e70913fed1c813b96b6e09eea00cf5621f"
+    }
+  ]
+}

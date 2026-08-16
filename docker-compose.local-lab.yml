@@ -1,0 +1,22 @@
+services:
+  gateway:
+    build: ./local_lab/gateway
+    container_name: projecta-gateway
+    cap_add: ["NET_ADMIN", "NET_RAW"]
+    volumes:
+      - labdata:/data
+    ports:
+      - "18080:8080"
+    networks: [labnet]
+  driver:
+    build: ./local_lab/driver
+    depends_on: [gateway]
+    volumes:
+      - labdata:/results
+    networks: [labnet]
+networks:
+  labnet:
+    name: projecta_labnet
+volumes:
+  labdata:
+    name: projecta_labdata

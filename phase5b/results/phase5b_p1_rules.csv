@@ -1,0 +1,195 @@
+pid,version,rid,priority,effect,action,resource_class,subject_class,seq_actions,seq_horizon
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00000,30,ALLOW,change_principal,process,process,change_principal > change_principal > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00001,30,ALLOW,change_principal,process,process,change_principal > change_principal > lseek > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00002,30,ALLOW,change_principal,process,process,change_principal > change_principal > modify_process > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00003,30,ALLOW,change_principal,process,process,change_principal > change_principal > unlink > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00004,30,ALLOW,change_principal,process,process,change_principal > lseek > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00005,30,ALLOW,change_principal,process,process,change_principal > modify_process > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00006,30,ALLOW,change_principal,process,process,change_principal > unlink > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00007,30,ALLOW,change_principal,process,process,close > change_principal > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00008,30,ALLOW,change_principal,process,process,close > login > modify_process > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00009,30,ALLOW,change_principal,process,process,close > open > close > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00010,30,ALLOW,change_principal,process,process,fcntl > change_principal > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00011,30,ALLOW,change_principal,process,process,fcntl > fcntl > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00012,30,ALLOW,change_principal,process,process,fcntl > fcntl > fcntl > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00013,30,ALLOW,change_principal,process,process,login > modify_process > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00014,30,ALLOW,change_principal,process,process,login > modify_process > modify_process > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00015,30,ALLOW,change_principal,process,process,lseek > change_principal > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00016,30,ALLOW,change_principal,process,process,lseek > read > close > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00017,30,ALLOW,change_principal,process,process,modify_process > change_principal > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00018,30,ALLOW,change_principal,process,process,modify_process > modify_process > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00019,30,ALLOW,change_principal,process,process,open > close > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00020,30,ALLOW,change_principal,process,process,open > fcntl > fcntl > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00021,30,ALLOW,change_principal,process,process,read > close > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00022,30,ALLOW,change_principal,process,process,read > read > close > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00023,30,ALLOW,change_principal,process,process,read > read > read > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00024,30,ALLOW,change_principal,process,process,read > write > close > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00025,30,ALLOW,change_principal,process,process,unlink > change_principal > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00026,30,ALLOW,change_principal,process,process,write > close > change_principal > change_principal,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00027,30,ALLOW,connect,network,process,fork > open > close > connect,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00028,30,ALLOW,connect,network,process,read > read > close > connect,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00029,30,ALLOW,connect,network,process,sendto > recvfrom > close > connect,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00030,30,ALLOW,connect,network,process,write > write > write > connect,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00031,30,ALLOW,modify_file_attributes,file:usr,process,write > write > close > modify_file_attributes,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00032,30,ALLOW,modify_process,process,process,change_principal > change_principal > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00033,30,ALLOW,modify_process,process,process,change_principal > change_principal > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00034,30,ALLOW,modify_process,process,process,close > change_principal > change_principal > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00035,30,ALLOW,modify_process,process,process,close > close > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00036,30,ALLOW,modify_process,process,process,close > close > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00037,30,ALLOW,modify_process,process,process,close > fork > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00038,30,ALLOW,modify_process,process,process,close > link > unlink > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00039,30,ALLOW,modify_process,process,process,close > login > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00040,30,ALLOW,modify_process,process,process,close > modify_process > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00041,30,ALLOW,modify_process,process,process,close > open > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00042,30,ALLOW,modify_process,process,process,close > unlink > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00043,30,ALLOW,modify_process,process,process,close > unlink > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00044,30,ALLOW,modify_process,process,process,close > write > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00045,30,ALLOW,modify_process,process,process,fork > modify_process > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00046,30,ALLOW,modify_process,process,process,lseek > close > login > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00047,30,ALLOW,modify_process,process,process,lseek > read > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00048,30,ALLOW,modify_process,process,process,modify_file_attributes > write > truncate > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00049,30,ALLOW,modify_process,process,process,modify_process > close > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00050,30,ALLOW,modify_process,process,process,modify_process > modify_process > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00051,30,ALLOW,modify_process,process,process,modify_process > open > modify_file_attributes > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00052,30,ALLOW,modify_process,process,process,modify_process > open > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00053,30,ALLOW,modify_process,process,process,open > close > fork > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00054,30,ALLOW,modify_process,process,process,open > close > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00055,30,ALLOW,modify_process,process,process,open > close > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00056,30,ALLOW,modify_process,process,process,open > fcntl > fcntl > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00057,30,ALLOW,modify_process,process,process,open > modify_process > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00058,30,ALLOW,modify_process,process,process,open > read > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00059,30,ALLOW,modify_process,process,process,read > close > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00060,30,ALLOW,modify_process,process,process,read > close > login > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00061,30,ALLOW,modify_process,process,process,read > close > modify_file_attributes > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00062,30,ALLOW,modify_process,process,process,read > close > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00063,30,ALLOW,modify_process,process,process,read > close > read > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00064,30,ALLOW,modify_process,process,process,read > read > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00065,30,ALLOW,modify_process,process,process,read > write > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00066,30,ALLOW,modify_process,process,process,unlink > unlink > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00067,30,ALLOW,modify_process,process,process,write > close > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00068,30,ALLOW,modify_process,process,process,write > read > close > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00069,30,ALLOW,modify_process,process,process,write > truncate > modify_process > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00070,30,ALLOW,modify_process,process,process,write > write > open > modify_process,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00071,30,ALLOW,sendto,network,process,change_principal > change_principal > sendto > sendto,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00072,30,ALLOW,sendto,network,process,close > close > close > sendto,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00073,30,ALLOW,sendto,network,process,close > fcntl > fcntl > sendto,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00074,30,ALLOW,sendto,network,process,open > close > connect > sendto,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00075,30,ALLOW,sendto,network,process,read > close > connect > sendto,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00076,30,ALLOW,sendto,network,process,recvfrom > close > connect > sendto,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00077,30,ALLOW,unlink,file:usr,process,modify_process > close > unlink > unlink,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00078,30,ALLOW,unlink,file:usr,process,open > modify_process > close > unlink,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00079,30,ALLOW,unlink,file:usr,process,unlink > unlink > unlink > unlink,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00080,30,ALLOW,write,file:root_other,process,open > read > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00081,30,ALLOW,write,file:root_other,process,read > read > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00082,30,ALLOW,write,network,process,close > close > unlink > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00083,30,ALLOW,write,network,process,close > write > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00084,30,ALLOW,write,network,process,close > write > write > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00085,30,ALLOW,write,network,process,lseek > lseek > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00086,30,ALLOW,write,network,process,open > modify_file_attributes > unlink > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00087,30,ALLOW,write,network,process,read > close > sendto > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00088,30,ALLOW,write,network,process,read > lseek > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00089,30,ALLOW,write,network,process,read > open > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00090,30,ALLOW,write,network,process,read > read > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00091,30,ALLOW,write,network,process,read > sendto > write > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00092,30,ALLOW,write,network,process,read > unlink > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00093,30,ALLOW,write,network,process,read > write > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00094,30,ALLOW,write,network,process,recvfrom > close > sendto > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00095,30,ALLOW,write,network,process,sendto > recvfrom > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00096,30,ALLOW,write,network,process,sendto > write > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00097,30,ALLOW,write,network,process,unlink > write > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00098,30,ALLOW,write,network,process,write > close > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00099,30,ALLOW,write,network,process,write > connect > write > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00100,30,ALLOW,write,network,process,write > read > close > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00101,30,ALLOW,write,network,process,write > read > sendto > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00102,30,ALLOW,write,network,process,write > read > write > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00103,30,ALLOW,write,network,process,write > write > read > write,4
+DARPA_CADETS_TRACE_AWARE,2,A_P1_TRACE_00104,30,ALLOW,write,network,process,write > write > write > write,4
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0000,20,DENY,change_principal,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0001,20,DENY,connect,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0002,20,DENY,modify_file_attributes,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0003,20,DENY,modify_process,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0004,20,DENY,sendmsg,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0005,20,DENY,sendto,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0006,20,DENY,unlink,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0007,20,DENY,write,file:etc,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0008,20,DENY,write,file:root_other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_SENSITIVE_0009,20,DENY,write,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0000,10,ALLOW,accept,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0001,10,ALLOW,accept,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0002,10,ALLOW,add_object_attribute,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0003,10,ALLOW,change_principal,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0004,10,ALLOW,close,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0005,10,ALLOW,close,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0006,10,ALLOW,close,pipe,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0007,10,ALLOW,connect,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0008,10,ALLOW,connect,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0009,10,ALLOW,create_object,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0010,10,ALLOW,create_object,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0011,10,ALLOW,create_object,pipe,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0012,10,ALLOW,exit,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0013,10,ALLOW,fcntl,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0014,10,ALLOW,fcntl,other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0015,10,ALLOW,fcntl,pipe,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0016,10,ALLOW,flows_to,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0017,10,ALLOW,flows_to,pipe,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0018,10,ALLOW,fork,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0019,10,ALLOW,link,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0020,10,ALLOW,link,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0021,10,ALLOW,login,other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0022,10,ALLOW,lseek,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0023,10,ALLOW,mmap,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0024,10,ALLOW,modify_file_attributes,file:dev,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0025,10,ALLOW,modify_file_attributes,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0026,10,ALLOW,modify_file_attributes,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0027,10,ALLOW,modify_file_attributes,file:tmp,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0028,10,ALLOW,modify_file_attributes,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0029,10,ALLOW,modify_file_attributes,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0030,10,ALLOW,modify_process,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0031,10,ALLOW,mprotect,other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0032,10,ALLOW,open,file:dev,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0033,10,ALLOW,open,file:etc,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0034,10,ALLOW,open,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0035,10,ALLOW,open,file:root_other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0036,10,ALLOW,open,file:sbin,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0037,10,ALLOW,open,file:tmp,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0038,10,ALLOW,open,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0039,10,ALLOW,open,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0040,10,ALLOW,open,other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0041,10,ALLOW,other,other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0042,10,ALLOW,read,file:dev,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0043,10,ALLOW,read,file:etc,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0044,10,ALLOW,read,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0045,10,ALLOW,read,file:other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0046,10,ALLOW,read,file:sbin,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0047,10,ALLOW,read,file:tmp,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0048,10,ALLOW,read,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0049,10,ALLOW,read,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0050,10,ALLOW,read,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0051,10,ALLOW,read,pipe,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0052,10,ALLOW,recvfrom,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0053,10,ALLOW,recvfrom,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0054,10,ALLOW,recvmsg,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0055,10,ALLOW,recvmsg,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0056,10,ALLOW,rename,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0057,10,ALLOW,rename,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0058,10,ALLOW,sendmsg,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0059,10,ALLOW,sendmsg,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0060,10,ALLOW,sendto,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0061,10,ALLOW,sendto,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0062,10,ALLOW,signal,other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0063,10,ALLOW,signal,process,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0064,10,ALLOW,truncate,file:none,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0065,10,ALLOW,unlink,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0066,10,ALLOW,unlink,file:tmp,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0067,10,ALLOW,unlink,file:usr,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0068,10,ALLOW,unlink,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0069,10,ALLOW,write,file:dev,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0070,10,ALLOW,write,file:etc,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0071,10,ALLOW,write,file:home,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0072,10,ALLOW,write,file:other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0073,10,ALLOW,write,file:root_other,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0074,10,ALLOW,write,file:tmp,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0075,10,ALLOW,write,file:var,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0076,10,ALLOW,write,network,process,,0
+DARPA_CADETS_TRACE_AWARE,2,A_P1_CONTEXT_0077,10,ALLOW,write,pipe,process,,0
+DARPA_CADETS_TRACE_AWARE,2,D_P1_UNSEEN_SELECTOR,0,DENY,*,*,*,,0

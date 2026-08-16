@@ -1,0 +1,5 @@
+# Frozen Project A local-bench rules. Do not tune after viewing final test results.
+alert http any any -> any any (msg:"PROJECTA ADMIN SENSITIVE ACCESS"; flow:established,to_server; http.uri; content:"/admin"; nocase; classtype:attempted-admin; sid:9100001; rev:1;)
+alert http any any -> any any (msg:"PROJECTA PATH TRAVERSAL"; flow:established,to_server; http.uri.raw; content:"%2e%2e"; nocase; classtype:web-application-attack; sid:9100002; rev:1;)
+alert http any any -> any any (msg:"PROJECTA COMMAND PROBE"; flow:established,to_server; http.uri; content:"/cmd"; nocase; classtype:web-application-attack; sid:9100003; rev:1;)
+alert http any any -> any any (msg:"PROJECTA BRUTE FORCE THRESHOLD"; flow:established,to_server; http.uri; content:"/login"; nocase; http.uri; content:"ok=0"; nocase; detection_filter:track by_src,count 4,seconds 5; classtype:attempted-user; sid:9100004; rev:1;)

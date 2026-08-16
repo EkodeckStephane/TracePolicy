@@ -1,0 +1,6 @@
+{
+  "benign_seen": 6881604,
+  "malicious_seen": 946778,
+  "benign_sampled": 50000,
+  "malicious_sampled": 10000
+}

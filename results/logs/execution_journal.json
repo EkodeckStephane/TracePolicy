@@ -1,0 +1,112 @@
+[
+  {
+    "step": "preflight",
+    "cmd": [
+      "/usr/local/bin/python",
+      "scripts/preflight.py"
+    ],
+    "start_epoch": 1786734100.4299014,
+    "duration_s": 9.318974018096924,
+    "returncode": 0,
+    "stdout_tail": "WARNING: less than 50 GiB free. DARPA E3 extraction may require substantially more space; monitor disk usage.\nPulling pinned image jasonish/suricata:8.0.5\n8.0.5: Pulling from jasonish/suricata\nDigest: sha256:93fadbb0771d0003d32c627069bc8bf26ebced13f2748e9cd7cf958dd1802f7e\nStatus: Image is up to date for jasonish/suricata:8.0.5\ndocker.io/jasonish/suricata:8.0.5\nPulling pinned image wazuh/wazuh-manager:4.14.7\n4.14.7: Pulling from wazuh/wazuh-manager\nDigest: sha256:c364ef100ba40d501537b1668a5a72bba4c4fbcf39bbef6a02123ff221fc40d0\nStatus: Image is up to date for wazuh/wazuh-manager:4.14.7\ndocker.io/wazuh/wazuh-manager:4.14.7\nPreflight OK\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "collect_datasets",
+    "cmd": [
+      "/usr/local/bin/python",
+      "scripts/collect_datasets.py"
+    ],
+    "start_epoch": 1786734109.7634687,
+    "duration_s": 284.0279951095581,
+    "returncode": 0,
+    "stdout_tail": "Dataset collection validation: OK; extracted files: 7\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "darpa_groundtruth_crosscheck",
+    "cmd": [
+      "/usr/local/bin/python",
+      "scripts/audit_darpa_groundtruth.py"
+    ],
+    "start_epoch": 1786734393.7960916,
+    "duration_s": 1.5556378364562988,
+    "returncode": 0,
+    "stdout_tail": "{\n  \"official_pdf_uuid_count\": 0,\n  \"threatrace_mapping_uuid_count\": 12858,\n  \"overlap_count\": 0,\n  \"pdf_only_count\": 0,\n  \"mapping_only_count\": 12858,\n  \"note\": \"Counts are provenance diagnostics only. The derived ThreaTrace mapping may expand/transform the narrative official ground truth; no equality assumption is made.\"\n}\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "semantic_tests",
+    "cmd": [
+      "/usr/local/bin/python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "start_epoch": 1786734395.3568263,
+    "duration_s": 1.7345209121704102,
+    "returncode": 0,
+    "stdout_tail": "......                                                                   [100%]\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "rq1_rq3_rq4_controlled",
+    "cmd": [
+      "/usr/local/bin/python",
+      "experiments/run_local_core.py"
+    ],
+    "start_epoch": 1786734397.0951204,
+    "duration_s": 30305.082288503647,
+    "returncode": 0,
+    "stdout_tail": "RQ1 rows 480\nRQ3 rows 120\nRQ4 perf rows/div (270, 0)\nRQ4 update rows/div (30, 0)\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "rq2_shap_controlled",
+    "cmd": [
+      "/usr/local/bin/python",
+      "experiments/run_rq2_explanations.py"
+    ],
+    "start_epoch": 1786764702.203841,
+    "duration_s": 10.841800212860107,
+    "returncode": 0,
+    "stdout_tail": "              intrinsic_core_size  shap_sufficient_k  ...  intrinsic_us   shap_us\nkind                                                  ...                        \nscan                          4.0                4.0  ...       274.627  5625.869\nsecret_read                   2.0                2.0  ...       467.199  9363.553\nsystem_exec                   2.0                2.0  ...       481.038  4823.727\nsystem_write                  2.0                2.0  ...       440.698  5183.921\n\n[4 rows x 5 columns]\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "rq2_lime_controlled",
+    "cmd": [
+      "/usr/local/bin/python",
+      "experiments/run_rq2_lime.py"
+    ],
+    "start_epoch": 1786764713.0502942,
+    "duration_s": 6.0959861278533936,
+    "returncode": 0,
+    "stdout_tail": "              intrinsic_core_size  lime_sufficient_k  ...     lime_us  lime_score\nkind                                                  ...                        \nscan                          4.0                4.0  ...  101814.630       0.320\nsecret_read                   2.0                2.0  ...  121219.984       0.703\nsystem_exec                   2.0                2.0  ...  111508.038       0.703\nsystem_write                  2.0                2.0  ...  102310.706       0.704\n\n[4 rows x 5 columns]\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "rq2_stability_controlled",
+    "cmd": [
+      "/usr/local/bin/python",
+      "experiments/run_rq2_stability.py"
+    ],
+    "start_epoch": 1786764719.1529875,
+    "duration_s": 9.795069694519043,
+    "returncode": 0,
+    "stdout_tail": "              intrinsic_jaccard  ...  witness_valid_after\nkind                             ...                     \nscan                        1.0  ...                  1.0\nsecret_read                 1.0  ...                  1.0\nsystem_exec                 1.0  ...                  1.0\nsystem_write                1.0  ...                  1.0\n\n[4 rows x 5 columns]\n",
+    "stderr_tail": ""
+  },
+  {
+    "step": "real_local_lab_capture",
+    "cmd": [
+      "/usr/local/bin/python",
+      "scripts/run_local_lab.py"
+    ],
+    "start_epoch": 1786764728.9548614,
+    "duration_s": 10.271896600723267,
+    "returncode": 1,
+    "stdout_tail": "+ docker compose -f /work/docker-compose.local-lab.yml build\nCompose now can delegate build to bake for better performances\nJust set COMPOSE_BAKE=true\n#0 building with \"default\" instance using docker driver\n\n#1 [gateway internal] load build definition from Dockerfile\n#1 transferring dockerfile: 30B 0.0s\n#1 transferring dockerfile: 285B 0.0s done\n#1 DONE 0.2s\n\n#2 [gateway internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.1s\n\n#3 [gateway internal] load .dockerignore\n#3 transferring context: 2B 0.0s done\n#3 DONE 0.1s\n\n#4 [gateway internal] load build context\n#4 transferring context: 1.57kB 0.0s done\n#4 DONE 0.1s\n\n#5 [gateway 1/4] FROM docker.io/library/python:3.11-slim@sha256:a630a63cdb314e2d138a2fca3e375e319e8568346ffafac5b980f888630ac4f1\n#5 resolve docker.io/library/python:3.11-slim@sha256:a630a63cdb314e2d138a2fca3e375e319e8568346ffafac5b980f888630ac4f1 0.0s done\n#5 CACHED\n\n#6 [gateway 2/4] RUN apt-get update && apt-get install -y --no-install-recommends tcpdump ca-certificates && rm -rf /var/lib/apt/lists/*\n#6 1.057 Ign:1 http://deb.debian.org/debian trixie InRelease\n#6 1.059 Ign:2 http://deb.debian.org/debian trixie-updates InRelease\n#6 1.061 Ign:3 http://deb.debian.org/debian-security trixie-security InRelease\n#6 2.066 Ign:3 http://deb.debian.org/debian-security trixie-security InRelease\n#6 2.067 Ign:2 http://deb.debian.org/debian trixie-updates InRelease\n#6 2.070 Ign:1 http://deb.debian.org/debian trixie InRelease\n#6 4.073 Ign:1 http://deb.debian.org/debian trixie InRelease\n#6 4.074 Ign:2 http://deb.debian.org/debian trixie-updates InRelease\n#6 4.076 Ign:3 http://deb.debian.org/debian-security trixie-security InRelease\n#6 8.093 Err:3 http://deb.debian.org/debian-security trixie-security InRelease\n#6 8.093   Could not resolve 'deb.debian.org'\n#6 8.095 Err:2 http://deb.debian.org/debian trixie-updates InRelease\n#6 8.095   Could not resolve 'deb.debian.org'\n#6 8.096 Err:1 http://deb.debian.org/debian trixie InRelease\n#6 8.096   Could not resolve 'deb.debian.org'\n#6 8.112 Reading package lists...\n#6 8.155 W: Failed to fetch http://deb.debian.org/debian/dists/trixie/InRelease  Could not resolve 'deb.debian.org'\n#6 8.155 W: Failed to fetch http://deb.debian.org/debian/dists/trixie-updates/InRelease  Could not resolve 'deb.debian.org'\n#6 8.155 W: Failed to fetch http://deb.debian.org/debian-security/dists/trixie-security/InRelease  Could not resolve 'deb.debian.org'\n#6 8.155 W: Some index files failed to download. They have been ignored, or old ones used instead.\n#6 8.168 Reading package lists...\n#6 8.189 Building dependency tree...\n#6 8.191 Reading state information...\n#6 8.197 E: Unable to locate package tcpdump\n#6 ERROR: process \"/bin/sh -c apt-get update && apt-get install -y --no-install-recommends tcpdump ca-certificates && rm -rf /var/lib/apt/lists/*\" did not complete successfully: exit code: 100\n------\n > [gateway 2/4] RUN apt-get update && apt-get install -y --no-install-recommends tcpdump ca-certificates && rm -rf /var/lib/apt/lists/*:\n8.096   Could not resolve 'deb.debian.org'\n8.112 Reading package lists...\n8.155 W: Failed to fetch http://deb.debian.org/debian/dists/trixie/InRelease  Could not resolve 'deb.debian.org'\n8.155 W: Failed to fetch http://deb.debian.org/debian/dists/trixie-updates/InRelease  Could not resolve 'deb.debian.org'\n8.155 W: Failed to fetch http://deb.debian.org/debian-security/dists/trixie-security/InRelease  Could not resolve 'deb.debian.org'\n8.155 W: Some index files failed to download. They have been ignored, or old ones used instead.\n8.168 Reading package lists...\n8.189 Building dependency tree...\n8.191 Reading state information...\n8.197 E: Unable to locate package tcpdump\n------\n",
+    "stderr_tail": "failed to solve: process \"/bin/sh -c apt-get update && apt-get install -y --no-install-recommends tcpdump ca-certificates && rm -rf /var/lib/apt/lists/*\" did not complete successfully: exit code: 100\nTraceback (most recent call last):\n  File \"/work/scripts/run_local_lab.py\", line 28, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/work/scripts/run_local_lab.py\", line 10, in main\n    run(['docker','compose','-f',ROOT/'docker-compose.local-lab.yml','build'])\n  File \"/work/scripts/run_local_lab.py\", line 8, in run\n    print('+',' '.join(map(str,cmd)));return subprocess.run(list(map(str,cmd)),check=True,**kw)\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['docker', 'compose', '-f', '/work/docker-compose.local-lab.yml', 'build']' returned non-zero exit status 1.\n"
+  }
+]

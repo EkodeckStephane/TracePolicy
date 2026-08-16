@@ -1,0 +1,2 @@
+precision,recall,f1,fpr,tp,tn,fp,fn,unit,groundtruth_source,official_darpa_event_groundtruth,events_scanned,alert_events,test_entity_nodes,truth_positive_nodes_in_test,predicted_positive_nodes,policy_version,policy_rules,streamed_from_archives
+0.0006611402125820069,0.0020222446916076846,0.0009964931107832053,0.06892342659918134,26,530898,39300,12831,entity_node,ThreaTrace-derived CADETS malicious-node UUID mapping,False,7828382,40152,583055,12857,39326,1,79,True

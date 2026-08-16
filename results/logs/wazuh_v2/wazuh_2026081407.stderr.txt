@@ -1,0 +1,5335 @@
+Starting wazuh-logtest v4.14.7
+Type one log per line
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=5fc977e1-332b-1fb1-347b-078b2ee33e9c", "sid": "5fc977e1-332b-1fb1-347b-078b2ee33e9c", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3128932, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=5fc977e1-332b-1fb1-347b-078b2ee33e9c'
+	sid: '5fc977e1-332b-1fb1-347b-078b2ee33e9c'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.312893'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=d54535fa-8449-05b2-1593-3d37789565a4", "sid": "d54535fa-8449-05b2-1593-3d37789565a4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3196576, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=d54535fa-8449-05b2-1593-3d37789565a4'
+	sid: 'd54535fa-8449-05b2-1593-3d37789565a4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.319658'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=134ff56c-73d8-e3dc-767b-26b6141ae612", "sid": "134ff56c-73d8-e3dc-767b-26b6141ae612", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3329203, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=134ff56c-73d8-e3dc-767b-26b6141ae612'
+	sid: '134ff56c-73d8-e3dc-767b-26b6141ae612'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.332920'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=ae74b767-a70e-1c13-eb2c-95603a79643b", "sid": "ae74b767-a70e-1c13-eb2c-95603a79643b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3370943, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=ae74b767-a70e-1c13-eb2c-95603a79643b'
+	sid: 'ae74b767-a70e-1c13-eb2c-95603a79643b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.337094'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=0f870e38-17ba-6dfe-4a89-6c27de4a5fd2", "sid": "0f870e38-17ba-6dfe-4a89-6c27de4a5fd2", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.353059, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=0f870e38-17ba-6dfe-4a89-6c27de4a5fd2'
+	sid: '0f870e38-17ba-6dfe-4a89-6c27de4a5fd2'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.353059'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=e014f578-f662-1e52-320f-998fdcfdd626", "sid": "e014f578-f662-1e52-320f-998fdcfdd626", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3683472, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=e014f578-f662-1e52-320f-998fdcfdd626'
+	sid: 'e014f578-f662-1e52-320f-998fdcfdd626'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.368347'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=1ea532e6-be50-ec29-c2a9-d2aaf6f8e02a", "sid": "1ea532e6-be50-ec29-c2a9-d2aaf6f8e02a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3810613, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=1ea532e6-be50-ec29-c2a9-d2aaf6f8e02a'
+	sid: '1ea532e6-be50-ec29-c2a9-d2aaf6f8e02a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.381061'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=6d6488aa-a3c8-36a3-ce65-1e9c4a8e59d7", "sid": "6d6488aa-a3c8-36a3-ce65-1e9c4a8e59d7", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.3967757, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=6d6488aa-a3c8-36a3-ce65-1e9c4a8e59d7'
+	sid: '6d6488aa-a3c8-36a3-ce65-1e9c4a8e59d7'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.396776'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=8ca73a03-5fe9-99a8-042f-2a8bb0b03c9c", "sid": "8ca73a03-5fe9-99a8-042f-2a8bb0b03c9c", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.4038637, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=8ca73a03-5fe9-99a8-042f-2a8bb0b03c9c'
+	sid: '8ca73a03-5fe9-99a8-042f-2a8bb0b03c9c'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.403864'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=22f73ea5-f1a7-02d3-395f-dc9b8b34fcb7", "sid": "22f73ea5-f1a7-02d3-395f-dc9b8b34fcb7", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797349.4092033, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=22f73ea5-f1a7-02d3-395f-dc9b8b34fcb7'
+	sid: '22f73ea5-f1a7-02d3-395f-dc9b8b34fcb7'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797349.409203'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '1'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=8817e959-abb4-e3fa-2543-66d30935cb77", "sid": "8817e959-abb4-e3fa-2543-66d30935cb77", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797349.423861, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=8817e959-abb4-e3fa-2543-66d30935cb77'
+	sid: '8817e959-abb4-e3fa-2543-66d30935cb77'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797349.423861'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '2'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=68f816d3-84ed-9cb4-c11e-39960811da2a", "sid": "68f816d3-84ed-9cb4-c11e-39960811da2a", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797349.4357524, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=68f816d3-84ed-9cb4-c11e-39960811da2a'
+	sid: '68f816d3-84ed-9cb4-c11e-39960811da2a'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797349.435752'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '3'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=47d4b4c7-e7bc-ec96-1bf0-cfd0a1bb7d7d", "sid": "47d4b4c7-e7bc-ec96-1bf0-cfd0a1bb7d7d", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797349.4453256, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=47d4b4c7-e7bc-ec96-1bf0-cfd0a1bb7d7d'
+	sid: '47d4b4c7-e7bc-ec96-1bf0-cfd0a1bb7d7d'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797349.445326'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '1'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=eeb80c60-e5d9-3ccf-7d1a-d7566b7fd9a3", "sid": "eeb80c60-e5d9-3ccf-7d1a-d7566b7fd9a3", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797349.4612124, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=eeb80c60-e5d9-3ccf-7d1a-d7566b7fd9a3'
+	sid: 'eeb80c60-e5d9-3ccf-7d1a-d7566b7fd9a3'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797349.461212'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '4'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=564bb2a1-7c1a-676f-0225-0bb8905b5889", "sid": "564bb2a1-7c1a-676f-0225-0bb8905b5889", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.4691825, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=564bb2a1-7c1a-676f-0225-0bb8905b5889'
+	sid: '564bb2a1-7c1a-676f-0225-0bb8905b5889'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.469182'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=9949e0bd-b779-f5a9-4344-a3e107491630", "sid": "9949e0bd-b779-f5a9-4344-a3e107491630", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.4798515, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=9949e0bd-b779-f5a9-4344-a3e107491630'
+	sid: '9949e0bd-b779-f5a9-4344-a3e107491630'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.479851'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=b69b2140-ee1d-4606-e8f8-3c3bf4beb2b6", "sid": "b69b2140-ee1d-4606-e8f8-3c3bf4beb2b6", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.496501, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=b69b2140-ee1d-4606-e8f8-3c3bf4beb2b6'
+	sid: 'b69b2140-ee1d-4606-e8f8-3c3bf4beb2b6'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.496501'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=8b736abb-bcef-d795-7be6-0ad599a15177", "sid": "8b736abb-bcef-d795-7be6-0ad599a15177", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5038588, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=8b736abb-bcef-d795-7be6-0ad599a15177'
+	sid: '8b736abb-bcef-d795-7be6-0ad599a15177'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.503859'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=aea0bba2-80f7-c7f7-b7f7-5c62b50ad79e", "sid": "aea0bba2-80f7-c7f7-b7f7-5c62b50ad79e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5073113, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=aea0bba2-80f7-c7f7-b7f7-5c62b50ad79e'
+	sid: 'aea0bba2-80f7-c7f7-b7f7-5c62b50ad79e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.507311'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=ccfb4314-2aa9-45e4-da91-b07633d8b56e", "sid": "ccfb4314-2aa9-45e4-da91-b07633d8b56e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5167851, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=ccfb4314-2aa9-45e4-da91-b07633d8b56e'
+	sid: 'ccfb4314-2aa9-45e4-da91-b07633d8b56e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.516785'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=0dd85ba6-8b82-88b3-8a8a-9479b8931e90", "sid": "0dd85ba6-8b82-88b3-8a8a-9479b8931e90", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.527884, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=0dd85ba6-8b82-88b3-8a8a-9479b8931e90'
+	sid: '0dd85ba6-8b82-88b3-8a8a-9479b8931e90'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.527884'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=4270d189-af10-b1ad-7507-ecd3364ef0ca", "sid": "4270d189-af10-b1ad-7507-ecd3364ef0ca", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5406597, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=4270d189-af10-b1ad-7507-ecd3364ef0ca'
+	sid: '4270d189-af10-b1ad-7507-ecd3364ef0ca'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.540660'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=81604174-74fe-35ad-e256-fb7c2ebbbd7e", "sid": "81604174-74fe-35ad-e256-fb7c2ebbbd7e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5507357, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=81604174-74fe-35ad-e256-fb7c2ebbbd7e'
+	sid: '81604174-74fe-35ad-e256-fb7c2ebbbd7e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.550736'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=0d3dc80f-2add-8579-84c3-7cebfd4feb2a", "sid": "0d3dc80f-2add-8579-84c3-7cebfd4feb2a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.564808, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=0d3dc80f-2add-8579-84c3-7cebfd4feb2a'
+	sid: '0d3dc80f-2add-8579-84c3-7cebfd4feb2a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.564808'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=22be1899-50f1-48d5-f959-5235b62637ac", "sid": "22be1899-50f1-48d5-f959-5235b62637ac", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5701892, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=22be1899-50f1-48d5-f959-5235b62637ac'
+	sid: '22be1899-50f1-48d5-f959-5235b62637ac'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.570189'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=bf3ebcf7-03ca-d6bd-cdb2-15674e1dd025", "sid": "bf3ebcf7-03ca-d6bd-cdb2-15674e1dd025", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797349.5820484, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=bf3ebcf7-03ca-d6bd-cdb2-15674e1dd025'
+	sid: 'bf3ebcf7-03ca-d6bd-cdb2-15674e1dd025'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797349.582048'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '1'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=96b99e30-df7e-a5a6-76bb-348580313888", "sid": "96b99e30-df7e-a5a6-76bb-348580313888", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.5868714, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=96b99e30-df7e-a5a6-76bb-348580313888'
+	sid: '96b99e30-df7e-a5a6-76bb-348580313888'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.586871'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=205e7815-d787-21a4-a806-3cf99ed3b525", "sid": "205e7815-d787-21a4-a806-3cf99ed3b525", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.592837, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=205e7815-d787-21a4-a806-3cf99ed3b525'
+	sid: '205e7815-d787-21a4-a806-3cf99ed3b525'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.592837'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=36a12e5a-69bb-ad62-c598-7002ac4b042e", "sid": "36a12e5a-69bb-ad62-c598-7002ac4b042e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.6061523, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=36a12e5a-69bb-ad62-c598-7002ac4b042e'
+	sid: '36a12e5a-69bb-ad62-c598-7002ac4b042e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.606152'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=94847e97-a5c2-91eb-93ca-1298ba07ac46", "sid": "94847e97-a5c2-91eb-93ca-1298ba07ac46", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.6197076, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=94847e97-a5c2-91eb-93ca-1298ba07ac46'
+	sid: '94847e97-a5c2-91eb-93ca-1298ba07ac46'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.619708'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/cmd", "raw_path": "/cmd?x=id&sid=f9e1bc16-740c-0ca2-fd0a-50b86e2da92e", "sid": "f9e1bc16-740c-0ca2-fd0a-50b86e2da92e", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797349.6319685, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/cmd'
+	raw_path: '/cmd?x=id&sid=f9e1bc16-740c-0ca2-fd0a-50b86e2da92e'
+	sid: 'f9e1bc16-740c-0ca2-fd0a-50b86e2da92e'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797349.631968'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100003'
+	level: '10'
+	description: 'PROJECTA command probe'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '1'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=599fe6bb-8225-1da7-dd06-8a5c00862a4e", "sid": "599fe6bb-8225-1da7-dd06-8a5c00862a4e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.640455, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=599fe6bb-8225-1da7-dd06-8a5c00862a4e'
+	sid: '599fe6bb-8225-1da7-dd06-8a5c00862a4e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.640455'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=c66aa8f9-12fc-5a19-d99a-196f03a0850a", "sid": "c66aa8f9-12fc-5a19-d99a-196f03a0850a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.6541455, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=c66aa8f9-12fc-5a19-d99a-196f03a0850a'
+	sid: 'c66aa8f9-12fc-5a19-d99a-196f03a0850a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.654145'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=2131ee1e-412a-1b25-6229-a14ad43b701d", "sid": "2131ee1e-412a-1b25-6229-a14ad43b701d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.6697078, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=2131ee1e-412a-1b25-6229-a14ad43b701d'
+	sid: '2131ee1e-412a-1b25-6229-a14ad43b701d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.669708'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f2bc40c1-5817-fb51-f5db-f3de998704ab", "sid": "f2bc40c1-5817-fb51-f5db-f3de998704ab", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.676619, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f2bc40c1-5817-fb51-f5db-f3de998704ab'
+	sid: 'f2bc40c1-5817-fb51-f5db-f3de998704ab'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.676619'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=f6313ef7-ef53-896d-6fca-7f7da4487c53", "sid": "f6313ef7-ef53-896d-6fca-7f7da4487c53", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.6839347, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=f6313ef7-ef53-896d-6fca-7f7da4487c53'
+	sid: 'f6313ef7-ef53-896d-6fca-7f7da4487c53'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.683935'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=fcd29ed5-1160-3d5e-51b4-7252bb128f5b", "sid": "fcd29ed5-1160-3d5e-51b4-7252bb128f5b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7003968, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=fcd29ed5-1160-3d5e-51b4-7252bb128f5b'
+	sid: 'fcd29ed5-1160-3d5e-51b4-7252bb128f5b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.700397'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=6036d00f-0b05-3f4b-a650-4961606fe76d", "sid": "6036d00f-0b05-3f4b-a650-4961606fe76d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.709799, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=6036d00f-0b05-3f4b-a650-4961606fe76d'
+	sid: '6036d00f-0b05-3f4b-a650-4961606fe76d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.709799'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f9bb6bf5-cc56-22b6-5b42-9bcd8074bb24", "sid": "f9bb6bf5-cc56-22b6-5b42-9bcd8074bb24", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7184494, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f9bb6bf5-cc56-22b6-5b42-9bcd8074bb24'
+	sid: 'f9bb6bf5-cc56-22b6-5b42-9bcd8074bb24'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.718449'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=9d509de6-da69-e875-d64f-3caa6b1d55ef", "sid": "9d509de6-da69-e875-d64f-3caa6b1d55ef", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7329416, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=9d509de6-da69-e875-d64f-3caa6b1d55ef'
+	sid: '9d509de6-da69-e875-d64f-3caa6b1d55ef'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.732942'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=66e00ece-4ef6-49ad-6548-c030f89b0b29", "sid": "66e00ece-4ef6-49ad-6548-c030f89b0b29", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7431056, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=66e00ece-4ef6-49ad-6548-c030f89b0b29'
+	sid: '66e00ece-4ef6-49ad-6548-c030f89b0b29'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.743106'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=78dff0e0-f255-a363-35ac-347e7ed23c96", "sid": "78dff0e0-f255-a363-35ac-347e7ed23c96", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7596433, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=78dff0e0-f255-a363-35ac-347e7ed23c96'
+	sid: '78dff0e0-f255-a363-35ac-347e7ed23c96'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.759643'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=8261c68f-7822-53a2-bb5e-84d9ac56e693", "sid": "8261c68f-7822-53a2-bb5e-84d9ac56e693", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7757988, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=8261c68f-7822-53a2-bb5e-84d9ac56e693'
+	sid: '8261c68f-7822-53a2-bb5e-84d9ac56e693'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.775799'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=3047d1d2-295a-3bb4-2cc1-9aee0c747ee4", "sid": "3047d1d2-295a-3bb4-2cc1-9aee0c747ee4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.7895155, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=3047d1d2-295a-3bb4-2cc1-9aee0c747ee4'
+	sid: '3047d1d2-295a-3bb4-2cc1-9aee0c747ee4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.789515'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=796eef48-669d-8afc-1ea6-981bd6b89e19", "sid": "796eef48-669d-8afc-1ea6-981bd6b89e19", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8050995, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=796eef48-669d-8afc-1ea6-981bd6b89e19'
+	sid: '796eef48-669d-8afc-1ea6-981bd6b89e19'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.805099'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=28a59a3f-c95f-4242-aca4-65d5ffc5ab4e", "sid": "28a59a3f-c95f-4242-aca4-65d5ffc5ab4e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8169272, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=28a59a3f-c95f-4242-aca4-65d5ffc5ab4e'
+	sid: '28a59a3f-c95f-4242-aca4-65d5ffc5ab4e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.816927'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=5910d49e-1792-f5c9-7054-c4a65ea20ac0", "sid": "5910d49e-1792-f5c9-7054-c4a65ea20ac0", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8208694, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=5910d49e-1792-f5c9-7054-c4a65ea20ac0'
+	sid: '5910d49e-1792-f5c9-7054-c4a65ea20ac0'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.820869'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=5b976578-a177-9b9e-620b-c3f2f1faf68c", "sid": "5b976578-a177-9b9e-620b-c3f2f1faf68c", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8369312, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=5b976578-a177-9b9e-620b-c3f2f1faf68c'
+	sid: '5b976578-a177-9b9e-620b-c3f2f1faf68c'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.836931'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f9bd5739-dae6-04ef-18d4-41a282ebc530", "sid": "f9bd5739-dae6-04ef-18d4-41a282ebc530", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8516257, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f9bd5739-dae6-04ef-18d4-41a282ebc530'
+	sid: 'f9bd5739-dae6-04ef-18d4-41a282ebc530'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.851626'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=88e8597c-e839-20de-ef26-4f07c9529efc", "sid": "88e8597c-e839-20de-ef26-4f07c9529efc", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797349.8680618, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=88e8597c-e839-20de-ef26-4f07c9529efc'
+	sid: '88e8597c-e839-20de-ef26-4f07c9529efc'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797349.868062'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '2'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=68acabff-d17d-86c8-4d9b-5c4b0dfe9a72", "sid": "68acabff-d17d-86c8-4d9b-5c4b0dfe9a72", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8803375, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=68acabff-d17d-86c8-4d9b-5c4b0dfe9a72'
+	sid: '68acabff-d17d-86c8-4d9b-5c4b0dfe9a72'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.880337'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=987f1bf6-3473-2815-31e7-9528a2231a0d", "sid": "987f1bf6-3473-2815-31e7-9528a2231a0d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.8951688, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=987f1bf6-3473-2815-31e7-9528a2231a0d'
+	sid: '987f1bf6-3473-2815-31e7-9528a2231a0d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.895169'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=29298721-beaf-ed1f-00f6-1be5ed6864f8", "sid": "29298721-beaf-ed1f-00f6-1be5ed6864f8", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.904573, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=29298721-beaf-ed1f-00f6-1be5ed6864f8'
+	sid: '29298721-beaf-ed1f-00f6-1be5ed6864f8'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.904573'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=0451ec71-5211-f429-a461-70aa021ab1c9", "sid": "0451ec71-5211-f429-a461-70aa021ab1c9", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.917724, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=0451ec71-5211-f429-a461-70aa021ab1c9'
+	sid: '0451ec71-5211-f429-a461-70aa021ab1c9'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.917724'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=5de46ede-35f1-cf2c-3b69-cdfcfe77a86d", "sid": "5de46ede-35f1-cf2c-3b69-cdfcfe77a86d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.9294648, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=5de46ede-35f1-cf2c-3b69-cdfcfe77a86d'
+	sid: '5de46ede-35f1-cf2c-3b69-cdfcfe77a86d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.929465'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=62cc7067-7fbc-5731-c05c-882f18a39452", "sid": "62cc7067-7fbc-5731-c05c-882f18a39452", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.9431021, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=62cc7067-7fbc-5731-c05c-882f18a39452'
+	sid: '62cc7067-7fbc-5731-c05c-882f18a39452'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.943102'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=c7d8d68c-3a6c-adab-6f32-21f216454b3d", "sid": "c7d8d68c-3a6c-adab-6f32-21f216454b3d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.958017, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=c7d8d68c-3a6c-adab-6f32-21f216454b3d'
+	sid: 'c7d8d68c-3a6c-adab-6f32-21f216454b3d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.958017'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=fb9a88db-903b-d96a-c9b5-484b6d1fb1c7", "sid": "fb9a88db-903b-d96a-c9b5-484b6d1fb1c7", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.9656918, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=fb9a88db-903b-d96a-c9b5-484b6d1fb1c7'
+	sid: 'fb9a88db-903b-d96a-c9b5-484b6d1fb1c7'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.965692'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=b8fd46a3-57ed-fe0b-bb0f-3b7f23323c95", "sid": "b8fd46a3-57ed-fe0b-bb0f-3b7f23323c95", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.9772584, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=b8fd46a3-57ed-fe0b-bb0f-3b7f23323c95'
+	sid: 'b8fd46a3-57ed-fe0b-bb0f-3b7f23323c95'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.977258'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=bceae0ec-190a-00ff-5311-14e4e608d3b2", "sid": "bceae0ec-190a-00ff-5311-14e4e608d3b2", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.9840405, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=bceae0ec-190a-00ff-5311-14e4e608d3b2'
+	sid: 'bceae0ec-190a-00ff-5311-14e4e608d3b2'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.984040'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=33252266-69a3-dacd-b7a5-fdd4047c7889", "sid": "33252266-69a3-dacd-b7a5-fdd4047c7889", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.9901342, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=33252266-69a3-dacd-b7a5-fdd4047c7889'
+	sid: '33252266-69a3-dacd-b7a5-fdd4047c7889'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.990134'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=0df15c6c-b511-72bd-001c-9007a5255e9c", "sid": "0df15c6c-b511-72bd-001c-9007a5255e9c", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797349.999343, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=0df15c6c-b511-72bd-001c-9007a5255e9c'
+	sid: '0df15c6c-b511-72bd-001c-9007a5255e9c'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797349.999343'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=dcfa109a-4bbe-8370-dbf1-a7849f0d8943", "sid": "dcfa109a-4bbe-8370-dbf1-a7849f0d8943", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.0161538, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=dcfa109a-4bbe-8370-dbf1-a7849f0d8943'
+	sid: 'dcfa109a-4bbe-8370-dbf1-a7849f0d8943'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.016154'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=4d45a280-2ba5-e30f-c7a6-a70c9127d457", "sid": "4d45a280-2ba5-e30f-c7a6-a70c9127d457", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797350.0260303, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=4d45a280-2ba5-e30f-c7a6-a70c9127d457'
+	sid: '4d45a280-2ba5-e30f-c7a6-a70c9127d457'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797350.026030'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '1'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=5f6aeecd-0bf1-8627-408b-86c580bf8c2b", "sid": "5f6aeecd-0bf1-8627-408b-86c580bf8c2b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.0301933, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=5f6aeecd-0bf1-8627-408b-86c580bf8c2b'
+	sid: '5f6aeecd-0bf1-8627-408b-86c580bf8c2b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.030193'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=3448879c-3a6b-8643-91d7-6850572954bf", "sid": "3448879c-3a6b-8643-91d7-6850572954bf", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.0366955, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=3448879c-3a6b-8643-91d7-6850572954bf'
+	sid: '3448879c-3a6b-8643-91d7-6850572954bf'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.036695'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=45da583d-2cf0-1b1c-ef59-a5566654a79c", "sid": "45da583d-2cf0-1b1c-ef59-a5566654a79c", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797350.040994, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=45da583d-2cf0-1b1c-ef59-a5566654a79c'
+	sid: '45da583d-2cf0-1b1c-ef59-a5566654a79c'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797350.040994'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '2'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=610b4a16-2fd5-563c-fc35-0834a812b111", "sid": "610b4a16-2fd5-563c-fc35-0834a812b111", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.0574374, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=610b4a16-2fd5-563c-fc35-0834a812b111'
+	sid: '610b4a16-2fd5-563c-fc35-0834a812b111'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.057437'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=e94309a1-bcab-4218-c0b8-00c3416c35cc", "sid": "e94309a1-bcab-4218-c0b8-00c3416c35cc", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.0635893, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=e94309a1-bcab-4218-c0b8-00c3416c35cc'
+	sid: 'e94309a1-bcab-4218-c0b8-00c3416c35cc'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.063589'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '5'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=2348f892-9ac1-61b0-a913-b12c8d758368", "sid": "2348f892-9ac1-61b0-a913-b12c8d758368", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.0694761, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=2348f892-9ac1-61b0-a913-b12c8d758368'
+	sid: '2348f892-9ac1-61b0-a913-b12c8d758368'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.069476'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '6'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=a6bd3b18-e2e8-046c-063a-3323ff92fcf3", "sid": "a6bd3b18-e2e8-046c-063a-3323ff92fcf3", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.0816212, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=a6bd3b18-e2e8-046c-063a-3323ff92fcf3'
+	sid: 'a6bd3b18-e2e8-046c-063a-3323ff92fcf3'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.081621'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '2'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=0d50465d-435e-a46b-57f7-614147bc6894", "sid": "0d50465d-435e-a46b-57f7-614147bc6894", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.0881999, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=0d50465d-435e-a46b-57f7-614147bc6894'
+	sid: '0d50465d-435e-a46b-57f7-614147bc6894'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.088200'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '7'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=f34baa0e-b797-f56d-0abc-fdff23c471bb", "sid": "f34baa0e-b797-f56d-0abc-fdff23c471bb", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.093744, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=f34baa0e-b797-f56d-0abc-fdff23c471bb'
+	sid: 'f34baa0e-b797-f56d-0abc-fdff23c471bb'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.093744'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '8'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=a37420ee-a748-9002-1a8e-d5f862ef1cda", "sid": "a37420ee-a748-9002-1a8e-d5f862ef1cda", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.109038, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=a37420ee-a748-9002-1a8e-d5f862ef1cda'
+	sid: 'a37420ee-a748-9002-1a8e-d5f862ef1cda'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.109038'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=7c93fc23-1042-81de-bfbe-5dc4e52b865e", "sid": "7c93fc23-1042-81de-bfbe-5dc4e52b865e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.1221411, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=7c93fc23-1042-81de-bfbe-5dc4e52b865e'
+	sid: '7c93fc23-1042-81de-bfbe-5dc4e52b865e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.122141'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=651845f0-2c25-66af-28b9-3ed0b9556008", "sid": "651845f0-2c25-66af-28b9-3ed0b9556008", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.1372502, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=651845f0-2c25-66af-28b9-3ed0b9556008'
+	sid: '651845f0-2c25-66af-28b9-3ed0b9556008'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.137250'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=02e1f618-894a-4ec3-12d8-c72225400e05", "sid": "02e1f618-894a-4ec3-12d8-c72225400e05", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.1513898, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=02e1f618-894a-4ec3-12d8-c72225400e05'
+	sid: '02e1f618-894a-4ec3-12d8-c72225400e05'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.151390'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=046d8080-5730-5526-759c-23cebf205408", "sid": "046d8080-5730-5526-759c-23cebf205408", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.1652095, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=046d8080-5730-5526-759c-23cebf205408'
+	sid: '046d8080-5730-5526-759c-23cebf205408'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.165210'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=40def0d4-4966-86c4-602a-e73827e4e5d7", "sid": "40def0d4-4966-86c4-602a-e73827e4e5d7", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.1783748, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=40def0d4-4966-86c4-602a-e73827e4e5d7'
+	sid: '40def0d4-4966-86c4-602a-e73827e4e5d7'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.178375'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '9'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=220b2e63-dc5f-c111-4336-ccddd54a3da5", "sid": "220b2e63-dc5f-c111-4336-ccddd54a3da5", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.1923285, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=220b2e63-dc5f-c111-4336-ccddd54a3da5'
+	sid: '220b2e63-dc5f-c111-4336-ccddd54a3da5'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.192328'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '3'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=8a882450-496a-ca41-149a-172413cad259", "sid": "8a882450-496a-ca41-149a-172413cad259", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.2015657, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=8a882450-496a-ca41-149a-172413cad259'
+	sid: '8a882450-496a-ca41-149a-172413cad259'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.201566'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '10'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=cdbd418f-1490-27e8-ee16-749c4d9b6067", "sid": "cdbd418f-1490-27e8-ee16-749c4d9b6067", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.2139058, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=cdbd418f-1490-27e8-ee16-749c4d9b6067'
+	sid: 'cdbd418f-1490-27e8-ee16-749c4d9b6067'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.213906'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '11'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=22dc0615-e8be-2290-1d69-518efaa4cf07", "sid": "22dc0615-e8be-2290-1d69-518efaa4cf07", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.223647, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=22dc0615-e8be-2290-1d69-518efaa4cf07'
+	sid: '22dc0615-e8be-2290-1d69-518efaa4cf07'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.223647'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '12'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=b42a10bf-e461-b04f-599f-c6536f2a2a85", "sid": "b42a10bf-e461-b04f-599f-c6536f2a2a85", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2389348, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=b42a10bf-e461-b04f-599f-c6536f2a2a85'
+	sid: 'b42a10bf-e461-b04f-599f-c6536f2a2a85'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.238935'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=3180c5d2-0e41-c0e9-bedd-3776eff88597", "sid": "3180c5d2-0e41-c0e9-bedd-3776eff88597", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2469044, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=3180c5d2-0e41-c0e9-bedd-3776eff88597'
+	sid: '3180c5d2-0e41-c0e9-bedd-3776eff88597'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.246904'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=8eeff359-dc13-3c22-b5c0-a0930edde425", "sid": "8eeff359-dc13-3c22-b5c0-a0930edde425", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2555215, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=8eeff359-dc13-3c22-b5c0-a0930edde425'
+	sid: '8eeff359-dc13-3c22-b5c0-a0930edde425'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.255522'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=e9610fde-685b-c177-3d5a-c6e85f4dbec4", "sid": "e9610fde-685b-c177-3d5a-c6e85f4dbec4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2627614, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=e9610fde-685b-c177-3d5a-c6e85f4dbec4'
+	sid: 'e9610fde-685b-c177-3d5a-c6e85f4dbec4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.262761'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=ec48a142-7f96-5aee-b5cd-bd0eca602bb4", "sid": "ec48a142-7f96-5aee-b5cd-bd0eca602bb4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2702324, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=ec48a142-7f96-5aee-b5cd-bd0eca602bb4'
+	sid: 'ec48a142-7f96-5aee-b5cd-bd0eca602bb4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.270232'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=236ec648-1599-15e0-eec8-5c3cf276e469", "sid": "236ec648-1599-15e0-eec8-5c3cf276e469", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2844846, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=236ec648-1599-15e0-eec8-5c3cf276e469'
+	sid: '236ec648-1599-15e0-eec8-5c3cf276e469'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.284485'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=3f51af6f-48d9-bb95-eec7-6968679f00be", "sid": "3f51af6f-48d9-bb95-eec7-6968679f00be", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.2917497, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=3f51af6f-48d9-bb95-eec7-6968679f00be'
+	sid: '3f51af6f-48d9-bb95-eec7-6968679f00be'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.291750'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=464dbdac-9d93-8a83-d9af-ce93db4f8269", "sid": "464dbdac-9d93-8a83-d9af-ce93db4f8269", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.308472, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=464dbdac-9d93-8a83-d9af-ce93db4f8269'
+	sid: '464dbdac-9d93-8a83-d9af-ce93db4f8269'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.308472'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=53ec3837-1783-27bb-fc5c-18edf653b52e", "sid": "53ec3837-1783-27bb-fc5c-18edf653b52e", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797350.315088, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=53ec3837-1783-27bb-fc5c-18edf653b52e'
+	sid: '53ec3837-1783-27bb-fc5c-18edf653b52e'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797350.315088'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '3'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=8aec69f7-b6c6-9623-abcb-92b1031c8f3f", "sid": "8aec69f7-b6c6-9623-abcb-92b1031c8f3f", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3214746, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=8aec69f7-b6c6-9623-abcb-92b1031c8f3f'
+	sid: '8aec69f7-b6c6-9623-abcb-92b1031c8f3f'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.321475'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=6aa754b7-14ee-5d6e-f431-50d2798463f8", "sid": "6aa754b7-14ee-5d6e-f431-50d2798463f8", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.332463, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=6aa754b7-14ee-5d6e-f431-50d2798463f8'
+	sid: '6aa754b7-14ee-5d6e-f431-50d2798463f8'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.332463'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=eb9ebdab-dcd8-4ced-c772-d069b979e0b0", "sid": "eb9ebdab-dcd8-4ced-c772-d069b979e0b0", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797350.3412893, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=eb9ebdab-dcd8-4ced-c772-d069b979e0b0'
+	sid: 'eb9ebdab-dcd8-4ced-c772-d069b979e0b0'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797350.341289'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '3'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=9d813ea1-59ab-ee99-a361-5229aa156778", "sid": "9d813ea1-59ab-ee99-a361-5229aa156778", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3526273, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=9d813ea1-59ab-ee99-a361-5229aa156778'
+	sid: '9d813ea1-59ab-ee99-a361-5229aa156778'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.352627'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=cce0bb9f-fdb4-30a2-0eaa-3c73f30e1644", "sid": "cce0bb9f-fdb4-30a2-0eaa-3c73f30e1644", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3602285, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=cce0bb9f-fdb4-30a2-0eaa-3c73f30e1644'
+	sid: 'cce0bb9f-fdb4-30a2-0eaa-3c73f30e1644'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.360229'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=4a6bbf3b-71dc-067c-5eac-c8b5cfe10ae9", "sid": "4a6bbf3b-71dc-067c-5eac-c8b5cfe10ae9", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3670518, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=4a6bbf3b-71dc-067c-5eac-c8b5cfe10ae9'
+	sid: '4a6bbf3b-71dc-067c-5eac-c8b5cfe10ae9'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.367052'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=9367dce9-4c99-f3c1-c086-90f90380de45", "sid": "9367dce9-4c99-f3c1-c086-90f90380de45", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3711357, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=9367dce9-4c99-f3c1-c086-90f90380de45'
+	sid: '9367dce9-4c99-f3c1-c086-90f90380de45'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.371136'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=336170ab-55cd-7697-e078-c1041c1c9c05", "sid": "336170ab-55cd-7697-e078-c1041c1c9c05", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3772812, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=336170ab-55cd-7697-e078-c1041c1c9c05'
+	sid: '336170ab-55cd-7697-e078-c1041c1c9c05'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.377281'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=4d59f2ab-a67b-cf9e-f477-fdb2a6ca50d8", "sid": "4d59f2ab-a67b-cf9e-f477-fdb2a6ca50d8", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.3902788, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=4d59f2ab-a67b-cf9e-f477-fdb2a6ca50d8'
+	sid: '4d59f2ab-a67b-cf9e-f477-fdb2a6ca50d8'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.390279'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=d37f80a4-74b9-77cd-cc36-90570395cbf9", "sid": "d37f80a4-74b9-77cd-cc36-90570395cbf9", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797350.4055743, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=d37f80a4-74b9-77cd-cc36-90570395cbf9'
+	sid: 'd37f80a4-74b9-77cd-cc36-90570395cbf9'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797350.405574'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=da9c179c-b7e1-ccb6-8039-a4671346d3d1", "sid": "da9c179c-b7e1-ccb6-8039-a4671346d3d1", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.416575, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=da9c179c-b7e1-ccb6-8039-a4671346d3d1'
+	sid: 'da9c179c-b7e1-ccb6-8039-a4671346d3d1'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.416575'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '4'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=be00c67e-eda5-c52b-863d-e2f748fdf549", "sid": "be00c67e-eda5-c52b-863d-e2f748fdf549", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.4290638, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=be00c67e-eda5-c52b-863d-e2f748fdf549'
+	sid: 'be00c67e-eda5-c52b-863d-e2f748fdf549'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.429064'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '13'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=0cda6e42-ba29-0575-b4c5-ac221b42c5b1", "sid": "0cda6e42-ba29-0575-b4c5-ac221b42c5b1", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.43539, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=0cda6e42-ba29-0575-b4c5-ac221b42c5b1'
+	sid: '0cda6e42-ba29-0575-b4c5-ac221b42c5b1'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.435390'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '14'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=730ae243-d9aa-4c4a-2daa-0045e0c48f6f", "sid": "730ae243-d9aa-4c4a-2daa-0045e0c48f6f", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.4436736, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=730ae243-d9aa-4c4a-2daa-0045e0c48f6f'
+	sid: '730ae243-d9aa-4c4a-2daa-0045e0c48f6f'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.443674'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '15'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=ded52aa3-ca93-a7e6-1830-7ca824990855", "sid": "ded52aa3-ca93-a7e6-1830-7ca824990855", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.4586072, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=ded52aa3-ca93-a7e6-1830-7ca824990855'
+	sid: 'ded52aa3-ca93-a7e6-1830-7ca824990855'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.458607'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '5'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=bbdfd6ed-b254-5d8f-fdde-61ac1cab820e", "sid": "bbdfd6ed-b254-5d8f-fdde-61ac1cab820e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.4625142, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=bbdfd6ed-b254-5d8f-fdde-61ac1cab820e'
+	sid: 'bbdfd6ed-b254-5d8f-fdde-61ac1cab820e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.462514'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=d1a3cbd5-ed24-e01f-0868-58508c4bc60c", "sid": "d1a3cbd5-ed24-e01f-0868-58508c4bc60c", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.4690564, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=d1a3cbd5-ed24-e01f-0868-58508c4bc60c'
+	sid: 'd1a3cbd5-ed24-e01f-0868-58508c4bc60c'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.469056'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=fb9821ff-6926-ff7c-7120-b0794c10212a", "sid": "fb9821ff-6926-ff7c-7120-b0794c10212a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.485605, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=fb9821ff-6926-ff7c-7120-b0794c10212a'
+	sid: 'fb9821ff-6926-ff7c-7120-b0794c10212a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.485605'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=b3e8a9fa-e24b-f4d9-7e5b-6c3aab79073d", "sid": "b3e8a9fa-e24b-f4d9-7e5b-6c3aab79073d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.4957275, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=b3e8a9fa-e24b-f4d9-7e5b-6c3aab79073d'
+	sid: 'b3e8a9fa-e24b-f4d9-7e5b-6c3aab79073d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.495728'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=4e78da84-6961-4db8-afe1-fdcfe1e1e85a", "sid": "4e78da84-6961-4db8-afe1-fdcfe1e1e85a", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797350.5090346, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=4e78da84-6961-4db8-afe1-fdcfe1e1e85a'
+	sid: '4e78da84-6961-4db8-afe1-fdcfe1e1e85a'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797350.509035'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '5'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=e9ded7d1-8d83-ab9d-e8e0-32d6ab662658", "sid": "e9ded7d1-8d83-ab9d-e8e0-32d6ab662658", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.5195172, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=e9ded7d1-8d83-ab9d-e8e0-32d6ab662658'
+	sid: 'e9ded7d1-8d83-ab9d-e8e0-32d6ab662658'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.519517'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=191be328-9967-e197-7f34-0b98de2bf516", "sid": "191be328-9967-e197-7f34-0b98de2bf516", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.5341716, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=191be328-9967-e197-7f34-0b98de2bf516'
+	sid: '191be328-9967-e197-7f34-0b98de2bf516'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.534172'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=62e2c4b0-479a-6080-0361-f937bfc78439", "sid": "62e2c4b0-479a-6080-0361-f937bfc78439", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.55074, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=62e2c4b0-479a-6080-0361-f937bfc78439'
+	sid: '62e2c4b0-479a-6080-0361-f937bfc78439'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.550740'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=6384a9d9-7630-b197-26e9-1a4448dfd133", "sid": "6384a9d9-7630-b197-26e9-1a4448dfd133", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.5556004, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=6384a9d9-7630-b197-26e9-1a4448dfd133'
+	sid: '6384a9d9-7630-b197-26e9-1a4448dfd133'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.555600'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/cmd", "raw_path": "/cmd?x=id&sid=b7b5cbc0-b695-8b4d-1e08-7726a1af6ec1", "sid": "b7b5cbc0-b695-8b4d-1e08-7726a1af6ec1", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797350.57064, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/cmd'
+	raw_path: '/cmd?x=id&sid=b7b5cbc0-b695-8b4d-1e08-7726a1af6ec1'
+	sid: 'b7b5cbc0-b695-8b4d-1e08-7726a1af6ec1'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797350.570640'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100003'
+	level: '10'
+	description: 'PROJECTA command probe'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '2'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=a6d79649-b8fa-5110-f4ef-5f4b2e4b0093", "sid": "a6d79649-b8fa-5110-f4ef-5f4b2e4b0093", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.5837293, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=a6d79649-b8fa-5110-f4ef-5f4b2e4b0093'
+	sid: 'a6d79649-b8fa-5110-f4ef-5f4b2e4b0093'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.583729'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f1c10806-9f13-f372-f661-9eaff838a66e", "sid": "f1c10806-9f13-f372-f661-9eaff838a66e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.5979464, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f1c10806-9f13-f372-f661-9eaff838a66e'
+	sid: 'f1c10806-9f13-f372-f661-9eaff838a66e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.597946'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=feae26bd-e41d-fe2b-c169-2d0fa4b5327f", "sid": "feae26bd-e41d-fe2b-c169-2d0fa4b5327f", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6096966, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=feae26bd-e41d-fe2b-c169-2d0fa4b5327f'
+	sid: 'feae26bd-e41d-fe2b-c169-2d0fa4b5327f'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.609697'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=c588ba2b-032d-2c0b-b3f0-8d97d3818752", "sid": "c588ba2b-032d-2c0b-b3f0-8d97d3818752", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6190858, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=c588ba2b-032d-2c0b-b3f0-8d97d3818752'
+	sid: 'c588ba2b-032d-2c0b-b3f0-8d97d3818752'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.619086'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=d14307c4-6cce-11c6-e7a6-e0ee1adebaa7", "sid": "d14307c4-6cce-11c6-e7a6-e0ee1adebaa7", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6336534, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=d14307c4-6cce-11c6-e7a6-e0ee1adebaa7'
+	sid: 'd14307c4-6cce-11c6-e7a6-e0ee1adebaa7'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.633653'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=a9f0ea7b-b59e-5cd3-5f09-dd1c302913ab", "sid": "a9f0ea7b-b59e-5cd3-5f09-dd1c302913ab", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6468096, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=a9f0ea7b-b59e-5cd3-5f09-dd1c302913ab'
+	sid: 'a9f0ea7b-b59e-5cd3-5f09-dd1c302913ab'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.646810'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=d5019ef6-c59a-55f6-5ac1-a4ebee9d34dd", "sid": "d5019ef6-c59a-55f6-5ac1-a4ebee9d34dd", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6605859, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=d5019ef6-c59a-55f6-5ac1-a4ebee9d34dd'
+	sid: 'd5019ef6-c59a-55f6-5ac1-a4ebee9d34dd'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.660586'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=b0b59202-815c-8cf2-0daf-0045434d115b", "sid": "b0b59202-815c-8cf2-0daf-0045434d115b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6750808, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=b0b59202-815c-8cf2-0daf-0045434d115b'
+	sid: 'b0b59202-815c-8cf2-0daf-0045434d115b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.675081'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=70ee3389-805a-7500-c6ff-6b20de99bace", "sid": "70ee3389-805a-7500-c6ff-6b20de99bace", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6862524, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=70ee3389-805a-7500-c6ff-6b20de99bace'
+	sid: '70ee3389-805a-7500-c6ff-6b20de99bace'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.686252'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=b3af8e84-1071-6380-2c38-515f9c559077", "sid": "b3af8e84-1071-6380-2c38-515f9c559077", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.6980076, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=b3af8e84-1071-6380-2c38-515f9c559077'
+	sid: 'b3af8e84-1071-6380-2c38-515f9c559077'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.698008'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=745f0ba3-f862-c94a-e656-0f641f32512e", "sid": "745f0ba3-f862-c94a-e656-0f641f32512e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.7119904, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=745f0ba3-f862-c94a-e656-0f641f32512e'
+	sid: '745f0ba3-f862-c94a-e656-0f641f32512e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.711990'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=debba070-94d3-a722-2b38-735183b9c6f7", "sid": "debba070-94d3-a722-2b38-735183b9c6f7", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.7289753, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=debba070-94d3-a722-2b38-735183b9c6f7'
+	sid: 'debba070-94d3-a722-2b38-735183b9c6f7'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.728975'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '16'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=69023033-7555-014a-29b2-e97c1e59abdb", "sid": "69023033-7555-014a-29b2-e97c1e59abdb", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.744452, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=69023033-7555-014a-29b2-e97c1e59abdb'
+	sid: '69023033-7555-014a-29b2-e97c1e59abdb'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.744452'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '17'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=50a639da-dbb8-47b1-6120-0b36690257c5", "sid": "50a639da-dbb8-47b1-6120-0b36690257c5", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.7558157, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=50a639da-dbb8-47b1-6120-0b36690257c5'
+	sid: '50a639da-dbb8-47b1-6120-0b36690257c5'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.755816'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '18'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=c77fdb24-3a47-6433-9e1f-400d40a50002", "sid": "c77fdb24-3a47-6433-9e1f-400d40a50002", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.7628787, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=c77fdb24-3a47-6433-9e1f-400d40a50002'
+	sid: 'c77fdb24-3a47-6433-9e1f-400d40a50002'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.762879'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '6'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=22abfad1-7c72-c4c6-8167-85684ac90228", "sid": "22abfad1-7c72-c4c6-8167-85684ac90228", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.7691212, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=22abfad1-7c72-c4c6-8167-85684ac90228'
+	sid: '22abfad1-7c72-c4c6-8167-85684ac90228'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.769121'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '19'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=2659f80b-84cd-d096-e9ee-505e61f4cb9a", "sid": "2659f80b-84cd-d096-e9ee-505e61f4cb9a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.7844052, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=2659f80b-84cd-d096-e9ee-505e61f4cb9a'
+	sid: '2659f80b-84cd-d096-e9ee-505e61f4cb9a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.784405'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=93201c0a-d768-1b61-5993-488c18fee264", "sid": "93201c0a-d768-1b61-5993-488c18fee264", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.7971559, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=93201c0a-d768-1b61-5993-488c18fee264'
+	sid: '93201c0a-d768-1b61-5993-488c18fee264'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.797156'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=c3d44aaa-7648-a702-3afc-5246e548004e", "sid": "c3d44aaa-7648-a702-3afc-5246e548004e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.8137467, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=c3d44aaa-7648-a702-3afc-5246e548004e'
+	sid: 'c3d44aaa-7648-a702-3afc-5246e548004e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.813747'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d959614d-1d0e-0238-a77b-d549fdaaf466", "sid": "d959614d-1d0e-0238-a77b-d549fdaaf466", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8290834, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d959614d-1d0e-0238-a77b-d549fdaaf466'
+	sid: 'd959614d-1d0e-0238-a77b-d549fdaaf466'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.829083'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '20'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=f115eceb-b07f-c565-9508-36c31e763d3a", "sid": "f115eceb-b07f-c565-9508-36c31e763d3a", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8364089, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=f115eceb-b07f-c565-9508-36c31e763d3a'
+	sid: 'f115eceb-b07f-c565-9508-36c31e763d3a'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.836409'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '21'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=f358170b-fa24-7af7-341f-6def86f8957a", "sid": "f358170b-fa24-7af7-341f-6def86f8957a", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8460522, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=f358170b-fa24-7af7-341f-6def86f8957a'
+	sid: 'f358170b-fa24-7af7-341f-6def86f8957a'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.846052'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '7'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=723a7099-81ea-e7d2-d2bb-7e19f93f6ffb", "sid": "723a7099-81ea-e7d2-d2bb-7e19f93f6ffb", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8528643, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=723a7099-81ea-e7d2-d2bb-7e19f93f6ffb'
+	sid: '723a7099-81ea-e7d2-d2bb-7e19f93f6ffb'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.852864'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '22'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=c7cbe806-0c63-7b45-44e4-67eb4a995665", "sid": "c7cbe806-0c63-7b45-44e4-67eb4a995665", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8595738, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=c7cbe806-0c63-7b45-44e4-67eb4a995665'
+	sid: 'c7cbe806-0c63-7b45-44e4-67eb4a995665'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.859574'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '23'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=cd55eb7f-9eeb-5b1d-0ee4-442684264476", "sid": "cd55eb7f-9eeb-5b1d-0ee4-442684264476", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8668306, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=cd55eb7f-9eeb-5b1d-0ee4-442684264476'
+	sid: 'cd55eb7f-9eeb-5b1d-0ee4-442684264476'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.866831'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '24'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=57576f75-f5e6-4469-ee23-eef2f019af95", "sid": "57576f75-f5e6-4469-ee23-eef2f019af95", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8827326, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=57576f75-f5e6-4469-ee23-eef2f019af95'
+	sid: '57576f75-f5e6-4469-ee23-eef2f019af95'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.882733'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '8'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=8d6d6b46-ab36-c044-c4a5-69af0249bc72", "sid": "8d6d6b46-ab36-c044-c4a5-69af0249bc72", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.890411, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=8d6d6b46-ab36-c044-c4a5-69af0249bc72'
+	sid: '8d6d6b46-ab36-c044-c4a5-69af0249bc72'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.890411'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '25'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=bac2b161-e77f-fafa-114e-a39e292b481f", "sid": "bac2b161-e77f-fafa-114e-a39e292b481f", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.8963306, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=bac2b161-e77f-fafa-114e-a39e292b481f'
+	sid: 'bac2b161-e77f-fafa-114e-a39e292b481f'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.896331'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '26'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=fecf04a4-3b70-a3f7-070a-f333c76de827", "sid": "fecf04a4-3b70-a3f7-070a-f333c76de827", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797350.9101598, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=fecf04a4-3b70-a3f7-070a-f333c76de827'
+	sid: 'fecf04a4-3b70-a3f7-070a-f333c76de827'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797350.910160'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '27'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=5fdfd9a7-54de-6ff7-af4b-795a330a6a84", "sid": "5fdfd9a7-54de-6ff7-af4b-795a330a6a84", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9144151, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=5fdfd9a7-54de-6ff7-af4b-795a330a6a84'
+	sid: '5fdfd9a7-54de-6ff7-af4b-795a330a6a84'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.914415'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=e526f833-fe30-2d89-72a3-5d82502dc585", "sid": "e526f833-fe30-2d89-72a3-5d82502dc585", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9257176, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=e526f833-fe30-2d89-72a3-5d82502dc585'
+	sid: 'e526f833-fe30-2d89-72a3-5d82502dc585'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.925718'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=1cbc4c66-fde6-0110-1029-fed8e8c92d9b", "sid": "1cbc4c66-fde6-0110-1029-fed8e8c92d9b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9319456, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=1cbc4c66-fde6-0110-1029-fed8e8c92d9b'
+	sid: '1cbc4c66-fde6-0110-1029-fed8e8c92d9b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.931946'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=52e209c8-6a9b-32fb-6914-fbf09c4014af", "sid": "52e209c8-6a9b-32fb-6914-fbf09c4014af", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9419138, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=52e209c8-6a9b-32fb-6914-fbf09c4014af'
+	sid: '52e209c8-6a9b-32fb-6914-fbf09c4014af'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.941914'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=15d1dc92-3d6c-9da8-b1b8-dd5659b1ec5e", "sid": "15d1dc92-3d6c-9da8-b1b8-dd5659b1ec5e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9496353, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=15d1dc92-3d6c-9da8-b1b8-dd5659b1ec5e'
+	sid: '15d1dc92-3d6c-9da8-b1b8-dd5659b1ec5e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.949635'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=c43d6674-a65b-a875-8a1c-e462f0d00425", "sid": "c43d6674-a65b-a875-8a1c-e462f0d00425", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9546678, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=c43d6674-a65b-a875-8a1c-e462f0d00425'
+	sid: 'c43d6674-a65b-a875-8a1c-e462f0d00425'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.954668'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/cmd", "raw_path": "/cmd?x=id&sid=31154533-f37d-2d65-b208-14dc3982ff3e", "sid": "31154533-f37d-2d65-b208-14dc3982ff3e", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797350.9595122, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/cmd'
+	raw_path: '/cmd?x=id&sid=31154533-f37d-2d65-b208-14dc3982ff3e'
+	sid: '31154533-f37d-2d65-b208-14dc3982ff3e'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797350.959512'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100003'
+	level: '10'
+	description: 'PROJECTA command probe'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '3'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=f086376d-c216-d714-d1ce-2df755bffbaa", "sid": "f086376d-c216-d714-d1ce-2df755bffbaa", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9715257, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=f086376d-c216-d714-d1ce-2df755bffbaa'
+	sid: 'f086376d-c216-d714-d1ce-2df755bffbaa'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.971526'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=7512b795-8063-c4c7-2d5c-178b4643d6da", "sid": "7512b795-8063-c4c7-2d5c-178b4643d6da", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.976032, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=7512b795-8063-c4c7-2d5c-178b4643d6da'
+	sid: '7512b795-8063-c4c7-2d5c-178b4643d6da'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.976032'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=b0414970-32bd-3c2f-e389-a49eb6609d1f", "sid": "b0414970-32bd-3c2f-e389-a49eb6609d1f", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9810102, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=b0414970-32bd-3c2f-e389-a49eb6609d1f'
+	sid: 'b0414970-32bd-3c2f-e389-a49eb6609d1f'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.981010'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=88a45272-0a26-0f29-0526-df2d2acadade", "sid": "88a45272-0a26-0f29-0526-df2d2acadade", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797350.9962156, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=88a45272-0a26-0f29-0526-df2d2acadade'
+	sid: '88a45272-0a26-0f29-0526-df2d2acadade'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797350.996216'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=41957800-286d-230c-adb7-3e9f79628367", "sid": "41957800-286d-230c-adb7-3e9f79628367", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0040998, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=41957800-286d-230c-adb7-3e9f79628367'
+	sid: '41957800-286d-230c-adb7-3e9f79628367'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.004100'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=4d6ae42c-53e2-8051-059f-186a740f75e8", "sid": "4d6ae42c-53e2-8051-059f-186a740f75e8", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.020699, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=4d6ae42c-53e2-8051-059f-186a740f75e8'
+	sid: '4d6ae42c-53e2-8051-059f-186a740f75e8'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.020699'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=c9e35fcc-3ca6-0d69-3da5-2462c3570b9a", "sid": "c9e35fcc-3ca6-0d69-3da5-2462c3570b9a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0259004, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=c9e35fcc-3ca6-0d69-3da5-2462c3570b9a'
+	sid: 'c9e35fcc-3ca6-0d69-3da5-2462c3570b9a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.025900'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=1f5577ab-1b63-b8f9-8e0e-4ea017eb9000", "sid": "1f5577ab-1b63-b8f9-8e0e-4ea017eb9000", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797351.0338163, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=1f5577ab-1b63-b8f9-8e0e-4ea017eb9000'
+	sid: '1f5577ab-1b63-b8f9-8e0e-4ea017eb9000'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797351.033816'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=bf9c4e8a-a230-80fc-077a-2a4c1f1a5275", "sid": "bf9c4e8a-a230-80fc-077a-2a4c1f1a5275", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0376334, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=bf9c4e8a-a230-80fc-077a-2a4c1f1a5275'
+	sid: 'bf9c4e8a-a230-80fc-077a-2a4c1f1a5275'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.037633'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=24439eb5-0ec3-9d4b-1580-3bbcb82c86db", "sid": "24439eb5-0ec3-9d4b-1580-3bbcb82c86db", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0502477, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=24439eb5-0ec3-9d4b-1580-3bbcb82c86db'
+	sid: '24439eb5-0ec3-9d4b-1580-3bbcb82c86db'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.050248'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=ec78d930-09cf-c2df-e9b0-5d9d2112ea61", "sid": "ec78d930-09cf-c2df-e9b0-5d9d2112ea61", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0538788, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=ec78d930-09cf-c2df-e9b0-5d9d2112ea61'
+	sid: 'ec78d930-09cf-c2df-e9b0-5d9d2112ea61'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.053879'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=7115e879-627f-083e-82fd-d5a96bf7e885", "sid": "7115e879-627f-083e-82fd-d5a96bf7e885", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0673897, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=7115e879-627f-083e-82fd-d5a96bf7e885'
+	sid: '7115e879-627f-083e-82fd-d5a96bf7e885'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.067390'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=6276a9c9-1c07-cc6d-7310-d6e62a5ffc13", "sid": "6276a9c9-1c07-cc6d-7310-d6e62a5ffc13", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0736406, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=6276a9c9-1c07-cc6d-7310-d6e62a5ffc13'
+	sid: '6276a9c9-1c07-cc6d-7310-d6e62a5ffc13'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.073641'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=ad47156b-c153-350d-869c-492f87e953a5", "sid": "ad47156b-c153-350d-869c-492f87e953a5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0785785, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=ad47156b-c153-350d-869c-492f87e953a5'
+	sid: 'ad47156b-c153-350d-869c-492f87e953a5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.078578'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=064ca056-a663-9931-502f-a8dd347b565a", "sid": "064ca056-a663-9931-502f-a8dd347b565a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0897727, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=064ca056-a663-9931-502f-a8dd347b565a'
+	sid: '064ca056-a663-9931-502f-a8dd347b565a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.089773'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=c4134765-5f8e-79b2-0c1a-c510d5627134", "sid": "c4134765-5f8e-79b2-0c1a-c510d5627134", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.0966442, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=c4134765-5f8e-79b2-0c1a-c510d5627134'
+	sid: 'c4134765-5f8e-79b2-0c1a-c510d5627134'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.096644'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=184e77eb-0d90-cdb1-2194-6368b2820254", "sid": "184e77eb-0d90-cdb1-2194-6368b2820254", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.1029317, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=184e77eb-0d90-cdb1-2194-6368b2820254'
+	sid: '184e77eb-0d90-cdb1-2194-6368b2820254'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.102932'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=9363152e-973f-76b6-7d66-b6e8c76a79c2", "sid": "9363152e-973f-76b6-7d66-b6e8c76a79c2", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.1183817, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=9363152e-973f-76b6-7d66-b6e8c76a79c2'
+	sid: '9363152e-973f-76b6-7d66-b6e8c76a79c2'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.118382'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=eeb114d7-db24-4973-4d0a-61f0b39c01d9", "sid": "eeb114d7-db24-4973-4d0a-61f0b39c01d9", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.1350217, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=eeb114d7-db24-4973-4d0a-61f0b39c01d9'
+	sid: 'eeb114d7-db24-4973-4d0a-61f0b39c01d9'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.135022'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '9'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=00a5d8bd-d590-b74e-6836-088924716c88", "sid": "00a5d8bd-d590-b74e-6836-088924716c88", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.1504316, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=00a5d8bd-d590-b74e-6836-088924716c88'
+	sid: '00a5d8bd-d590-b74e-6836-088924716c88'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.150432'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '28'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=6054ba37-5827-bf4d-e35a-1cd61b367cc2", "sid": "6054ba37-5827-bf4d-e35a-1cd61b367cc2", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.165326, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=6054ba37-5827-bf4d-e35a-1cd61b367cc2'
+	sid: '6054ba37-5827-bf4d-e35a-1cd61b367cc2'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.165326'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '29'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=c5113b95-4d47-cbeb-4666-f2204b4f17fd", "sid": "c5113b95-4d47-cbeb-4666-f2204b4f17fd", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.1721907, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=c5113b95-4d47-cbeb-4666-f2204b4f17fd'
+	sid: 'c5113b95-4d47-cbeb-4666-f2204b4f17fd'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.172191'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '30'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=635bb0cd-0c92-4fa0-a425-a84982127999", "sid": "635bb0cd-0c92-4fa0-a425-a84982127999", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.1883543, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=635bb0cd-0c92-4fa0-a425-a84982127999'
+	sid: '635bb0cd-0c92-4fa0-a425-a84982127999'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.188354'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '10'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=de48e4b2-2368-86e8-f15e-776b4d3f4563", "sid": "de48e4b2-2368-86e8-f15e-776b4d3f4563", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.1944497, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=de48e4b2-2368-86e8-f15e-776b4d3f4563'
+	sid: 'de48e4b2-2368-86e8-f15e-776b4d3f4563'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.194450'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=6200020e-d702-79ce-52e8-8f2c8af7a6fc", "sid": "6200020e-d702-79ce-52e8-8f2c8af7a6fc", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.2028363, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=6200020e-d702-79ce-52e8-8f2c8af7a6fc'
+	sid: '6200020e-d702-79ce-52e8-8f2c8af7a6fc'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.202836'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=1e564014-c19e-0c05-1ca2-f373c159c9a2", "sid": "1e564014-c19e-0c05-1ca2-f373c159c9a2", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.2150307, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=1e564014-c19e-0c05-1ca2-f373c159c9a2'
+	sid: '1e564014-c19e-0c05-1ca2-f373c159c9a2'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.215031'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=b32d2c62-dceb-2216-ee6f-f3fd7e9abf3b", "sid": "b32d2c62-dceb-2216-ee6f-f3fd7e9abf3b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.2290375, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=b32d2c62-dceb-2216-ee6f-f3fd7e9abf3b'
+	sid: 'b32d2c62-dceb-2216-ee6f-f3fd7e9abf3b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.229038'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=ec777e1d-bd20-3a1d-0f49-ffe63bccd453", "sid": "ec777e1d-bd20-3a1d-0f49-ffe63bccd453", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797351.2352767, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=ec777e1d-bd20-3a1d-0f49-ffe63bccd453'
+	sid: 'ec777e1d-bd20-3a1d-0f49-ffe63bccd453'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797351.235277'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '6'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=7f99fd33-3fe6-d025-1634-ad07556fc052", "sid": "7f99fd33-3fe6-d025-1634-ad07556fc052", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.2520418, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=7f99fd33-3fe6-d025-1634-ad07556fc052'
+	sid: '7f99fd33-3fe6-d025-1634-ad07556fc052'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.252042'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=b64f22dd-3120-c9a2-bdfe-d7206d75bfe1", "sid": "b64f22dd-3120-c9a2-bdfe-d7206d75bfe1", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.2682867, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=b64f22dd-3120-c9a2-bdfe-d7206d75bfe1'
+	sid: 'b64f22dd-3120-c9a2-bdfe-d7206d75bfe1'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.268287'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=9837cd72-54cc-5762-9aa0-812883d162c0", "sid": "9837cd72-54cc-5762-9aa0-812883d162c0", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.280303, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=9837cd72-54cc-5762-9aa0-812883d162c0'
+	sid: '9837cd72-54cc-5762-9aa0-812883d162c0'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.280303'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=f8bc501a-2e66-41c6-1ba0-b4eb380b9fbe", "sid": "f8bc501a-2e66-41c6-1ba0-b4eb380b9fbe", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.2916636, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=f8bc501a-2e66-41c6-1ba0-b4eb380b9fbe'
+	sid: 'f8bc501a-2e66-41c6-1ba0-b4eb380b9fbe'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.291664'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=9b149b5c-9f34-9847-06da-5c92ea1ce8bd", "sid": "9b149b5c-9f34-9847-06da-5c92ea1ce8bd", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.3000891, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=9b149b5c-9f34-9847-06da-5c92ea1ce8bd'
+	sid: '9b149b5c-9f34-9847-06da-5c92ea1ce8bd'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.300089'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/cmd", "raw_path": "/cmd?x=id&sid=c880e2e8-0be4-620a-7609-ae9d48fd4abb", "sid": "c880e2e8-0be4-620a-7609-ae9d48fd4abb", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797351.313836, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/cmd'
+	raw_path: '/cmd?x=id&sid=c880e2e8-0be4-620a-7609-ae9d48fd4abb'
+	sid: 'c880e2e8-0be4-620a-7609-ae9d48fd4abb'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797351.313836'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100003'
+	level: '10'
+	description: 'PROJECTA command probe'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=b023ad7a-8889-5048-cdd1-1d662a34d57b", "sid": "b023ad7a-8889-5048-cdd1-1d662a34d57b", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.3256364, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=b023ad7a-8889-5048-cdd1-1d662a34d57b'
+	sid: 'b023ad7a-8889-5048-cdd1-1d662a34d57b'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.325636'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=351ed4f3-078d-d883-a5ba-ddff2b50f7a4", "sid": "351ed4f3-078d-d883-a5ba-ddff2b50f7a4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.3369331, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=351ed4f3-078d-d883-a5ba-ddff2b50f7a4'
+	sid: '351ed4f3-078d-d883-a5ba-ddff2b50f7a4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.336933'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=b42bd8de-4ac9-ebe1-5008-4c88709e2b22", "sid": "b42bd8de-4ac9-ebe1-5008-4c88709e2b22", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.3495479, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=b42bd8de-4ac9-ebe1-5008-4c88709e2b22'
+	sid: 'b42bd8de-4ac9-ebe1-5008-4c88709e2b22'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.349548'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=3242ed05-877f-4e1f-abf7-aa8e7ab780e4", "sid": "3242ed05-877f-4e1f-abf7-aa8e7ab780e4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.3575456, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=3242ed05-877f-4e1f-abf7-aa8e7ab780e4'
+	sid: '3242ed05-877f-4e1f-abf7-aa8e7ab780e4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.357546'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=aebce03b-5303-6e5f-c204-0aec64785a89", "sid": "aebce03b-5303-6e5f-c204-0aec64785a89", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.3655386, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=aebce03b-5303-6e5f-c204-0aec64785a89'
+	sid: 'aebce03b-5303-6e5f-c204-0aec64785a89'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.365539'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '31'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d62cbb0c-5008-24bd-87e1-c2101d963eab", "sid": "d62cbb0c-5008-24bd-87e1-c2101d963eab", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.3745399, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d62cbb0c-5008-24bd-87e1-c2101d963eab'
+	sid: 'd62cbb0c-5008-24bd-87e1-c2101d963eab'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.374540'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '32'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=213404da-c758-8bd3-7697-df34587b5a81", "sid": "213404da-c758-8bd3-7697-df34587b5a81", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.385673, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=213404da-c758-8bd3-7697-df34587b5a81'
+	sid: '213404da-c758-8bd3-7697-df34587b5a81'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.385673'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '33'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=0eeccb9e-12ff-0b02-8e54-0bed696b7028", "sid": "0eeccb9e-12ff-0b02-8e54-0bed696b7028", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.3998218, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=0eeccb9e-12ff-0b02-8e54-0bed696b7028'
+	sid: '0eeccb9e-12ff-0b02-8e54-0bed696b7028'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.399822'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '11'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=98b72c98-6556-dbad-157c-675ad3b50c67", "sid": "98b72c98-6556-dbad-157c-675ad3b50c67", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.4033246, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=98b72c98-6556-dbad-157c-675ad3b50c67'
+	sid: '98b72c98-6556-dbad-157c-675ad3b50c67'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.403325'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '34'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=9452179b-7d70-4fec-5937-8feeb6bfd5a5", "sid": "9452179b-7d70-4fec-5937-8feeb6bfd5a5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.4110162, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=9452179b-7d70-4fec-5937-8feeb6bfd5a5'
+	sid: '9452179b-7d70-4fec-5937-8feeb6bfd5a5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.411016'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=89003085-e831-9378-0010-6bdeb24157d6", "sid": "89003085-e831-9378-0010-6bdeb24157d6", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797351.4262505, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=89003085-e831-9378-0010-6bdeb24157d6'
+	sid: '89003085-e831-9378-0010-6bdeb24157d6'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797351.426250'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '5'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=c5e32600-a0a4-f47c-684a-6aa1d65e6a0c", "sid": "c5e32600-a0a4-f47c-684a-6aa1d65e6a0c", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.4325993, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=c5e32600-a0a4-f47c-684a-6aa1d65e6a0c'
+	sid: 'c5e32600-a0a4-f47c-684a-6aa1d65e6a0c'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.432599'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=497dcd2a-304f-a56a-3689-6f641f86f8f9", "sid": "497dcd2a-304f-a56a-3689-6f641f86f8f9", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.4477046, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=497dcd2a-304f-a56a-3689-6f641f86f8f9'
+	sid: '497dcd2a-304f-a56a-3689-6f641f86f8f9'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.447705'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=1d8921aa-0831-7608-844a-4e050d1ee1f1", "sid": "1d8921aa-0831-7608-844a-4e050d1ee1f1", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.456327, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=1d8921aa-0831-7608-844a-4e050d1ee1f1'
+	sid: '1d8921aa-0831-7608-844a-4e050d1ee1f1'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.456327'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=36ff3952-eb23-90bd-8a01-d7dbfee1fa4d", "sid": "36ff3952-eb23-90bd-8a01-d7dbfee1fa4d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.470193, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=36ff3952-eb23-90bd-8a01-d7dbfee1fa4d'
+	sid: '36ff3952-eb23-90bd-8a01-d7dbfee1fa4d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.470193'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=ceef516d-a7e8-eb6f-b7d6-3f5c00bf96b7", "sid": "ceef516d-a7e8-eb6f-b7d6-3f5c00bf96b7", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.4784262, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=ceef516d-a7e8-eb6f-b7d6-3f5c00bf96b7'
+	sid: 'ceef516d-a7e8-eb6f-b7d6-3f5c00bf96b7'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.478426'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=1dc685b3-e86d-7c16-453c-395d6962b8a3", "sid": "1dc685b3-e86d-7c16-453c-395d6962b8a3", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.4823482, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=1dc685b3-e86d-7c16-453c-395d6962b8a3'
+	sid: '1dc685b3-e86d-7c16-453c-395d6962b8a3'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.482348'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f888bc7a-e6f4-b736-8451-f7afe92b1075", "sid": "f888bc7a-e6f4-b736-8451-f7afe92b1075", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.4941373, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f888bc7a-e6f4-b736-8451-f7afe92b1075'
+	sid: 'f888bc7a-e6f4-b736-8451-f7afe92b1075'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.494137'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=7f8cf77f-a9fc-1323-d7af-195ebf501cba", "sid": "7f8cf77f-a9fc-1323-d7af-195ebf501cba", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.505767, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=7f8cf77f-a9fc-1323-d7af-195ebf501cba'
+	sid: '7f8cf77f-a9fc-1323-d7af-195ebf501cba'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.505767'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f4b5ac82-f38a-d129-3e89-89db95f8e2cd", "sid": "f4b5ac82-f38a-d129-3e89-89db95f8e2cd", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.5132103, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f4b5ac82-f38a-d129-3e89-89db95f8e2cd'
+	sid: 'f4b5ac82-f38a-d129-3e89-89db95f8e2cd'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.513210'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=eaad8a84-6b7e-06ac-c850-4336282745db", "sid": "eaad8a84-6b7e-06ac-c850-4336282745db", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.5198386, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=eaad8a84-6b7e-06ac-c850-4336282745db'
+	sid: 'eaad8a84-6b7e-06ac-c850-4336282745db'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.519839'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=9a52240e-e7f3-a4b2-12d3-c62a381e89bb", "sid": "9a52240e-e7f3-a4b2-12d3-c62a381e89bb", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.5343602, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=9a52240e-e7f3-a4b2-12d3-c62a381e89bb'
+	sid: '9a52240e-e7f3-a4b2-12d3-c62a381e89bb'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.534360'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=e8be87c5-1737-26d0-35e3-0a25e274eb5d", "sid": "e8be87c5-1737-26d0-35e3-0a25e274eb5d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.5500252, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=e8be87c5-1737-26d0-35e3-0a25e274eb5d'
+	sid: 'e8be87c5-1737-26d0-35e3-0a25e274eb5d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.550025'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=55ef0ce0-8c1a-568a-a65c-2ed4bfe6cf9d", "sid": "55ef0ce0-8c1a-568a-a65c-2ed4bfe6cf9d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.5651534, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=55ef0ce0-8c1a-568a-a65c-2ed4bfe6cf9d'
+	sid: '55ef0ce0-8c1a-568a-a65c-2ed4bfe6cf9d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.565153'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=c018debf-b85a-158a-c1c9-19010dddc8a2", "sid": "c018debf-b85a-158a-c1c9-19010dddc8a2", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.5757089, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=c018debf-b85a-158a-c1c9-19010dddc8a2'
+	sid: 'c018debf-b85a-158a-c1c9-19010dddc8a2'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.575709'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=d68476c7-9250-40be-01b4-566d391cf4c5", "sid": "d68476c7-9250-40be-01b4-566d391cf4c5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.587721, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=d68476c7-9250-40be-01b4-566d391cf4c5'
+	sid: 'd68476c7-9250-40be-01b4-566d391cf4c5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.587721'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=b6053bed-9a82-2595-1377-3c16f8fa890d", "sid": "b6053bed-9a82-2595-1377-3c16f8fa890d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6013324, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=b6053bed-9a82-2595-1377-3c16f8fa890d'
+	sid: 'b6053bed-9a82-2595-1377-3c16f8fa890d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.601332'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=70c4f31d-7008-afa2-0166-7eaacfdd5206", "sid": "70c4f31d-7008-afa2-0166-7eaacfdd5206", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6166365, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=70c4f31d-7008-afa2-0166-7eaacfdd5206'
+	sid: '70c4f31d-7008-afa2-0166-7eaacfdd5206'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.616637'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=6590a52a-bd21-4c0a-5dd1-da57c1934d37", "sid": "6590a52a-bd21-4c0a-5dd1-da57c1934d37", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6298785, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=6590a52a-bd21-4c0a-5dd1-da57c1934d37'
+	sid: '6590a52a-bd21-4c0a-5dd1-da57c1934d37'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.629879'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=ee056a65-0e2d-a30a-6f4e-282846ec9e24", "sid": "ee056a65-0e2d-a30a-6f4e-282846ec9e24", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6338406, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=ee056a65-0e2d-a30a-6f4e-282846ec9e24'
+	sid: 'ee056a65-0e2d-a30a-6f4e-282846ec9e24'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.633841'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=47ef4692-9b5d-2a75-cb61-59ae6c0da3ae", "sid": "47ef4692-9b5d-2a75-cb61-59ae6c0da3ae", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6471958, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=47ef4692-9b5d-2a75-cb61-59ae6c0da3ae'
+	sid: '47ef4692-9b5d-2a75-cb61-59ae6c0da3ae'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.647196'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=12bddbae-9372-271d-2c00-47ad2a3d307a", "sid": "12bddbae-9372-271d-2c00-47ad2a3d307a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.661738, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=12bddbae-9372-271d-2c00-47ad2a3d307a'
+	sid: '12bddbae-9372-271d-2c00-47ad2a3d307a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.661738'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=2c57ccd5-75b1-7d5d-12cf-71410e560ee5", "sid": "2c57ccd5-75b1-7d5d-12cf-71410e560ee5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6723092, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=2c57ccd5-75b1-7d5d-12cf-71410e560ee5'
+	sid: '2c57ccd5-75b1-7d5d-12cf-71410e560ee5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.672309'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=a4b29dc1-f8e3-7b7d-9f8b-f2c7c7708b3a", "sid": "a4b29dc1-f8e3-7b7d-9f8b-f2c7c7708b3a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.6880674, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=a4b29dc1-f8e3-7b7d-9f8b-f2c7c7708b3a'
+	sid: 'a4b29dc1-f8e3-7b7d-9f8b-f2c7c7708b3a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.688067'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=88415b32-ab17-8899-f6b4-fc9a20743778", "sid": "88415b32-ab17-8899-f6b4-fc9a20743778", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.70252, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=88415b32-ab17-8899-f6b4-fc9a20743778'
+	sid: '88415b32-ab17-8899-f6b4-fc9a20743778'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.702520'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=543839c4-6b5d-282f-b177-94b680fb4511", "sid": "543839c4-6b5d-282f-b177-94b680fb4511", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7074993, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=543839c4-6b5d-282f-b177-94b680fb4511'
+	sid: '543839c4-6b5d-282f-b177-94b680fb4511'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.707499'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=4575fade-0085-5637-dab7-dcb13fbc9bb3", "sid": "4575fade-0085-5637-dab7-dcb13fbc9bb3", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7184005, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=4575fade-0085-5637-dab7-dcb13fbc9bb3'
+	sid: '4575fade-0085-5637-dab7-dcb13fbc9bb3'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.718400'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=e2b3777f-c9d4-3821-2a79-4487ac61c1b5", "sid": "e2b3777f-c9d4-3821-2a79-4487ac61c1b5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.72666, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=e2b3777f-c9d4-3821-2a79-4487ac61c1b5'
+	sid: 'e2b3777f-c9d4-3821-2a79-4487ac61c1b5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.726660'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=6cb07428-2f0d-f2fe-aa22-25693a98d8c0", "sid": "6cb07428-2f0d-f2fe-aa22-25693a98d8c0", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7395182, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=6cb07428-2f0d-f2fe-aa22-25693a98d8c0'
+	sid: '6cb07428-2f0d-f2fe-aa22-25693a98d8c0'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.739518'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=f9618acd-d938-f7fa-2b96-916d6b499972", "sid": "f9618acd-d938-f7fa-2b96-916d6b499972", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7436347, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=f9618acd-d938-f7fa-2b96-916d6b499972'
+	sid: 'f9618acd-d938-f7fa-2b96-916d6b499972'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.743635'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=1ae25106-7420-c232-0ae8-33df02641908", "sid": "1ae25106-7420-c232-0ae8-33df02641908", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7515018, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=1ae25106-7420-c232-0ae8-33df02641908'
+	sid: '1ae25106-7420-c232-0ae8-33df02641908'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.751502'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=4f0a8f80-7a79-ae21-2ec0-8cb32197e9e4", "sid": "4f0a8f80-7a79-ae21-2ec0-8cb32197e9e4", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7630072, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=4f0a8f80-7a79-ae21-2ec0-8cb32197e9e4'
+	sid: '4f0a8f80-7a79-ae21-2ec0-8cb32197e9e4'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.763007'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=1429507d-516b-2f60-d0da-b495e56bed9f", "sid": "1429507d-516b-2f60-d0da-b495e56bed9f", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7732284, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=1429507d-516b-2f60-d0da-b495e56bed9f'
+	sid: '1429507d-516b-2f60-d0da-b495e56bed9f'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.773228'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=7281fab1-aec4-e164-8ed3-4bfd8e60ea8d", "sid": "7281fab1-aec4-e164-8ed3-4bfd8e60ea8d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7782588, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=7281fab1-aec4-e164-8ed3-4bfd8e60ea8d'
+	sid: '7281fab1-aec4-e164-8ed3-4bfd8e60ea8d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.778259'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=ff924c2f-38e7-f200-b2be-c22f07f9dbde", "sid": "ff924c2f-38e7-f200-b2be-c22f07f9dbde", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.7908354, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=ff924c2f-38e7-f200-b2be-c22f07f9dbde'
+	sid: 'ff924c2f-38e7-f200-b2be-c22f07f9dbde'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.790835'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=f76fcad7-db0b-c429-af04-d8352f8055eb", "sid": "f76fcad7-db0b-c429-af04-d8352f8055eb", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.807269, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=f76fcad7-db0b-c429-af04-d8352f8055eb'
+	sid: 'f76fcad7-db0b-c429-af04-d8352f8055eb'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.807269'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=658ea6e6-aed2-2236-eed3-e912d4978a4e", "sid": "658ea6e6-aed2-2236-eed3-e912d4978a4e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.8163414, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=658ea6e6-aed2-2236-eed3-e912d4978a4e'
+	sid: '658ea6e6-aed2-2236-eed3-e912d4978a4e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.816341'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=6e380889-fb57-525e-524a-b5638480075e", "sid": "6e380889-fb57-525e-524a-b5638480075e", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.8278503, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=6e380889-fb57-525e-524a-b5638480075e'
+	sid: '6e380889-fb57-525e-524a-b5638480075e'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.827850'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d8d69aa6-f709-4161-608d-7e2926e2e6cf", "sid": "d8d69aa6-f709-4161-608d-7e2926e2e6cf", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.8392806, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d8d69aa6-f709-4161-608d-7e2926e2e6cf'
+	sid: 'd8d69aa6-f709-4161-608d-7e2926e2e6cf'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.839281'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '35'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=5e4e2580-fefd-6ad7-abec-b6f29f042178", "sid": "5e4e2580-fefd-6ad7-abec-b6f29f042178", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.8438532, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=5e4e2580-fefd-6ad7-abec-b6f29f042178'
+	sid: '5e4e2580-fefd-6ad7-abec-b6f29f042178'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.843853'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '36'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=8be54c56-5b49-810e-0595-9ca66dacdae1", "sid": "8be54c56-5b49-810e-0595-9ca66dacdae1", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.8586252, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=8be54c56-5b49-810e-0595-9ca66dacdae1'
+	sid: '8be54c56-5b49-810e-0595-9ca66dacdae1'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.858625'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '12'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=0644b685-4ab3-cdb8-128c-e9f3ebfc46c8", "sid": "0644b685-4ab3-cdb8-128c-e9f3ebfc46c8", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.8651538, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=0644b685-4ab3-cdb8-128c-e9f3ebfc46c8'
+	sid: '0644b685-4ab3-cdb8-128c-e9f3ebfc46c8'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.865154'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '37'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=ae2ab002-4259-71d2-d205-d5c759f42969", "sid": "ae2ab002-4259-71d2-d205-d5c759f42969", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.8693683, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=ae2ab002-4259-71d2-d205-d5c759f42969'
+	sid: 'ae2ab002-4259-71d2-d205-d5c759f42969'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.869368'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '38'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=3cafdeef-9fdd-f087-f380-f17f3525acc5", "sid": "3cafdeef-9fdd-f087-f380-f17f3525acc5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.877383, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=3cafdeef-9fdd-f087-f380-f17f3525acc5'
+	sid: '3cafdeef-9fdd-f087-f380-f17f3525acc5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.877383'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=1367be01-8a70-4b57-02e6-7ad79bd95462", "sid": "1367be01-8a70-4b57-02e6-7ad79bd95462", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.890792, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=1367be01-8a70-4b57-02e6-7ad79bd95462'
+	sid: '1367be01-8a70-4b57-02e6-7ad79bd95462'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.890792'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=99c79955-bc52-e550-84de-323f90a73d1f", "sid": "99c79955-bc52-e550-84de-323f90a73d1f", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.9074495, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=99c79955-bc52-e550-84de-323f90a73d1f'
+	sid: '99c79955-bc52-e550-84de-323f90a73d1f'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.907449'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '39'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=ff0941c5-79db-3ed7-b9f1-310d9095d56a", "sid": "ff0941c5-79db-3ed7-b9f1-310d9095d56a", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.9148552, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=ff0941c5-79db-3ed7-b9f1-310d9095d56a'
+	sid: 'ff0941c5-79db-3ed7-b9f1-310d9095d56a'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.914855'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '13'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d9104502-1864-4228-2046-549764f48668", "sid": "d9104502-1864-4228-2046-549764f48668", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.9187515, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d9104502-1864-4228-2046-549764f48668'
+	sid: 'd9104502-1864-4228-2046-549764f48668'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.918751'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '40'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=3d0c13b8-7dcd-70a2-469e-97337abc7f41", "sid": "3d0c13b8-7dcd-70a2-469e-97337abc7f41", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.9289758, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=3d0c13b8-7dcd-70a2-469e-97337abc7f41'
+	sid: '3d0c13b8-7dcd-70a2-469e-97337abc7f41'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.928976'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '41'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=102a7e7e-4a4b-6fdd-e403-af215053ab6d", "sid": "102a7e7e-4a4b-6fdd-e403-af215053ab6d", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797351.9422703, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=102a7e7e-4a4b-6fdd-e403-af215053ab6d'
+	sid: '102a7e7e-4a4b-6fdd-e403-af215053ab6d'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797351.942270'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '42'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=e2540a0d-f2b0-4b52-b8e6-c2a46ef16b9d", "sid": "e2540a0d-f2b0-4b52-b8e6-c2a46ef16b9d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.9512906, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=e2540a0d-f2b0-4b52-b8e6-c2a46ef16b9d'
+	sid: 'e2540a0d-f2b0-4b52-b8e6-c2a46ef16b9d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.951291'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=d6223d87-4c78-50f0-735b-26c39099eb6d", "sid": "d6223d87-4c78-50f0-735b-26c39099eb6d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.957422, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=d6223d87-4c78-50f0-735b-26c39099eb6d'
+	sid: 'd6223d87-4c78-50f0-735b-26c39099eb6d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.957422'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=21b1a258-95b2-1697-740e-6699e7caeb0d", "sid": "21b1a258-95b2-1697-740e-6699e7caeb0d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.9725392, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=21b1a258-95b2-1697-740e-6699e7caeb0d'
+	sid: '21b1a258-95b2-1697-740e-6699e7caeb0d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.972539'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/../../etc/passwd", "raw_path": "/%2e%2e/%2e%2e/etc/passwd?sid=c51882df-ae53-eab2-f61f-8b07837c99fb", "sid": "c51882df-ae53-eab2-f61f-8b07837c99fb", "src_ip": "172.22.0.3", "status": 400, "ts": 1786797351.9848847, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/../../etc/passwd'
+	raw_path: '/%2e%2e/%2e%2e/etc/passwd?sid=c51882df-ae53-eab2-f61f-8b07837c99fb'
+	sid: 'c51882df-ae53-eab2-f61f-8b07837c99fb'
+	src_ip: '172.22.0.3'
+	status: '400'
+	ts: '1786797351.984885'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100002'
+	level: '10'
+	description: 'PROJECTA path traversal'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '7'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=9c933a2d-f351-3691-6ac1-1438457f9739", "sid": "9c933a2d-f351-3691-6ac1-1438457f9739", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797351.991213, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=9c933a2d-f351-3691-6ac1-1438457f9739'
+	sid: '9c933a2d-f351-3691-6ac1-1438457f9739'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797351.991213'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=f5e2ed95-f63a-44f7-4f49-a884d524e545", "sid": "f5e2ed95-f63a-44f7-4f49-a884d524e545", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.004812, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=f5e2ed95-f63a-44f7-4f49-a884d524e545'
+	sid: 'f5e2ed95-f63a-44f7-4f49-a884d524e545'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.004812'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=9c1e6dfe-0359-7985-3569-1a8f44c35d05", "sid": "9c1e6dfe-0359-7985-3569-1a8f44c35d05", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.0206296, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=9c1e6dfe-0359-7985-3569-1a8f44c35d05'
+	sid: '9c1e6dfe-0359-7985-3569-1a8f44c35d05'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.020630'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=51a51f14-5ac0-8682-8f7e-a00a0773cfe5", "sid": "51a51f14-5ac0-8682-8f7e-a00a0773cfe5", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.033955, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=51a51f14-5ac0-8682-8f7e-a00a0773cfe5'
+	sid: '51a51f14-5ac0-8682-8f7e-a00a0773cfe5'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.033955'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=63eee378-7670-eafa-c961-e5e441f6e0dc", "sid": "63eee378-7670-eafa-c961-e5e441f6e0dc", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.0380106, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=63eee378-7670-eafa-c961-e5e441f6e0dc'
+	sid: '63eee378-7670-eafa-c961-e5e441f6e0dc'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.038011'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=c1eb4d82-a682-2ed1-c90c-63301330bffa", "sid": "c1eb4d82-a682-2ed1-c90c-63301330bffa", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.051774, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=c1eb4d82-a682-2ed1-c90c-63301330bffa'
+	sid: 'c1eb4d82-a682-2ed1-c90c-63301330bffa'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.051774'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '14'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d6326315-af1c-3752-3445-0d2979db6eb6", "sid": "d6326315-af1c-3752-3445-0d2979db6eb6", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.0600061, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d6326315-af1c-3752-3445-0d2979db6eb6'
+	sid: 'd6326315-af1c-3752-3445-0d2979db6eb6'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.060006'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '43'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=780c093a-29f1-3b48-d9c4-8fb0b954a784", "sid": "780c093a-29f1-3b48-d9c4-8fb0b954a784", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.074671, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=780c093a-29f1-3b48-d9c4-8fb0b954a784'
+	sid: '780c093a-29f1-3b48-d9c4-8fb0b954a784'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.074671'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '44'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=9d3550ed-9417-931e-976f-653aa1a8abba", "sid": "9d3550ed-9417-931e-976f-653aa1a8abba", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.088542, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=9d3550ed-9417-931e-976f-653aa1a8abba'
+	sid: '9d3550ed-9417-931e-976f-653aa1a8abba'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.088542'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '45'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=6fb0dba7-d5a8-ddf3-4d2f-86fc1a36cd96", "sid": "6fb0dba7-d5a8-ddf3-4d2f-86fc1a36cd96", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.0970953, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=6fb0dba7-d5a8-ddf3-4d2f-86fc1a36cd96'
+	sid: '6fb0dba7-d5a8-ddf3-4d2f-86fc1a36cd96'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.097095'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '15'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d1ec47ee-9612-4307-18df-477e1714f9da", "sid": "d1ec47ee-9612-4307-18df-477e1714f9da", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.111747, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d1ec47ee-9612-4307-18df-477e1714f9da'
+	sid: 'd1ec47ee-9612-4307-18df-477e1714f9da'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.111747'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '46'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=2be43ffb-a7db-ca47-fa0f-32016e7d2101", "sid": "2be43ffb-a7db-ca47-fa0f-32016e7d2101", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.1282656, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=2be43ffb-a7db-ca47-fa0f-32016e7d2101'
+	sid: '2be43ffb-a7db-ca47-fa0f-32016e7d2101'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.128266'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '47'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=2f455c8c-fb80-f756-3a6f-271096626be6", "sid": "2f455c8c-fb80-f756-3a6f-271096626be6", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.131975, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=2f455c8c-fb80-f756-3a6f-271096626be6'
+	sid: '2f455c8c-fb80-f756-3a6f-271096626be6'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.131975'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '48'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=fca38f04-2a4b-66e7-f912-92d1e1989578", "sid": "fca38f04-2a4b-66e7-f912-92d1e1989578", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.1454487, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=fca38f04-2a4b-66e7-f912-92d1e1989578'
+	sid: 'fca38f04-2a4b-66e7-f912-92d1e1989578'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.145449'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '16'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=f2711822-2fd6-8540-f02c-186a67d4e7f3", "sid": "f2711822-2fd6-8540-f02c-186a67d4e7f3", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.1585808, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=f2711822-2fd6-8540-f02c-186a67d4e7f3'
+	sid: 'f2711822-2fd6-8540-f02c-186a67d4e7f3'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.158581'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '49'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=91b6a3c0-fb3b-6ddd-983f-9868f1079ac6", "sid": "91b6a3c0-fb3b-6ddd-983f-9868f1079ac6", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.175295, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=91b6a3c0-fb3b-6ddd-983f-9868f1079ac6'
+	sid: '91b6a3c0-fb3b-6ddd-983f-9868f1079ac6'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.175295'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=665af64b-ba14-af44-6481-507ea0111da4", "sid": "665af64b-ba14-af44-6481-507ea0111da4", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.1837773, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=665af64b-ba14-af44-6481-507ea0111da4'
+	sid: '665af64b-ba14-af44-6481-507ea0111da4'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.183777'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '50'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=5455e490-0237-7aea-b333-f9338cbd1bac", "sid": "5455e490-0237-7aea-b333-f9338cbd1bac", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.1986256, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=5455e490-0237-7aea-b333-f9338cbd1bac'
+	sid: '5455e490-0237-7aea-b333-f9338cbd1bac'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.198626'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '51'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d1d85acb-771d-515b-66bb-74c810fd1440", "sid": "d1d85acb-771d-515b-66bb-74c810fd1440", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.2024941, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d1d85acb-771d-515b-66bb-74c810fd1440'
+	sid: 'd1d85acb-771d-515b-66bb-74c810fd1440'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.202494'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '17'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=833b9ab7-4448-8843-e209-799766230fec", "sid": "833b9ab7-4448-8843-e209-799766230fec", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.2066238, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=833b9ab7-4448-8843-e209-799766230fec'
+	sid: '833b9ab7-4448-8843-e209-799766230fec'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.206624'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '52'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=ab995aef-fe56-3c97-e4b2-d58b5b7c0254", "sid": "ab995aef-fe56-3c97-e4b2-d58b5b7c0254", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.2172952, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=ab995aef-fe56-3c97-e4b2-d58b5b7c0254'
+	sid: 'ab995aef-fe56-3c97-e4b2-d58b5b7c0254'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.217295'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '53'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=451d3c88-97b1-d653-da84-0f0fb6b04342", "sid": "451d3c88-97b1-d653-da84-0f0fb6b04342", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.2298212, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=451d3c88-97b1-d653-da84-0f0fb6b04342'
+	sid: '451d3c88-97b1-d653-da84-0f0fb6b04342'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.229821'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=065e8b51-7613-eadc-b952-c15ee5a7f6b7", "sid": "065e8b51-7613-eadc-b952-c15ee5a7f6b7", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797352.2388754, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=065e8b51-7613-eadc-b952-c15ee5a7f6b7'
+	sid: '065e8b51-7613-eadc-b952-c15ee5a7f6b7'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797352.238875'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '6'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=e6a9b164-7c5c-c026-a045-9a7a97d886ec", "sid": "e6a9b164-7c5c-c026-a045-9a7a97d886ec", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.2428198, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=e6a9b164-7c5c-c026-a045-9a7a97d886ec'
+	sid: 'e6a9b164-7c5c-c026-a045-9a7a97d886ec'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.242820'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=06cf2b67-003b-9b5f-9d67-9e732933d858", "sid": "06cf2b67-003b-9b5f-9d67-9e732933d858", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.25008, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=06cf2b67-003b-9b5f-9d67-9e732933d858'
+	sid: '06cf2b67-003b-9b5f-9d67-9e732933d858'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.250080'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=66bf5daf-720d-bd8c-6b77-b46383abfab3", "sid": "66bf5daf-720d-bd8c-6b77-b46383abfab3", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.2560976, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=66bf5daf-720d-bd8c-6b77-b46383abfab3'
+	sid: '66bf5daf-720d-bd8c-6b77-b46383abfab3'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.256098'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=93af902f-5773-1927-fccf-a32d0dd016bd", "sid": "93af902f-5773-1927-fccf-a32d0dd016bd", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.2602236, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=93af902f-5773-1927-fccf-a32d0dd016bd'
+	sid: '93af902f-5773-1927-fccf-a32d0dd016bd'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.260224'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=4cd6fb3e-627c-0b34-0981-da36e8ad54ba", "sid": "4cd6fb3e-627c-0b34-0981-da36e8ad54ba", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.271272, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=4cd6fb3e-627c-0b34-0981-da36e8ad54ba'
+	sid: '4cd6fb3e-627c-0b34-0981-da36e8ad54ba'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.271272'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=f9b8808f-6058-c555-b8be-a005108e2220", "sid": "f9b8808f-6058-c555-b8be-a005108e2220", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797352.2876132, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=f9b8808f-6058-c555-b8be-a005108e2220'
+	sid: 'f9b8808f-6058-c555-b8be-a005108e2220'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797352.287613'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '7'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/admin/secret", "raw_path": "/admin/secret?sid=ecc299b2-ef01-7ea9-6761-280ac925f63f", "sid": "ecc299b2-ef01-7ea9-6761-280ac925f63f", "src_ip": "172.22.0.3", "status": 403, "ts": 1786797352.2984438, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/admin/secret'
+	raw_path: '/admin/secret?sid=ecc299b2-ef01-7ea9-6761-280ac925f63f'
+	sid: 'ecc299b2-ef01-7ea9-6761-280ac925f63f'
+	src_ip: '172.22.0.3'
+	status: '403'
+	ts: '1786797352.298444'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100001'
+	level: '10'
+	description: 'PROJECTA admin sensitive access'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '8'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/public", "raw_path": "/public?sid=8dd6ce55-5d3c-69a4-dda8-9190f7e590fb", "sid": "8dd6ce55-5d3c-69a4-dda8-9190f7e590fb", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3137908, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/public'
+	raw_path: '/public?sid=8dd6ce55-5d3c-69a4-dda8-9190f7e590fb'
+	sid: '8dd6ce55-5d3c-69a4-dda8-9190f7e590fb'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.313791'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=5c466d52-8d06-7c4b-73f4-92e49dcfab2a", "sid": "5c466d52-8d06-7c4b-73f4-92e49dcfab2a", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3260434, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=5c466d52-8d06-7c4b-73f4-92e49dcfab2a'
+	sid: '5c466d52-8d06-7c4b-73f4-92e49dcfab2a'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.326043'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=d12e6d59-9709-5ff3-1e0f-c4c6007b02bb", "sid": "d12e6d59-9709-5ff3-1e0f-c4c6007b02bb", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3421254, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=d12e6d59-9709-5ff3-1e0f-c4c6007b02bb'
+	sid: 'd12e6d59-9709-5ff3-1e0f-c4c6007b02bb'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.342125'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=741ee41c-0366-f51b-3059-3f088b7f44ce", "sid": "741ee41c-0366-f51b-3059-3f088b7f44ce", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3510437, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=741ee41c-0366-f51b-3059-3f088b7f44ce'
+	sid: '741ee41c-0366-f51b-3059-3f088b7f44ce'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.351044'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=4a1a7146-e9da-c622-5a23-3a7df9a79fa9", "sid": "4a1a7146-e9da-c622-5a23-3a7df9a79fa9", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3664293, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=4a1a7146-e9da-c622-5a23-3a7df9a79fa9'
+	sid: '4a1a7146-e9da-c622-5a23-3a7df9a79fa9'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.366429'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=4359dbae-0996-f06d-f2ac-ec394c625441", "sid": "4359dbae-0996-f06d-f2ac-ec394c625441", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.379175, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=4359dbae-0996-f06d-f2ac-ec394c625441'
+	sid: '4359dbae-0996-f06d-f2ac-ec394c625441'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.379175'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=5893b645-6159-054d-5c38-be7c008efc63", "sid": "5893b645-6159-054d-5c38-be7c008efc63", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3895092, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=5893b645-6159-054d-5c38-be7c008efc63'
+	sid: '5893b645-6159-054d-5c38-be7c008efc63'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.389509'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=1&sid=f7383c02-36f1-47b3-ef1e-fa79fa469e03", "sid": "f7383c02-36f1-47b3-ef1e-fa79fa469e03", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.3997002, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=1&sid=f7383c02-36f1-47b3-ef1e-fa79fa469e03'
+	sid: 'f7383c02-36f1-47b3-ef1e-fa79fa469e03'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.399700'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=9b93c58d-e07e-cb8c-9700-060cb20809e6", "sid": "9b93c58d-e07e-cb8c-9700-060cb20809e6", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.4040492, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=9b93c58d-e07e-cb8c-9700-060cb20809e6'
+	sid: '9b93c58d-e07e-cb8c-9700-060cb20809e6'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.404049'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=57cf4272-f5b7-ed88-be59-0cf1581c0f35", "sid": "57cf4272-f5b7-ed88-be59-0cf1581c0f35", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.4159594, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=57cf4272-f5b7-ed88-be59-0cf1581c0f35'
+	sid: '57cf4272-f5b7-ed88-be59-0cf1581c0f35'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.415959'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=b9f0a397-4da5-fd9e-d1dc-21eba01247f6", "sid": "b9f0a397-4da5-fd9e-d1dc-21eba01247f6", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4246297, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=b9f0a397-4da5-fd9e-d1dc-21eba01247f6'
+	sid: 'b9f0a397-4da5-fd9e-d1dc-21eba01247f6'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.424630'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '54'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=7bf60295-3bdb-7ecd-2516-b9698a0c3f62", "sid": "7bf60295-3bdb-7ecd-2516-b9698a0c3f62", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4322379, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=7bf60295-3bdb-7ecd-2516-b9698a0c3f62'
+	sid: '7bf60295-3bdb-7ecd-2516-b9698a0c3f62'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.432238'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '18'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=c133a51a-0a1d-a7f9-4004-81240aef887d", "sid": "c133a51a-0a1d-a7f9-4004-81240aef887d", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4413528, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=c133a51a-0a1d-a7f9-4004-81240aef887d'
+	sid: 'c133a51a-0a1d-a7f9-4004-81240aef887d'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.441353'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '55'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=49a40579-ae08-c1f0-df42-969deebd7c40", "sid": "49a40579-ae08-c1f0-df42-969deebd7c40", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4478877, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=49a40579-ae08-c1f0-df42-969deebd7c40'
+	sid: '49a40579-ae08-c1f0-df42-969deebd7c40'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.447888'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '56'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=f477a1fd-c97b-2700-0a4b-40160f94a696", "sid": "f477a1fd-c97b-2700-0a4b-40160f94a696", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4646168, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=f477a1fd-c97b-2700-0a4b-40160f94a696'
+	sid: 'f477a1fd-c97b-2700-0a4b-40160f94a696'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.464617'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '57'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/status", "raw_path": "/status?sid=f87656e5-2866-5429-309e-93896f13580d", "sid": "f87656e5-2866-5429-309e-93896f13580d", "src_ip": "172.22.0.3", "status": 200, "ts": 1786797352.4704776, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/status'
+	raw_path: '/status?sid=f87656e5-2866-5429-309e-93896f13580d'
+	sid: 'f87656e5-2866-5429-309e-93896f13580d'
+	src_ip: '172.22.0.3'
+	status: '200'
+	ts: '1786797352.470478'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=d7560c5f-10bc-838a-4545-97ad7d4eb467", "sid": "d7560c5f-10bc-838a-4545-97ad7d4eb467", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4755893, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=d7560c5f-10bc-838a-4545-97ad7d4eb467'
+	sid: 'd7560c5f-10bc-838a-4545-97ad7d4eb467'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.475589'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100014'
+	level: '10'
+	description: 'PROJECTA brute force threshold'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '19'
+	frequency: '4'
+	mail: 'False'
+**Alert to be generated.
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=34452bc2-1da8-20d9-d2cf-256a62ef93b2", "sid": "34452bc2-1da8-20d9-d2cf-256a62ef93b2", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.4893417, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=34452bc2-1da8-20d9-d2cf-256a62ef93b2'
+	sid: '34452bc2-1da8-20d9-d2cf-256a62ef93b2'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.489342'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '58'
+	mail: 'False'
+
+**Phase 1: Completed pre-decoding.
+	full event: '{"method": "GET", "path": "/login", "raw_path": "/login?ok=0&sid=f554121b-dacc-9577-f0b5-05ae5d36b481", "sid": "f554121b-dacc-9577-f0b5-05ae5d36b481", "src_ip": "172.22.0.3", "status": 401, "ts": 1786797352.5034287, "user_agent": "ProjectA-Lab/1.0"}
+'
+
+**Phase 2: Completed decoding.
+	name: 'json'
+	method: 'GET'
+	path: '/login'
+	raw_path: '/login?ok=0&sid=f554121b-dacc-9577-f0b5-05ae5d36b481'
+	sid: 'f554121b-dacc-9577-f0b5-05ae5d36b481'
+	src_ip: '172.22.0.3'
+	status: '401'
+	ts: '1786797352.503429'
+	user_agent: 'ProjectA-Lab/1.0'
+
+**Phase 3: Completed filtering (rules).
+	id: '100010'
+	level: '1'
+	description: 'PROJECTA failed authentication base event'
+	groups: '['projecta', 'localbench']'
+	firedtimes: '59'
+	mail: 'False'

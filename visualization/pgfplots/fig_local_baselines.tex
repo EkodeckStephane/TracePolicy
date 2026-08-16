@@ -1,0 +1,25 @@
+
+\begin{center}
+\begin{minipage}{\columnwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+width=\columnwidth,height=0.78\columnwidth,
+ybar,bar width=7pt,ymin=0,ymax=1.05,
+ylabel={F1 score},
+symbolic x coords={TracePolicy,Suricata,Wazuh},
+xtick=data,
+xticklabel style={rotate=18,anchor=east,font=\scriptsize},
+legend style={font=\scriptsize,at={(0.5,1.02)},anchor=south,legend columns=2},
+grid=major
+]
+\addplot table[x=system,y=event_f1,col sep=comma] {figures/data/local_baselines.csv};
+\addlegendentry{Event}
+\addplot table[x=system,y=episode_f1,col sep=comma] {figures/data/local_baselines.csv};
+\addlegendentry{Episode}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Local Docker bench: event-level and episode-level F1 over 30 seeded workloads.}
+\label{fig:localbaseline}
+\end{minipage}
+\end{center}

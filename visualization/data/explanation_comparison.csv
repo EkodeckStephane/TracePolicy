@@ -1,0 +1,4 @@
+method,mean_us,core_jaccard,evidence
+Intrinsic,415.890496875,1.0,Theorem-backed
+SHAP,6249.267634375,1.0,Empirical
+LIME,109213.339540625,1.0,Empirical

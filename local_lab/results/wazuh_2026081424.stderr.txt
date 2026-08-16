@@ -1,0 +1,602 @@
+Starting wazuh-logtest v4.14.7
+Type one log per line
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd
+
+** Wazuh-logtest error when connecting with wazuh-analysisd

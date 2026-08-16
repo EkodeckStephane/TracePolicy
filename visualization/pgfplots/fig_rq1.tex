@@ -1,0 +1,32 @@
+
+\begin{center}
+\begin{minipage}{\columnwidth}
+\centering
+\resizebox{0.97\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{axis}[
+width=\columnwidth,height=0.78\columnwidth,
+xlabel={Trace dropout fraction},ylabel={Mean F1},
+ymin=0,ymax=0.9,grid=major,
+legend style={font=\tiny,at={(0.5,1.02)},anchor=south,legend columns=2}
+]
+\addplot table[x=trace_dropout_fraction,y=f1,col sep=comma,
+restrict expr to domain={\thisrow{policy_deletion_fraction}}{0:0}]
+{figures/data/rq1_degradation.csv}; \addlegendentry{Policy deletion 0}
+\addplot table[x=trace_dropout_fraction,y=f1,col sep=comma,
+restrict expr to domain={\thisrow{policy_deletion_fraction}}{0.25:0.25}]
+{figures/data/rq1_degradation.csv}; \addlegendentry{0.25}
+\addplot table[x=trace_dropout_fraction,y=f1,col sep=comma,
+restrict expr to domain={\thisrow{policy_deletion_fraction}}{0.5:0.5}]
+{figures/data/rq1_degradation.csv}; \addlegendentry{0.50}
+\addplot table[x=trace_dropout_fraction,y=f1,col sep=comma,
+restrict expr to domain={\thisrow{policy_deletion_fraction}}{0.75:0.75}]
+{figures/data/rq1_degradation.csv}; \addlegendentry{0.75}
+\end{axis}
+\end{tikzpicture}%
+}
+\captionof{figure}{Sensitivity of detection to policy coverage and trace completeness. Policy coverage and trace completeness jointly shape
+detection F1, quantifying the specification-quality dependence of declarative detection.}
+\label{fig:qualitysensitivity}
+\end{minipage}
+\end{center}

@@ -1,0 +1,8 @@
+{
+  "official_pdf_uuid_count": 0,
+  "threatrace_mapping_uuid_count": 12858,
+  "overlap_count": 0,
+  "pdf_only_count": 0,
+  "mapping_only_count": 12858,
+  "note": "Counts are provenance diagnostics only. The derived ThreaTrace mapping may expand/transform the narrative official ground truth; no equality assumption is made."
+}

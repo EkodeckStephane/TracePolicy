@@ -1,0 +1,17 @@
+{
+  "truth_mapping": "ThreaTrace-derived node/entity UUID mapping",
+  "mapping_uuid_count": 12858,
+  "mapping_present_in_test_count": 12857,
+  "evaluation_unit": "CDM entity node (subject/predicateObject/predicateObject2)",
+  "event_uuid_used_as_node": false,
+  "event_level_existing_label": "malicious_entity_link proxy",
+  "official_DARPA_report_role": "narrative scenario provenance; not parsed into structured event UUID labels",
+  "test_files": [
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\datasets\\raw\\darpa_e3\\cadets\\ta1-cadets-e3-official-2.json.tar.gz"
+  ],
+  "streamed_from_archives": true,
+  "entity_db": {
+    "rebuilt": true,
+    "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\datasets\\processed\\darpa_cadets_entities.sqlite"
+  }
+}
