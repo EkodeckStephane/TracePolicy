@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Large/downloaded datasets and generated stores
+datasets/raw/
+datasets/processed/
+*.sqlite
+*.tar.gz
+
+# Local execution products that can be regenerated
+results/tmp/
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Retained PCAPs are distributed as one compressed archive
+local_lab/results/pcap_*.pcap
+
+# Internal audit utilities are not published
+scripts/audit_*.py
