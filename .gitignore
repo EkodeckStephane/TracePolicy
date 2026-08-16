@@ -23,5 +23,10 @@ Thumbs.db
 # Retained PCAPs are stored losslessly in pcaps_30runs.tar.xz
 local_lab/results/pcap_*.pcap
 
-# Internal audit utilities are not published
-scripts/audit_*.py
+# Internal manuscript-audit documents are not published
+*Manuscript_Audit*
+*manuscript_audit*
+*review_report*
+
+# Runtime process identifiers
+*.pid
