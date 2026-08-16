@@ -7,7 +7,7 @@ CFG=json.load(open(ROOT/'config/experiment.json'))
 def capture(cmd):
  p=subprocess.run(cmd,text=True,capture_output=True);return {'cmd':cmd,'returncode':p.returncode,'stdout':p.stdout,'stderr':p.stderr}
 def main():
- # Verify the current publication protocol before contacting datasets or running baselines.
+ # Verify the frozen scientific protocol before contacting datasets or running baselines.
  manifest=ROOT/'FROZEN_PUBLICATION_SHA256.txt'
  for line in manifest.read_text().splitlines():
   expected,rel=line.split(None,1); fp=ROOT/rel.strip(); import hashlib
