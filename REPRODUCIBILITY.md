@@ -7,11 +7,15 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pip install -r requirements-lime.txt
-python scripts/collect_datasets.py
+python scripts/verify_frozen_protocol_v2.py
+python scripts/corrective_gate_v2.py
 pytest -q
+python scripts/collect_datasets.py
 bash run_all.sh
 python scripts/compute_phase5_statistics_v2.py
 ```
+
+`FROZEN_PUBLICATION_SHA256.txt` is the executable/configuration freeze for the current publication state. `provenance/FROZEN_PROTOCOL_SHA256_ORIGINAL.txt` preserves the earlier 40-file protocol manifest as a historical record; it is not rewritten to make the later disclosure/scaling revision appear pre-specified. See `provenance/README.md`.
 
 For DARPA CADETS, obtain the official E3 archives using the source and target filenames in `datasets/DATASETS.md`. Keep the large archives outside Git history.
 
@@ -52,4 +56,3 @@ python experiments/run_rq2_local_lab_explanations.py
 ```
 
 The original 32-case LIME experiment remains available through `experiments/run_rq2_lime.py` and is kept distinct from these scope-validation additions.
-
