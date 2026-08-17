@@ -398,11 +398,11 @@ Citation metadata are provided in `CITATION.cff`. Until the journal article rece
 
 ## 15. Authors
 
-- Jacques Narcisse Bayem — University of Yaounde I
+- Jacques Narcisse Bayem — University of Yaounde I (corresponding author)
 - Nicolas Nkondock Mi Bahanag — University of Yaounde I
 - Stéphane Gaël R. Ekodeck — University of Yaounde I; UMMISCO, IRD France Nord; Sorbonne Université
-- Serge Alain Ebele — University of Yaounde I; UMMISCO, IRD France Nord; Sorbonne Université
-- Roger Atsa Etoundi — University of Yaounde I (corresponding author)
+- Samson Priso Essawe Ndedi — University of Yaounde I
+- Marcel Fouda Ndjodo — University of Yaounde I
 
 ## 16. License
 
