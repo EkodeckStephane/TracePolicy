@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-12",
+  "ntp_local": {
+    "method": "w32tm /stripchart /computer:time.windows.com /samples:5 /dataonly",
+    "offset_seconds": [0.0391403, -0.0769099, 0.0443218, 0.0388764, 0.0490728],
+    "maximum_absolute_offset_seconds": 0.0769099,
+    "scope": "read-only pre-run sample; not continuous drift monitoring"
+  },
+  "vps_time_sync": {
+    "157.173.116.245": "NTPSynchronized=yes",
+    "194.163.169.17": "NTPSynchronized=yes"
+  },
+  "nodes": {
+    "local": {
+      "role": "source_A",
+      "platform": "Windows 10",
+      "python": "3.11.9"
+    },
+    "157.173.116.245": {
+      "role": "source_B",
+      "platform": "Ubuntu 24.04.3 LTS",
+      "account": "administrator (sudo; non-root)",
+      "vcpus": 6,
+      "ram_gib_total": 11,
+      "ram_gib_available_at_preflight": 7.2,
+      "disk_gib_available": 75
+    },
+    "194.163.169.17": {
+      "role": "controller",
+      "platform": "Ubuntu 24.04.4 LTS",
+      "account": "root",
+      "vcpus": 4,
+      "ram_gib_total": 7.8,
+      "ram_gib_available_at_preflight": 6.4,
+      "disk_gib_available": 82
+    },
+    "ssh.cluster100.hosting.ovh.net": {
+      "role": "excluded",
+      "finding": "authenticated account is shared hosting with no root privileges; not an administrable VPS"
+    }
+  },
+  "transport": {
+    "controller_bind": "127.0.0.1",
+    "public_campaign_port_opened": false,
+    "access": "SSH local forwards from both sources to controller loopback",
+    "existing_services_modified": false,
+    "packages_installed": false
+  },
+  "provider_independence": "Both VPS instances are Contabo; independent hypervisor or zone placement was not verified."
+}

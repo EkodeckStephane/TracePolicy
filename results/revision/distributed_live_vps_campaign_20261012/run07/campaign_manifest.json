@@ -1,0 +1,98 @@
+{
+  "run_id": "COSE-LIVE-DIST-20261012-07",
+  "run_type": "three-instance live distributed integration trial; benign constructed workload",
+  "topology": {
+    "source_A": {
+      "hostname": "DESKTOP-5C8VKSH",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "role": "Windows workstation source"
+    },
+    "source_B": {
+      "hostname": "vmi2990518",
+      "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+      "role": "Ubuntu VPS source"
+    },
+    "controller": {
+      "hostname": "vmi3153741",
+      "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.39",
+      "role": "Ubuntu Contabo VPS coordinator"
+    },
+    "transport": "SSH tunnels to loopback-bound coordinator; no campaign port exposed publicly"
+  },
+  "workload": "one filesystem fixture read, one child Python execution, one TCP connection; deliberately arranged to exercise the declared temporal deny rule",
+  "result": {
+    "status": "complete",
+    "observed": 3,
+    "committed": 3,
+    "pending": 0,
+    "duplicates": 0,
+    "sequence_gaps": {
+      "A": [],
+      "B": []
+    },
+    "protocol_errors": [],
+    "max_arrival_lateness_s": 1.1116316318511963,
+    "lateness_budget_s": 1.5,
+    "decisions": [
+      {
+        "event_id": "COSE-LIVE-DIST-20261012-07:A:1",
+        "trace_id": "COSE-LIVE-DIST-20261012-07",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "COSE-LIVE-DIST-20261012-07:B:1",
+        "trace_id": "COSE-LIVE-DIST-20261012-07",
+        "policy_version": 2,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "COSE-LIVE-DIST-20261012-07:A:2",
+        "trace_id": "COSE-LIVE-DIST-20261012-07",
+        "policy_version": 2,
+        "alert_class": "Violation",
+        "top": [
+          "DENY_READ_EXEC_CONNECT"
+        ]
+      }
+    ]
+  },
+  "verification": {
+    "complete": true,
+    "all_events_committed": true,
+    "source_closure": true,
+    "no_transport_or_sequence_faults": true,
+    "distinct_execution_instances": true,
+    "expected_event_order": true,
+    "all_deliveries_acknowledged": true,
+    "all_records_accepted": true,
+    "lateness_within_budget": true,
+    "canonical_replay_matches_controller": true,
+    "checkpoint_restore_matches_controller": true,
+    "expected_final_policy_violation": true
+  },
+  "implementation": {
+    "file": "experiments/revision_distributed_lab.py",
+    "sha256": "a46923d24b691b11edb0274927781b58e1224b4ba64d393a329e4d2cbd3726bc"
+  },
+  "scope_limits": [
+    "single ordered run; not an attack-efficacy or P1 temporal external-validation campaign",
+    "only explicitly instrumented benign operations were observed",
+    "source identity and event clocks are trusted; clock skew was sampled before but not continuously monitored during the run",
+    "no production IDS sensors, sustained-load test, arbitrary interhost correlation, adversarial-source test, or provider hypervisor/zone verification",
+    "the final violation is the expected result of a deliberately constructed sequence, not an attack label"
+  ],
+  "sha256": {
+    "config.json": "5cb06570d121086dce9ed2526918df89272aa3adca2a9fce00c886947762235f",
+    "source_A.json": "061d8eed8d24c29d9305663abc9774456d97a36fc825ecd847691f412c97c3f9",
+    "source_B.json": "2e2199ddacb3e2700e316f5a8c486a47c8fed06eda7a5e54101a4eb21fe141f1",
+    "controller_result.json": "03fe4e796cb9998d6824ce089027fb4e7bf84d19aeeed0e64a3c7e4e03078d20",
+    "checkpoint.json": "26cd70dad68e9ca9e9e97283e1bc65ebffab8cc71c21bd5e3e038d0f4be86c43"
+  }
+}

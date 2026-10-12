@@ -272,8 +272,11 @@ def collect(args):
         raise RuntimeError('transport infrastructure failure: '+str(delivery_errors))
     # Terminal time fence is a declaration that this source has no more jobs.
     last = max(x['event']['ts'] for x in journal)
+    scheduled_horizon = max((job['offset_s'] for jobs_for_source in config['jobs'].values()
+                            for job in jobs_for_source), default=0.0)
     request(endpoint, dict(kind='watermark', source=args.source,
-               event_time=max(last+.01,config['start_epoch']+1.5), through_seq=len(jobs)))
+               event_time=max(last+.01, config['start_epoch']+scheduled_horizon+10.0),
+               through_seq=len(jobs)))
     request(endpoint, dict(kind='close', source=args.source))
     destination.write_text(json.dumps(dict(identity=source_identity, observations=journal,
                                     deliveries=deliveries), indent=2), encoding='utf-8')

@@ -19,3 +19,4 @@ jobs:
       - run: python -m pytest tests -q
       - run: python scripts/verify_frozen_protocol_v2.py
       - run: python scripts/verify_revision_evidence.py
+      - run: python results/revision/distributed_live_vps_campaign_20261012/run07/verify_campaign.py

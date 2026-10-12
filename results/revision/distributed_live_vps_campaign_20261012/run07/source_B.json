@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "hostname": "vmi2990518",
+    "pid": 2181986,
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "interpreter": "/usr/bin/python3",
+    "source": "B"
+  },
+  "observations": [
+    {
+      "source": "B",
+      "source_seq": 1,
+      "trace_id": "COSE-LIVE-DIST-20261012-07",
+      "policy_version": 2,
+      "event": {
+        "eid": "COSE-LIVE-DIST-20261012-07:B:1",
+        "ts": 1791842847.4393551,
+        "action": "exec",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "child_process_exec",
+            "returncode": 0,
+            "output": "executed-child 2190243",
+            "interpreter": "/usr/bin/python3"
+          },
+          "source_identity": {
+            "hostname": "vmi2990518",
+            "pid": 2181986,
+            "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+            "interpreter": "/usr/bin/python3",
+            "source": "B"
+          },
+          "operation_start": 1791842847.3949795,
+          "operation_end": 1791842847.4393551
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "COSE-LIVE-DIST-20261012-07:B:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    }
+  ]
+}

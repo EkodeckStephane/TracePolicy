@@ -1,0 +1,29 @@
+[
+  {
+    "event_id": "COSE-LIVE-DIST-20261012-07:A:1",
+    "trace_id": "COSE-LIVE-DIST-20261012-07",
+    "policy_version": 1,
+    "alert_class": "NoAlert",
+    "top": [
+      "ALLOW_OBSERVED"
+    ]
+  },
+  {
+    "event_id": "COSE-LIVE-DIST-20261012-07:B:1",
+    "trace_id": "COSE-LIVE-DIST-20261012-07",
+    "policy_version": 2,
+    "alert_class": "NoAlert",
+    "top": [
+      "ALLOW_OBSERVED"
+    ]
+  },
+  {
+    "event_id": "COSE-LIVE-DIST-20261012-07:A:2",
+    "trace_id": "COSE-LIVE-DIST-20261012-07",
+    "policy_version": 2,
+    "alert_class": "Violation",
+    "top": [
+      "DENY_READ_EXEC_CONNECT"
+    ]
+  }
+]

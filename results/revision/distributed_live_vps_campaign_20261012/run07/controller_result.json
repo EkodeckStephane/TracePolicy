@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "status": "complete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 3,
+    "committed": 3,
+    "pending": 0,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [],
+    "decisions": [
+      {
+        "event_id": "COSE-LIVE-DIST-20261012-07:A:1",
+        "trace_id": "COSE-LIVE-DIST-20261012-07",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "COSE-LIVE-DIST-20261012-07:B:1",
+        "trace_id": "COSE-LIVE-DIST-20261012-07",
+        "policy_version": 2,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "COSE-LIVE-DIST-20261012-07:A:2",
+        "trace_id": "COSE-LIVE-DIST-20261012-07",
+        "policy_version": 2,
+        "alert_class": "Violation",
+        "top": [
+          "DENY_READ_EXEC_CONNECT"
+        ]
+      }
+    ]
+  },
+  "arrivals": [
+    {
+      "event_id": "COSE-LIVE-DIST-20261012-07:B:1",
+      "received_at": 1791842847.4557931,
+      "peer": [
+        "127.0.0.1",
+        38462
+      ],
+      "lateness_s": 0.016438007354736328,
+      "status": "accepted"
+    },
+    {
+      "event_id": "COSE-LIVE-DIST-20261012-07:A:1",
+      "received_at": 1791842848.2816274,
+      "peer": [
+        "127.0.0.1",
+        38500
+      ],
+      "lateness_s": 1.1116316318511963,
+      "status": "accepted"
+    },
+    {
+      "event_id": "COSE-LIVE-DIST-20261012-07:A:2",
+      "received_at": 1791842850.433057,
+      "peer": [
+        "127.0.0.1",
+        38532
+      ],
+      "lateness_s": 0.8084406852722168,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "127.0.0.1",
+    "port": 57510,
+    "pid": 2986986,
+    "hostname": "vmi3153741",
+    "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.39",
+    "restored": false
+  }
+}

@@ -11,5 +11,6 @@
 # Preserve byte identities of retained inputs and measured result artifacts.
 local_lab/results/** -text
 results/** -text
+results/revision/distributed_live_vps_campaign_20261012/** text eol=crlf
 revision_audit/*.json -text
 revision_audit/temporal_external/**/*.json -text

@@ -56,3 +56,15 @@ python experiments/run_rq2_local_lab_explanations.py
 ```
 
 The original 32-case LIME experiment remains available through `experiments/run_rq2_lime.py` and is kept distinct from these scope-validation additions.
+
+## Three-instance live integration evidence
+
+`results/revision/distributed_live_vps_campaign_20261012/run07/` preserves the configuration, journals from the Windows and Ubuntu VPS sources, controller result, checkpoint, canonical replay and SHA-256 manifest for one live three-instance run. The workload is a constructed benign read/exec/connect sequence that exercises the declared temporal deny rule; the final violation is expected. This result tests distributed collection and checkpoint consistency for that fixed scenario. It supplies no attack-detection TP/FP/F1 and does not establish sustained production deployment.
+
+Verify all archived decisions and restore the checkpoint with:
+
+```bash
+python results/revision/distributed_live_vps_campaign_20261012/run07/verify_campaign.py
+```
+
+The live hosts and SSH credentials are not required for this offline verification. `network_preflight.json` records the pre-run clock sample and host topology; continuous clock drift and VPS hypervisor/zone placement were not measured.
