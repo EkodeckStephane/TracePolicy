@@ -1,0 +1,8 @@
+{
+  "reason": "footer range was written into the partially downloaded file while curl append resume was active; appended resume therefore followed the extended EOF",
+  "verified_resume_boundary": 291296666,
+  "tool_evidence": "curl explicitly reported Resuming transfer from byte position291296666",
+  "before_bytes": 578722713,
+  "after_bytes": 291296666,
+  "acceptance_requirement": "full SHA256 must match HF LFS source before any rows are opened"
+}
