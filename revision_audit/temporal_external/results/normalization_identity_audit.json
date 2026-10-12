@@ -1,0 +1,11 @@
+{
+  "rows": 279369,
+  "distinct_indexes": 279369,
+  "distinct_hashes": 279369,
+  "distinct_uuids": 279369,
+  "nonnull_indexes": 279369,
+  "nonnull_hashes": 279369,
+  "nonnull_uuids": 279369,
+  "normalized_rows": 44408090,
+  "distinct_original_row_ids": 44408090
+}

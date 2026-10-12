@@ -1,0 +1,2337 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "pid": "THEIA_TIME_P1",
+    "version": 1,
+    "rules": [
+      {
+        "rid": "A_SEQ0",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_RECVFROM",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_RECVFROM",
+                "EVENT_RECVFROM"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_SENDTO",
+                "EVENT_RECVFROM"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_READ",
+                "EVENT_RECVFROM"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            }
+          ],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_SEQ1",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_READ_SOCKET_PARAMS",
+                "EVENT_READ_SOCKET_PARAMS"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_SENDTO",
+                "EVENT_READ_SOCKET_PARAMS"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_WRITE_SOCKET_PARAMS",
+                "EVENT_READ_SOCKET_PARAMS"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            }
+          ],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_SEQ2",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_OPEN",
+                "EVENT_READ"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_READ",
+                "EVENT_READ"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_WRITE",
+                "EVENT_READ"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            }
+          ],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_SEQ3",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_READ",
+                "EVENT_OPEN"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_OPEN",
+                "EVENT_OPEN"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_WRITE",
+                "EVENT_OPEN"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            }
+          ],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_SEQ4",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_RECVMSG",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_SENDMSG",
+                "EVENT_RECVMSG"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_RECVMSG",
+                "EVENT_RECVMSG"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_SENDTO",
+                "EVENT_RECVMSG"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            }
+          ],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_SEQ5",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_SENDMSG",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_RECVMSG",
+                "EVENT_SENDMSG"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_SENDMSG",
+                "EVENT_SENDMSG"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            },
+            {
+              "comparisons": [],
+              "state_comparisons": [],
+              "seen_action": null,
+              "seen_resource": null,
+              "seen_horizon": 0,
+              "count_action": null,
+              "count_resource": null,
+              "count_horizon": 0,
+              "count_op": null,
+              "count_threshold": null,
+              "seq_actions": [
+                "EVENT_READ",
+                "EVENT_SENDMSG"
+              ],
+              "seq_horizon": 2,
+              "all_of": [],
+              "any_of": [],
+              "none_of": []
+            }
+          ],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_UNSEEN",
+        "priority": 0,
+        "effect": "DENY",
+        "selector": {
+          "action": "*",
+          "resource_class": "*",
+          "subject_class": "*"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      }
+    ],
+    "created_at": 0.0
+  },
+  "policy_content_sha256": "edfbd5274002a0dfb2f59e543b5e5c6d6a3be81cb61f39795c139bda43eafbd5",
+  "policy_manifest_sha256": "ced4ff7d6368ba131d2afec273d452bcea3d3359ed075141dacbebf07982a667",
+  "protocol_sha256": "07ea05259478c3da0537d867d943d0af9f7db040046eabc7d2ea56ce421d6f67",
+  "input_sha256": {
+    "event_table.parquet": "08c006812b25b56c0e1f1e3fbceac144027fcee43f1adc81cd92491497f570e1",
+    "process_node_table.parquet": "69a057f2fce1da35d4f8c22e4ee8b73ce2fd5c14a02689bc123c67d29a08543b"
+  },
+  "sampling_description": "p1_earliest_alerts earliest32 by true ns timestamp/original row, labels not consulted",
+  "cases": [
+    {
+      "case": 0,
+      "event_id": "20D446B5-0379-2415-64DE-7D0100000010:35773480",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "5150F01F-FD78-2415-39DD-7D0100000010:35773194",
+          "ts": 1523475602.5159721,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475602515972177,
+            "row_id": 35773194
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "20D446B5-0379-2415-64DE-7D0100000010:35773480",
+          "ts": 1523475630.791251,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475630791250976,
+            "row_id": 35773480
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773480,
+        "original_timestamp_ns": 1523475630791250976,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 1,
+      "event_id": "0B27101C-0479-2415-75DE-7D0100000010:35773497",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "907347B5-0379-2415-66DE-7D0100000010:35773482",
+          "ts": 1523475630.791292,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475630791291792,
+            "row_id": 35773482
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "0B27101C-0479-2415-75DE-7D0100000010:35773497",
+          "ts": 1523475632.5157208,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475632515720971,
+            "row_id": 35773497
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773497,
+        "original_timestamp_ns": 1523475632515720971,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 2,
+      "event_id": "D8EC3FF1-0479-2415-99DE-7D0100000010:35773532",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "D7F1121C-0479-2415-77DE-7D0100000010:35773499",
+          "ts": 1523475632.515904,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475632515903959,
+            "row_id": 35773499
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "D8EC3FF1-0479-2415-99DE-7D0100000010:35773532",
+          "ts": 1523475636.092399,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475636092398808,
+            "row_id": 35773532
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773532,
+        "original_timestamp_ns": 1523475636092398808,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 3,
+      "event_id": "3CF6B181-0579-2415-ACDE-7D0100000010:35773551",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "E6708733-0579-2415-A3DE-7D0100000010:35773542",
+          "ts": 1523475637.204382,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475637204381926,
+            "row_id": 35773542
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "3CF6B181-0579-2415-ACDE-7D0100000010:35773551",
+          "ts": 1523475638.5157914,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475638515791420,
+            "row_id": 35773551
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773551,
+        "original_timestamp_ns": 1523475638515791420,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 4,
+      "event_id": "AD330B66-0679-2415-D1DE-7D0100000010:35773586",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "F45D0A66-0679-2415-CFDE-7D0100000010:35773585",
+          "ts": 1523475642.3467903,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295838,
+            "timestamp_ns": 1523475642346790388,
+            "row_id": 35773585
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "AD330B66-0679-2415-D1DE-7D0100000010:35773586",
+          "ts": 1523475642.3468451,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295838,
+            "timestamp_ns": 1523475642346845101,
+            "row_id": 35773586
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773586,
+        "original_timestamp_ns": 1523475642346845101,
+        "source_process": 295838,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 5,
+      "event_id": "2BAF0C66-0679-2415-D3DE-7D0100000010:35773588",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "6AA80B66-0679-2415-D2DE-7D0100000010:35773587",
+          "ts": 1523475642.346875,
+          "action": "EVENT_RECVFROM",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642346874986,
+            "row_id": 35773587
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "2BAF0C66-0679-2415-D3DE-7D0100000010:35773588",
+          "ts": 1523475642.3469422,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642346942251,
+            "row_id": 35773588
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773588,
+        "original_timestamp_ns": 1523475642346942251,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 6,
+      "event_id": "10910D66-0679-2415-D4DE-7D0100000010:35773589",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "2BAF0C66-0679-2415-D3DE-7D0100000010:35773588",
+          "ts": 1523475642.3469422,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642346942251,
+            "row_id": 35773588
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "10910D66-0679-2415-D4DE-7D0100000010:35773589",
+          "ts": 1523475642.3470001,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642347000080,
+            "row_id": 35773589
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773589,
+        "original_timestamp_ns": 1523475642347000080,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 7,
+      "event_id": "1AF60D66-0679-2415-D5DE-7D0100000010:35773590",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "10910D66-0679-2415-D4DE-7D0100000010:35773589",
+          "ts": 1523475642.3470001,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642347000080,
+            "row_id": 35773589
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "1AF60D66-0679-2415-D5DE-7D0100000010:35773590",
+          "ts": 1523475642.3470259,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642347025946,
+            "row_id": 35773590
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773590,
+        "original_timestamp_ns": 1523475642347025946,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 8,
+      "event_id": "D6D7A666-0679-2415-D7DE-7D0100000010:35773591",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "AD330B66-0679-2415-D1DE-7D0100000010:35773586",
+          "ts": 1523475642.3468451,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295838,
+            "timestamp_ns": 1523475642346845101,
+            "row_id": 35773586
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "D6D7A666-0679-2415-D7DE-7D0100000010:35773591",
+          "ts": 1523475642.3570452,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295838,
+            "timestamp_ns": 1523475642357045206,
+            "row_id": 35773591
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773591,
+        "original_timestamp_ns": 1523475642357045206,
+        "source_process": 295838,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 9,
+      "event_id": "FAB5AE66-0679-2415-DEDE-7D0100000010:35773596",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "6D52376C-F878-2415-32DC-7D0100000010:35772942",
+          "ts": 1523475582.3208575,
+          "action": "EVENT_CLONE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295837,
+            "timestamp_ns": 1523475582320857709,
+            "row_id": 35772942
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "FAB5AE66-0679-2415-DEDE-7D0100000010:35773596",
+          "ts": 1523475642.3575609,
+          "action": "EVENT_CLONE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295837,
+            "timestamp_ns": 1523475642357560826,
+            "row_id": 35773596
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773596,
+        "original_timestamp_ns": 1523475642357560826,
+        "source_process": 295837,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 10,
+      "event_id": "6E72B066-0679-2415-DFDE-7D0100000010:35773597",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "FAB5AE66-0679-2415-DEDE-7D0100000010:35773596",
+          "ts": 1523475642.3575609,
+          "action": "EVENT_CLONE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295837,
+            "timestamp_ns": 1523475642357560826,
+            "row_id": 35773596
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "6E72B066-0679-2415-DFDE-7D0100000010:35773597",
+          "ts": 1523475642.3576746,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295837,
+            "timestamp_ns": 1523475642357674606,
+            "row_id": 35773597
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773597,
+        "original_timestamp_ns": 1523475642357674606,
+        "source_process": 295837,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 11,
+      "event_id": "A9ECB266-0679-2415-E1DE-7D0100000010:35773599",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "A9ECB266-0679-2415-E1DE-7D0100000010:35773599",
+          "ts": 1523475642.357837,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642357836969,
+            "row_id": 35773599
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773599,
+        "original_timestamp_ns": 1523475642357836969,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 12,
+      "event_id": "FCA2B366-0679-2415-E2DE-7D0100000010:35773600",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "A9ECB266-0679-2415-E1DE-7D0100000010:35773599",
+          "ts": 1523475642.357837,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642357836969,
+            "row_id": 35773599
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "FCA2B366-0679-2415-E2DE-7D0100000010:35773600",
+          "ts": 1523475642.3578837,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642357883644,
+            "row_id": 35773600
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773600,
+        "original_timestamp_ns": 1523475642357883644,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 13,
+      "event_id": "4BF7BA66-0679-2415-E4DE-7D0100000010:35773601",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "FCA2B366-0679-2415-E2DE-7D0100000010:35773600",
+          "ts": 1523475642.3578837,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642357883644,
+            "row_id": 35773600
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "4BF7BA66-0679-2415-E4DE-7D0100000010:35773601",
+          "ts": 1523475642.3583639,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642358363979,
+            "row_id": 35773601
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773601,
+        "original_timestamp_ns": 1523475642358363979,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 14,
+      "event_id": "90FBC266-0679-2415-E5DE-7D0100000010:35773602",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "4BF7BA66-0679-2415-E4DE-7D0100000010:35773601",
+          "ts": 1523475642.3583639,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642358363979,
+            "row_id": 35773601
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "90FBC266-0679-2415-E5DE-7D0100000010:35773602",
+          "ts": 1523475642.3588896,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642358889360,
+            "row_id": 35773602
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773602,
+        "original_timestamp_ns": 1523475642358889360,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 15,
+      "event_id": "5F79E466-0679-2415-15DF-7D0100000010:35773646",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "48DCE366-0679-2415-13DF-7D0100000010:35773645",
+          "ts": 1523475642.361044,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642361044040,
+            "row_id": 35773645
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "5F79E466-0679-2415-15DF-7D0100000010:35773646",
+          "ts": 1523475642.3610842,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642361084255,
+            "row_id": 35773646
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773646,
+        "original_timestamp_ns": 1523475642361084255,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 16,
+      "event_id": "7E71E666-0679-2415-16DF-7D0100000010:35773647",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "1AF60D66-0679-2415-D5DE-7D0100000010:35773590",
+          "ts": 1523475642.3470259,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642347025946,
+            "row_id": 35773590
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "7E71E666-0679-2415-16DF-7D0100000010:35773647",
+          "ts": 1523475642.3612132,
+          "action": "EVENT_RECVFROM",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361213310,
+            "row_id": 35773647
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773647,
+        "original_timestamp_ns": 1523475642361213310,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 17,
+      "event_id": "7179E766-0679-2415-18DF-7D0100000010:35773649",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "AAAEE666-0679-2415-17DF-7D0100000010:35773648",
+          "ts": 1523475642.361229,
+          "action": "EVENT_RECVFROM",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361228970,
+            "row_id": 35773648
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "7179E766-0679-2415-18DF-7D0100000010:35773649",
+          "ts": 1523475642.3612807,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361280881,
+            "row_id": 35773649
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773649,
+        "original_timestamp_ns": 1523475642361280881,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 18,
+      "event_id": "3847E866-0679-2415-19DF-7D0100000010:35773650",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "7179E766-0679-2415-18DF-7D0100000010:35773649",
+          "ts": 1523475642.3612807,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361280881,
+            "row_id": 35773649
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "3847E866-0679-2415-19DF-7D0100000010:35773650",
+          "ts": 1523475642.3613336,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361333560,
+            "row_id": 35773650
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773650,
+        "original_timestamp_ns": 1523475642361333560,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 19,
+      "event_id": "D9A4E866-0679-2415-1ADF-7D0100000010:35773651",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "3847E866-0679-2415-19DF-7D0100000010:35773650",
+          "ts": 1523475642.3613336,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361333560,
+            "row_id": 35773650
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "D9A4E866-0679-2415-1ADF-7D0100000010:35773651",
+          "ts": 1523475642.3613575,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361357529,
+            "row_id": 35773651
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773651,
+        "original_timestamp_ns": 1523475642361357529,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 20,
+      "event_id": "34167F67-0679-2415-1CDF-7D0100000010:35773652",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "5F79E466-0679-2415-15DF-7D0100000010:35773646",
+          "ts": 1523475642.3610842,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642361084255,
+            "row_id": 35773646
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "34167F67-0679-2415-1CDF-7D0100000010:35773652",
+          "ts": 1523475642.371217,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642371216948,
+            "row_id": 35773652
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773652,
+        "original_timestamp_ns": 1523475642371216948,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 21,
+      "event_id": "7D0A8A67-0679-2415-25DF-7D0100000010:35773659",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "D9A4E866-0679-2415-1ADF-7D0100000010:35773651",
+          "ts": 1523475642.3613575,
+          "action": "EVENT_WRITE",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642361357529,
+            "row_id": 35773651
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "7D0A8A67-0679-2415-25DF-7D0100000010:35773659",
+          "ts": 1523475642.3719347,
+          "action": "EVENT_RECVFROM",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295839,
+            "timestamp_ns": 1523475642371934845,
+            "row_id": 35773659
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773659,
+        "original_timestamp_ns": 1523475642371934845,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 22,
+      "event_id": "4CF68B67-0679-2415-26DF-7D0100000010:35773660",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "0E428467-0679-2415-24DF-7D0100000010:35773658",
+          "ts": 1523475642.3715558,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642371555854,
+            "row_id": 35773658
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "4CF68B67-0679-2415-26DF-7D0100000010:35773660",
+          "ts": 1523475642.3720608,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642372060748,
+            "row_id": 35773660
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773660,
+        "original_timestamp_ns": 1523475642372060748,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 23,
+      "event_id": "DBBD8C67-0679-2415-28DF-7D0100000010:35773662",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "4CF68B67-0679-2415-26DF-7D0100000010:35773660",
+          "ts": 1523475642.3720608,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642372060748,
+            "row_id": 35773660
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "DBBD8C67-0679-2415-28DF-7D0100000010:35773662",
+          "ts": 1523475642.3721118,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642372111835,
+            "row_id": 35773662
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773662,
+        "original_timestamp_ns": 1523475642372111835,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 24,
+      "event_id": "CB3C8D67-0679-2415-2ADF-7D0100000010:35773664",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "DBBD8C67-0679-2415-28DF-7D0100000010:35773662",
+          "ts": 1523475642.3721118,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642372111835,
+            "row_id": 35773662
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "CB3C8D67-0679-2415-2ADF-7D0100000010:35773664",
+          "ts": 1523475642.3721445,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399422,
+            "timestamp_ns": 1523475642372144331,
+            "row_id": 35773664
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773664,
+        "original_timestamp_ns": 1523475642372144331,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 25,
+      "event_id": "B9C363EE-0679-2415-3BDF-7D0100000010:35773681",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "2C26B581-0579-2415-AEDE-7D0100000010:35773553",
+          "ts": 1523475638.5160003,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475638516000300,
+            "row_id": 35773553
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "B9C363EE-0679-2415-3BDF-7D0100000010:35773681",
+          "ts": 1523475644.6343505,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475644634350521,
+            "row_id": 35773681
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773681,
+        "original_timestamp_ns": 1523475644634350521,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 26,
+      "event_id": "93CD875E-0779-2415-4CDF-7D0100000010:35773698",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "B9C363EE-0679-2415-3BDF-7D0100000010:35773681",
+          "ts": 1523475644.6343505,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475644634350521,
+            "row_id": 35773681
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "93CD875E-0779-2415-4CDF-7D0100000010:35773698",
+          "ts": 1523475646.5157607,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475646515760531,
+            "row_id": 35773698
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773698,
+        "original_timestamp_ns": 1523475646515760531,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 27,
+      "event_id": "22319F7E-0879-2415-76DF-7D0100000010:35773739",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "E5A18A5E-0779-2415-4EDF-7D0100000010:35773700",
+          "ts": 1523475646.515946,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475646515945957,
+            "row_id": 35773700
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "22319F7E-0879-2415-76DF-7D0100000010:35773739",
+          "ts": 1523475651.3491316,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475651349131554,
+            "row_id": 35773739
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773739,
+        "original_timestamp_ns": 1523475651349131554,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 28,
+      "event_id": "12FC28C4-0879-2415-7FDF-7D0100000010:35773748",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "22319F7E-0879-2415-76DF-7D0100000010:35773739",
+          "ts": 1523475651.3491316,
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475651349131554,
+            "row_id": 35773739
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "12FC28C4-0879-2415-7FDF-7D0100000010:35773748",
+          "ts": 1523475652.5157897,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 295846,
+            "timestamp_ns": 1523475652515789842,
+            "row_id": 35773748
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773748,
+        "original_timestamp_ns": 1523475652515789842,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 29,
+      "event_id": "59F398F2-0979-2415-ABDF-7D0100000010:35773791",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "59F398F2-0979-2415-ABDF-7D0100000010:35773791",
+          "ts": 1523475657.5898468,
+          "action": "EVENT_SENDTO",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399423,
+            "timestamp_ns": 1523475657589846873,
+            "row_id": 35773791
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773791,
+        "original_timestamp_ns": 1523475657589846873,
+        "source_process": 399423,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 30,
+      "event_id": "BE5D9AF2-0979-2415-AFDF-7D0100000010:35773795",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "3EAC99F2-0979-2415-AEDF-7D0100000010:35773794",
+          "ts": 1523475657.589894,
+          "action": "EVENT_RECVMSG",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399423,
+            "timestamp_ns": 1523475657589894206,
+            "row_id": 35773794
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "BE5D9AF2-0979-2415-AFDF-7D0100000010:35773795",
+          "ts": 1523475657.5899396,
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399423,
+            "timestamp_ns": 1523475657589939646,
+            "row_id": 35773795
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773795,
+        "original_timestamp_ns": 1523475657589939646,
+        "source_process": 399423,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    {
+      "case": 31,
+      "event_id": "22789DF2-0979-2415-B7DF-7D0100000010:35773801",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "trace": [
+        {
+          "eid": "89BB9CF2-0979-2415-B5DF-7D0100000010:35773800",
+          "ts": 1523475657.5900948,
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399423,
+            "timestamp_ns": 1523475657590094729,
+            "row_id": 35773800
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "22789DF2-0979-2415-B7DF-7D0100000010:35773801",
+          "ts": 1523475657.590143,
+          "action": "EVENT_CONNECT",
+          "resource_class": "entity",
+          "subject_class": "process",
+          "attrs": {
+            "process_index": 399423,
+            "timestamp_ns": 1523475657590143010,
+            "row_id": 35773801
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 2,
+      "initial_state": {},
+      "units": [
+        "e:0",
+        "e:1",
+        "r:A_SEQ0",
+        "r:A_SEQ1",
+        "r:A_SEQ2",
+        "r:A_SEQ3",
+        "r:A_SEQ4",
+        "r:A_SEQ5",
+        "r:D_UNSEEN"
+      ],
+      "metadata": {
+        "original_subject_row": 35773801,
+        "original_timestamp_ns": 1523475657590143010,
+        "source_process": 399423,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    }
+  ]
+}

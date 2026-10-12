@@ -1,0 +1,120 @@
+{
+  "protocol_sha256": "07ea05259478c3da0537d867d943d0af9f7db040046eabc7d2ea56ce421d6f67",
+  "policy_manifest_sha256": "ced4ff7d6368ba131d2afec273d452bcea3d3359ed075141dacbebf07982a667",
+  "label_sha256": {
+    "reapr_edge_labels.parquet": "c77aa8a99386043aac42524c12527c9653c508d8d628a6474c380ad5862d80d8",
+    "reapr_node_labels.parquet": "4ec8b53b9507f47dc6afb1917ef4fd13ed1dca7007744dcbd97686ed8e54f860"
+  },
+  "identity_audit": {
+    "edge_label_records": [
+      [
+        "attack",
+        68925,
+        68922
+      ],
+      [
+        "contaminated",
+        4,
+        2
+      ]
+    ],
+    "edge_keys_multiple_labels": 0,
+    "invalid_edge_uuid": 0,
+    "attack_edge_keys": 68922,
+    "attack_edge_keys_matched_whole_chronology": 68025,
+    "attack_edge_keys_matched_test": 66221,
+    "attack_event_rows_in_test": 66221,
+    "duplicate_test_event_uuid_rows": 0,
+    "contaminated_event_rows_excluded": 2,
+    "node_label_records": [
+      [
+        "attack",
+        125,
+        125
+      ],
+      [
+        "contaminated",
+        2,
+        1
+      ]
+    ],
+    "invalid_node_uuid": 0,
+    "node_keys_multiple_labels": 0,
+    "attack_node_keys": 125,
+    "attack_node_keys_matched_process_table": 125,
+    "test_active_processes": 74467,
+    "attack_node_keys_active_test": 67,
+    "contaminated_active_processes_excluded": 1
+  },
+  "event_uuid_proxy_metrics": {
+    "p0": {
+      "tp": 63818,
+      "fp": 2072800,
+      "fn": 2403,
+      "tn": 11704590,
+      "precision": 0.029868699037450774,
+      "recall": 0.9637124175110614,
+      "f1": 0.057941592644764325,
+      "fpr": 0.15044939571283095
+    },
+    "p1": {
+      "tp": 63864,
+      "fp": 2595132,
+      "fn": 2357,
+      "tn": 11182258,
+      "precision": 0.024018088030218925,
+      "recall": 0.9644070612041498,
+      "f1": 0.046868928235806545,
+      "fpr": 0.18836165630790738
+    },
+    "p2": {
+      "tp": 63818,
+      "fp": 2072800,
+      "fn": 2403,
+      "tn": 11704590,
+      "precision": 0.029868699037450774,
+      "recall": 0.9637124175110614,
+      "f1": 0.057941592644764325,
+      "fpr": 0.15044939571283095
+    }
+  },
+  "active_process_node_metrics": {
+    "p0": {
+      "tp": 64,
+      "fp": 67406,
+      "fn": 3,
+      "tn": 6993,
+      "precision": 0.0009485697346969023,
+      "recall": 0.9552238805970149,
+      "f1": 0.001895257414454299,
+      "fpr": 0.9060068011666823
+    },
+    "p1": {
+      "tp": 66,
+      "fp": 74381,
+      "fn": 1,
+      "tn": 18,
+      "precision": 0.0008865367308286432,
+      "recall": 0.9850746268656716,
+      "f1": 0.001771479185119575,
+      "fpr": 0.9997580612642643
+    },
+    "p2": {
+      "tp": 64,
+      "fp": 67406,
+      "fn": 3,
+      "tn": 6993,
+      "precision": 0.0009485697346969023,
+      "recall": 0.9552238805970149,
+      "f1": 0.001895257414454299,
+      "fpr": 0.9060068011666823
+    }
+  },
+  "limitations": [
+    "unlisted edge/process treated negative; annotations are derived REAPr, not exhaustive official event truth",
+    "contaminated event/process identities excluded from scoring; missing annotation treated negative",
+    "node metric only verified subject-process actors active during the test period",
+    "no labels used in policy construction; training may contain attacks",
+    "P2 fixed positive sequence had zero test firings; no retuning"
+  ]
+}

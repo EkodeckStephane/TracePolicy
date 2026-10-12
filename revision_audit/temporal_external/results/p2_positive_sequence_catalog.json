@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "pid": "THEIA_TIME_P2_DIAGNOSTIC",
+    "version": 1,
+    "rules": [
+      {
+        "rid": "A0",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_RECVFROM",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A1",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_READ_SOCKET_PARAMS",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A2",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_READ",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A3",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_OPEN",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A4",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_RECVMSG",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A5",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "EVENT_SENDMSG",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_UNSEEN",
+        "priority": 0,
+        "effect": "DENY",
+        "selector": {
+          "action": "*",
+          "resource_class": "*",
+          "subject_class": "*"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_EXEC_CONNECT",
+        "priority": 100,
+        "effect": "DENY",
+        "selector": {
+          "action": "EVENT_CONNECT",
+          "resource_class": "entity",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [
+            "EVENT_EXECUTE",
+            "EVENT_CONNECT"
+          ],
+          "seq_horizon": 2,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      }
+    ],
+    "created_at": 0.0
+  },
+  "policy_content_sha256": "a26bdb1c29a9414f7e6e543d7cc4ff4140bd569a20d62c7b2339ec564e704012",
+  "policy_manifest_sha256": "ced4ff7d6368ba131d2afec273d452bcea3d3359ed075141dacbebf07982a667",
+  "protocol_sha256": "07ea05259478c3da0537d867d943d0af9f7db040046eabc7d2ea56ce421d6f67",
+  "input_sha256": {
+    "event_table.parquet": "08c006812b25b56c0e1f1e3fbceac144027fcee43f1adc81cd92491497f570e1",
+    "process_node_table.parquet": "69a057f2fce1da35d4f8c22e4ee8b73ce2fd5c14a02689bc123c67d29a08543b"
+  },
+  "sampling_description": "p2_positive_sequence earliest32 by true ns timestamp/original row, labels not consulted",
+  "cases": []
+}

@@ -1,0 +1,32 @@
+{
+  "source_audit_files": {
+    "hf_readme.md": "533b7034d18f626c9d6ecbd6ed4fc773be892b4295f4396bd6cddefd99e6b17f",
+    "hf_listing.json": "69468c14b19239aefe51b9079155e0fbe739e36e4f76215934947de01ed8caa5",
+    "hf_dataset_metadata.json": "71e2c2045796ffbd9ffbc0ec7dbe1043efaec3213faad6b841d6af6b2974986c",
+    "pidsmaker_create_database.py": "8e5c6d8d431ef9a83fb8c00e327de2ce0a090211b13953dce6b7ac74cf683ce2",
+    "pidsmaker_dataset_utils.py": "6bc57733b508c7301fd04e88a9675812c4d2fd4d544169d1e03c99656852c258",
+    "pidsmaker_tree.json": "d452e26e94fc3dbd9e5d622200903018def9ca0c23017621f26c11b09c8f5063",
+    "PREFREEZE.md": "5e9688d1a774d07c506814eff02a776d642365c0e3441a8df61689adfc70e08c",
+    "README.md": "99535dddcc4da7d95a77e75733a873b920e90066626e53dc15778ed99f8f73ac"
+  },
+  "pidsmaker_commit": "438a05a7c55256f639e5b5945cf4828fe3ee078e",
+  "runtime": {
+    "pyarrow": "26.0.0",
+    "duckdb": "1.5.6"
+  },
+  "prospective_public_commit": "e3d2ab2",
+  "status": "chronological replay and identity audited label metrics actually executed",
+  "large_data_omitted_from_git": [
+    "event_table.parquet",
+    "process_node_table.parquet",
+    "results/chronology.duckdb",
+    "parquet_footer_probe"
+  ],
+  "software_checks": {
+    "temporal_miniature_tests": 7,
+    "actual_process_identity_rows": 279369,
+    "actual_unique_normalized_rows": 44408090,
+    "node_invalid_uuid": 0,
+    "node_conflicting_labels": 0
+  }
+}

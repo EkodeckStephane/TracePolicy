@@ -1,0 +1,47 @@
+{
+  "source": "alafage/darpa_tc_e3_theia",
+  "revision": "690e8889c36429db1f62da22ec7ac06254d76e6a",
+  "input_sha256": {
+    "event_table.parquet": "08c006812b25b56c0e1f1e3fbceac144027fcee43f1adc81cd92491497f570e1",
+    "process_node_table.parquet": "69a057f2fce1da35d4f8c22e4ee8b73ce2fd5c14a02689bc123c67d29a08543b"
+  },
+  "timestamp_unit": "nanoseconds",
+  "bounds": [
+    1522764134000380070,
+    1523653470865469444
+  ],
+  "cuts": [
+    1523297736119433694,
+    1523475603492451569
+  ],
+  "train": "ts<1523297736119433694",
+  "validation": "1523297736119433694<=ts<1523475603492451569",
+  "test": "ts>=1523475603492451569",
+  "min_support": 20,
+  "selector_cap": 6,
+  "predecessor_cap": 3,
+  "history": "same verified process, consecutive events, carried across partition cuts",
+  "reverse_operations": [
+    "EVENT_EXECUTE",
+    "EVENT_LSEEK",
+    "EVENT_MMAP",
+    "EVENT_OPEN",
+    "EVENT_ACCEPT",
+    "EVENT_READ",
+    "EVENT_RECVFROM",
+    "EVENT_RECVMSG",
+    "EVENT_READ_SOCKET_PARAMS",
+    "EVENT_CHECK_FILE_ATTRIBUTES",
+    "READ"
+  ],
+  "p2_probe": [
+    "EVENT_EXECUTE",
+    "EVENT_CONNECT"
+  ],
+  "labels_used_for_policy": false,
+  "validation_tuning": false,
+  "sampling": "earliest32 P1 alerts; earliest32 P1-P0 deltas; earliest32 P2 Seq alerts; no label consultation",
+  "prior_static_THEIA_inspection": true,
+  "total_source_rows": 44408090,
+  "missing_timestamp_rows": 0
+}

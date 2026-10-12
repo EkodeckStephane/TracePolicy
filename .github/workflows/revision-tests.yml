@@ -12,8 +12,10 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
-          cache-dependency-path: requirements-revision.txt
-      - run: python -m pip install -r requirements-revision.txt
+          cache-dependency-path: |
+            requirements-revision.txt
+            requirements-temporal-revision.txt
+      - run: python -m pip install -r requirements-revision.txt -r requirements-temporal-revision.txt
       - run: python -m pytest tests -q
       - run: python scripts/verify_frozen_protocol_v2.py
       - run: python scripts/verify_revision_evidence.py

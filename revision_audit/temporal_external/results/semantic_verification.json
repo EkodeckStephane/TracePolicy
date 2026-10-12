@@ -1,0 +1,13 @@
+{
+  "test_observed_patterns": 158,
+  "pattern_weighted_rows": {
+    "THEIA_TIME_P0": 13843613,
+    "THEIA_TIME_P1": 13843613,
+    "THEIA_TIME_P2_DIAGNOSTIC": 13843613
+  },
+  "failures": [],
+  "claim": "all observed action/predecessor equivalence classes exhaustively compared, not independent evaluation of every repeated row",
+  "soundness_scope": "only current-action and consecutive-process-action guards, no state atoms; exact class/top through reference,indexed,incremental",
+  "protocol_sha256": "07ea05259478c3da0537d867d943d0af9f7db040046eabc7d2ea56ce421d6f67",
+  "policy_manifest_sha256": "ced4ff7d6368ba131d2afec273d452bcea3d3359ed075141dacbebf07982a667"
+}

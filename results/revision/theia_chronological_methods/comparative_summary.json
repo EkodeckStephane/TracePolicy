@@ -1,0 +1,472 @@
+{
+  "earliest_alerts": {
+    "cases": 32,
+    "unique_events": 32,
+    "methods": {
+      "tracepolicy": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 6.109850015491247,
+        "mean_total_ms": 6.1437968906830065,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "kernelshap": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 21.526450058445334,
+        "mean_total_ms": 21.40752186824102,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "lime": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 41.94749996531755,
+        "mean_total_ms": 43.82724063907517,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "ffa": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 4.929700051434338,
+        "mean_total_ms": 4.782434341905173,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "anchors": {
+        "rows": 96,
+        "statuses": {
+          "ok": 96
+        },
+        "sufficient": 96,
+        "minimal": 96,
+        "selected_sizes": {
+          "2": 96
+        },
+        "median_total_ms": 312.40040017291903,
+        "mean_total_ms": 304.18237292178674,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          11,
+          23,
+          47
+        ]
+      }
+    },
+    "unit_counts": {
+      "9": 30,
+      "8": 2
+    },
+    "exact_core_counts": {
+      "1": 32
+    },
+    "tp_selected_sets": {
+      "e:1|r:D_UNSEEN": 30,
+      "e:0|r:D_UNSEEN": 2
+    }
+  },
+  "temporal_delta": {
+    "cases": 32,
+    "unique_events": 32,
+    "methods": {
+      "tracepolicy": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 6.397900055162609,
+        "mean_total_ms": 6.295981242146809,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "kernelshap": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 21.69745007995516,
+        "mean_total_ms": 21.23178126203129,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "lime": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 40.907899965532124,
+        "mean_total_ms": 40.89839375956217,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "ffa": {
+        "rows": 32,
+        "statuses": {
+          "ok": 32
+        },
+        "sufficient": 32,
+        "minimal": 32,
+        "selected_sizes": {
+          "2": 32
+        },
+        "median_total_ms": 4.981349920853972,
+        "mean_total_ms": 4.91543127282057,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          20261012,
+          20261013,
+          20261014,
+          20261015,
+          20261016,
+          20261017,
+          20261018,
+          20261019,
+          20261020,
+          20261021,
+          20261022,
+          20261023,
+          20261024,
+          20261025,
+          20261026,
+          20261027,
+          20261028,
+          20261029,
+          20261030,
+          20261031,
+          20261032,
+          20261033,
+          20261034,
+          20261035,
+          20261036,
+          20261037,
+          20261038,
+          20261039,
+          20261040,
+          20261041,
+          20261042,
+          20261043
+        ]
+      },
+      "anchors": {
+        "rows": 96,
+        "statuses": {
+          "ok": 96
+        },
+        "sufficient": 96,
+        "minimal": 96,
+        "selected_sizes": {
+          "2": 96
+        },
+        "median_total_ms": 313.92234994564205,
+        "mean_total_ms": 308.44413230079226,
+        "mean_jaccard_to_tp": 1.0,
+        "seeds": [
+          11,
+          23,
+          47
+        ]
+      }
+    },
+    "unit_counts": {
+      "9": 30,
+      "8": 2
+    },
+    "exact_core_counts": {
+      "1": 32
+    },
+    "tp_selected_sets": {
+      "e:1|r:D_UNSEEN": 30,
+      "e:0|r:D_UNSEEN": 2
+    }
+  },
+  "dependence": {
+    "catalog_cases": 64,
+    "unique_current_events": 46,
+    "overlapping_current_events": 18,
+    "unique_processes": 7
+  },
+  "interpretation": [
+    "Two conditional, deterministic earliest-alert cohorts; overlap and shared actors preclude treating 64 cases as independent observations.",
+    "All minimal-core tables describe full shared event-stutter/rule-disable domains, not correctness inferred from Jaccard.",
+    "Positive-retention cores need not contain predecessors whose absence of an expected pattern caused fallback denial.",
+    "FFA is an exact complete-core membership adaptation with cached state enumeration included in its total; no timing superiority inference.",
+    "Anchors native sets are unchanged and independently certified; three seeds are repeated explanations of each case, not new alerts.",
+    "The frozen positive EXECUTE-to-CONNECT diagnostic had zero test instances and is excluded without retuning."
+  ]
+}

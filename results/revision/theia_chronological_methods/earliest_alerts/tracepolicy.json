@@ -1,0 +1,2588 @@
+[
+  {
+    "case": 0,
+    "event_id": "20D446B5-0379-2415-64DE-7D0100000010:35773480",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 0,
+      "event_id": "20D446B5-0379-2415-64DE-7D0100000010:35773480",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773480,
+        "original_timestamp_ns": 1523475630791250976,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261012,
+    "core_count": 1,
+    "independent_audit_s": 0.003881199983879924,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.007267399923875928,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.007267399923875928,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 1,
+    "event_id": "0B27101C-0479-2415-75DE-7D0100000010:35773497",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 1,
+      "event_id": "0B27101C-0479-2415-75DE-7D0100000010:35773497",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773497,
+        "original_timestamp_ns": 1523475632515720971,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261013,
+    "core_count": 1,
+    "independent_audit_s": 0.0028632001485675573,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.006512100109830499,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.006512100109830499,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 2,
+    "event_id": "D8EC3FF1-0479-2415-99DE-7D0100000010:35773532",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 2,
+      "event_id": "D8EC3FF1-0479-2415-99DE-7D0100000010:35773532",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773532,
+        "original_timestamp_ns": 1523475636092398808,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261014,
+    "core_count": 1,
+    "independent_audit_s": 0.0027509001083672047,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.006613299949094653,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.006613299949094653,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 3,
+    "event_id": "3CF6B181-0579-2415-ACDE-7D0100000010:35773551",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 3,
+      "event_id": "3CF6B181-0579-2415-ACDE-7D0100000010:35773551",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773551,
+        "original_timestamp_ns": 1523475638515791420,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261015,
+    "core_count": 1,
+    "independent_audit_s": 0.0025931999552994967,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.007482900051400065,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.007482900051400065,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 4,
+    "event_id": "AD330B66-0679-2415-D1DE-7D0100000010:35773586",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 4,
+      "event_id": "AD330B66-0679-2415-D1DE-7D0100000010:35773586",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773586,
+        "original_timestamp_ns": 1523475642346845101,
+        "source_process": 295838,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261016,
+    "core_count": 1,
+    "independent_audit_s": 0.003126499941572547,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005997499916702509,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005997499916702509,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 5,
+    "event_id": "2BAF0C66-0679-2415-D3DE-7D0100000010:35773588",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 5,
+      "event_id": "2BAF0C66-0679-2415-D3DE-7D0100000010:35773588",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773588,
+        "original_timestamp_ns": 1523475642346942251,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261017,
+    "core_count": 1,
+    "independent_audit_s": 0.0026542998384684324,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.007119699846953154,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.007119699846953154,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 6,
+    "event_id": "10910D66-0679-2415-D4DE-7D0100000010:35773589",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 6,
+      "event_id": "10910D66-0679-2415-D4DE-7D0100000010:35773589",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773589,
+        "original_timestamp_ns": 1523475642347000080,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261018,
+    "core_count": 1,
+    "independent_audit_s": 0.0022012998815625906,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005564700113609433,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005564700113609433,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 7,
+    "event_id": "1AF60D66-0679-2415-D5DE-7D0100000010:35773590",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 7,
+      "event_id": "1AF60D66-0679-2415-D5DE-7D0100000010:35773590",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773590,
+        "original_timestamp_ns": 1523475642347025946,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261019,
+    "core_count": 1,
+    "independent_audit_s": 0.002217500004917383,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005481699947267771,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005481699947267771,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 8,
+    "event_id": "D6D7A666-0679-2415-D7DE-7D0100000010:35773591",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 8,
+      "event_id": "D6D7A666-0679-2415-D7DE-7D0100000010:35773591",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773591,
+        "original_timestamp_ns": 1523475642357045206,
+        "source_process": 295838,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261020,
+    "core_count": 1,
+    "independent_audit_s": 0.0024037999100983143,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.00666880002245307,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.00666880002245307,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 9,
+    "event_id": "FAB5AE66-0679-2415-DEDE-7D0100000010:35773596",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 9,
+      "event_id": "FAB5AE66-0679-2415-DEDE-7D0100000010:35773596",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773596,
+        "original_timestamp_ns": 1523475642357560826,
+        "source_process": 295837,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261021,
+    "core_count": 1,
+    "independent_audit_s": 0.0023129999171942472,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005383299896493554,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005383299896493554,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 10,
+    "event_id": "6E72B066-0679-2415-DFDE-7D0100000010:35773597",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 10,
+      "event_id": "6E72B066-0679-2415-DFDE-7D0100000010:35773597",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773597,
+        "original_timestamp_ns": 1523475642357674606,
+        "source_process": 295837,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261022,
+    "core_count": 1,
+    "independent_audit_s": 0.002870399970561266,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.007165699964389205,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.007165699964389205,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 11,
+    "event_id": "A9ECB266-0679-2415-E1DE-7D0100000010:35773599",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 8,
+    "units": [
+      "e:0",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 11,
+      "event_id": "A9ECB266-0679-2415-E1DE-7D0100000010:35773599",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773599,
+        "original_timestamp_ns": 1523475642357836969,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261023,
+    "core_count": 1,
+    "independent_audit_s": 0.0013484000228345394,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.002963599981740117,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.002963599981740117,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:0": {
+          "e:0": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 194
+    },
+    "intrinsic_queries": 194,
+    "status": "ok",
+    "selected": [
+      "e:0",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 12,
+    "event_id": "FCA2B366-0679-2415-E2DE-7D0100000010:35773600",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 12,
+      "event_id": "FCA2B366-0679-2415-E2DE-7D0100000010:35773600",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773600,
+        "original_timestamp_ns": 1523475642357883644,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261024,
+    "core_count": 1,
+    "independent_audit_s": 0.001903400057926774,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005586399929597974,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005586399929597974,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 13,
+    "event_id": "4BF7BA66-0679-2415-E4DE-7D0100000010:35773601",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 13,
+      "event_id": "4BF7BA66-0679-2415-E4DE-7D0100000010:35773601",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773601,
+        "original_timestamp_ns": 1523475642358363979,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261025,
+    "core_count": 1,
+    "independent_audit_s": 0.0018966000061482191,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005910400068387389,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005910400068387389,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 14,
+    "event_id": "90FBC266-0679-2415-E5DE-7D0100000010:35773602",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 14,
+      "event_id": "90FBC266-0679-2415-E5DE-7D0100000010:35773602",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773602,
+        "original_timestamp_ns": 1523475642358889360,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261026,
+    "core_count": 1,
+    "independent_audit_s": 0.0024511998053640127,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.00666119996458292,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.00666119996458292,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 15,
+    "event_id": "5F79E466-0679-2415-15DF-7D0100000010:35773646",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 15,
+      "event_id": "5F79E466-0679-2415-15DF-7D0100000010:35773646",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773646,
+        "original_timestamp_ns": 1523475642361084255,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261027,
+    "core_count": 1,
+    "independent_audit_s": 0.002163900062441826,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005280100042000413,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005280100042000413,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 16,
+    "event_id": "7E71E666-0679-2415-16DF-7D0100000010:35773647",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 16,
+      "event_id": "7E71E666-0679-2415-16DF-7D0100000010:35773647",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773647,
+        "original_timestamp_ns": 1523475642361213310,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261028,
+    "core_count": 1,
+    "independent_audit_s": 0.002732000080868602,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005875200033187866,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005875200033187866,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 17,
+    "event_id": "7179E766-0679-2415-18DF-7D0100000010:35773649",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 17,
+      "event_id": "7179E766-0679-2415-18DF-7D0100000010:35773649",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773649,
+        "original_timestamp_ns": 1523475642361280881,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261029,
+    "core_count": 1,
+    "independent_audit_s": 0.0026314998976886272,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.006222200114279985,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.006222200114279985,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 18,
+    "event_id": "3847E866-0679-2415-19DF-7D0100000010:35773650",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 18,
+      "event_id": "3847E866-0679-2415-19DF-7D0100000010:35773650",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773650,
+        "original_timestamp_ns": 1523475642361333560,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261030,
+    "core_count": 1,
+    "independent_audit_s": 0.001982400193810463,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005619199946522713,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005619199946522713,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 19,
+    "event_id": "D9A4E866-0679-2415-1ADF-7D0100000010:35773651",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 19,
+      "event_id": "D9A4E866-0679-2415-1ADF-7D0100000010:35773651",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773651,
+        "original_timestamp_ns": 1523475642361357529,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261031,
+    "core_count": 1,
+    "independent_audit_s": 0.0019359998404979706,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.0058114000130444765,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.0058114000130444765,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 20,
+    "event_id": "34167F67-0679-2415-1CDF-7D0100000010:35773652",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 20,
+      "event_id": "34167F67-0679-2415-1CDF-7D0100000010:35773652",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773652,
+        "original_timestamp_ns": 1523475642371216948,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261032,
+    "core_count": 1,
+    "independent_audit_s": 0.003491699928417802,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.0066188001073896885,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.0066188001073896885,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 21,
+    "event_id": "7D0A8A67-0679-2415-25DF-7D0100000010:35773659",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 21,
+      "event_id": "7D0A8A67-0679-2415-25DF-7D0100000010:35773659",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773659,
+        "original_timestamp_ns": 1523475642371934845,
+        "source_process": 295839,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261033,
+    "core_count": 1,
+    "independent_audit_s": 0.002841399982571602,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.007092699874192476,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.007092699874192476,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 22,
+    "event_id": "4CF68B67-0679-2415-26DF-7D0100000010:35773660",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 22,
+      "event_id": "4CF68B67-0679-2415-26DF-7D0100000010:35773660",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773660,
+        "original_timestamp_ns": 1523475642372060748,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261034,
+    "core_count": 1,
+    "independent_audit_s": 0.0032021000515669584,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005373300053179264,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005373300053179264,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 23,
+    "event_id": "DBBD8C67-0679-2415-28DF-7D0100000010:35773662",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 23,
+      "event_id": "DBBD8C67-0679-2415-28DF-7D0100000010:35773662",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773662,
+        "original_timestamp_ns": 1523475642372111835,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261035,
+    "core_count": 1,
+    "independent_audit_s": 0.0018093998078256845,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005737000145018101,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005737000145018101,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 24,
+    "event_id": "CB3C8D67-0679-2415-2ADF-7D0100000010:35773664",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 24,
+      "event_id": "CB3C8D67-0679-2415-2ADF-7D0100000010:35773664",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773664,
+        "original_timestamp_ns": 1523475642372144331,
+        "source_process": 399422,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261036,
+    "core_count": 1,
+    "independent_audit_s": 0.00277339993044734,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.005900700110942125,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.005900700110942125,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 25,
+    "event_id": "B9C363EE-0679-2415-3BDF-7D0100000010:35773681",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 25,
+      "event_id": "B9C363EE-0679-2415-3BDF-7D0100000010:35773681",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773681,
+        "original_timestamp_ns": 1523475644634350521,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261037,
+    "core_count": 1,
+    "independent_audit_s": 0.002913899952545762,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.009141200222074986,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.009141200222074986,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 26,
+    "event_id": "93CD875E-0779-2415-4CDF-7D0100000010:35773698",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 26,
+      "event_id": "93CD875E-0779-2415-4CDF-7D0100000010:35773698",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773698,
+        "original_timestamp_ns": 1523475646515760531,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261038,
+    "core_count": 1,
+    "independent_audit_s": 0.0026390000712126493,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.007153799990192056,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.007153799990192056,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 27,
+    "event_id": "22319F7E-0879-2415-76DF-7D0100000010:35773739",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 27,
+      "event_id": "22319F7E-0879-2415-76DF-7D0100000010:35773739",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773739,
+        "original_timestamp_ns": 1523475651349131554,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261039,
+    "core_count": 1,
+    "independent_audit_s": 0.0025355000980198383,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.006620100000873208,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.006620100000873208,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 28,
+    "event_id": "12FC28C4-0879-2415-7FDF-7D0100000010:35773748",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 28,
+      "event_id": "12FC28C4-0879-2415-7FDF-7D0100000010:35773748",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773748,
+        "original_timestamp_ns": 1523475652515789842,
+        "source_process": 295846,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261040,
+    "core_count": 1,
+    "independent_audit_s": 0.002881700173020363,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.006717800162732601,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.006717800162732601,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 29,
+    "event_id": "59F398F2-0979-2415-ABDF-7D0100000010:35773791",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 8,
+    "units": [
+      "e:0",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 29,
+      "event_id": "59F398F2-0979-2415-ABDF-7D0100000010:35773791",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773791,
+        "original_timestamp_ns": 1523475657589846873,
+        "source_process": 399423,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261041,
+    "core_count": 1,
+    "independent_audit_s": 0.001267199870198965,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.0025422999169677496,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.0025422999169677496,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:0": {
+          "e:0": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 194
+    },
+    "intrinsic_queries": 194,
+    "status": "ok",
+    "selected": [
+      "e:0",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 30,
+    "event_id": "BE5D9AF2-0979-2415-AFDF-7D0100000010:35773795",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 30,
+      "event_id": "BE5D9AF2-0979-2415-AFDF-7D0100000010:35773795",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773795,
+        "original_timestamp_ns": 1523475657589939646,
+        "source_process": 399423,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261042,
+    "core_count": 1,
+    "independent_audit_s": 0.002536499872803688,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.006542599992826581,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.006542599992826581,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  },
+  {
+    "case": 31,
+    "event_id": "22789DF2-0979-2415-B7DF-7D0100000010:35773801",
+    "scenario": "p1_earliest_alerts",
+    "target_class": "Violation",
+    "n_units": 9,
+    "units": [
+      "e:0",
+      "e:1",
+      "r:A_SEQ0",
+      "r:A_SEQ1",
+      "r:A_SEQ2",
+      "r:A_SEQ3",
+      "r:A_SEQ4",
+      "r:A_SEQ5",
+      "r:D_UNSEEN"
+    ],
+    "horizon": 2,
+    "case_metadata": {
+      "case": 31,
+      "event_id": "22789DF2-0979-2415-B7DF-7D0100000010:35773801",
+      "scenario": "p1_earliest_alerts",
+      "alertstratum": "p1_earliest_alerts",
+      "target_class": "Violation",
+      "horizon": 2,
+      "metadata": {
+        "original_subject_row": 35773801,
+        "original_timestamp_ns": 1523475657590143010,
+        "source_process": 399423,
+        "stream_segment": "exact two consecutive events for this verified process, guard horizon2, no state atoms"
+      }
+    },
+    "method": "tracepolicy",
+    "seed": 20261043,
+    "core_count": 1,
+    "independent_audit_s": 0.0019247999880462885,
+    "setup_s": 0,
+    "attribution_s": 0,
+    "selection_certification_s": 0.0059744000900536776,
+    "fixed_set_proof_s": 0,
+    "total_s": 0.0059744000900536776,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:1": {
+          "e:0": 0,
+          "e:1": 0,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 1
+        },
+        "r:D_UNSEEN": {
+          "e:0": 0,
+          "e:1": 1,
+          "r:A_SEQ0": 0,
+          "r:A_SEQ1": 0,
+          "r:A_SEQ2": 0,
+          "r:A_SEQ3": 0,
+          "r:A_SEQ4": 0,
+          "r:A_SEQ5": 0,
+          "r:D_UNSEEN": 0
+        }
+      },
+      "checks": 386
+    },
+    "intrinsic_queries": 386,
+    "status": "ok",
+    "selected": [
+      "e:1",
+      "r:D_UNSEEN"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 0,
+    "canonical_queries": 0
+  }
+]

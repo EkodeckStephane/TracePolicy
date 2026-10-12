@@ -1,0 +1,7 @@
+{
+  "prospective_choice_publication_commit": "e3d2ab2",
+  "branch": "revision/cose-2026-review",
+  "publication_before_test_decision_output": true,
+  "policy_manifest_sha256": "ced4ff7d6368ba131d2afec273d452bcea3d3359ed075141dacbebf07982a667",
+  "additional_catalog_schema_provenance": "bounded two-consecutive-event process-local segments preserve all guard memory, no state atoms"
+}

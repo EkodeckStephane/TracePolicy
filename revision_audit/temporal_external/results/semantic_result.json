@@ -1,0 +1,27 @@
+{
+  "protocol_sha256": "07ea05259478c3da0537d867d943d0af9f7db040046eabc7d2ea56ce421d6f67",
+  "policy_manifest_sha256": "ced4ff7d6368ba131d2afec273d452bcea3d3359ed075141dacbebf07982a667",
+  "rows": 13843613,
+  "alerts": {
+    "p0": 2136620,
+    "p1": 2658998,
+    "p2": 2136620
+  },
+  "temporal_deltas": 522378,
+  "diagnostic_seq_fires": 0,
+  "catalogs": {
+    "p1_earliest_alerts": {
+      "n": 32,
+      "path": "p1_earliest_alerts_catalog.json"
+    },
+    "p1_temporal_delta": {
+      "n": 32,
+      "path": "p1_temporal_delta_catalog.json"
+    },
+    "p2_positive_sequence": {
+      "n": 0,
+      "path": "p2_positive_sequence_catalog.json"
+    }
+  },
+  "detection_metrics": "withheld until REAPr identity schema is audited"
+}

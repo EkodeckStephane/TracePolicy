@@ -12,3 +12,4 @@
 local_lab/results/** -text
 results/** -text
 revision_audit/*.json -text
+revision_audit/temporal_external/**/*.json -text
