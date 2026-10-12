@@ -1,0 +1,10 @@
+# Separate environment: Alibi requires NumPy < 2, unlike SHAP 0.50.
+alibi==0.9.6
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.17.1
+scikit-learn==1.9.1
+spacy==3.7.5
+thinc==8.2.5
+blis==0.7.11
+click==8.1.8

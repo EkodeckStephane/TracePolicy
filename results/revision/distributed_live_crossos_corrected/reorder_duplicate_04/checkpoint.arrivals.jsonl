@@ -1,0 +1,4 @@
+{"event_id":"reorder_duplicate_04:B:1","lateness_s":0.10562372207641602,"peer":["172.21.89.166",35188],"received_at":1791801824.953148,"status":"accepted"}
+{"event_id":"reorder_duplicate_04:A:2","lateness_s":0.001001119613647461,"peer":["127.0.0.1",2449],"received_at":1791801825.233386,"status":"accepted"}
+{"event_id":"reorder_duplicate_04:A:2","lateness_s":0.007147789001464844,"peer":["127.0.0.1",2450],"received_at":1791801825.2395327,"status":"duplicate"}
+{"event_id":"reorder_duplicate_04:A:1","lateness_s":0.8524694442749023,"peer":["127.0.0.1",2451],"received_at":1791801825.4531004,"status":"accepted"}

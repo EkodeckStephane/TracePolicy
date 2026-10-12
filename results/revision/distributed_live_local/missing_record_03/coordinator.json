@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "status": "incomplete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 2,
+    "committed": 0,
+    "pending": 2,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [
+        1
+      ],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [],
+    "decisions": []
+  },
+  "arrivals": [
+    {
+      "event_id": "missing_record_03:B:1",
+      "received_at": 1791796913.4868143,
+      "lateness_s": 0.008370637893676758,
+      "status": "accepted"
+    },
+    {
+      "event_id": "missing_record_03:A:2",
+      "received_at": 1791796913.823556,
+      "lateness_s": 0.003512144088745117,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "127.0.0.1",
+    "port": 13407,
+    "pid": 41284,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

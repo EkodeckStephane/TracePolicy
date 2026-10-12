@@ -1,0 +1,70 @@
+{
+  "catalog_sha256": "8de2eda9657ae8e2e8e80cb0f38a2493e8495382224430a53eb66b4b0c09f841",
+  "catalog_provenance": {
+    "kind": "controlled smoke; not external data",
+    "policy": {
+      "pid": "temporal_seq",
+      "version": 1,
+      "rules": [
+        {
+          "rid": "SEQ",
+          "priority": 10,
+          "effect": "DENY",
+          "selector": {
+            "action": "act",
+            "resource_class": "*",
+            "subject_class": "*"
+          },
+          "guard": {
+            "comparisons": [],
+            "state_comparisons": [],
+            "seen_action": null,
+            "seen_resource": null,
+            "seen_horizon": 0,
+            "count_action": null,
+            "count_resource": null,
+            "count_horizon": 0,
+            "count_op": null,
+            "count_threshold": null,
+            "seq_actions": [
+              "start",
+              "act"
+            ],
+            "seq_horizon": 3,
+            "all_of": [],
+            "any_of": [],
+            "none_of": []
+          }
+        }
+      ],
+      "created_at": 0.0
+    }
+  },
+  "policy_sha256": "c683a0550160bff46dc97665fd50d1683530a742f9eec5e6428053215351b654",
+  "case_count": 1,
+  "arguments": {
+    "case_catalog": "revision_COSE_2026\\code\\results\\revision\\catalog_smoke\\input.json",
+    "output": "revision_COSE_2026\\code\\results\\revision\\catalog_smoke\\results",
+    "methods": "anchors",
+    "seeds": "11,23,47",
+    "seed_base": 20261012,
+    "timeout_s": 120,
+    "lime_samples": 5000,
+    "shap_samples": 1024
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "shap": null,
+    "lime": null,
+    "alibi": "0.9.6"
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "cold_import_s": {
+    "anchors": 9.674917000113055
+  },
+  "mask_encoding": "integer k retains unit i iff k & (1<<i)",
+  "oracle_backend": "native prediction memoization begins empty per method/case; FFA independent table caches event-mask state; exact prefix/proof calls canonical evaluator",
+  "limits": "declared external alert sample; domain-relative validity; cached backends/separate environments preclude timing superiority inference"
+}

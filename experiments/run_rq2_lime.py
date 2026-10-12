@@ -7,7 +7,7 @@ sys.path.insert(0,str(ROOT/'src')); sys.path.insert(0,str(ROOT/'vendor'))
 import trace_policy_engine as tpe
 from local_bench import clean_policy
 from lime.lime_tabular import LimeTabularExplainer
-RES=ROOT/'results'/'raw'; SEEDS=json.load(open(ROOT/'config'/'seeds.json'))['seeds']
+RES=ROOT/'results'/'revision'/'legacy_driver'; RES.mkdir(parents=True,exist_ok=True); SEEDS=json.load(open(ROOT/'config'/'seeds.json'))['seeds']
 CLASSES=[tpe.NOALERT,tpe.VIOLATION,tpe.CONFLICT,tpe.GAP]
 
 def make_case(kind,seed):
@@ -20,7 +20,7 @@ def make_case(kind,seed):
     if kind=='scan': return [tpe.Event(f'S{seed}_{i}',i+1,'connect','network','user',{},1,'scan') for i in range(3)]
 
 def unit_info(trace,pol,horizon=4):
-    st=max(0,len(trace)-horizon); eps=list(range(st,len(trace))); cur=trace[-1]; rids=[r.rid for r in pol.rules if r.selector.matches(cur)]; units=[f'e:{i}' for i in eps]+[f'r:{r}' for r in rids]; return eps,rids,units
+    return tpe.explanation_unit_info(trace,pol,horizon)
 
 def smallest(trace,pol,ranking):
     s=set()

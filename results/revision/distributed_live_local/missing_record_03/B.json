@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 37648,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "source": "B"
+  },
+  "observations": [
+    {
+      "source": "B",
+      "source_seq": 1,
+      "trace_id": "missing_record_03",
+      "policy_version": 2,
+      "event": {
+        "eid": "missing_record_03:B:1",
+        "ts": 1791796913.4784436,
+        "action": "exec",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "child_process_exec",
+            "returncode": 0,
+            "output": "executed-child 14024",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 37648,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "B"
+          },
+          "operation_start": 1791796913.418182,
+          "operation_end": 1791796913.4784436
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "missing_record_03:B:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    }
+  ]
+}

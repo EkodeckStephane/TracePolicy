@@ -1,0 +1,571 @@
+[
+  {
+    "run_id": "ordered_00",
+    "profile": "ordered",
+    "repeat": 0,
+    "source_processes": [
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 41928,
+        "platform": "Windows-10-10.0.26200-SP0",
+        "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "source": "A"
+      },
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 397,
+        "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "interpreter": "/usr/bin/python3",
+        "source": "B"
+      }
+    ],
+    "coordinator_process": {
+      "host": "0.0.0.0",
+      "hostname": "DESKTOP-5C8VKSH",
+      "pid": 29572,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "port": 10068,
+      "restored": false
+    },
+    "restarts": [],
+    "canonical": [
+      {
+        "event_id": "ordered_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "ordered_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "ordered_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "observed": [
+      {
+        "event_id": "ordered_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "ordered_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "ordered_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "summary": {
+      "status": "complete",
+      "sources": [
+        "A",
+        "B"
+      ],
+      "observed": 3,
+      "committed": 3,
+      "pending": 0,
+      "duplicate_count": 0,
+      "sequence_gaps": {
+        "A": [],
+        "B": []
+      },
+      "missing_watermarks": [],
+      "closed_sources": [
+        "A",
+        "B"
+      ],
+      "errors": [],
+      "decisions": [
+        {
+          "event_id": "ordered_00:A:1",
+          "trace_id": "ordered_00",
+          "policy_version": 1,
+          "alert_class": "NoAlert",
+          "top": [
+            "ALLOW_OBSERVED"
+          ]
+        },
+        {
+          "event_id": "ordered_00:B:1",
+          "trace_id": "ordered_00",
+          "policy_version": 2,
+          "alert_class": "NoAlert",
+          "top": [
+            "ALLOW_OBSERVED"
+          ]
+        },
+        {
+          "event_id": "ordered_00:A:2",
+          "trace_id": "ordered_00",
+          "policy_version": 2,
+          "alert_class": "Violation",
+          "top": [
+            "DENY_READ_EXEC_CONNECT"
+          ]
+        }
+      ]
+    },
+    "expected_status": "complete",
+    "status_matches": true,
+    "canonical_matches": true,
+    "checkpoint_replay_matches": true,
+    "actual_operation_count": 3,
+    "expected_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "actual_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "sha256": {
+      "config.json": "63ae14f5bfabd6e62f2622b1fbaaba7467c25d943a0d8c78a3d2e15b4d83f833",
+      "A.json": "2eddac6e1aa292921f299ba612ba952c1269b8a7cfe27d91ff78ae470c1193a5",
+      "B.json": "7fdebf2a0726d74bf4321224a1e653eb5c84c1a5ecc71c0fd5559f21f57105db",
+      "checkpoint.json": "ef88942af8dc80c39fdb9d50636c33ae4750c942cbba1e8eedc228b66e471ea8"
+    }
+  },
+  {
+    "run_id": "reorder_duplicate_00",
+    "profile": "reorder_duplicate",
+    "repeat": 0,
+    "source_processes": [
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 17912,
+        "platform": "Windows-10-10.0.26200-SP0",
+        "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "source": "A"
+      },
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 403,
+        "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "interpreter": "/usr/bin/python3",
+        "source": "B"
+      }
+    ],
+    "coordinator_process": {
+      "host": "0.0.0.0",
+      "hostname": "DESKTOP-5C8VKSH",
+      "pid": 43560,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "port": 10078,
+      "restored": false
+    },
+    "restarts": [],
+    "canonical": [
+      {
+        "event_id": "reorder_duplicate_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "reorder_duplicate_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "reorder_duplicate_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "observed": [
+      {
+        "event_id": "reorder_duplicate_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "reorder_duplicate_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "reorder_duplicate_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "summary": {
+      "status": "complete",
+      "sources": [
+        "A",
+        "B"
+      ],
+      "observed": 3,
+      "committed": 3,
+      "pending": 0,
+      "duplicate_count": 1,
+      "sequence_gaps": {
+        "A": [],
+        "B": []
+      },
+      "missing_watermarks": [],
+      "closed_sources": [
+        "A",
+        "B"
+      ],
+      "errors": [],
+      "decisions": [
+        {
+          "event_id": "reorder_duplicate_00:A:1",
+          "trace_id": "reorder_duplicate_00",
+          "policy_version": 1,
+          "alert_class": "NoAlert",
+          "top": [
+            "ALLOW_OBSERVED"
+          ]
+        },
+        {
+          "event_id": "reorder_duplicate_00:B:1",
+          "trace_id": "reorder_duplicate_00",
+          "policy_version": 2,
+          "alert_class": "NoAlert",
+          "top": [
+            "ALLOW_OBSERVED"
+          ]
+        },
+        {
+          "event_id": "reorder_duplicate_00:A:2",
+          "trace_id": "reorder_duplicate_00",
+          "policy_version": 2,
+          "alert_class": "Violation",
+          "top": [
+            "DENY_READ_EXEC_CONNECT"
+          ]
+        }
+      ]
+    },
+    "expected_status": "complete",
+    "status_matches": true,
+    "canonical_matches": true,
+    "checkpoint_replay_matches": true,
+    "actual_operation_count": 3,
+    "expected_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "actual_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "sha256": {
+      "config.json": "d12ef73d4a4b069f0b0642658f2c180aa1a0665753225f45365a1a9a3de64b1c",
+      "A.json": "0de20ca0262ced1e18ca00f3cf957ab52349341b7fe38423168772195883c026",
+      "B.json": "5893780674d808f0631775b39dde6269fc76daaaac47684c605972b37a94b903",
+      "checkpoint.json": "93b6ade7cecbc70c3380998b97c0facbcb371d9329c1966081d9ad2733ff7748"
+    }
+  },
+  {
+    "run_id": "missing_record_00",
+    "profile": "missing_record",
+    "repeat": 0,
+    "source_processes": [
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 46820,
+        "platform": "Windows-10-10.0.26200-SP0",
+        "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "source": "A"
+      },
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 410,
+        "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "interpreter": "/usr/bin/python3",
+        "source": "B"
+      }
+    ],
+    "coordinator_process": {
+      "host": "0.0.0.0",
+      "hostname": "DESKTOP-5C8VKSH",
+      "pid": 13172,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "port": 10092,
+      "restored": false
+    },
+    "restarts": [],
+    "canonical": [
+      {
+        "event_id": "missing_record_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "missing_record_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "missing_record_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "observed": [],
+    "summary": {
+      "status": "incomplete",
+      "sources": [
+        "A",
+        "B"
+      ],
+      "observed": 2,
+      "committed": 0,
+      "pending": 2,
+      "duplicate_count": 0,
+      "sequence_gaps": {
+        "A": [
+          1
+        ],
+        "B": []
+      },
+      "missing_watermarks": [],
+      "closed_sources": [
+        "A",
+        "B"
+      ],
+      "errors": [],
+      "decisions": []
+    },
+    "expected_status": "incomplete",
+    "status_matches": true,
+    "canonical_matches": false,
+    "checkpoint_replay_matches": true,
+    "actual_operation_count": 3,
+    "expected_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "actual_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "sha256": {
+      "config.json": "5e065c76480a6591e60b2121e241721d95c1d2a6070c69b81584cce35562bb19",
+      "A.json": "497330d9b427ae3090cc4e34af5a877c12c7bcc75b94c2c8931e6038af55edb0",
+      "B.json": "6b0e29430c5e46c72ffcae8391efc9c83f31b6e3ceff252b517fe906fc68984a",
+      "checkpoint.json": "f9bc5ba94d97032f2a23f05668767288974d52f1fd5f5b6d64a9a3affb3f289e"
+    }
+  },
+  {
+    "run_id": "late_00",
+    "profile": "late",
+    "repeat": 0,
+    "source_processes": [
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 13632,
+        "platform": "Windows-10-10.0.26200-SP0",
+        "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "source": "A"
+      },
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 416,
+        "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "interpreter": "/usr/bin/python3",
+        "source": "B"
+      }
+    ],
+    "coordinator_process": {
+      "host": "0.0.0.0",
+      "hostname": "DESKTOP-5C8VKSH",
+      "pid": 19116,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "port": 10101,
+      "restored": false
+    },
+    "restarts": [],
+    "canonical": [
+      {
+        "event_id": "late_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "late_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "late_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "observed": [],
+    "summary": {
+      "status": "incomplete",
+      "sources": [
+        "A",
+        "B"
+      ],
+      "observed": 2,
+      "committed": 0,
+      "pending": 2,
+      "duplicate_count": 0,
+      "sequence_gaps": {
+        "A": [
+          1
+        ],
+        "B": []
+      },
+      "missing_watermarks": [],
+      "closed_sources": [
+        "A",
+        "B"
+      ],
+      "errors": [
+        "record exceeds the declared lateness budget"
+      ],
+      "decisions": []
+    },
+    "expected_status": "incomplete",
+    "status_matches": true,
+    "canonical_matches": false,
+    "checkpoint_replay_matches": true,
+    "actual_operation_count": 3,
+    "expected_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "actual_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "sha256": {
+      "config.json": "fa68c85836e4c34bb928e8adbd7cedf752ea2769a6f87f3336c2467f7e24a52a",
+      "A.json": "4d01f3b3410879bf573d011fc82f64b6a842dea6d3b8b1e2fdabb7e20d337a5c",
+      "B.json": "3ceadff78aff110338c501ca475b947250016567138c1b99bc3d458339155d4e",
+      "checkpoint.json": "8be779cd5280ae51a65a8cd4066ee993bdc8e680fcb7a7f6d5aa8e5ba43a7407"
+    }
+  },
+  {
+    "run_id": "wrong_version_00",
+    "profile": "wrong_version",
+    "repeat": 0,
+    "source_processes": [
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 22304,
+        "platform": "Windows-10-10.0.26200-SP0",
+        "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "source": "A"
+      },
+      {
+        "hostname": "DESKTOP-5C8VKSH",
+        "pid": 422,
+        "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "interpreter": "/usr/bin/python3",
+        "source": "B"
+      }
+    ],
+    "coordinator_process": {
+      "host": "0.0.0.0",
+      "hostname": "DESKTOP-5C8VKSH",
+      "pid": 43956,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "port": 10113,
+      "restored": false
+    },
+    "restarts": [],
+    "canonical": [
+      {
+        "event_id": "wrong_version_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "wrong_version_00:B:1",
+        "policy_version": 2,
+        "alert_class": "NoAlert"
+      },
+      {
+        "event_id": "wrong_version_00:A:2",
+        "policy_version": 2,
+        "alert_class": "Violation"
+      }
+    ],
+    "observed": [
+      {
+        "event_id": "wrong_version_00:A:1",
+        "policy_version": 1,
+        "alert_class": "NoAlert"
+      }
+    ],
+    "summary": {
+      "status": "incomplete",
+      "sources": [
+        "A",
+        "B"
+      ],
+      "observed": 2,
+      "committed": 1,
+      "pending": 1,
+      "duplicate_count": 0,
+      "sequence_gaps": {
+        "A": [
+          2
+        ],
+        "B": []
+      },
+      "missing_watermarks": [],
+      "closed_sources": [
+        "A",
+        "B"
+      ],
+      "errors": [
+        "record policy version does not match frozen event-time schedule"
+      ],
+      "decisions": [
+        {
+          "event_id": "wrong_version_00:A:1",
+          "trace_id": "wrong_version_00",
+          "policy_version": 1,
+          "alert_class": "NoAlert",
+          "top": [
+            "ALLOW_OBSERVED"
+          ]
+        }
+      ]
+    },
+    "expected_status": "incomplete",
+    "status_matches": true,
+    "canonical_matches": false,
+    "checkpoint_replay_matches": true,
+    "actual_operation_count": 3,
+    "expected_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "actual_action_order": [
+      "read",
+      "exec",
+      "connect"
+    ],
+    "sha256": {
+      "config.json": "399f54a724079920756b3a4569a520215340251ad2e5dd853b2553622a146985",
+      "A.json": "53247b03f1f0ad4234e77093d8b36e5708c1cace3ff767436ebde58d1f844901",
+      "B.json": "44d099cf18bbebd3e010a55f9dd9503c06797b1e2f14db5cfbba02c2dbc8f74d",
+      "checkpoint.json": "ce3ead7b6598902f3480f48f5c5af6195e2e7a0565c4391ce1fa769cfaa472b0"
+    }
+  }
+]

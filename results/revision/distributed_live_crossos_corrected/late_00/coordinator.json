@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "status": "incomplete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 2,
+    "committed": 0,
+    "pending": 2,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [
+        1
+      ],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [
+      "record exceeds the declared lateness budget"
+    ],
+    "decisions": []
+  },
+  "arrivals": [
+    {
+      "event_id": "late_00:B:1",
+      "received_at": 1791801747.5113215,
+      "peer": [
+        "172.21.89.166",
+        41490
+      ],
+      "lateness_s": 0.329390287399292,
+      "status": "accepted"
+    },
+    {
+      "event_id": "late_00:A:2",
+      "received_at": 1791801747.565323,
+      "peer": [
+        "127.0.0.1",
+        1983
+      ],
+      "lateness_s": 0.0030028820037841797,
+      "status": "accepted"
+    },
+    {
+      "event_id": "late_00:A:1",
+      "received_at": 1791801748.0354912,
+      "peer": [
+        "127.0.0.1",
+        1984
+      ],
+      "status": "rejected",
+      "error": "record exceeds the declared lateness budget",
+      "lateness_s": 1.1035406589508057
+    }
+  ],
+  "process": {
+    "host": "0.0.0.0",
+    "port": 1977,
+    "pid": 26748,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

@@ -1,0 +1,1079 @@
+[
+  {
+    "case": "instant_violation",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:1",
+      "r:D"
+    ],
+    "feature_indices": [
+      1,
+      2
+    ],
+    "anchor": [
+      "e:1 = retained",
+      "r:D = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2509,
+    "threshold": 0.95,
+    "init_us": 1889.7,
+    "explanation_us": 693094.4,
+    "total_native_us": 694984.1,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 71.0,
+    "total_certified_us": 695055.1,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "instant_violation",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:1",
+      "r:D"
+    ],
+    "feature_indices": [
+      1,
+      2
+    ],
+    "anchor": [
+      "e:1 = retained",
+      "r:D = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2493,
+    "threshold": 0.95,
+    "init_us": 204.9,
+    "explanation_us": 855480.1,
+    "total_native_us": 855685.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 166.6,
+    "total_certified_us": 855851.6,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "instant_violation",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:D",
+      "e:1"
+    ],
+    "feature_indices": [
+      2,
+      1
+    ],
+    "anchor": [
+      "r:D = retained",
+      "e:1 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.251,
+    "threshold": 0.95,
+    "init_us": 511.1,
+    "explanation_us": 652388.5,
+    "total_native_us": 652899.6,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 233.1,
+    "total_certified_us": 653132.7,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "conflict",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:A",
+      "r:D",
+      "e:0"
+    ],
+    "feature_indices": [
+      2,
+      1,
+      0
+    ],
+    "anchor": [
+      "r:A = retained",
+      "r:D = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1213,
+    "threshold": 0.95,
+    "init_us": 270.9,
+    "explanation_us": 1554944.1,
+    "total_native_us": 1555215.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 123.1,
+    "total_certified_us": 1555338.1,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "r:A",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "conflict",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:D",
+      "r:A",
+      "e:0"
+    ],
+    "feature_indices": [
+      1,
+      2,
+      0
+    ],
+    "anchor": [
+      "r:D = retained",
+      "r:A = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1251,
+    "threshold": 0.95,
+    "init_us": 684.9,
+    "explanation_us": 1303030.6,
+    "total_native_us": 1303715.5,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 77.2,
+    "total_certified_us": 1303792.7,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "r:A",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "conflict",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:0",
+      "r:D",
+      "r:A"
+    ],
+    "feature_indices": [
+      0,
+      1,
+      2
+    ],
+    "anchor": [
+      "e:0 = retained",
+      "r:D = retained",
+      "r:A = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1262,
+    "threshold": 0.95,
+    "init_us": 199.3,
+    "explanation_us": 991151.2,
+    "total_native_us": 991350.5,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 65.5,
+    "total_certified_us": 991416.0,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "r:A",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "gap",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [],
+    "feature_indices": [],
+    "anchor": [],
+    "precision": 1.0,
+    "coverage": 1.0,
+    "threshold": 0.95,
+    "init_us": 183.0,
+    "explanation_us": 1882.2,
+    "total_native_us": 2065.2,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 180.0,
+    "total_certified_us": 2245.2,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 0,
+      "selected": [],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "gap",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [],
+    "feature_indices": [],
+    "anchor": [],
+    "precision": 1.0,
+    "coverage": 1.0,
+    "threshold": 0.95,
+    "init_us": 235.9,
+    "explanation_us": 2363.6,
+    "total_native_us": 2599.5,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 83.3,
+    "total_certified_us": 2682.8,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 0,
+      "selected": [],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "gap",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [],
+    "feature_indices": [],
+    "anchor": [],
+    "precision": 1.0,
+    "coverage": 1.0,
+    "threshold": 0.95,
+    "init_us": 326.9,
+    "explanation_us": 2771.1,
+    "total_native_us": 3098.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 68.3,
+    "total_certified_us": 3166.3,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 0,
+      "selected": [],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "temporal_seq",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:SEQ",
+      "e:2",
+      "e:0"
+    ],
+    "feature_indices": [
+      3,
+      2,
+      0
+    ],
+    "anchor": [
+      "r:SEQ = retained",
+      "e:2 = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1237,
+    "threshold": 0.95,
+    "init_us": 250.6,
+    "explanation_us": 1134018.4,
+    "total_native_us": 1134269.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 115.6,
+    "total_certified_us": 1134384.6,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "temporal_seq",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:0",
+      "r:SEQ",
+      "e:2"
+    ],
+    "feature_indices": [
+      0,
+      3,
+      2
+    ],
+    "anchor": [
+      "e:0 = retained",
+      "r:SEQ = retained",
+      "e:2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1243,
+    "threshold": 0.95,
+    "init_us": 307.9,
+    "explanation_us": 858157.2,
+    "total_native_us": 858465.1,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 117.2,
+    "total_certified_us": 858582.2999999999,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "temporal_seq",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:0",
+      "e:2",
+      "r:SEQ"
+    ],
+    "feature_indices": [
+      0,
+      2,
+      3
+    ],
+    "anchor": [
+      "e:0 = retained",
+      "e:2 = retained",
+      "r:SEQ = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1278,
+    "threshold": 0.95,
+    "init_us": 318.6,
+    "explanation_us": 933923.3,
+    "total_native_us": 934241.9,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 98.3,
+    "total_certified_us": 934340.2000000001,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "multiple_rules",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:0",
+      "r:D2"
+    ],
+    "feature_indices": [
+      0,
+      2
+    ],
+    "anchor": [
+      "e:0 = retained",
+      "r:D2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2469,
+    "threshold": 0.95,
+    "init_us": 276.0,
+    "explanation_us": 39595.5,
+    "total_native_us": 39871.5,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 89.4,
+    "total_certified_us": 39960.9,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:0",
+        "r:D2"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "multiple_rules",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:0",
+      "r:D2"
+    ],
+    "feature_indices": [
+      0,
+      2
+    ],
+    "anchor": [
+      "e:0 = retained",
+      "r:D2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.251,
+    "threshold": 0.95,
+    "init_us": 190.5,
+    "explanation_us": 30031.3,
+    "total_native_us": 30221.8,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 80.3,
+    "total_certified_us": 30302.1,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:0",
+        "r:D2"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "multiple_rules",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:0",
+      "r:D2"
+    ],
+    "feature_indices": [
+      0,
+      2
+    ],
+    "anchor": [
+      "e:0 = retained",
+      "r:D2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.253,
+    "threshold": 0.95,
+    "init_us": 257.5,
+    "explanation_us": 30270.8,
+    "total_native_us": 30528.3,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 66.5,
+    "total_certified_us": 30594.8,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:0",
+        "r:D2"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "multiple_events",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:2",
+      "r:SEEN",
+      "e:0"
+    ],
+    "feature_indices": [
+      2,
+      3,
+      0
+    ],
+    "anchor": [
+      "e:2 = retained",
+      "r:SEEN = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1237,
+    "threshold": 0.95,
+    "init_us": 390.2,
+    "explanation_us": 737078.5,
+    "total_native_us": 737468.7,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 126.1,
+    "total_certified_us": 737594.7999999999,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEEN"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "multiple_events",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:2",
+      "r:SEEN",
+      "e:0"
+    ],
+    "feature_indices": [
+      2,
+      3,
+      0
+    ],
+    "anchor": [
+      "e:2 = retained",
+      "r:SEEN = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1243,
+    "threshold": 0.95,
+    "init_us": 309.9,
+    "explanation_us": 603651.5,
+    "total_native_us": 603961.4,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 90.2,
+    "total_certified_us": 604051.6,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEEN"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "multiple_events",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:2",
+      "r:SEEN",
+      "e:0"
+    ],
+    "feature_indices": [
+      2,
+      3,
+      0
+    ],
+    "anchor": [
+      "e:2 = retained",
+      "r:SEEN = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.1278,
+    "threshold": 0.95,
+    "init_us": 199.8,
+    "explanation_us": 709848.0,
+    "total_native_us": 710047.8,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 166.0,
+    "total_certified_us": 710213.8,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEEN"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "distractors",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:2",
+      "r:D"
+    ],
+    "feature_indices": [
+      2,
+      3
+    ],
+    "anchor": [
+      "e:2 = retained",
+      "r:D = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2486,
+    "threshold": 0.95,
+    "init_us": 344.0,
+    "explanation_us": 822551.0,
+    "total_native_us": 822895.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 203.0,
+    "total_certified_us": 823098.0,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:2",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "distractors",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:D",
+      "e:2"
+    ],
+    "feature_indices": [
+      3,
+      2
+    ],
+    "anchor": [
+      "r:D = retained",
+      "e:2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2511,
+    "threshold": 0.95,
+    "init_us": 245.2,
+    "explanation_us": 810367.3,
+    "total_native_us": 810612.5,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 224.3,
+    "total_certified_us": 810836.8,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:2",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "distractors",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:D",
+      "e:2"
+    ],
+    "feature_indices": [
+      3,
+      2
+    ],
+    "anchor": [
+      "r:D = retained",
+      "e:2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2567,
+    "threshold": 0.95,
+    "init_us": 244.0,
+    "explanation_us": 940509.7,
+    "total_native_us": 940753.7,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 366.3,
+    "total_certified_us": 941120.0,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:2",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "state_fixed_context",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:1",
+      "r:STATE"
+    ],
+    "feature_indices": [
+      0,
+      1
+    ],
+    "anchor": [
+      "e:1 = retained",
+      "r:STATE = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2509,
+    "threshold": 0.95,
+    "init_us": 265.9,
+    "explanation_us": 663882.9,
+    "total_native_us": 664148.8,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 61.1,
+    "total_certified_us": 664209.9,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:STATE"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "state_fixed_context",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:STATE",
+      "e:1"
+    ],
+    "feature_indices": [
+      1,
+      0
+    ],
+    "anchor": [
+      "r:STATE = retained",
+      "e:1 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.2493,
+    "threshold": 0.95,
+    "init_us": 272.4,
+    "explanation_us": 617629.7,
+    "total_native_us": 617902.1,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 66.0,
+    "total_certified_us": 617968.1,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:STATE"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "state_fixed_context",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:STATE",
+      "e:1"
+    ],
+    "feature_indices": [
+      1,
+      0
+    ],
+    "anchor": [
+      "r:STATE = retained",
+      "e:1 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.251,
+    "threshold": 0.95,
+    "init_us": 333.6,
+    "explanation_us": 549256.5,
+    "total_native_us": 549590.1,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 110.0,
+    "total_certified_us": 549700.1,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:STATE"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "count_threshold",
+    "seed": 11,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:1",
+      "r:COUNT",
+      "e:0",
+      "e:2"
+    ],
+    "feature_indices": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "anchor": [
+      "e:1 = retained",
+      "r:COUNT = retained",
+      "e:0 = retained",
+      "e:2 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.0588,
+    "threshold": 0.95,
+    "init_us": 205.6,
+    "explanation_us": 2393395.0,
+    "total_native_us": 2393600.6,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 112.0,
+    "total_certified_us": 2393712.6,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 4,
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:COUNT"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "count_threshold",
+    "seed": 23,
+    "method": "AnchorTabular",
+    "selected": [
+      "e:1",
+      "r:COUNT",
+      "e:2",
+      "e:0"
+    ],
+    "feature_indices": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "anchor": [
+      "e:1 = retained",
+      "r:COUNT = retained",
+      "e:2 = retained",
+      "e:0 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.0618,
+    "threshold": 0.95,
+    "init_us": 305.0,
+    "explanation_us": 2261117.0,
+    "total_native_us": 2261422.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 165.8,
+    "total_certified_us": 2261587.8,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 4,
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:COUNT"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "count_threshold",
+    "seed": 47,
+    "method": "AnchorTabular",
+    "selected": [
+      "r:COUNT",
+      "e:2",
+      "e:0",
+      "e:1"
+    ],
+    "feature_indices": [
+      3,
+      2,
+      0,
+      1
+    ],
+    "anchor": [
+      "r:COUNT = retained",
+      "e:2 = retained",
+      "e:0 = retained",
+      "e:1 = retained"
+    ],
+    "precision": 1.0,
+    "coverage": 0.0636,
+    "threshold": 0.95,
+    "init_us": 415.3,
+    "explanation_us": 1385924.7,
+    "total_native_us": 1386340.0,
+    "implementation": "alibi.AnchorTabular",
+    "background_distribution": "uniform_complete_binary_domain",
+    "status": "ok",
+    "exact_certified": true,
+    "certification_us": 98.0,
+    "total_certified_us": 1386438.0,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 4,
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:COUNT"
+      ],
+      "valid_alternative_count": 1
+    }
+  }
+]

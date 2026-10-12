@@ -1,0 +1,80 @@
+{
+  "kind": "controlled smoke; not external data",
+  "policy": {
+    "pid": "temporal_seq",
+    "version": 1,
+    "rules": [
+      {
+        "rid": "SEQ",
+        "priority": 10,
+        "effect": "DENY",
+        "selector": {
+          "action": "act",
+          "resource_class": "*",
+          "subject_class": "*"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [
+            "start",
+            "act"
+          ],
+          "seq_horizon": 3,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      }
+    ],
+    "created_at": 0.0
+  },
+  "cases": [
+    {
+      "case": 0,
+      "trace": [
+        {
+          "eid": "0",
+          "ts": 0.0,
+          "action": "start",
+          "resource_class": "resource",
+          "subject_class": "user",
+          "attrs": {},
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "1",
+          "ts": 1.0,
+          "action": "noise",
+          "resource_class": "resource",
+          "subject_class": "user",
+          "attrs": {},
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "2",
+          "ts": 2.0,
+          "action": "act",
+          "resource_class": "resource",
+          "subject_class": "user",
+          "attrs": {},
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "horizon": 3,
+      "scenario": "temporal_seq",
+      "target_class": "Violation"
+    }
+  ]
+}

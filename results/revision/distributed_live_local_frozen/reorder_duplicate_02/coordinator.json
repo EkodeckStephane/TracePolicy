@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "status": "complete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 3,
+    "committed": 3,
+    "pending": 0,
+    "duplicate_count": 1,
+    "sequence_gaps": {
+      "A": [],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [],
+    "decisions": [
+      {
+        "event_id": "reorder_duplicate_02:A:1",
+        "trace_id": "reorder_duplicate_02",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "reorder_duplicate_02:B:1",
+        "trace_id": "reorder_duplicate_02",
+        "policy_version": 2,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "reorder_duplicate_02:A:2",
+        "trace_id": "reorder_duplicate_02",
+        "policy_version": 2,
+        "alert_class": "Violation",
+        "top": [
+          "DENY_READ_EXEC_CONNECT"
+        ]
+      }
+    ]
+  },
+  "arrivals": [
+    {
+      "event_id": "reorder_duplicate_02:B:1",
+      "received_at": 1791797348.4583347,
+      "lateness_s": 0.008046627044677734,
+      "status": "accepted"
+    },
+    {
+      "event_id": "reorder_duplicate_02:A:2",
+      "received_at": 1791797348.8264158,
+      "lateness_s": 0.002015829086303711,
+      "status": "accepted"
+    },
+    {
+      "event_id": "reorder_duplicate_02:A:2",
+      "received_at": 1791797348.828416,
+      "lateness_s": 0.00401616096496582,
+      "status": "duplicate"
+    },
+    {
+      "event_id": "reorder_duplicate_02:A:1",
+      "received_at": 1791797349.05557,
+      "lateness_s": 0.8686928749084473,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "127.0.0.1",
+    "port": 13005,
+    "pid": 18396,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

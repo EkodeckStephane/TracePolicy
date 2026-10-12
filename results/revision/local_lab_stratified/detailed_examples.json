@@ -1,0 +1,728 @@
+[
+  {
+    "case": 0,
+    "scenario": "admin_probe",
+    "seed": 2026081401,
+    "event_index": 180,
+    "target": "Violation",
+    "trace": [
+      {
+        "eid": "b8106b11-5ba6-cc0e-8887-7abb0974e3cb",
+        "ts": 1786797289.5622094,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "b8106b11-5ba6-cc0e-8887-7abb0974e3cb"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "26b34430-486b-3854-eb47-0fab7eea214b",
+        "ts": 1786797289.5690398,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "26b34430-486b-3854-eb47-0fab7eea214b"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "215e81c6-2b8b-308f-fe2d-4726ef5bca71",
+        "ts": 1786797289.582967,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "215e81c6-2b8b-308f-fe2d-4726ef5bca71"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "9869413f-f39e-de54-c601-23583da1853a",
+        "ts": 1786797289.5917351,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "9869413f-f39e-de54-c601-23583da1853a"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "2974cf63-4211-bb12-0857-fdd03f23683b",
+        "ts": 1786797289.5963998,
+        "action": "http_request",
+        "resource_class": "admin_sensitive",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/admin/secret",
+          "status": 403,
+          "sid": "2974cf63-4211-bb12-0857-fdd03f23683b"
+        },
+        "malicious": 1,
+        "attack_type": "admin_probe"
+      }
+    ],
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "core": [
+      "e:4",
+      "r:D_ADMIN"
+    ],
+    "witnesses": {
+      "e:4": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 0,
+        "e:3": 0,
+        "e:4": 0,
+        "r:D_ADMIN": 1,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "r:D_ADMIN": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 0,
+        "e:3": 0,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      }
+    },
+    "shap_weights": {
+      "e:0": 0.0,
+      "e:1": 0.0,
+      "e:2": 0.0,
+      "e:3": 0.0,
+      "e:4": 0.5,
+      "r:D_ADMIN": 0.5,
+      "r:D_TRAVERSAL": 0.0,
+      "r:D_COMMAND": 0.0,
+      "r:D_BRUTEFORCE": 0.0,
+      "r:A_AUTH_FAIL_SINGLE": 0.0,
+      "r:A_AUTH": 0.0,
+      "r:A_PUBLIC": 0.0,
+      "r:A_STATUS": 0.0
+    },
+    "shap_selected": [
+      "e:4",
+      "r:D_ADMIN"
+    ],
+    "lime_weights": {
+      "e:4": 0.5078716061466555,
+      "r:D_ADMIN": 0.5048514816626206,
+      "r:A_AUTH_FAIL_SINGLE": -0.017762654967901574,
+      "r:D_BRUTEFORCE": 0.014846688251111373,
+      "r:D_TRAVERSAL": 0.012207893301333603,
+      "r:A_STATUS": 0.01093102535850027,
+      "e:2": -0.007303049910210359,
+      "e:3": -0.0065776942434505135,
+      "r:D_COMMAND": -0.005790470025175394,
+      "e:0": -0.005037905472121878,
+      "e:1": -0.00453460210146504,
+      "r:A_AUTH": -0.004088448999121252,
+      "r:A_PUBLIC": -0.0037363408355938167
+    },
+    "lime_selected": [
+      "e:4",
+      "r:D_ADMIN"
+    ]
+  },
+  {
+    "case": 30,
+    "scenario": "bruteforce",
+    "seed": 2026081401,
+    "event_index": 77,
+    "target": "Violation",
+    "trace": [
+      {
+        "eid": "b8154558-4c66-5797-f123-bd8fef4f0978",
+        "ts": 1786797288.502902,
+        "action": "http_request",
+        "resource_class": "public",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/public",
+          "status": 200,
+          "sid": "b8154558-4c66-5797-f123-bd8fef4f0978"
+        },
+        "malicious": 0,
+        "attack_type": "benign_public"
+      },
+      {
+        "eid": "1e12278f-77cf-4511-4a38-ffcdd53e107f",
+        "ts": 1786797288.5078704,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "1e12278f-77cf-4511-4a38-ffcdd53e107f"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "2d2c04ab-f816-5806-c875-4ee8d76f72ab",
+        "ts": 1786797288.519145,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "2d2c04ab-f816-5806-c875-4ee8d76f72ab"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "96108fa7-8a22-c160-7651-80757d0e4532",
+        "ts": 1786797288.5254412,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "96108fa7-8a22-c160-7651-80757d0e4532"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "c9616dd8-f49d-66ac-ea8c-a71ea4c02110",
+        "ts": 1786797288.5335803,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "c9616dd8-f49d-66ac-ea8c-a71ea4c02110"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      }
+    ],
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "core": [
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_BRUTEFORCE"
+    ],
+    "witnesses": {
+      "e:1": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 1,
+        "e:3": 1,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "e:2": {
+        "e:0": 0,
+        "e:1": 1,
+        "e:2": 0,
+        "e:3": 1,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "e:3": {
+        "e:0": 0,
+        "e:1": 1,
+        "e:2": 1,
+        "e:3": 0,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "e:4": {
+        "e:0": 0,
+        "e:1": 1,
+        "e:2": 1,
+        "e:3": 1,
+        "e:4": 0,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "r:D_BRUTEFORCE": {
+        "e:0": 0,
+        "e:1": 1,
+        "e:2": 1,
+        "e:3": 1,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      }
+    },
+    "shap_weights": {
+      "e:0": 0.009670028026315811,
+      "e:1": 0.20754233020706514,
+      "e:2": 0.17965321787824834,
+      "e:3": 0.19316680012366513,
+      "e:4": 0.20886937745652426,
+      "r:D_ADMIN": 0.0,
+      "r:D_TRAVERSAL": 0.0,
+      "r:D_COMMAND": 0.004114659067145436,
+      "r:D_BRUTEFORCE": 0.1931002656595988,
+      "r:A_AUTH_FAIL_SINGLE": 0.0,
+      "r:A_AUTH": -0.011022211636654289,
+      "r:A_PUBLIC": 0.009411078424418821,
+      "r:A_STATUS": 0.005494454793672292
+    },
+    "shap_selected": [
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_BRUTEFORCE"
+    ],
+    "lime_weights": {
+      "e:2": 0.07089561670940236,
+      "e:3": 0.06963999982718383,
+      "e:4": 0.06731687083754272,
+      "e:1": 0.06560830926199307,
+      "r:D_BRUTEFORCE": 0.06534217738622496,
+      "r:A_STATUS": 0.013196388992481227,
+      "r:D_ADMIN": -0.008570576015373685,
+      "r:D_TRAVERSAL": 0.005450425334591582,
+      "e:0": -0.0051587274625773385,
+      "r:A_PUBLIC": 0.004617875656314319,
+      "r:A_AUTH": -0.0037929722507414887,
+      "r:D_COMMAND": -0.0027112287113656972,
+      "r:A_AUTH_FAIL_SINGLE": -0.002427511154568871
+    },
+    "lime_selected": [
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_BRUTEFORCE"
+    ]
+  },
+  {
+    "case": 60,
+    "scenario": "command_probe",
+    "seed": 2026081401,
+    "event_index": 294,
+    "target": "Violation",
+    "trace": [
+      {
+        "eid": "3dfd5ea6-fabe-3e17-0733-c6043ebfaf80",
+        "ts": 1786797290.8101552,
+        "action": "http_request",
+        "resource_class": "status",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/status",
+          "status": 200,
+          "sid": "3dfd5ea6-fabe-3e17-0733-c6043ebfaf80"
+        },
+        "malicious": 0,
+        "attack_type": "benign_status"
+      },
+      {
+        "eid": "320b0288-bf80-2343-670d-540863f4b49c",
+        "ts": 1786797290.821003,
+        "action": "http_request",
+        "resource_class": "public",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/public",
+          "status": 200,
+          "sid": "320b0288-bf80-2343-670d-540863f4b49c"
+        },
+        "malicious": 0,
+        "attack_type": "benign_public"
+      },
+      {
+        "eid": "b4746f09-c3de-b10a-57cb-6db4fefa6137",
+        "ts": 1786797290.8369522,
+        "action": "http_request",
+        "resource_class": "public",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/public",
+          "status": 200,
+          "sid": "b4746f09-c3de-b10a-57cb-6db4fefa6137"
+        },
+        "malicious": 0,
+        "attack_type": "benign_public"
+      },
+      {
+        "eid": "ba5024fc-dd53-ff37-612d-d392b1e897ec",
+        "ts": 1786797290.853368,
+        "action": "http_request",
+        "resource_class": "public",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/public",
+          "status": 200,
+          "sid": "ba5024fc-dd53-ff37-612d-d392b1e897ec"
+        },
+        "malicious": 0,
+        "attack_type": "benign_public"
+      },
+      {
+        "eid": "b95c7722-9e86-1e67-3fdc-b2607b00c70d",
+        "ts": 1786797290.8656514,
+        "action": "http_request",
+        "resource_class": "command_probe",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/cmd",
+          "status": 400,
+          "sid": "b95c7722-9e86-1e67-3fdc-b2607b00c70d"
+        },
+        "malicious": 1,
+        "attack_type": "command_probe"
+      }
+    ],
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "core": [
+      "e:4",
+      "r:D_COMMAND"
+    ],
+    "witnesses": {
+      "e:4": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 0,
+        "e:3": 0,
+        "e:4": 0,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 1,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "r:D_COMMAND": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 0,
+        "e:3": 0,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      }
+    },
+    "shap_weights": {
+      "e:0": 0.0,
+      "e:1": 0.0,
+      "e:2": 0.0,
+      "e:3": 0.0,
+      "e:4": 0.5000000000000002,
+      "r:D_ADMIN": 0.0,
+      "r:D_TRAVERSAL": 0.0,
+      "r:D_COMMAND": 0.4999999999999998,
+      "r:D_BRUTEFORCE": 0.0,
+      "r:A_AUTH_FAIL_SINGLE": 0.0,
+      "r:A_AUTH": 0.0,
+      "r:A_PUBLIC": 0.0,
+      "r:A_STATUS": 0.0
+    },
+    "shap_selected": [
+      "e:4",
+      "r:D_COMMAND"
+    ],
+    "lime_weights": {
+      "e:4": 0.5241558477795865,
+      "r:D_COMMAND": 0.5053507505072026,
+      "r:D_BRUTEFORCE": -0.010503838048453396,
+      "r:A_PUBLIC": -0.01033974688994317,
+      "r:A_AUTH": -0.010128299769334707,
+      "r:D_ADMIN": -0.007868020427429671,
+      "e:0": 0.005067785154998998,
+      "e:1": -0.003782659587600014,
+      "e:2": -0.0024785297435018735,
+      "r:D_TRAVERSAL": 0.0014599173986077638,
+      "r:A_AUTH_FAIL_SINGLE": -0.0006594752682840773,
+      "r:A_STATUS": -0.00017461267608417033,
+      "e:3": 6.738134296555478e-05
+    },
+    "lime_selected": [
+      "e:4",
+      "r:D_COMMAND"
+    ]
+  },
+  {
+    "case": 90,
+    "scenario": "path_traversal",
+    "seed": 2026081401,
+    "event_index": 120,
+    "target": "Violation",
+    "trace": [
+      {
+        "eid": "dc7107e5-db71-d065-7cdd-daf7dc21a626",
+        "ts": 1786797288.9434898,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "dc7107e5-db71-d065-7cdd-daf7dc21a626"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "899dd87b-1897-a267-a0e1-d174636d5bf6",
+        "ts": 1786797288.9589999,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "899dd87b-1897-a267-a0e1-d174636d5bf6"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "9f439d85-8e56-7faa-d306-d92e969f0fdf",
+        "ts": 1786797288.973147,
+        "action": "http_request",
+        "resource_class": "auth_fail",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/login",
+          "status": 401,
+          "sid": "9f439d85-8e56-7faa-d306-d92e969f0fdf"
+        },
+        "malicious": 1,
+        "attack_type": "bruteforce"
+      },
+      {
+        "eid": "995aad65-3078-4565-1800-f03c5d703816",
+        "ts": 1786797288.9870756,
+        "action": "http_request",
+        "resource_class": "public",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/public",
+          "status": 200,
+          "sid": "995aad65-3078-4565-1800-f03c5d703816"
+        },
+        "malicious": 0,
+        "attack_type": "benign_public"
+      },
+      {
+        "eid": "2efa23e7-2b5f-deb9-0479-01c0f7d9bd4e",
+        "ts": 1786797288.9996176,
+        "action": "http_request",
+        "resource_class": "path_traversal",
+        "subject_class": "remote_client",
+        "attrs": {
+          "path": "/../../etc/passwd",
+          "status": 400,
+          "sid": "2efa23e7-2b5f-deb9-0479-01c0f7d9bd4e"
+        },
+        "malicious": 1,
+        "attack_type": "path_traversal"
+      }
+    ],
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "core": [
+      "e:4",
+      "r:D_TRAVERSAL"
+    ],
+    "witnesses": {
+      "e:4": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 0,
+        "e:3": 0,
+        "e:4": 0,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 1,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "r:D_TRAVERSAL": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 0,
+        "e:3": 0,
+        "e:4": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      }
+    },
+    "shap_weights": {
+      "e:0": 0.0,
+      "e:1": 0.0,
+      "e:2": 0.0,
+      "e:3": 0.0,
+      "e:4": 0.5,
+      "r:D_ADMIN": 0.0,
+      "r:D_TRAVERSAL": 0.5,
+      "r:D_COMMAND": 0.0,
+      "r:D_BRUTEFORCE": 0.0,
+      "r:A_AUTH_FAIL_SINGLE": 0.0,
+      "r:A_AUTH": 0.0,
+      "r:A_PUBLIC": 0.0,
+      "r:A_STATUS": 0.0
+    },
+    "shap_selected": [
+      "e:4",
+      "r:D_TRAVERSAL"
+    ],
+    "lime_weights": {
+      "e:4": 0.5207507675230286,
+      "r:D_TRAVERSAL": 0.5189178390378808,
+      "e:0": 0.016360424570076255,
+      "r:D_BRUTEFORCE": 0.011773679292784913,
+      "r:D_COMMAND": 0.007300633515074534,
+      "e:1": -0.006189349484314361,
+      "e:3": -0.005366005526695519,
+      "r:A_PUBLIC": -0.004620320037675807,
+      "r:A_AUTH_FAIL_SINGLE": 0.003011865624141568,
+      "r:A_AUTH": 0.0025031572681084237,
+      "r:A_STATUS": -0.00200534339093285,
+      "e:2": -0.0006395343953538964,
+      "r:D_ADMIN": -5.7333643105896866e-05
+    },
+    "lime_selected": [
+      "e:4",
+      "r:D_TRAVERSAL"
+    ]
+  }
+]

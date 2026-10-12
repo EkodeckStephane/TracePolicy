@@ -1,0 +1,3 @@
+{"event_id":"late_02:B:1","lateness_s":0.015428543090820312,"peer":["172.21.89.166",35018],"received_at":1791801788.628247,"status":"accepted"}
+{"event_id":"late_02:A:2","lateness_s":0.0035986900329589844,"peer":["127.0.0.1",2135],"received_at":1791801788.9817598,"status":"accepted"}
+{"error":"record exceeds the declared lateness budget","event_id":"late_02:A:1","lateness_s":1.1038105487823486,"peer":["127.0.0.1",2136],"received_at":1791801789.4536753,"status":"rejected"}

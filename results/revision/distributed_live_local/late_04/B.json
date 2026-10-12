@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 34776,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "source": "B"
+  },
+  "observations": [
+    {
+      "source": "B",
+      "source_seq": 1,
+      "trace_id": "late_04",
+      "policy_version": 2,
+      "event": {
+        "eid": "late_04:B:1",
+        "ts": 1791796927.416067,
+        "action": "exec",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "child_process_exec",
+            "returncode": 0,
+            "output": "executed-child 12836",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 34776,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "B"
+          },
+          "operation_start": 1791796927.3728046,
+          "operation_end": 1791796927.416067
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "late_04:B:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    }
+  ]
+}

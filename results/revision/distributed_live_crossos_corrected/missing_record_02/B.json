@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 481,
+    "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "interpreter": "/usr/bin/python3",
+    "source": "B"
+  },
+  "observations": [
+    {
+      "source": "B",
+      "source_seq": 1,
+      "trace_id": "missing_record_02",
+      "policy_version": 2,
+      "event": {
+        "eid": "missing_record_02:B:1",
+        "ts": 1791801785.2473972,
+        "action": "exec",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "child_process_exec",
+            "returncode": 0,
+            "output": "executed-child 483",
+            "interpreter": "/usr/bin/python3"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 481,
+            "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+            "interpreter": "/usr/bin/python3",
+            "source": "B"
+          },
+          "operation_start": 1791801785.2207334,
+          "operation_end": 1791801785.2473972
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "missing_record_02:B:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    }
+  ]
+}

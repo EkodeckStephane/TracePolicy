@@ -1,0 +1,38 @@
+{
+  "run_id": "missing_record_02",
+  "profile": "missing_record",
+  "sources": [
+    "A",
+    "B"
+  ],
+  "start_epoch": 1791796901.415364,
+  "max_lateness_s": 1.5,
+  "schedule": [
+    [
+      0,
+      1
+    ],
+    [
+      1791796901.535364,
+      2
+    ]
+  ],
+  "jobs": {
+    "A": [
+      {
+        "action": "read",
+        "offset_s": 0.02
+      },
+      {
+        "action": "connect",
+        "offset_s": 0.65
+      }
+    ],
+    "B": [
+      {
+        "action": "exec",
+        "offset_s": 0.25
+      }
+    ]
+  }
+}

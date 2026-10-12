@@ -1,0 +1,101 @@
+{
+  "allowed": [
+    [
+      10,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      2
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      4,
+      3,
+      0
+    ],
+    [
+      8,
+      0,
+      0
+    ]
+  ],
+  "policy_rules": 7,
+  "train_sizes": [
+    {
+      "member": "train0.pkl",
+      "nodes": 167265,
+      "edges": 284562
+    },
+    {
+      "member": "train1.pkl",
+      "nodes": 380204,
+      "edges": 674723
+    }
+  ],
+  "protocol": {
+    "kind": "exploratory_external_static_projection",
+    "origin": "MAGIC derivative THEIA E3 archive",
+    "archive_sha256": "926b4e30a39b1680fe512ef015bfe03ab85760e12dc7d8ae88da40a346bd6864",
+    "train": [
+      "train0.pkl",
+      "train1.pkl"
+    ],
+    "descriptive_validation": [
+      "train2.pkl"
+    ],
+    "test": "test0.pkl",
+    "cap_allow_selectors": 6,
+    "min_support": 1,
+    "hyperparameter_selection": "none",
+    "explanation_edge_indexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "labels": "metadata malicious node IDs, incident-edge OR used for prediction aggregation",
+    "metadata_schema_and_sample_ids_previously_inspected": true,
+    "temporal_claim": false
+  },
+  "frozen_policy_sha256": "eb3ca7908771f4add614952116ccdb4e897cf22f790dadcd082f135526f6bc9a"
+}

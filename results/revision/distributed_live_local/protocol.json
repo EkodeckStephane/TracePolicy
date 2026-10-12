@@ -1,0 +1,36 @@
+{
+  "kind": "live_tcp_operation_lab",
+  "topology": "one_host_three_distinct_os_processes",
+  "sources": [
+    "A",
+    "B"
+  ],
+  "profiles": [
+    "ordered",
+    "reorder_duplicate",
+    "missing_record",
+    "late",
+    "wrong_version",
+    "restart"
+  ],
+  "repeats": 5,
+  "total_runs": 30,
+  "trust": [
+    "source identity",
+    "source clock",
+    "source sequence",
+    "policy schedule"
+  ],
+  "expected_incomplete": [
+    "missing_record",
+    "late",
+    "wrong_version"
+  ],
+  "expected_complete": [
+    "ordered",
+    "reorder_duplicate",
+    "restart"
+  ],
+  "clock_synchronization_measured": false,
+  "network_faults": "controlled send-side injections"
+}

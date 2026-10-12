@@ -36,6 +36,8 @@ def transition(state: SystemState, event: Event) -> SystemState:
     add state values before evaluation, but they must do so deterministically and record
     that transition function in their protocol.
     """
+    if event.action == '__STUTTER__':
+        return state
     v = dict(state.values)
     v['event_count'] = int(v.get('event_count', 0)) + 1
     v[f'action_count:{event.action}'] = int(v.get(f'action_count:{event.action}', 0)) + 1
@@ -58,6 +60,8 @@ class Selector:
     subject_class: str='*'
 
     def matches(self, e: Event) -> bool:
+        if e.action == '__STUTTER__':
+            return False
         return ((self.action=='*' or self.action==e.action) and
                 (self.resource_class=='*' or self.resource_class==e.resource_class) and
                 (self.subject_class=='*' or self.subject_class==e.subject_class))
@@ -115,6 +119,8 @@ class Guard:
         if not trace:
             return False
         e = trace[-1]
+        if e.action == '__STUTTER__':
+            return False
         state = state or derive_state(trace)
 
         for key,op,val in self.comparisons:
@@ -132,7 +138,7 @@ class Guard:
         if self.seen_action is not None:
             h=max(1,int(self.seen_horizon))
             window=trace[-h:]
-            if not any((self.seen_action=='*' or z.action==self.seen_action) and
+            if not any(z.action!='__STUTTER__' and (self.seen_action=='*' or z.action==self.seen_action) and
                        (self.seen_resource is None or self.seen_resource=='*' or z.resource_class==self.seen_resource)
                        for z in window):
                 return False
@@ -141,14 +147,14 @@ class Guard:
             h=max(1,int(self.count_horizon))
             window=trace[-h:]
             c=sum(1 for z in window
-                  if (self.count_action=='*' or z.action==self.count_action)
+                  if z.action!='__STUTTER__' and (self.count_action=='*' or z.action==self.count_action)
                   and (self.count_resource is None or self.count_resource=='*' or z.resource_class==self.count_resource))
             if not self._cmp(c, self.count_op or '>=', self.count_threshold if self.count_threshold is not None else 0):
                 return False
 
         if self.seq_actions:
             h=max(len(self.seq_actions), int(self.seq_horizon or len(self.seq_actions)))
-            acts=[z.action for z in trace[-h:]]
+            acts=[z.action for z in trace[-h:] if z.action!='__STUTTER__']
             pos=0
             for a in acts:
                 want=self.seq_actions[pos]
@@ -269,18 +275,24 @@ class IncrementalEvaluator:
         self.trace: List[Event]=[]
         self.state=initial_state or SystemState()
         self.version_history=[policy.version]
+        self.discarded_positions=0
 
     def update_policy(self, policy: PolicyVersion):
         if policy.version <= self.policy.version:
             raise ValueError('policy updates must create a strictly newer immutable version')
+        required_horizon=policy_monitor_horizon(policy)
+        if required_horizon>self.retention_horizon and self.discarded_positions:
+            raise ValueError('cannot enlarge monitor horizon after history was discarded; '
+                             'preconfigure sufficient retention or replay a full archived prefix')
         self.policy=policy
         self.index=StaticIndex(policy)
-        self.retention_horizon=max(self.retention_horizon, policy_monitor_horizon(policy))
+        self.retention_horizon=max(self.retention_horizon, required_horizon)
         self.version_history.append(policy.version)
 
     def push(self,e:Event)->EvalResult:
         self.trace.append(e)
         if len(self.trace)>self.retention_horizon:
+            self.discarded_positions+=len(self.trace)-self.retention_horizon
             del self.trace[:-self.retention_horizon]
         self.state=transition(self.state,e)
         return self.index.eval(self.trace,state=self.state)
@@ -303,15 +315,37 @@ def _neutralized_trace(trace: Sequence[Event], keep_event_positions:Set[int]) ->
 def _class_under_mask(trace: Sequence[Event], policy: PolicyVersion, event_positions: Sequence[int],
                       rule_ids: Sequence[str], bits: Sequence[int]) -> str:
     ne=len(event_positions)
-    keep_e={event_positions[i] for i in range(ne) if bits[i]}
-    keep_r={rule_ids[j] for j in range(len(rule_ids)) if bits[ne+j]}
+    if len(bits) != ne + len(rule_ids):
+        raise ValueError('mask length does not match explanatory domain')
+    # Context outside the declared intervention horizon is fixed factual context.
+    keep_e=set(range(len(trace))) - set(event_positions)
+    keep_e.update(event_positions[i] for i in range(ne) if bits[i])
+    keep_r={r.rid for r in policy.rules} - set(rule_ids)
+    keep_r.update(rule_ids[j] for j in range(len(rule_ids)) if bits[ne+j])
     t=_neutralized_trace(trace,keep_e)
     return reference_eval(t,policy,enabled=keep_r,state=derive_state(t)).alert_class
 
 
+def explanation_unit_info(trace, policy, horizon=4, relevant_only=False):
+    """Declared retention domain: horizon events, policy rules, fixed prior context.
+
+    Selector reduction is safe only because current-event neutralization matches
+    no selector. It changes the universe; report this explicitly if used.
+    """
+    if not trace or horizon < 1:
+        raise ValueError('nonempty trace and positive horizon required')
+    eps=list(range(max(0,len(trace)-horizon),len(trace)))
+    rids=[r.rid for r in policy.rules if not relevant_only or r.selector.matches(trace[-1])]
+    return eps,rids,[f'e:{i}' for i in eps]+[f'r:{r}' for r in rids]
+
+
 def min_explain_bruteforce(trace: Sequence[Event], policy: PolicyVersion, horizon:int=4,
-                          relevant_only:bool=True, max_units:int=18) -> Explanation:
+                          relevant_only:bool=False, max_units:int=18) -> Explanation:
     """Exact bounded retention-abductive explainer.
+
+    Replay starts from an empty SystemState with the default transition. This
+    API does not explain custom initial/evaluation states. Policy contents must
+    remain immutable; frozen dataclasses do not deep-freeze caller containers.
 
     Sufficiency/minimality checks enumerate every assignment of the currently
     free explanatory units. The extraction therefore has worst-case time
@@ -322,17 +356,7 @@ def min_explain_bruteforce(trace: Sequence[Event], policy: PolicyVersion, horizo
     factual=reference_eval(trace,policy)
     y=factual.alert_class
     if y==NOALERT: raise ValueError('Explanation requested for NoAlert')
-    start=max(0,len(trace)-horizon)
-    event_positions=list(range(start,len(trace)))
-    if relevant_only:
-        cur=trace[-1]
-        rset=[r.rid for r in policy.rules if r.selector.matches(cur)]
-        for rid in factual.applicable:
-            if rid not in rset: rset.append(rid)
-        rule_ids=rset
-    else:
-        rule_ids=[r.rid for r in policy.rules]
-    units=[f'e:{i}' for i in event_positions]+[f'r:{r}' for r in rule_ids]
+    event_positions,rule_ids,units=explanation_unit_info(trace,policy,horizon,relevant_only)
     n=len(units); checks=0
     if n>max_units:
         raise RuntimeError(f'bounded brute-force explainer unit limit exceeded: {n}>{max_units}')
@@ -367,12 +391,11 @@ def min_explain_bruteforce(trace: Sequence[Event], policy: PolicyVersion, horizo
 
 
 def exact_sufficiency_of_selected(trace: Sequence[Event], policy: PolicyVersion, selected_units:Set[str],
-                                  horizon:int=4, max_units:int=18):
+                                  horizon:int=4, max_units:int=18, relevant_only:bool=False):
     factual=reference_eval(trace,policy); y=factual.alert_class
-    start=max(0,len(trace)-horizon); event_positions=list(range(start,len(trace)))
-    cur=trace[-1]
-    rule_ids=[r.rid for r in policy.rules if r.selector.matches(cur)]
-    units=[f'e:{i}' for i in event_positions]+[f'r:{r}' for r in rule_ids]
+    event_positions,rule_ids,units=explanation_unit_info(trace,policy,horizon,relevant_only)
+    if selected_units-set(units):
+        raise ValueError('selected units outside explanatory domain')
     core={i for i,u in enumerate(units) if u in selected_units}
     n=len(units)
     if n>max_units: return None

@@ -1,0 +1,128 @@
+{
+  "identity": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 15664,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "source": "A"
+  },
+  "observations": [
+    {
+      "source": "A",
+      "source_seq": 1,
+      "trace_id": "wrong_version_00",
+      "policy_version": 1,
+      "event": {
+        "eid": "wrong_version_00:A:1",
+        "ts": 1791801750.6298757,
+        "action": "read",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "filesystem_read",
+            "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\wrong_version_00\\work_A\\fixture.txt",
+            "bytes": 24,
+            "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 15664,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "A"
+          },
+          "operation_start": 1791801750.627254,
+          "operation_end": 1791801750.6298757
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    },
+    {
+      "source": "A",
+      "source_seq": 2,
+      "trace_id": "wrong_version_00",
+      "policy_version": 2,
+      "event": {
+        "eid": "wrong_version_00:A:2",
+        "ts": 1791801751.2606258,
+        "action": "connect",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "tcp_connect",
+            "endpoint": [
+              "127.0.0.1",
+              1988
+            ],
+            "reply": "connected"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 15664,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "A"
+          },
+          "operation_start": 1791801751.2565837,
+          "operation_end": 1791801751.2606258
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "wrong_version_00:A:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    },
+    {
+      "event_id": "wrong_version_00:A:2",
+      "duplicate": false,
+      "reply": {
+        "error": "record policy version does not match frozen event-time schedule",
+        "ok": false,
+        "result": {
+          "closed_sources": [
+            "B"
+          ],
+          "committed": 1,
+          "decisions": [
+            {
+              "alert_class": "NoAlert",
+              "event_id": "wrong_version_00:A:1",
+              "policy_version": 1,
+              "top": [
+                "ALLOW_OBSERVED"
+              ],
+              "trace_id": "wrong_version_00"
+            }
+          ],
+          "duplicate_count": 0,
+          "errors": [
+            "record policy version does not match frozen event-time schedule"
+          ],
+          "missing_watermarks": [],
+          "observed": 2,
+          "pending": 1,
+          "sequence_gaps": {
+            "A": [],
+            "B": []
+          },
+          "sources": [
+            "A",
+            "B"
+          ],
+          "status": "incomplete"
+        }
+      }
+    }
+  ]
+}

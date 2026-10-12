@@ -1,0 +1,3 @@
+{"event_id":"wrong_version_04:A:1","lateness_s":0.015316009521484375,"peer":["127.0.0.1",2475],"received_at":1791801835.3727314,"status":"accepted"}
+{"event_id":"wrong_version_04:B:1","lateness_s":0.1815323829650879,"peer":["172.21.89.166",52612],"received_at":1791801835.7872891,"status":"accepted"}
+{"error":"record policy version does not match frozen event-time schedule","event_id":"wrong_version_04:A:2","lateness_s":0.003087759017944336,"peer":["127.0.0.1",2480],"received_at":1791801836.0135832,"status":"rejected"}

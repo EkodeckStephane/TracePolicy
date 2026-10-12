@@ -1,0 +1,3395 @@
+{
+  "kind": "post_analysis_of_archived_complete_live_prefixes",
+  "cohort": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected",
+  "cohort_sha256": {
+    "protocol.json": "a88c4bffae3745934a4afbb16724afe464718a0dbcfba5b81f388176ecbfb9bc",
+    "results.json": "53c2e0d75941b92fc838322bf1efc070fe008ae067b8c1e013fff5c125c931a5",
+    "summary.json": "8014da0f60aee3f6c17f7a39551ef02230e8e5dfb5f286772fcb29e93ff0c1c0"
+  },
+  "analysis_sha256": "72b1d471b4e3538bd5699360f732ecc8e47f2536a4b89ed00ee2a500c2708e3a",
+  "engine_snapshot_sha256": "66e509d42fd33e7a2cc7d8fdf8c8e3a6619bf5496e3a5222dd24ff9936674951",
+  "complete_runs": 15,
+  "excluded_incomplete_runs": [
+    "missing_record_00",
+    "late_00",
+    "wrong_version_00",
+    "missing_record_01",
+    "late_01",
+    "wrong_version_01",
+    "missing_record_02",
+    "late_02",
+    "wrong_version_02",
+    "missing_record_03",
+    "late_03",
+    "wrong_version_03",
+    "missing_record_04",
+    "late_04",
+    "wrong_version_04"
+  ],
+  "reference_incremental_comparisons": 45,
+  "sufficient_minimal_proofs": 15,
+  "verified_witnesses": 60,
+  "scope": "default initial state; archived full prefix; trusted canonical IDs/time/version; offline explanation post-analysis, not online proof delivery",
+  "proofs": [
+    {
+      "run_id": "ordered_00",
+      "source_sha256": {
+        "config.json": "30d9e19d5d1c40f98f8cac8adb9e41364d04cecccfcae3cb82bbf8cecc15e2e4",
+        "A.json": "f9c837d94acf1720fd2a713dca468af9efff3211bc1fdaba4b1722422c09a32a",
+        "B.json": "243452f8ee63d59c5bc08108b8ba68fe3aef3e825290e7c87d8dde4816bab052",
+        "checkpoint.json": "343ce4b0b8d9662356b79e11e3d648da536641a0ba1616b0776ae77d7d533aa8"
+      },
+      "trace": [
+        {
+          "eid": "ordered_00:A:1",
+          "ts": 1791801736.6620288,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\ordered_00\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 10260,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801736.65995,
+            "operation_end": 1791801736.6620288
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_00:B:1",
+          "ts": 1791801736.9103127,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 395",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 393,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801736.8881733,
+            "operation_end": 1791801736.9103127
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_00:A:2",
+          "ts": 1791801737.292733,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                6421
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 10260,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801737.2891753,
+            "operation_end": 1791801737.292733
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "ordered_00:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_00:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_00:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 0.00013429997488856316,
+        "intrinsic_extraction": 0.00029630004428327084,
+        "independent_audit": 0.0015898998826742172
+      }
+    },
+    {
+      "run_id": "reorder_duplicate_00",
+      "source_sha256": {
+        "config.json": "9d915b9874f4d98c6d20f3e4bd7a018de8cd571d044c9064f53e7819e492ad2b",
+        "A.json": "b109c76eaea37c271f8a7bc89febd5ee1b1bfe13db30a1a34964364e4f97e8d1",
+        "B.json": "efbc68daa02d17a7f343446e9513afabb8a903c7050ccea19ea3491b713da2ce",
+        "checkpoint.json": "2bf5f9fd4473a6c99dda2b5bc72141f9037a136b02afad0941bcf3e5b4c72583"
+      },
+      "trace": [
+        {
+          "eid": "reorder_duplicate_00:A:1",
+          "ts": 1791801740.0121465,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\reorder_duplicate_00\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 24996,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801740.0095155,
+            "operation_end": 1791801740.0121465
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_00:B:1",
+          "ts": 1791801740.2594569,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 402",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 399,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801740.238262,
+            "operation_end": 1791801740.2594569
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_00:A:2",
+          "ts": 1791801740.6659777,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                6432
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 24996,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801740.6390526,
+            "operation_end": 1791801740.6659777
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "reorder_duplicate_00:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_00:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_00:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 0.00012609991244971752,
+        "intrinsic_extraction": 0.0002297000028192997,
+        "independent_audit": 0.0014184999745339155
+      }
+    },
+    {
+      "run_id": "restart_00",
+      "source_sha256": {
+        "config.json": "fc0bdc2cc9ef2fd215dfa85f7a178142dc12f3d82c78775b3383462b19e5bfa7",
+        "A.json": "c9caa03587027e3159699224173549d8ead46efa0e8cf352912ec08e3607236e",
+        "B.json": "d73273326073417be3c1f5ce3a225865443963be823dea8218fae5d0ed88a2f2",
+        "checkpoint.json": "6dd980d96b8f9d7699db02f6f03af865089559f5740793cd814143c59666bc36"
+      },
+      "trace": [
+        {
+          "eid": "restart_00:A:1",
+          "ts": 1791801753.8543255,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\restart_00\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 16712,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801753.85232,
+            "operation_end": 1791801753.8543255
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_00:B:1",
+          "ts": 1791801754.103098,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 426",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 424,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801754.0808432,
+            "operation_end": 1791801754.103098
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_00:A:2",
+          "ts": 1791801754.5040305,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2000
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 16712,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801754.482247,
+            "operation_end": 1791801754.5040305
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "restart_00:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_00:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_00:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.809985592961311e-05,
+        "intrinsic_extraction": 0.00021489989012479782,
+        "independent_audit": 0.0013355999253690243
+      }
+    },
+    {
+      "run_id": "ordered_01",
+      "source_sha256": {
+        "config.json": "9ebd5816399ca4d41c35b784eb25642df9ddfc7a6793f3e7b7ebd9f7f4da11bd",
+        "A.json": "d486bca3d532e201e40be2df6ca5cf038f36691fd8a72a77105919eead3fad90",
+        "B.json": "240a4d28eedb48ebcc968f0b03101cf0cc8e941be27b3eec2fe6a689a700a150",
+        "checkpoint.json": "6255075b8679b6cc3fe22ba89d94167dbc79a452cea5feb7497e6357f90a6dab"
+      },
+      "trace": [
+        {
+          "eid": "ordered_01:A:1",
+          "ts": 1791801757.2095091,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\ordered_01\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 30956,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801757.2064815,
+            "operation_end": 1791801757.2095091
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_01:B:1",
+          "ts": 1791801757.4628117,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 432",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 430,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801757.435136,
+            "operation_end": 1791801757.4628117
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_01:A:2",
+          "ts": 1791801757.842773,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2013
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 30956,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801757.8357394,
+            "operation_end": 1791801757.842773
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "ordered_01:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_01:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_01:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.63000750541687e-05,
+        "intrinsic_extraction": 0.00022220006212592125,
+        "independent_audit": 0.0011859000660479069
+      }
+    },
+    {
+      "run_id": "reorder_duplicate_01",
+      "source_sha256": {
+        "config.json": "0eef52f26fc1abac737534bb50cd80265035f30e9c086eb457b2d6d3b4916967",
+        "A.json": "e4f8a7865e967ec55e1fa4f5d3c7e0ffa946f8afb96f2c708d8b9d63ba93a005",
+        "B.json": "c8e1676e930114e27e74f44cdb66705d6a4595d3570a9ed7dad5229bfb343f8a",
+        "checkpoint.json": "22dee7cbed60bcfeaae2da6e57dfd6174d619baa063c48d2910ee8be77e7f714"
+      },
+      "trace": [
+        {
+          "eid": "reorder_duplicate_01:A:1",
+          "ts": 1791801760.5482244,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\reorder_duplicate_01\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 43884,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801760.5452173,
+            "operation_end": 1791801760.5482244
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_01:B:1",
+          "ts": 1791801760.7954955,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 438",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 436,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801760.7742667,
+            "operation_end": 1791801760.7954955
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_01:A:2",
+          "ts": 1791801761.1795259,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2028
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 43884,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801761.1755204,
+            "operation_end": 1791801761.1795259
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "reorder_duplicate_01:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_01:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_01:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 9.010010398924351e-05,
+        "intrinsic_extraction": 0.00022879987955093384,
+        "independent_audit": 0.001232299953699112
+      }
+    },
+    {
+      "run_id": "restart_01",
+      "source_sha256": {
+        "config.json": "aeed68c77eeb70112ec393a31f4117b368003d0bf4faff5440057298f7d9860d",
+        "A.json": "2512f559f437d9b34097f46b2b7a38e65e72b1229586e69cd9fad037046403fc",
+        "B.json": "a9d73364c22d93a07ba992e89898cd9367ad1d32841900e7a56742eceb494f81",
+        "checkpoint.json": "0376ffc4e3cffe680faea147eca7a3999260adb206e3881975f2b83e3f626a31"
+      },
+      "trace": [
+        {
+          "eid": "restart_01:A:1",
+          "ts": 1791801774.6773283,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\restart_01\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 32672,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801774.6753216,
+            "operation_end": 1791801774.6773283
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_01:B:1",
+          "ts": 1791801774.9282844,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 465",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 463,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801774.9040594,
+            "operation_end": 1791801774.9282844
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_01:A:2",
+          "ts": 1791801775.333482,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2082
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 32672,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801775.3049858,
+            "operation_end": 1791801775.333482
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "restart_01:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_01:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_01:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.670007809996605e-05,
+        "intrinsic_extraction": 0.00022409996017813683,
+        "independent_audit": 0.0011948999017477036
+      }
+    },
+    {
+      "run_id": "ordered_02",
+      "source_sha256": {
+        "config.json": "a0e2f23ceb33a11efe2b3f2fa042415c6ece6c6e936939cceaf7dcf1979d9a0f",
+        "A.json": "f21d6adce35e758d5142aef2899a947a5e490eb0536962de2128e03417b75810",
+        "B.json": "a6f403195536e6846bcb10d5545d89f84fa98f114d105f397898010a30bbadc7",
+        "checkpoint.json": "322acfaa8e4ef4c4b367235bfc9363a908cd5d4d9f6e6b6b075fcc8b5b5f4ee4"
+      },
+      "trace": [
+        {
+          "eid": "ordered_02:A:1",
+          "ts": 1791801778.0711114,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\ordered_02\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 13108,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801778.068863,
+            "operation_end": 1791801778.0711114
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_02:B:1",
+          "ts": 1791801778.3306112,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 471",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 469,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801778.3060253,
+            "operation_end": 1791801778.3306112
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_02:A:2",
+          "ts": 1791801778.7023351,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2093
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 13108,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801778.6992893,
+            "operation_end": 1791801778.7023351
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "ordered_02:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_02:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_02:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.510006591677666e-05,
+        "intrinsic_extraction": 0.00022389995865523815,
+        "independent_audit": 0.0011876001954078674
+      }
+    },
+    {
+      "run_id": "reorder_duplicate_02",
+      "source_sha256": {
+        "config.json": "6828ef55ea500046df5b5fd4c07fef36fe0a7bf12f6d6c2a9f8664c89fbe87c2",
+        "A.json": "ed7c67ba719ebd0c3fe6a754ec21adf560be2d125f1f2b96e0dfb8956ad229be",
+        "B.json": "0f53bc749d687846129cb413d0a9becb60191d22a12725b6a0b5d7eaa1410b6b",
+        "checkpoint.json": "b06e532bd26dad2c5b05a92fb63d7380784ec459200b65604bfb7ed2803a75c1"
+      },
+      "trace": [
+        {
+          "eid": "reorder_duplicate_02:A:1",
+          "ts": 1791801781.4146743,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\reorder_duplicate_02\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 23100,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801781.4125614,
+            "operation_end": 1791801781.4146743
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_02:B:1",
+          "ts": 1791801781.6649458,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 477",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 475,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801781.6410527,
+            "operation_end": 1791801781.6649458
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_02:A:2",
+          "ts": 1791801782.06787,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2107
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 23100,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801782.0410857,
+            "operation_end": 1791801782.06787
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "reorder_duplicate_02:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_02:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_02:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 0.00010169995948672295,
+        "intrinsic_extraction": 0.0002373000606894493,
+        "independent_audit": 0.0012634999584406614
+      }
+    },
+    {
+      "run_id": "restart_02",
+      "source_sha256": {
+        "config.json": "3ef5c022606c3c2ccd067fedb2d61390e7360ec7dabb1c0ed680386e9755e564",
+        "A.json": "968da19ae8173b52ca19c80c91df30173b82ca9b97493d0008a0d4e16150af27",
+        "B.json": "61b603c6fbb71c84226640772bc08ef0c39152fd6fbc1dc57f53e4df36a7191e",
+        "checkpoint.json": "fdd2cdbacd5cc72c2c6191f4b40f4a001a88540bc03c104940a5308de129c7ab"
+      },
+      "trace": [
+        {
+          "eid": "restart_02:A:1",
+          "ts": 1791801795.5647902,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\restart_02\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 32596,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801795.5617838,
+            "operation_end": 1791801795.5647902
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_02:B:1",
+          "ts": 1791801795.8123162,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 501",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 499,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801795.791919,
+            "operation_end": 1791801795.8123162
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_02:A:2",
+          "ts": 1791801796.2149963,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2152
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 32596,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801796.191388,
+            "operation_end": 1791801796.2149963
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "restart_02:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_02:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_02:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 0.00010060006752610207,
+        "intrinsic_extraction": 0.00023410003632307053,
+        "independent_audit": 0.0014334002044051886
+      }
+    },
+    {
+      "run_id": "ordered_03",
+      "source_sha256": {
+        "config.json": "0029dbc8420b63f8318de60cf32f00e52e5c391770528430a8379917c51d2959",
+        "A.json": "d3a16e24b1b2087d59c4bcc5e33a6247ad6f0d3be5b8dab59472fb74b2e2499a",
+        "B.json": "84e2bba3e29eedb4820392e6e636fe436af7f5efc223b4f7d309802b6d1830ba",
+        "checkpoint.json": "d8229cbf0758f3ac8625db908a1ef9a1468b81b0fb709ad8b885e362cec2be45"
+      },
+      "trace": [
+        {
+          "eid": "ordered_03:A:1",
+          "ts": 1791801798.94656,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\ordered_03\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 38572,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801798.9425466,
+            "operation_end": 1791801798.94656
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_03:B:1",
+          "ts": 1791801799.4440057,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 507",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 505,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801799.172087,
+            "operation_end": 1791801799.4440057
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_03:A:2",
+          "ts": 1791801799.5763676,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2162
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 38572,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801799.5723236,
+            "operation_end": 1791801799.5763676
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "ordered_03:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_03:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_03:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 9.019998833537102e-05,
+        "intrinsic_extraction": 0.00022489996626973152,
+        "independent_audit": 0.0012364001013338566
+      }
+    },
+    {
+      "run_id": "reorder_duplicate_03",
+      "source_sha256": {
+        "config.json": "5a0305bd991e60a1f80fec3a565c5caba4e7f6a78c27e1532ed30f8960a577bb",
+        "A.json": "1499c1f9f2701331d0e4e7cf46966b20aab329c66b3daec50978954624d92ac6",
+        "B.json": "4a7b24035ab15c931a9a21b931739adacf194d0d38a50bd4705f53b250872d48",
+        "checkpoint.json": "aae2388456abe495eac8a6a8c50e9dca154d57e5d7ad8050011fc38e1e607ed1"
+      },
+      "trace": [
+        {
+          "eid": "reorder_duplicate_03:A:1",
+          "ts": 1791801802.423556,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\reorder_duplicate_03\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 46072,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801802.420007,
+            "operation_end": 1791801802.423556
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_03:B:1",
+          "ts": 1791801802.672908,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 513",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 511,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801802.6496186,
+            "operation_end": 1791801802.672908
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_03:A:2",
+          "ts": 1791801803.0784783,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2172
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 46072,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801803.0507622,
+            "operation_end": 1791801803.0784783
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "reorder_duplicate_03:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_03:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_03:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.219992741942406e-05,
+        "intrinsic_extraction": 0.0002430998720228672,
+        "independent_audit": 0.0012678001075983047
+      }
+    },
+    {
+      "run_id": "restart_03",
+      "source_sha256": {
+        "config.json": "54a9a7eb57644f503fb1a15629ea2eb1114b9781c8c5d25c216b96e05dd1d7e9",
+        "A.json": "4bdc406bded543f7f7295b99fee820ca10f82a28de1ede9f4465f9ba38bdff4a",
+        "B.json": "a54dcf6f5960fe9da682177ed94020f49798795ad06b60abab6206829699c72b",
+        "checkpoint.json": "a3ea43e1224dc0d7abcf2332cfb3bc0f5d222c61b751a61a286e913549008c71"
+      },
+      "trace": [
+        {
+          "eid": "restart_03:A:1",
+          "ts": 1791801817.9046474,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\restart_03\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 316,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801817.9026256,
+            "operation_end": 1791801817.9046474
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_03:B:1",
+          "ts": 1791801818.1545134,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 541",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 539,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801818.133779,
+            "operation_end": 1791801818.1545134
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_03:A:2",
+          "ts": 1791801818.5353503,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2417
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 316,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801818.5328357,
+            "operation_end": 1791801818.5353503
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "restart_03:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_03:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_03:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.79000872373581e-05,
+        "intrinsic_extraction": 0.00023159990087151527,
+        "independent_audit": 0.0012684001121670008
+      }
+    },
+    {
+      "run_id": "ordered_04",
+      "source_sha256": {
+        "config.json": "acaf9019ac40b8ab26f4f595d0f7f6844c6489eb4a33d67a8d9ffc3806d2181f",
+        "A.json": "1125072b685f59244adf4c4a212fe3a89e9429ab20affea8e3fb0d6d4d810beb",
+        "B.json": "7242f2186d294c34611d5f6d9d63de742deceae1a4b1c31990e3528a7067702b",
+        "checkpoint.json": "9e5c68ba50a37b10432a14799a8cdbef4b3507045860bd046c15d68b957816f1"
+      },
+      "trace": [
+        {
+          "eid": "ordered_04:A:1",
+          "ts": 1791801821.2680354,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\ordered_04\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 43972,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801821.2656193,
+            "operation_end": 1791801821.2680354
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_04:B:1",
+          "ts": 1791801821.5302627,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 548",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 546,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801821.497808,
+            "operation_end": 1791801821.5302627
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "ordered_04:A:2",
+          "ts": 1791801821.8980145,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2427
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 43972,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801821.895008,
+            "operation_end": 1791801821.8980145
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "ordered_04:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_04:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "ordered_04:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.579995483160019e-05,
+        "intrinsic_extraction": 0.00022140005603432655,
+        "independent_audit": 0.0012344999704509974
+      }
+    },
+    {
+      "run_id": "reorder_duplicate_04",
+      "source_sha256": {
+        "config.json": "13d90ec9292a40eed5e3320f21f76e775cf68807c751982aac8c133ca9550be6",
+        "A.json": "879d5311a00770010b8f30c9e304e0cecb5480e535da78399e74b6bf66b05258",
+        "B.json": "c15fec9ec95aa3a66c515ec88b370486eca5e3ce0a7c4dec51289fbce07c79b1",
+        "checkpoint.json": "cac91a1b3f20d2d3556c23e448e4f555371600d0fb25cd0ec155a81c0cd31122"
+      },
+      "trace": [
+        {
+          "eid": "reorder_duplicate_04:A:1",
+          "ts": 1791801824.600631,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\reorder_duplicate_04\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 46680,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801824.5987432,
+            "operation_end": 1791801824.600631
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_04:B:1",
+          "ts": 1791801824.8475242,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 554",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 552,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801824.8282418,
+            "operation_end": 1791801824.8475242
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "reorder_duplicate_04:A:2",
+          "ts": 1791801825.232385,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2442
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 46680,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801825.229369,
+            "operation_end": 1791801825.232385
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "reorder_duplicate_04:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_04:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "reorder_duplicate_04:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.150003850460052e-05,
+        "intrinsic_extraction": 0.0002185001503676176,
+        "independent_audit": 0.0011340000201016665
+      }
+    },
+    {
+      "run_id": "restart_04",
+      "source_sha256": {
+        "config.json": "1fe75f8f6c860ca03eb3c4982a54f42d831e997f1d8e1fbb1c6360d15e66fa30",
+        "A.json": "7e77d857edcdddbdbc542c19bf089e3b8f3dd6d9b1975edd00cde3a7fcb5fea9",
+        "B.json": "dfbdec401b531f8e1258fe5aafa4b3afa9679bc4b1bbb635ff9969be3f996ed8",
+        "checkpoint.json": "62bf6863a7183dd719447210afb9d950e8307b9e84c91209eac566dd46857ea1"
+      },
+      "trace": [
+        {
+          "eid": "restart_04:A:1",
+          "ts": 1791801838.7506998,
+          "action": "read",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "filesystem_read",
+              "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_crossos_corrected\\restart_04\\work_A\\fixture.txt",
+              "bytes": 24,
+              "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 48912,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801838.747552,
+            "operation_end": 1791801838.7506998
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_04:B:1",
+          "ts": 1791801838.9987252,
+          "action": "exec",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "child_process_exec",
+              "returncode": 0,
+              "output": "executed-child 578",
+              "interpreter": "/usr/bin/python3"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 576,
+              "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+              "interpreter": "/usr/bin/python3",
+              "source": "B"
+            },
+            "operation_start": 1791801838.9788134,
+            "operation_end": 1791801838.9987252
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "restart_04:A:2",
+          "ts": 1791801839.4051993,
+          "action": "connect",
+          "resource_class": "lab_resource",
+          "subject_class": "collector_operation",
+          "attrs": {
+            "evidence": {
+              "operation": "tcp_connect",
+              "endpoint": [
+                "127.0.0.1",
+                2484
+              ],
+              "reply": "connected"
+            },
+            "source_identity": {
+              "hostname": "DESKTOP-5C8VKSH",
+              "pid": 48912,
+              "platform": "Windows-10-10.0.26200-SP0",
+              "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+              "source": "A"
+            },
+            "operation_start": 1791801839.3768778,
+            "operation_end": 1791801839.4051993
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ],
+      "decisions": [
+        {
+          "event_id": "restart_04:A:1",
+          "policy_version": 1,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_04:B:1",
+          "policy_version": 2,
+          "reference": "NoAlert",
+          "incremental": "NoAlert"
+        },
+        {
+          "event_id": "restart_04:A:2",
+          "policy_version": 2,
+          "reference": "Violation",
+          "incremental": "Violation"
+        }
+      ],
+      "policy_version_history": [
+        1,
+        2
+      ],
+      "retained_horizon": 3,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1,
+          2
+        ],
+        "rule_ids": [
+          "DENY_READ_EXEC_CONNECT"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "e:2": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "r:DENY_READ_EXEC_CONNECT": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          }
+        },
+        "unit_count": 5,
+        "checks": 12,
+        "policy_version": 2
+      },
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:DENY_READ_EXEC_CONNECT"
+      ],
+      "sufficient": true,
+      "minimal": true,
+      "witness_checks": [
+        {
+          "released_unit": "e:0",
+          "mask": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:1",
+          "mask": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "e:2",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 0,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 1
+          },
+          "observed_class": "Gap",
+          "valid": true
+        },
+        {
+          "released_unit": "r:DENY_READ_EXEC_CONNECT",
+          "mask": {
+            "e:0": 1,
+            "e:1": 1,
+            "e:2": 1,
+            "r:ALLOW_OBSERVED": 0,
+            "r:DENY_READ_EXEC_CONNECT": 0
+          },
+          "observed_class": "Gap",
+          "valid": true
+        }
+      ],
+      "independent_assignment_count": 32,
+      "timings_s": {
+        "archived_replay": 8.619995787739754e-05,
+        "intrinsic_extraction": 0.00022449996322393417,
+        "independent_audit": 0.0010800999589264393
+      }
+    }
+  ]
+}

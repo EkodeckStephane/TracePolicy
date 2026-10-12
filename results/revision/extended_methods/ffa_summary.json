@@ -1,0 +1,10 @@
+{
+  "cases": 120,
+  "rows": 120,
+  "statuses": {
+    "ok": 120
+  },
+  "sufficient": 120,
+  "minimal": 120,
+  "workloads": 30
+}

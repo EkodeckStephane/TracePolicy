@@ -1,0 +1,280 @@
+[
+  {
+    "case": "instant_violation",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "weights": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 193.9,
+    "attribution_us": 21.0,
+    "selection_certification_us": 180.8,
+    "total_us": 395.7,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "conflict",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "r:D",
+      "r:A"
+    ],
+    "weights": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 122.7,
+    "attribution_us": 7.7,
+    "selection_certification_us": 186.2,
+    "total_us": 316.6,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "r:A",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "gap",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "r:D"
+    ],
+    "weights": [
+      0.0,
+      0.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 47.1,
+    "attribution_us": 5.1,
+    "selection_certification_us": 55.5,
+    "total_us": 107.7,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 0,
+      "selected": [],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "temporal_seq",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "weights": [
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 273.2,
+    "attribution_us": 6.2,
+    "selection_certification_us": 175.2,
+    "total_us": 454.6,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "multiple_rules",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "r:D1",
+      "r:D2"
+    ],
+    "weights": [
+      1.0,
+      0.5,
+      0.5
+    ],
+    "n_cores": 2,
+    "enumeration_us": 118.9,
+    "attribution_us": 5.7,
+    "selection_certification_us": 106.7,
+    "total_us": 231.3,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:0",
+        "r:D1"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "multiple_events",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEEN"
+    ],
+    "weights": [
+      0.5,
+      0.5,
+      1.0,
+      1.0
+    ],
+    "n_cores": 2,
+    "enumeration_us": 295.2,
+    "attribution_us": 6.7,
+    "selection_certification_us": 164.5,
+    "total_us": 466.4,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 3,
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEEN"
+      ],
+      "valid_alternative_count": 2
+    }
+  },
+  {
+    "case": "distractors",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:D",
+      "r:IRRELEVANT"
+    ],
+    "weights": [
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 592.7,
+    "attribution_us": 6.2,
+    "selection_certification_us": 219.0,
+    "total_us": 817.9,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:2",
+        "r:D"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "state_fixed_context",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:1",
+      "r:STATE"
+    ],
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 74.5,
+    "attribution_us": 5.4,
+    "selection_certification_us": 94.4,
+    "total_us": 174.3,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 2,
+      "selected": [
+        "e:1",
+        "r:STATE"
+      ],
+      "valid_alternative_count": 1
+    }
+  },
+  {
+    "case": "count_threshold",
+    "method": "Exact_FFA_definition_adaptation",
+    "status": "ok",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:COUNT"
+    ],
+    "weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_cores": 1,
+    "enumeration_us": 289.4,
+    "attribution_us": 5.4,
+    "selection_certification_us": 171.6,
+    "total_us": 466.4,
+    "validation": {
+      "sufficient": true,
+      "minimal": true,
+      "size": 4,
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:COUNT"
+      ],
+      "valid_alternative_count": 1
+    }
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "by_scenario": [
+    {
+      "method": "anchors",
+      "scenario": "admin_probe",
+      "runs": 90,
+      "ok": 90,
+      "sufficient": 90,
+      "minimal": 90,
+      "jaccard_mean": 1.0,
+      "total_s_median": 0.6892725999932736,
+      "selected_size_min": 2,
+      "selected_size_max": 2
+    },
+    {
+      "method": "anchors",
+      "scenario": "bruteforce",
+      "runs": 90,
+      "ok": 90,
+      "sufficient": 90,
+      "minimal": 90,
+      "jaccard_mean": 0.8222222222222222,
+      "total_s_median": 1.4673687999602407,
+      "selected_size_min": 5,
+      "selected_size_max": 5
+    },
+    {
+      "method": "anchors",
+      "scenario": "command_probe",
+      "runs": 90,
+      "ok": 90,
+      "sufficient": 90,
+      "minimal": 90,
+      "jaccard_mean": 1.0,
+      "total_s_median": 0.7268618998350576,
+      "selected_size_min": 2,
+      "selected_size_max": 2
+    },
+    {
+      "method": "anchors",
+      "scenario": "path_traversal",
+      "runs": 90,
+      "ok": 90,
+      "sufficient": 90,
+      "minimal": 90,
+      "jaccard_mean": 1.0,
+      "total_s_median": 0.6492359000258148,
+      "selected_size_min": 2,
+      "selected_size_max": 2
+    },
+    {
+      "method": "ffa",
+      "scenario": "admin_probe",
+      "runs": 30,
+      "ok": 30,
+      "sufficient": 30,
+      "minimal": 30,
+      "jaccard_mean": 1.0,
+      "total_s_median": 0.06627789989579469,
+      "selected_size_min": 2,
+      "selected_size_max": 2
+    },
+    {
+      "method": "ffa",
+      "scenario": "bruteforce",
+      "runs": 30,
+      "ok": 30,
+      "sufficient": 30,
+      "minimal": 30,
+      "jaccard_mean": 0.8222222222222222,
+      "total_s_median": 0.03690900013316423,
+      "selected_size_min": 5,
+      "selected_size_max": 5
+    },
+    {
+      "method": "ffa",
+      "scenario": "command_probe",
+      "runs": 30,
+      "ok": 30,
+      "sufficient": 30,
+      "minimal": 30,
+      "jaccard_mean": 1.0,
+      "total_s_median": 0.06495535001158714,
+      "selected_size_min": 2,
+      "selected_size_max": 2
+    },
+    {
+      "method": "ffa",
+      "scenario": "path_traversal",
+      "runs": 30,
+      "ok": 30,
+      "sufficient": 30,
+      "minimal": 30,
+      "jaccard_mean": 1.0,
+      "total_s_median": 0.06518090015742928,
+      "selected_size_min": 2,
+      "selected_size_max": 2
+    }
+  ],
+  "complete_core_count_distribution": {
+    "1": 104,
+    "4": 16
+  },
+  "limitations": [
+    "retrospective true-positive Docker strata only",
+    "native Anchors canonical-cache backend and separate NumPy environment",
+    "FFA full-core cached-state enumeration is a definition adaptation, not the published anytime implementation",
+    "no analyst utility or timing superiority inferred"
+  ]
+}

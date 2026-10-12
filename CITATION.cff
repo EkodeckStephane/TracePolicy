@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use TracePolicy, please cite the software repository and the associated manuscript when bibliographic metadata are available."
-title: "TracePolicy: Minimal Trace--Policy Explanations for Explainable Intrusion Detection"
+title: "TracePolicy: Minimal Event--Rule Explanations for Intrusion Detection"
 type: software
 authors:
   - family-names: "Bayem"

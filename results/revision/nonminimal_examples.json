@@ -1,0 +1,426 @@
+[
+  {
+    "case": "instant_violation",
+    "method": "DeterministicRanking",
+    "seed": 0,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "setup_s": 0,
+    "attribution_s": 1.00000761449337e-06,
+    "selection_certification_s": 0.00014190003275871277,
+    "total_s": 0.00014290004037320614,
+    "sufficient": true,
+    "minimal": false,
+    "size": 3,
+    "selected": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "instant_violation",
+    "method": "RandomRanking",
+    "seed": 11,
+    "status": "ok",
+    "ranking": [
+      "e:1",
+      "e:0",
+      "r:D"
+    ],
+    "setup_s": 0,
+    "attribution_s": 0.0005803999956697226,
+    "selection_certification_s": 0.00012400001287460327,
+    "total_s": 0.0007044000085443258,
+    "sufficient": true,
+    "minimal": false,
+    "size": 3,
+    "selected": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "instant_violation",
+    "method": "RandomRanking",
+    "seed": 47,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "setup_s": 0,
+    "attribution_s": 3.550015389919281e-05,
+    "selection_certification_s": 0.00010529998689889908,
+    "total_s": 0.0001408001407980919,
+    "sufficient": true,
+    "minimal": false,
+    "size": 3,
+    "selected": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "temporal_seq",
+    "method": "DeterministicRanking",
+    "seed": 0,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "setup_s": 0,
+    "attribution_s": 4.00003045797348e-07,
+    "selection_certification_s": 0.00014439993537962437,
+    "total_s": 0.00014479993842542171,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "temporal_seq",
+    "method": "RandomRanking",
+    "seed": 11,
+    "status": "ok",
+    "ranking": [
+      "r:SEQ",
+      "e:1",
+      "e:0",
+      "e:2"
+    ],
+    "setup_s": 0,
+    "attribution_s": 8.500018157064915e-05,
+    "selection_certification_s": 0.00015159999020397663,
+    "total_s": 0.00023660017177462578,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "temporal_seq",
+    "method": "RandomRanking",
+    "seed": 23,
+    "status": "ok",
+    "ranking": [
+      "e:2",
+      "r:SEQ",
+      "e:1",
+      "e:0"
+    ],
+    "setup_s": 0,
+    "attribution_s": 3.50000336766243e-05,
+    "selection_certification_s": 0.00017019989900290966,
+    "total_s": 0.00020519993267953396,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "temporal_seq",
+    "method": "RandomRanking",
+    "seed": 47,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "r:SEQ",
+      "e:1",
+      "e:2"
+    ],
+    "setup_s": 0,
+    "attribution_s": 3.2899901270866394e-05,
+    "selection_certification_s": 0.00015980005264282227,
+    "total_s": 0.00019269995391368866,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "temporal_seq",
+    "method": "LIME",
+    "seed": 23,
+    "num_samples": 128,
+    "kernel_width_scale": 0.5,
+    "background_probability": 0.25,
+    "local_training_score": 0.5753774781431273,
+    "status": "ok",
+    "weights": [
+      0.1931319477521646,
+      0.18287438971323702,
+      0.1724500112296582,
+      0.23124758648703864
+    ],
+    "ranking": [
+      "r:SEQ",
+      "e:0",
+      "e:1",
+      "e:2"
+    ],
+    "setup_s": 0.0013041000347584486,
+    "attribution_s": 0.02254869998432696,
+    "selection_certification_s": 0.0001946999691426754,
+    "total_s": 0.024047499988228083,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "valid_alternative_count": 1,
+    "full_domain_surrogate_mse": 0.07575267182610818
+  },
+  {
+    "case": "multiple_rules",
+    "method": "RandomRanking",
+    "seed": 23,
+    "status": "ok",
+    "ranking": [
+      "r:D2",
+      "r:D1",
+      "e:0"
+    ],
+    "setup_s": 0,
+    "attribution_s": 3.220001235604286e-05,
+    "selection_certification_s": 0.0001066999975591898,
+    "total_s": 0.00013890000991523266,
+    "sufficient": true,
+    "minimal": false,
+    "size": 3,
+    "selected": [
+      "e:0",
+      "r:D1",
+      "r:D2"
+    ],
+    "valid_alternative_count": 2
+  },
+  {
+    "case": "multiple_events",
+    "method": "DeterministicRanking",
+    "seed": 0,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEEN"
+    ],
+    "setup_s": 0,
+    "attribution_s": 4.00003045797348e-07,
+    "selection_certification_s": 0.00013939989730715752,
+    "total_s": 0.00013979990035295486,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEEN"
+    ],
+    "valid_alternative_count": 2
+  },
+  {
+    "case": "multiple_events",
+    "method": "RandomRanking",
+    "seed": 11,
+    "status": "ok",
+    "ranking": [
+      "r:SEEN",
+      "e:1",
+      "e:0",
+      "e:2"
+    ],
+    "setup_s": 0,
+    "attribution_s": 7.529999129474163e-05,
+    "selection_certification_s": 0.000148500083014369,
+    "total_s": 0.00022380007430911064,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEEN"
+    ],
+    "valid_alternative_count": 2
+  },
+  {
+    "case": "multiple_events",
+    "method": "RandomRanking",
+    "seed": 47,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "r:SEEN",
+      "e:1",
+      "e:2"
+    ],
+    "setup_s": 0,
+    "attribution_s": 2.9100105166435242e-05,
+    "selection_certification_s": 0.00014190003275871277,
+    "total_s": 0.000171000137925148,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEEN"
+    ],
+    "valid_alternative_count": 2
+  },
+  {
+    "case": "distractors",
+    "method": "DeterministicRanking",
+    "seed": 0,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:D",
+      "r:IRRELEVANT"
+    ],
+    "setup_s": 0,
+    "attribution_s": 7.00121745467186e-07,
+    "selection_certification_s": 0.00015069986693561077,
+    "total_s": 0.00015139998868107796,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:D"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "distractors",
+    "method": "RandomRanking",
+    "seed": 11,
+    "status": "ok",
+    "ranking": [
+      "e:1",
+      "r:IRRELEVANT",
+      "e:2",
+      "r:D",
+      "e:0"
+    ],
+    "setup_s": 0,
+    "attribution_s": 8.190004155039787e-05,
+    "selection_certification_s": 0.0001580000389367342,
+    "total_s": 0.00023990008048713207,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:1",
+      "e:2",
+      "r:D",
+      "r:IRRELEVANT"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "distractors",
+    "method": "RandomRanking",
+    "seed": 23,
+    "status": "ok",
+    "ranking": [
+      "e:2",
+      "e:0",
+      "e:1",
+      "r:D",
+      "r:IRRELEVANT"
+    ],
+    "setup_s": 0,
+    "attribution_s": 3.300001844763756e-05,
+    "selection_certification_s": 0.000287399860098958,
+    "total_s": 0.0003203998785465956,
+    "sufficient": true,
+    "minimal": false,
+    "size": 4,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:D"
+    ],
+    "valid_alternative_count": 1
+  },
+  {
+    "case": "distractors",
+    "method": "RandomRanking",
+    "seed": 47,
+    "status": "ok",
+    "ranking": [
+      "e:0",
+      "e:2",
+      "r:IRRELEVANT",
+      "e:1",
+      "r:D"
+    ],
+    "setup_s": 0,
+    "attribution_s": 4.910002462565899e-05,
+    "selection_certification_s": 0.00016540009528398514,
+    "total_s": 0.00021450011990964413,
+    "sufficient": true,
+    "minimal": false,
+    "size": 5,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:D",
+      "r:IRRELEVANT"
+    ],
+    "valid_alternative_count": 1
+  }
+]

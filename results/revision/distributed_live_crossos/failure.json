@@ -1,0 +1,11 @@
+{
+  "status": "infrastructure_launcher_failure",
+  "completed_runs": 5,
+  "planned_runs": 30,
+  "failed_profile": "restart_00",
+  "reason": "The restart launcher waited at most 2 seconds for a durable event while the cross-OS action schedule started after 2.5 seconds. It attempted to read a checkpoint that did not yet exist.",
+  "algorithm_verdict_on_failed_profile": null,
+  "preserved_artifacts": true,
+  "correction": "Wait until max(current_time + 2 seconds, scheduled_start + 2 seconds), and require a checkpoint containing at least one event before terminating the coordinator.",
+  "replacement_cohort": "../distributed_live_crossos_corrected"
+}

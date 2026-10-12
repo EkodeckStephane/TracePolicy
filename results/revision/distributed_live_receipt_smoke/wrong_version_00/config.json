@@ -1,0 +1,38 @@
+{
+  "run_id": "wrong_version_00",
+  "profile": "wrong_version",
+  "sources": [
+    "A",
+    "B"
+  ],
+  "start_epoch": 1791797610.7288563,
+  "max_lateness_s": 1.5,
+  "schedule": [
+    [
+      0,
+      1
+    ],
+    [
+      1791797610.8488562,
+      2
+    ]
+  ],
+  "jobs": {
+    "A": [
+      {
+        "action": "read",
+        "offset_s": 0.02
+      },
+      {
+        "action": "connect",
+        "offset_s": 0.65
+      }
+    ],
+    "B": [
+      {
+        "action": "exec",
+        "offset_s": 0.25
+      }
+    ]
+  }
+}

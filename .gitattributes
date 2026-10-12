@@ -1,0 +1,14 @@
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.ps1 text eol=lf
+*.sh text eol=lf
+.gitattributes text eol=lf
+*.npz -text
+# Preserve byte identities of retained inputs and measured result artifacts.
+local_lab/results/** -text
+results/** -text
+revision_audit/*.json -text

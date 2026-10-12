@@ -5,7 +5,7 @@ import numpy as np,pandas as pd, shap
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 import trace_policy_engine as tpe
 from local_bench import clean_policy
-ROOT=Path(__file__).resolve().parents[1]; RES=ROOT/'results'/'raw'; RES.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1]; RES=ROOT/'results'/'revision'/'legacy_driver'; RES.mkdir(parents=True,exist_ok=True)
 SEEDS=json.load(open(ROOT/'config'/'seeds.json'))['seeds']
 CLASSES=[tpe.NOALERT,tpe.VIOLATION,tpe.CONFLICT,tpe.GAP]
 
@@ -25,10 +25,7 @@ def make_case(kind,seed):
     raise ValueError(kind)
 
 def unit_info(trace,pol,horizon=4):
-    start=max(0,len(trace)-horizon); eps=list(range(start,len(trace))); cur=trace[-1]
-    rids=[r.rid for r in pol.rules if r.selector.matches(cur)]
-    units=[f'e:{i}' for i in eps]+[f'r:{r}' for r in rids]
-    return eps,rids,units
+    return tpe.explanation_unit_info(trace,pol,horizon)
 
 def model_for(trace,pol,eps,rids):
     m=len(eps)+len(rids)

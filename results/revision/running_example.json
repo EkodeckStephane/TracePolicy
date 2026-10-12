@@ -1,0 +1,128 @@
+[
+  {
+    "case": "bruteforce",
+    "target": "Violation",
+    "core": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "r:D_BRUTEFORCE"
+    ],
+    "witnesses": {
+      "e:0": {
+        "e:0": 0,
+        "e:1": 1,
+        "e:2": 1,
+        "e:3": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "e:1": {
+        "e:0": 1,
+        "e:1": 0,
+        "e:2": 1,
+        "e:3": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "e:2": {
+        "e:0": 1,
+        "e:1": 1,
+        "e:2": 0,
+        "e:3": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "e:3": {
+        "e:0": 1,
+        "e:1": 1,
+        "e:2": 1,
+        "e:3": 0,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 1,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "r:D_BRUTEFORCE": {
+        "e:0": 1,
+        "e:1": 1,
+        "e:2": 1,
+        "e:3": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      }
+    },
+    "unit_count": 12,
+    "release_event_with_rules_factual": [
+      "NoAlert",
+      "NoAlert",
+      "NoAlert",
+      "Gap"
+    ]
+  },
+  {
+    "case": "admin",
+    "target": "Violation",
+    "core": [
+      "e:0",
+      "r:D_ADMIN"
+    ],
+    "witnesses": {
+      "e:0": {
+        "e:0": 0,
+        "r:D_ADMIN": 1,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      },
+      "r:D_ADMIN": {
+        "e:0": 1,
+        "r:D_ADMIN": 0,
+        "r:D_TRAVERSAL": 0,
+        "r:D_COMMAND": 0,
+        "r:D_BRUTEFORCE": 0,
+        "r:A_AUTH_FAIL_SINGLE": 0,
+        "r:A_AUTH": 0,
+        "r:A_PUBLIC": 0,
+        "r:A_STATUS": 0
+      }
+    },
+    "unit_count": 9,
+    "release_event_with_rules_factual": [
+      "Gap"
+    ]
+  }
+]

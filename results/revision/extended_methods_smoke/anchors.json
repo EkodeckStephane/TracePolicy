@@ -1,0 +1,317 @@
+[
+  {
+    "workload_seed": 2026081401,
+    "event_index": 180,
+    "event_id": "2974cf63-4211-bb12-0857-fdd03f23683b",
+    "scenario": "admin_probe",
+    "case": 0,
+    "n_units": 13,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "target_class": "Violation",
+    "horizon": 5,
+    "method": "alibi_AnchorTabular",
+    "seed": 11,
+    "status": "ok",
+    "native": {
+      "selected": [
+        "e:4",
+        "r:D_ADMIN"
+      ],
+      "feature_indices": [
+        4,
+        5
+      ],
+      "anchor": [
+        "e:4 = retained",
+        "r:D_ADMIN = retained"
+      ],
+      "precision": 1.0,
+      "coverage": 0.2412,
+      "threshold": 0.95,
+      "seed": 11,
+      "init_us": 1210.2,
+      "explanation_us": 630050.1,
+      "total_native_us": 631260.3,
+      "implementation": "alibi.AnchorTabular",
+      "background_distribution": "uniform_complete_binary_domain"
+    },
+    "native_s": 12.424167799996212,
+    "fixed_set_proof_s": 0.048698300030082464,
+    "total_s": 12.472866100026295,
+    "independent_audit_s": 0.026948800077661872,
+    "independent_audit_queries": 8192,
+    "oracle_requests": 30602,
+    "canonical_queries": 6315,
+    "memoization": "empty per-explanation canonical oracle cache; no precomputed truth table supplied",
+    "selected": [
+      "e:4",
+      "r:D_ADMIN"
+    ],
+    "core_count": 1,
+    "sufficient": true,
+    "minimal": true,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:4": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 0,
+          "e:3": 0,
+          "e:4": 0,
+          "r:D_ADMIN": 1,
+          "r:D_TRAVERSAL": 0,
+          "r:D_COMMAND": 0,
+          "r:D_BRUTEFORCE": 0,
+          "r:A_AUTH_FAIL_SINGLE": 0,
+          "r:A_AUTH": 0,
+          "r:A_PUBLIC": 0,
+          "r:A_STATUS": 0
+        },
+        "r:D_ADMIN": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 0,
+          "e:3": 0,
+          "e:4": 1,
+          "r:D_ADMIN": 0,
+          "r:D_TRAVERSAL": 0,
+          "r:D_COMMAND": 0,
+          "r:D_BRUTEFORCE": 0,
+          "r:A_AUTH_FAIL_SINGLE": 0,
+          "r:A_AUTH": 0,
+          "r:A_PUBLIC": 0,
+          "r:A_STATUS": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 2050,
+      "target": "Violation"
+    }
+  },
+  {
+    "workload_seed": 2026081401,
+    "event_index": 180,
+    "event_id": "2974cf63-4211-bb12-0857-fdd03f23683b",
+    "scenario": "admin_probe",
+    "case": 0,
+    "n_units": 13,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "target_class": "Violation",
+    "horizon": 5,
+    "method": "alibi_AnchorTabular",
+    "seed": 23,
+    "status": "ok",
+    "native": {
+      "selected": [
+        "r:D_ADMIN",
+        "e:4"
+      ],
+      "feature_indices": [
+        5,
+        4
+      ],
+      "anchor": [
+        "r:D_ADMIN = retained",
+        "e:4 = retained"
+      ],
+      "precision": 1.0,
+      "coverage": 0.2504,
+      "threshold": 0.95,
+      "seed": 23,
+      "init_us": 953.6,
+      "explanation_us": 681175.1,
+      "total_native_us": 682128.7,
+      "implementation": "alibi.AnchorTabular",
+      "background_distribution": "uniform_complete_binary_domain"
+    },
+    "native_s": 0.6933867000043392,
+    "fixed_set_proof_s": 0.04002310009673238,
+    "total_s": 0.7334098001010716,
+    "independent_audit_s": 0.026948800077661872,
+    "independent_audit_queries": 8192,
+    "oracle_requests": 33002,
+    "canonical_queries": 6491,
+    "memoization": "empty per-explanation canonical oracle cache; no precomputed truth table supplied",
+    "selected": [
+      "e:4",
+      "r:D_ADMIN"
+    ],
+    "core_count": 1,
+    "sufficient": true,
+    "minimal": true,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:4": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 0,
+          "e:3": 0,
+          "e:4": 0,
+          "r:D_ADMIN": 1,
+          "r:D_TRAVERSAL": 0,
+          "r:D_COMMAND": 0,
+          "r:D_BRUTEFORCE": 0,
+          "r:A_AUTH_FAIL_SINGLE": 0,
+          "r:A_AUTH": 0,
+          "r:A_PUBLIC": 0,
+          "r:A_STATUS": 0
+        },
+        "r:D_ADMIN": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 0,
+          "e:3": 0,
+          "e:4": 1,
+          "r:D_ADMIN": 0,
+          "r:D_TRAVERSAL": 0,
+          "r:D_COMMAND": 0,
+          "r:D_BRUTEFORCE": 0,
+          "r:A_AUTH_FAIL_SINGLE": 0,
+          "r:A_AUTH": 0,
+          "r:A_PUBLIC": 0,
+          "r:A_STATUS": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 2050,
+      "target": "Violation"
+    }
+  },
+  {
+    "workload_seed": 2026081401,
+    "event_index": 180,
+    "event_id": "2974cf63-4211-bb12-0857-fdd03f23683b",
+    "scenario": "admin_probe",
+    "case": 0,
+    "n_units": 13,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "r:D_ADMIN",
+      "r:D_TRAVERSAL",
+      "r:D_COMMAND",
+      "r:D_BRUTEFORCE",
+      "r:A_AUTH_FAIL_SINGLE",
+      "r:A_AUTH",
+      "r:A_PUBLIC",
+      "r:A_STATUS"
+    ],
+    "target_class": "Violation",
+    "horizon": 5,
+    "method": "alibi_AnchorTabular",
+    "seed": 47,
+    "status": "ok",
+    "native": {
+      "selected": [
+        "e:4",
+        "r:D_ADMIN"
+      ],
+      "feature_indices": [
+        4,
+        5
+      ],
+      "anchor": [
+        "e:4 = retained",
+        "r:D_ADMIN = retained"
+      ],
+      "precision": 1.0,
+      "coverage": 0.2481,
+      "threshold": 0.95,
+      "seed": 47,
+      "init_us": 928.6,
+      "explanation_us": 583817.3,
+      "total_native_us": 584745.9,
+      "implementation": "alibi.AnchorTabular",
+      "background_distribution": "uniform_complete_binary_domain"
+    },
+    "native_s": 0.5960696002002805,
+    "fixed_set_proof_s": 0.03930730000138283,
+    "total_s": 0.6353769002016634,
+    "independent_audit_s": 0.026948800077661872,
+    "independent_audit_queries": 8192,
+    "oracle_requests": 28402,
+    "canonical_queries": 6364,
+    "memoization": "empty per-explanation canonical oracle cache; no precomputed truth table supplied",
+    "selected": [
+      "e:4",
+      "r:D_ADMIN"
+    ],
+    "core_count": 1,
+    "sufficient": true,
+    "minimal": true,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:4": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 0,
+          "e:3": 0,
+          "e:4": 0,
+          "r:D_ADMIN": 1,
+          "r:D_TRAVERSAL": 0,
+          "r:D_COMMAND": 0,
+          "r:D_BRUTEFORCE": 0,
+          "r:A_AUTH_FAIL_SINGLE": 0,
+          "r:A_AUTH": 0,
+          "r:A_PUBLIC": 0,
+          "r:A_STATUS": 0
+        },
+        "r:D_ADMIN": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 0,
+          "e:3": 0,
+          "e:4": 1,
+          "r:D_ADMIN": 0,
+          "r:D_TRAVERSAL": 0,
+          "r:D_COMMAND": 0,
+          "r:D_BRUTEFORCE": 0,
+          "r:A_AUTH_FAIL_SINGLE": 0,
+          "r:A_AUTH": 0,
+          "r:A_PUBLIC": 0,
+          "r:A_STATUS": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 2050,
+      "target": "Violation"
+    }
+  }
+]

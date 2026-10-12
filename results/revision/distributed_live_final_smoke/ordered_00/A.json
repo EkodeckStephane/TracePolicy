@@ -1,0 +1,95 @@
+{
+  "identity": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 30500,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "source": "A"
+  },
+  "observations": [
+    {
+      "source": "A",
+      "source_seq": 1,
+      "trace_id": "ordered_00",
+      "policy_version": 1,
+      "event": {
+        "eid": "ordered_00:A:1",
+        "ts": 1791797048.2970564,
+        "action": "read",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "filesystem_read",
+            "path": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_final_smoke\\ordered_00\\work_A\\fixture.txt",
+            "bytes": 24,
+            "sha256": "fe634af2fb6d4bf7573f4c3546466266f464cb6ade01f47368fd60e269bcc2a9"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 30500,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "A"
+          },
+          "operation_start": 1791797048.2950406,
+          "operation_end": 1791797048.2970564
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    },
+    {
+      "source": "A",
+      "source_seq": 2,
+      "trace_id": "ordered_00",
+      "policy_version": 2,
+      "event": {
+        "eid": "ordered_00:A:2",
+        "ts": 1791797048.9422877,
+        "action": "connect",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "tcp_connect",
+            "endpoint": [
+              "127.0.0.1",
+              13585
+            ],
+            "reply": "connected"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 30500,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "A"
+          },
+          "operation_start": 1791797048.925045,
+          "operation_end": 1791797048.9422877
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "ordered_00:A:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    },
+    {
+      "event_id": "ordered_00:A:2",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    }
+  ]
+}

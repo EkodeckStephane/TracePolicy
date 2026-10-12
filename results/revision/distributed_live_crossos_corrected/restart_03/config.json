@@ -1,0 +1,38 @@
+{
+  "run_id": "restart_03",
+  "profile": "restart",
+  "sources": [
+    "A",
+    "B"
+  ],
+  "start_epoch": 1791801817.8821614,
+  "max_lateness_s": 1.5,
+  "schedule": [
+    [
+      0,
+      1
+    ],
+    [
+      1791801818.0021613,
+      2
+    ]
+  ],
+  "jobs": {
+    "A": [
+      {
+        "action": "read",
+        "offset_s": 0.02
+      },
+      {
+        "action": "connect",
+        "offset_s": 0.65
+      }
+    ],
+    "B": [
+      {
+        "action": "exec",
+        "offset_s": 0.25
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "status": "complete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 3,
+    "committed": 3,
+    "pending": 0,
+    "duplicate_count": 1,
+    "sequence_gaps": {
+      "A": [],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [],
+    "decisions": [
+      {
+        "event_id": "reorder_duplicate_02:A:1",
+        "trace_id": "reorder_duplicate_02",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "reorder_duplicate_02:B:1",
+        "trace_id": "reorder_duplicate_02",
+        "policy_version": 2,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "reorder_duplicate_02:A:2",
+        "trace_id": "reorder_duplicate_02",
+        "policy_version": 2,
+        "alert_class": "Violation",
+        "top": [
+          "DENY_READ_EXEC_CONNECT"
+        ]
+      }
+    ]
+  },
+  "arrivals": [
+    {
+      "event_id": "reorder_duplicate_02:B:1",
+      "received_at": 1791801781.6982586,
+      "peer": [
+        "172.21.89.166",
+        48938
+      ],
+      "lateness_s": 0.03331279754638672,
+      "status": "accepted"
+    },
+    {
+      "event_id": "reorder_duplicate_02:A:2",
+      "received_at": 1791801782.070962,
+      "peer": [
+        "127.0.0.1",
+        2115
+      ],
+      "lateness_s": 0.003092050552368164,
+      "status": "accepted"
+    },
+    {
+      "event_id": "reorder_duplicate_02:A:2",
+      "received_at": 1791801782.0770133,
+      "peer": [
+        "127.0.0.1",
+        2116
+      ],
+      "lateness_s": 0.009143352508544922,
+      "status": "duplicate"
+    },
+    {
+      "event_id": "reorder_duplicate_02:A:1",
+      "received_at": 1791801782.2674015,
+      "peer": [
+        "127.0.0.1",
+        2117
+      ],
+      "lateness_s": 0.8527271747589111,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "0.0.0.0",
+    "port": 2107,
+    "pid": 15200,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

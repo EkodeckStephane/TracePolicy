@@ -1,0 +1,527 @@
+{
+  "policy_id": "REVISION_TWO_SOURCE",
+  "policy_version": 1,
+  "kind": "synthetic_two_source_ingestion",
+  "canonical": [
+    {
+      "eid": "hostA:1",
+      "class": "NoAlert"
+    },
+    {
+      "eid": "hostB:1",
+      "class": "NoAlert"
+    },
+    {
+      "eid": "hostA:2",
+      "class": "Violation"
+    }
+  ],
+  "cases": [
+    {
+      "arrival": [
+        "hostA:1",
+        "hostB:1",
+        "hostA:2"
+      ],
+      "duplicated": false,
+      "raw_matches_by_identity": true,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:1",
+        "hostA:1",
+        "hostB:1",
+        "hostA:2"
+      ],
+      "duplicated": true,
+      "raw_matches_by_identity": true,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:1",
+        "hostA:2",
+        "hostB:1"
+      ],
+      "duplicated": false,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:1",
+        "hostA:1",
+        "hostA:2",
+        "hostB:1"
+      ],
+      "duplicated": true,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostB:1",
+        "hostA:1",
+        "hostA:2"
+      ],
+      "duplicated": false,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostB:1",
+        "hostB:1",
+        "hostA:1",
+        "hostA:2"
+      ],
+      "duplicated": true,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostB:1",
+        "hostA:2",
+        "hostA:1"
+      ],
+      "duplicated": false,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostB:1",
+        "hostB:1",
+        "hostA:2",
+        "hostA:1"
+      ],
+      "duplicated": true,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:2",
+        "hostA:1",
+        "hostB:1"
+      ],
+      "duplicated": false,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:2",
+        "hostA:2",
+        "hostA:1",
+        "hostB:1"
+      ],
+      "duplicated": true,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:2",
+        "hostB:1",
+        "hostA:1"
+      ],
+      "duplicated": false,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    },
+    {
+      "arrival": [
+        "hostA:2",
+        "hostA:2",
+        "hostB:1",
+        "hostA:1"
+      ],
+      "duplicated": true,
+      "raw_matches_by_identity": false,
+      "normalized_matches": true,
+      "raw": [
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        }
+      ],
+      "normalized": [
+        {
+          "eid": "hostA:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostB:1",
+          "class": "NoAlert"
+        },
+        {
+          "eid": "hostA:2",
+          "class": "Violation"
+        }
+      ]
+    }
+  ],
+  "n_cases": 12,
+  "normalized_matches": 12,
+  "raw_matches": 2,
+  "loss_case": [
+    {
+      "eid": "hostA:1",
+      "class": "NoAlert"
+    },
+    {
+      "eid": "hostA:2",
+      "class": "NoAlert"
+    }
+  ],
+  "limitations": [
+    "trusted timestamps and identities",
+    "full offline buffering",
+    "no bounded-lateness watermark",
+    "no real multi-host deployment",
+    "loss cannot be repaired by normalization"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "shap": "0.50.0",
+  "lime_available": true,
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "shap": "0.50.0",
+    "lime": "0.2.0.1"
+  },
+  "arguments": {
+    "output": "results/revision",
+    "seeds": "11,23,47",
+    "samples": "128,512,2048",
+    "kernel_scales": "0.5,1,1.5",
+    "background_probabilities": "0.25,0.5"
+  }
+}

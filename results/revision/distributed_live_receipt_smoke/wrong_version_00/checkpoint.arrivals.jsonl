@@ -1,0 +1,3 @@
+{"event_id":"wrong_version_00:A:1","lateness_s":0.008484125137329102,"received_at":1791797610.7602565,"status":"accepted"}
+{"event_id":"wrong_version_00:B:1","lateness_s":0.0073490142822265625,"received_at":1791797611.034092,"status":"accepted"}
+{"error":"record policy version does not match frozen event-time schedule","event_id":"wrong_version_00:A:2","lateness_s":0.0020117759704589844,"received_at":1791797611.385725,"status":"rejected"}

@@ -1,0 +1,79 @@
+{
+  "summary": {
+    "status": "incomplete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 2,
+    "committed": 1,
+    "pending": 1,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [
+        2
+      ],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [
+      "record policy version does not match frozen event-time schedule"
+    ],
+    "decisions": [
+      {
+        "event_id": "wrong_version_00:A:1",
+        "trace_id": "wrong_version_00",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      }
+    ]
+  },
+  "arrivals": [
+    {
+      "event_id": "wrong_version_00:A:1",
+      "received_at": 1791801750.638286,
+      "peer": [
+        "127.0.0.1",
+        1993
+      ],
+      "lateness_s": 0.008410453796386719,
+      "status": "accepted"
+    },
+    {
+      "event_id": "wrong_version_00:B:1",
+      "received_at": 1791801751.224334,
+      "peer": [
+        "172.21.89.166",
+        54800
+      ],
+      "lateness_s": 0.3444514274597168,
+      "status": "accepted"
+    },
+    {
+      "event_id": "wrong_version_00:A:2",
+      "received_at": 1791801751.2631416,
+      "peer": [
+        "127.0.0.1",
+        1995
+      ],
+      "status": "rejected",
+      "error": "record policy version does not match frozen event-time schedule",
+      "lateness_s": 0.0025157928466796875
+    }
+  ],
+  "process": {
+    "host": "0.0.0.0",
+    "port": 1988,
+    "pid": 7372,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

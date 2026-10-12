@@ -1,0 +1,38 @@
+{
+  "run_id": "ordered_02",
+  "profile": "ordered",
+  "sources": [
+    "A",
+    "B"
+  ],
+  "start_epoch": 1791801778.0481243,
+  "max_lateness_s": 1.5,
+  "schedule": [
+    [
+      0,
+      1
+    ],
+    [
+      1791801778.1681242,
+      2
+    ]
+  ],
+  "jobs": {
+    "A": [
+      {
+        "action": "read",
+        "offset_s": 0.02
+      },
+      {
+        "action": "connect",
+        "offset_s": 0.65
+      }
+    ],
+    "B": [
+      {
+        "action": "exec",
+        "offset_s": 0.25
+      }
+    ]
+  }
+}

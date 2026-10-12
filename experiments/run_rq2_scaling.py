@@ -18,8 +18,8 @@ except ModuleNotFoundError:
     LimeTabularExplainer = None
 
 CLASSES = [tpe.NOALERT, tpe.VIOLATION, tpe.CONFLICT, tpe.GAP]
-RAW = ROOT / 'results' / 'raw'
-SUMMARY = ROOT / 'results' / 'summary'
+RAW = ROOT / 'results' / 'revision' / 'scaling_native_only'
+SUMMARY = RAW
 RAW.mkdir(parents=True, exist_ok=True)
 SUMMARY.mkdir(parents=True, exist_ok=True)
 
@@ -58,12 +58,7 @@ def make_scaling_case(n_units: int):
 
 
 def unit_info(trace, policy, horizon=4):
-    start = max(0, len(trace) - horizon)
-    event_positions = list(range(start, len(trace)))
-    current = trace[-1]
-    rule_ids = [r.rid for r in policy.rules if r.selector.matches(current)]
-    units = [f'e:{i}' for i in event_positions] + [f'r:{r}' for r in rule_ids]
-    return event_positions, rule_ids, units
+    return tpe.explanation_unit_info(trace,policy,horizon)
 
 
 def predictor(trace, policy, event_positions, rule_ids):

@@ -7,7 +7,7 @@ import trace_policy_engine as tpe
 from local_bench import clean_policy
 from lime.lime_tabular import LimeTabularExplainer
 from run_rq2_lime import make_case,unit_info,smallest,CLASSES
-RES=ROOT/'results'/'raw'; SEEDS=json.load(open(ROOT/'config'/'seeds.json'))['seeds']+[2026081501,2026081502]; kinds=['secret_read','system_write','system_exec','scan']
+RES=ROOT/'results'/'revision'/'legacy_driver'; RES.mkdir(parents=True,exist_ok=True); SEEDS=json.load(open(ROOT/'config'/'seeds.json'))['seeds']+[2026081501,2026081502]; kinds=['secret_read','system_write','system_exec','scan']
 
 def explain_sets(tr,pol,seed):
     y=tpe.reference_eval(tr,pol).alert_class; yi=CLASSES.index(y); ex=tpe.min_explain_bruteforce(tr,pol,4); core={f'e:{i}' for i in ex.event_positions}|{f'r:{r}' for r in ex.rule_ids}; eps,rids,units=unit_info(tr,pol); m=len(units)
@@ -22,7 +22,7 @@ def explain_sets(tr,pol,seed):
     train=np.array(list(itertools.product([0,1],repeat=m)),float); le=LimeTabularExplainer(train,mode='classification',feature_names=units,categorical_features=list(range(m)),categorical_names={i:['0','1'] for i in range(m)},class_names=CLASSES,discretize_continuous=False,random_state=seed); exp=le.explain_instance(np.ones(m),pred,labels=(yi,),num_features=m,num_samples=5000); w={units[i]:float(v) for i,v in exp.local_exp[yi]}; rank2=sorted(units,key=lambda u:abs(w.get(u,0)),reverse=True); _,lisel=smallest(tr,pol,rank2)
     # Witness validation
     witness_ok=True
-    start=max(0,len(tr)-4); epos=list(range(start,len(tr))); cur=tr[-1]; rr=[r.rid for r in pol.rules if r.selector.matches(cur)]; allunits=[f'e:{i}' for i in epos]+[f'r:{r}' for r in rr]
+    epos,rr,allunits=tpe.explanation_unit_info(tr,pol,4)
     for u,maskdict in ex.witnesses.items():
         bits=[maskdict[x] for x in allunits]
         if tpe._class_under_mask(tr,pol,epos,rr,bits)==y: witness_ok=False

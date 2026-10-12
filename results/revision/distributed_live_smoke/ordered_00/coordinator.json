@@ -1,0 +1,80 @@
+{
+  "summary": {
+    "status": "complete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 3,
+    "committed": 3,
+    "pending": 0,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [],
+    "decisions": [
+      {
+        "event_id": "ordered_00:A:1",
+        "trace_id": "ordered_00",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "ordered_00:B:1",
+        "trace_id": "ordered_00",
+        "policy_version": 2,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      },
+      {
+        "event_id": "ordered_00:A:2",
+        "trace_id": "ordered_00",
+        "policy_version": 2,
+        "alert_class": "Violation",
+        "top": [
+          "DENY_READ_EXEC_CONNECT"
+        ]
+      }
+    ]
+  },
+  "arrivals": [
+    {
+      "event_id": "ordered_00:A:1",
+      "received_at": 1791796743.471633,
+      "lateness_s": 0.008043766021728516,
+      "status": "accepted"
+    },
+    {
+      "event_id": "ordered_00:B:1",
+      "received_at": 1791796743.7305763,
+      "lateness_s": 0.005519390106201172,
+      "status": "accepted"
+    },
+    {
+      "event_id": "ordered_00:A:2",
+      "received_at": 1791796744.0980544,
+      "lateness_s": 0.002510547637939453,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "127.0.0.1",
+    "port": 5774,
+    "pid": 18316,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

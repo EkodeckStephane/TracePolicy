@@ -1,0 +1,3 @@
+{"event_id":"ordered_02:A:1","lateness_s":0.007169246673583984,"peer":["127.0.0.1",2099],"received_at":1791801778.0782807,"status":"accepted"}
+{"event_id":"ordered_02:B:1","lateness_s":0.078704833984375,"peer":["172.21.89.166",33010],"received_at":1791801778.409316,"status":"accepted"}
+{"event_id":"ordered_02:A:2","lateness_s":0.002002239227294922,"peer":["127.0.0.1",2101],"received_at":1791801778.7043374,"status":"accepted"}

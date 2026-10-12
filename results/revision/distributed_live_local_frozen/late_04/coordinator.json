@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "status": "incomplete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 2,
+    "committed": 0,
+    "pending": 2,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [
+        1
+      ],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [
+      "record exceeds the declared lateness budget"
+    ],
+    "decisions": []
+  },
+  "arrivals": [
+    {
+      "event_id": "late_04:B:1",
+      "received_at": 1791797376.248229,
+      "lateness_s": 0.006537437438964844,
+      "status": "accepted"
+    },
+    {
+      "event_id": "late_04:A:2",
+      "received_at": 1791797376.6033845,
+      "lateness_s": 0.003156423568725586,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "127.0.0.1",
+    "port": 13194,
+    "pid": 22776,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

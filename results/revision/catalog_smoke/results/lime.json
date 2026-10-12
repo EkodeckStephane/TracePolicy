@@ -1,0 +1,75 @@
+[
+  {
+    "case": 0,
+    "event_id": "2",
+    "scenario": "temporal_seq",
+    "target_class": "Violation",
+    "n_units": 4,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "horizon": 3,
+    "method": "lime",
+    "seed": 20261012,
+    "core_count": 1,
+    "independent_audit_s": 0.0010049999691545963,
+    "local_score": 0.4935343236732107,
+    "setup_s": 0.014830600004643202,
+    "attribution_s": 0.04634599993005395,
+    "selection_certification_s": 0.0002857998479157686,
+    "fixed_set_proof_s": 0.00012010009959340096,
+    "total_s": 0.06158249988220632,
+    "weights": [
+      0.314779203555287,
+      0.0024050638481855732,
+      0.30428881945960806,
+      0.2981055588059669
+    ],
+    "ranking": [
+      "e:0",
+      "e:2",
+      "r:SEQ",
+      "e:1"
+    ],
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:0": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 1
+        },
+        "e:2": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 0,
+          "r:SEQ": 1
+        },
+        "r:SEQ": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 5,
+      "target": "Violation"
+    },
+    "status": "ok",
+    "selected": [
+      "e:0",
+      "e:2",
+      "r:SEQ"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 5000,
+    "canonical_queries": 16
+  }
+]

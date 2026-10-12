@@ -1,0 +1,1 @@
+{"closed":[],"duplicates":0,"errors":[],"max_lateness_s":1.5,"policies":{"1":"927d961171e994affef5ba6475faf7e03cb2775f212e186e916e4849f0c425d9","2":"e94d0db42a4b6e52e7ebe07bc39361700a81de87efef837418d72ae7810ebe9c"},"records":[],"schedule":[[0.0,1],[1791801788.4526694,2]],"schema":1,"sources":["A","B"],"watermarks":{"A":[],"B":[]}}

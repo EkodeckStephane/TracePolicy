@@ -1,0 +1,1 @@
+{"hostname": "DESKTOP-5C8VKSH", "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39", "interpreter": "/usr/bin/python3", "pid": 303, "time_before": 1791801506.3491561, "time_after": 1791801506.3657546, "reply": {"ok": true, "result": "connected"}}

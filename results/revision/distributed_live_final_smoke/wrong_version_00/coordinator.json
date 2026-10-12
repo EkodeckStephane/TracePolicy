@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "status": "incomplete",
+    "sources": [
+      "A",
+      "B"
+    ],
+    "observed": 2,
+    "committed": 1,
+    "pending": 1,
+    "duplicate_count": 0,
+    "sequence_gaps": {
+      "A": [
+        2
+      ],
+      "B": []
+    },
+    "missing_watermarks": [],
+    "closed_sources": [
+      "A",
+      "B"
+    ],
+    "errors": [
+      "record policy version does not match frozen event-time schedule"
+    ],
+    "decisions": [
+      {
+        "event_id": "wrong_version_00:A:1",
+        "trace_id": "wrong_version_00",
+        "policy_version": 1,
+        "alert_class": "NoAlert",
+        "top": [
+          "ALLOW_OBSERVED"
+        ]
+      }
+    ]
+  },
+  "arrivals": [
+    {
+      "event_id": "wrong_version_00:A:1",
+      "received_at": 1791797056.4001794,
+      "lateness_s": 0.007134437561035156,
+      "status": "accepted"
+    },
+    {
+      "event_id": "wrong_version_00:B:1",
+      "received_at": 1791797056.677376,
+      "lateness_s": 0.007504701614379883,
+      "status": "accepted"
+    }
+  ],
+  "process": {
+    "host": "127.0.0.1",
+    "port": 13638,
+    "pid": 2904,
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "restored": false
+  }
+}

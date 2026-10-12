@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 1492,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "source": "B"
+  },
+  "observations": [
+    {
+      "source": "B",
+      "source_seq": 1,
+      "trace_id": "reorder_duplicate_00",
+      "policy_version": 2,
+      "event": {
+        "eid": "reorder_duplicate_00:B:1",
+        "ts": 1791796745.61613,
+        "action": "exec",
+        "resource_class": "lab_resource",
+        "subject_class": "collector_operation",
+        "attrs": {
+          "evidence": {
+            "operation": "child_process_exec",
+            "returncode": 0,
+            "output": "executed-child 2284",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+          },
+          "source_identity": {
+            "hostname": "DESKTOP-5C8VKSH",
+            "pid": 1492,
+            "platform": "Windows-10-10.0.26200-SP0",
+            "interpreter": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+            "source": "B"
+          },
+          "operation_start": 1791796745.5644858,
+          "operation_end": 1791796745.61613
+        },
+        "malicious": null,
+        "attack_type": null
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "event_id": "reorder_duplicate_00:B:1",
+      "duplicate": false,
+      "reply": {
+        "ok": true,
+        "result": "accepted"
+      }
+    }
+  ]
+}

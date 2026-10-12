@@ -1,0 +1,1271 @@
+{
+  "strata": [
+    {
+      "seed": 2026081401,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 180,
+      "event_id": "2974cf63-4211-bb12-0857-fdd03f23683b"
+    },
+    {
+      "seed": 2026081401,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 40,
+      "event_index": 77,
+      "event_id": "c9616dd8-f49d-66ac-ea8c-a71ea4c02110"
+    },
+    {
+      "seed": 2026081401,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 294,
+      "event_id": "b95c7722-9e86-1e67-3fdc-b2607b00c70d"
+    },
+    {
+      "seed": 2026081401,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 120,
+      "event_id": "2efa23e7-2b5f-deb9-0479-01c0f7d9bd4e"
+    },
+    {
+      "seed": 2026081402,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 122,
+      "event_id": "2b72eb93-cae7-e922-eed5-a9bece2efb93"
+    },
+    {
+      "seed": 2026081402,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 44,
+      "event_index": 278,
+      "event_id": "32e2582a-5c4b-cb58-17e1-ace62fe63135"
+    },
+    {
+      "seed": 2026081402,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 185,
+      "event_id": "4b47bc7d-279a-9681-7e6b-3720e45e5704"
+    },
+    {
+      "seed": 2026081402,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 111,
+      "event_id": "02f003cb-d706-e3c3-a182-62977f17edf8"
+    },
+    {
+      "seed": 2026081403,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 61,
+      "event_id": "84f60aef-5bbe-f906-2735-bb79f2a9f4b3"
+    },
+    {
+      "seed": 2026081403,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 44,
+      "event_index": 180,
+      "event_id": "b822f805-66ff-74bb-6494-d289befa9746"
+    },
+    {
+      "seed": 2026081403,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 2,
+      "event_index": 15,
+      "event_id": "3b5d5976-a811-7522-698b-99cf338c90a9"
+    },
+    {
+      "seed": 2026081403,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 57,
+      "event_id": "c019d8be-3fb9-2747-e606-8ac7e9c4a8d1"
+    },
+    {
+      "seed": 2026081404,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 266,
+      "event_id": "836707c4-0caf-8b55-d583-04e92fb911df"
+    },
+    {
+      "seed": 2026081404,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 44,
+      "event_index": 189,
+      "event_id": "5d25fc74-b566-04a0-e7f3-77f73e04b891"
+    },
+    {
+      "seed": 2026081404,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 2,
+      "event_index": 109,
+      "event_id": "1b370ab2-ab47-7117-0aa4-f3540b461956"
+    },
+    {
+      "seed": 2026081404,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 102,
+      "event_id": "5e7acd3d-65e3-0f6a-8a1d-d2ae4edf76d0"
+    },
+    {
+      "seed": 2026081405,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 242,
+      "event_id": "062dc8ce-3dcb-df60-4495-71b3b5a95f29"
+    },
+    {
+      "seed": 2026081405,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 63,
+      "event_index": 180,
+      "event_id": "bf0efb91-b474-9486-4611-eb3f769b98e0"
+    },
+    {
+      "seed": 2026081405,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 122,
+      "event_id": "f7292936-b7d5-d6ea-88d5-627191b17e7d"
+    },
+    {
+      "seed": 2026081405,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 218,
+      "event_id": "70e6edcb-daeb-171f-dbd1-9ae473407c5b"
+    },
+    {
+      "seed": 2026081406,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 76,
+      "event_id": "9c983b1a-ffb0-2a14-46ef-80abd3097144"
+    },
+    {
+      "seed": 2026081406,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 57,
+      "event_index": 242,
+      "event_id": "75b06b9b-dfdc-4e96-5745-6a7fa782b3ab"
+    },
+    {
+      "seed": 2026081406,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 280,
+      "event_id": "0a94fb91-5ed3-7c82-7481-91c794f446c3"
+    },
+    {
+      "seed": 2026081406,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 260,
+      "event_id": "550304d7-9ade-a7c4-538f-c45922d46a0d"
+    },
+    {
+      "seed": 2026081407,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 273,
+      "event_id": "065e8b51-7613-eadc-b952-c15ee5a7f6b7"
+    },
+    {
+      "seed": 2026081407,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 42,
+      "event_index": 271,
+      "event_id": "ab995aef-fe56-3c97-e4b2-d58b5b7c0254"
+    },
+    {
+      "seed": 2026081407,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 116,
+      "event_id": "b7b5cbc0-b695-8b4d-1e08-7726a1af6ec1"
+    },
+    {
+      "seed": 2026081407,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 49,
+      "event_id": "88e8597c-e839-20de-ef26-4f07c9529efc"
+    },
+    {
+      "seed": 2026081408,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 244,
+      "event_id": "f0ee23fd-895d-4f21-0497-1a9d178257f7"
+    },
+    {
+      "seed": 2026081408,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 53,
+      "event_index": 104,
+      "event_id": "55286460-b3fa-49ac-5823-ac9281890e81"
+    },
+    {
+      "seed": 2026081408,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 256,
+      "event_id": "794caa1f-69ad-cc19-c1ba-13b0a6c73f60"
+    },
+    {
+      "seed": 2026081408,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 63,
+      "event_id": "bf6c68f4-1697-9889-8ef5-abd97e769807"
+    },
+    {
+      "seed": 2026081409,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 10,
+      "event_index": 97,
+      "event_id": "7c4966da-c8bc-ea82-7f75-6d5f5104ee4a"
+    },
+    {
+      "seed": 2026081409,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 46,
+      "event_index": 6,
+      "event_id": "631f9fa1-7883-1878-4c34-b60d53aaddf7"
+    },
+    {
+      "seed": 2026081409,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 260,
+      "event_id": "f4fccb0b-3c4c-a9fe-3da9-50eada5249c0"
+    },
+    {
+      "seed": 2026081409,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 10,
+      "event_index": 287,
+      "event_id": "96f0ee8e-7690-7436-9286-02da7ade2169"
+    },
+    {
+      "seed": 2026081410,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 170,
+      "event_id": "daed2ec2-aee8-1497-f865-7e4e4083f54a"
+    },
+    {
+      "seed": 2026081410,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 55,
+      "event_index": 179,
+      "event_id": "ff91a2cb-8a27-1d85-8c9e-2f18a880080f"
+    },
+    {
+      "seed": 2026081410,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 181,
+      "event_id": "19a75894-785f-afa8-8772-64efdc5d236d"
+    },
+    {
+      "seed": 2026081410,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 12,
+      "event_index": 204,
+      "event_id": "89c3d97e-22d3-738e-c852-6f23e5a3a405"
+    },
+    {
+      "seed": 2026081411,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 10,
+      "event_index": 140,
+      "event_id": "185c0901-6d65-8fb0-dd81-08d8d0906d3d"
+    },
+    {
+      "seed": 2026081411,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 72,
+      "event_index": 286,
+      "event_id": "5d14e52c-4dd4-0e95-a340-11c3e457d0d0"
+    },
+    {
+      "seed": 2026081411,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 166,
+      "event_id": "152aea76-dacc-a89b-361b-1581f8a5c85c"
+    },
+    {
+      "seed": 2026081411,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 81,
+      "event_id": "93c3c720-f0ad-9a9c-91d0-553674049070"
+    },
+    {
+      "seed": 2026081412,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 191,
+      "event_id": "ed5f1584-678b-1017-e8fe-e58d6291fbeb"
+    },
+    {
+      "seed": 2026081412,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 44,
+      "event_index": 231,
+      "event_id": "099f88da-29e8-a812-9cbd-1ef15b44a781"
+    },
+    {
+      "seed": 2026081412,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 298,
+      "event_id": "a39c0903-0771-22d3-ce91-5cea36071d9c"
+    },
+    {
+      "seed": 2026081412,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 11,
+      "event_index": 77,
+      "event_id": "96a55d8e-9610-8813-91ea-12c140faeecf"
+    },
+    {
+      "seed": 2026081413,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 175,
+      "event_id": "95028fd4-524c-edbb-d006-606fc47e2524"
+    },
+    {
+      "seed": 2026081413,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 42,
+      "event_index": 62,
+      "event_id": "767ca174-0666-fdbc-642c-8c12611a05af"
+    },
+    {
+      "seed": 2026081413,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 252,
+      "event_id": "ad40e6b7-d71f-7211-2907-48bb4a3f688b"
+    },
+    {
+      "seed": 2026081413,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 294,
+      "event_id": "cb980ed2-be51-476d-1492-8e6edde5134c"
+    },
+    {
+      "seed": 2026081414,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 143,
+      "event_id": "0ad81068-9443-3845-f8a3-334ca7e44556"
+    },
+    {
+      "seed": 2026081414,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 51,
+      "event_index": 261,
+      "event_id": "783a693b-1e90-4b08-72a1-3057ed73b787"
+    },
+    {
+      "seed": 2026081414,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 9,
+      "event_index": 94,
+      "event_id": "7ef873ac-8df2-5b5f-6f86-9c92e5026069"
+    },
+    {
+      "seed": 2026081414,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 177,
+      "event_id": "5a503fe7-e8a6-1edc-4c93-f120f4cd8b20"
+    },
+    {
+      "seed": 2026081415,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 9,
+      "event_index": 198,
+      "event_id": "ba1413ca-bb2e-df87-88d1-2c077680b6ae"
+    },
+    {
+      "seed": 2026081415,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 54,
+      "event_index": 6,
+      "event_id": "d46366da-4a38-09ba-d924-37ce14a6037a"
+    },
+    {
+      "seed": 2026081415,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 10,
+      "event_index": 279,
+      "event_id": "f72d82fa-ba5a-13b6-f0c7-8ca2cc39d7c2"
+    },
+    {
+      "seed": 2026081415,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 190,
+      "event_id": "22ff504f-3277-7405-3506-a80122ea29f2"
+    },
+    {
+      "seed": 2026081416,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 10,
+      "event_index": 275,
+      "event_id": "f582487e-fc94-2e45-c0d0-9aad561fc74d"
+    },
+    {
+      "seed": 2026081416,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 67,
+      "event_index": 215,
+      "event_id": "68bca159-acd9-de76-81bc-8346c1bb8f04"
+    },
+    {
+      "seed": 2026081416,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 9,
+      "event_index": 185,
+      "event_id": "5d56e2de-58fa-f35c-ccbe-f67bbdd0ce8a"
+    },
+    {
+      "seed": 2026081416,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 18,
+      "event_id": "de7fef17-10c3-37b6-0c5f-d6eee156b26e"
+    },
+    {
+      "seed": 2026081417,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 164,
+      "event_id": "bfd89351-57a6-165d-3d19-caf41ed6bf1e"
+    },
+    {
+      "seed": 2026081417,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 49,
+      "event_index": 139,
+      "event_id": "0105b755-a4c1-c890-72c9-04848345ebc7"
+    },
+    {
+      "seed": 2026081417,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 209,
+      "event_id": "e8670be8-eaf5-633f-07cd-f4ac34ddf56c"
+    },
+    {
+      "seed": 2026081417,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 202,
+      "event_id": "513a4694-c73e-3ccc-494f-c7eef0d2065e"
+    },
+    {
+      "seed": 2026081418,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 2,
+      "event_index": 282,
+      "event_id": "583b70f1-8bfa-9a88-0d2b-440ec8935c42"
+    },
+    {
+      "seed": 2026081418,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 49,
+      "event_index": 131,
+      "event_id": "71e8f3a9-abb0-5e9f-2082-bd5c32b1f507"
+    },
+    {
+      "seed": 2026081418,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 277,
+      "event_id": "4f4a9ed5-d23a-e203-a0be-7dcb535f2d7a"
+    },
+    {
+      "seed": 2026081418,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 208,
+      "event_id": "eb636edf-8923-dea5-776f-10bb193669bc"
+    },
+    {
+      "seed": 2026081419,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 11,
+      "event_id": "4697ab45-07d0-160e-cd0f-a9c4fd25c5c9"
+    },
+    {
+      "seed": 2026081419,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 56,
+      "event_index": 45,
+      "event_id": "d7178531-7046-a0b1-86d8-809b04fac8ff"
+    },
+    {
+      "seed": 2026081419,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 79,
+      "event_id": "24d5fa7a-b688-7e06-0e7c-54e978440a17"
+    },
+    {
+      "seed": 2026081419,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 130,
+      "event_id": "22f40a1c-5f07-60f4-7723-00231b712c67"
+    },
+    {
+      "seed": 2026081420,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 264,
+      "event_id": "a85b6990-f908-85e7-d60f-90357014aa7e"
+    },
+    {
+      "seed": 2026081420,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 69,
+      "event_index": 259,
+      "event_id": "f6d58e50-ab76-2843-3847-6f1e80734721"
+    },
+    {
+      "seed": 2026081420,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 1,
+      "event_index": 205,
+      "event_id": "46a75dc2-757e-c43f-7b4a-20a40dcb5920"
+    },
+    {
+      "seed": 2026081420,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 9,
+      "event_index": 27,
+      "event_id": "51a68eac-e63b-693a-a38d-73ab3c2f0a78"
+    },
+    {
+      "seed": 2026081421,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 203,
+      "event_id": "0183fdb6-cf8a-d9a6-1952-5e1315cd5adb"
+    },
+    {
+      "seed": 2026081421,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 39,
+      "event_index": 25,
+      "event_id": "236544f3-7955-0d13-d23d-d40b93bf4af5"
+    },
+    {
+      "seed": 2026081421,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 9,
+      "event_index": 183,
+      "event_id": "f5bc01a8-a83e-fbfb-8345-f6b7649d3947"
+    },
+    {
+      "seed": 2026081421,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 67,
+      "event_id": "f82bbf3e-a8b3-e357-1371-4dbc72172fec"
+    },
+    {
+      "seed": 2026081422,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 2,
+      "event_id": "0ee6a7cb-81ea-42fa-955d-62b2870d971c"
+    },
+    {
+      "seed": 2026081422,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 62,
+      "event_index": 283,
+      "event_id": "5b22fe84-1ac7-38ec-1908-b93b590e3275"
+    },
+    {
+      "seed": 2026081422,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 0,
+      "event_id": "85c2029f-998e-5911-9fc3-903474725f9a"
+    },
+    {
+      "seed": 2026081422,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 2,
+      "event_index": 133,
+      "event_id": "2ebac5a5-c744-cb44-57b1-576f8f1c837e"
+    },
+    {
+      "seed": 2026081423,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 8,
+      "event_index": 263,
+      "event_id": "f740df54-278c-5956-116d-cba4b9ef0b32"
+    },
+    {
+      "seed": 2026081423,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 43,
+      "event_index": 253,
+      "event_id": "6dc8479a-8397-41ec-c02c-297fef3bb7b4"
+    },
+    {
+      "seed": 2026081423,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 298,
+      "event_id": "e342e7c2-c2d9-dccf-9d7a-7ae456d9309b"
+    },
+    {
+      "seed": 2026081423,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 12,
+      "event_index": 154,
+      "event_id": "7e75a7bf-a744-ec1a-68c1-072450125ba2"
+    },
+    {
+      "seed": 2026081424,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 18,
+      "event_id": "3552c722-78a2-8389-d3c0-b1851e8d3c41"
+    },
+    {
+      "seed": 2026081424,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 47,
+      "event_index": 149,
+      "event_id": "4b7ad355-abf9-2c27-68c5-0b7f35e46ebf"
+    },
+    {
+      "seed": 2026081424,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 270,
+      "event_id": "48338a7c-abcb-af2e-4e49-bfa8187a6261"
+    },
+    {
+      "seed": 2026081424,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 140,
+      "event_id": "8de50045-8937-2eed-d1a4-5599b9a036ed"
+    },
+    {
+      "seed": 2026081425,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 80,
+      "event_id": "a7e62536-d19c-22f3-34c3-e69666f944cb"
+    },
+    {
+      "seed": 2026081425,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 41,
+      "event_index": 240,
+      "event_id": "0579ffac-b362-759b-2fef-e22b63ff6566"
+    },
+    {
+      "seed": 2026081425,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 265,
+      "event_id": "2ce4cfe0-8e27-79a9-4fd7-d4cf901ab19e"
+    },
+    {
+      "seed": 2026081425,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 11,
+      "event_index": 241,
+      "event_id": "d9812abd-a157-f85e-e4b5-69b4ceddb0f9"
+    },
+    {
+      "seed": 2026081426,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 159,
+      "event_id": "dfef1011-0487-329e-0bf6-d11b69d2a6de"
+    },
+    {
+      "seed": 2026081426,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 53,
+      "event_index": 257,
+      "event_id": "8f956e8d-b1b9-29b9-89a1-4b24ca5e31b8"
+    },
+    {
+      "seed": 2026081426,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 10,
+      "event_index": 250,
+      "event_id": "1c53ddb2-802e-a29a-5f5b-227f0af64799"
+    },
+    {
+      "seed": 2026081426,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 269,
+      "event_id": "854063d0-0bc3-26f0-45ac-a0a2e18dc725"
+    },
+    {
+      "seed": 2026081427,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 11,
+      "event_index": 237,
+      "event_id": "89905656-c4c7-9c18-4648-822d88e78c9c"
+    },
+    {
+      "seed": 2026081427,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 52,
+      "event_index": 283,
+      "event_id": "a76bbfa1-7451-5b70-2172-39ea9eb566f5"
+    },
+    {
+      "seed": 2026081427,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 118,
+      "event_id": "1694ea10-88a8-9e8b-21cb-255edec74d8d"
+    },
+    {
+      "seed": 2026081427,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 3,
+      "event_index": 222,
+      "event_id": "2fa97c19-1d16-d6c2-0b9b-dd9eb866a563"
+    },
+    {
+      "seed": 2026081428,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 111,
+      "event_id": "520c008f-df6d-b486-c53b-86eafb48a2a5"
+    },
+    {
+      "seed": 2026081428,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 56,
+      "event_index": 48,
+      "event_id": "42260332-f0a9-097b-de6d-dfd858463f27"
+    },
+    {
+      "seed": 2026081428,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 54,
+      "event_id": "a0941bbc-a988-00bf-8a75-8b4e3033ea95"
+    },
+    {
+      "seed": 2026081428,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 7,
+      "event_index": 52,
+      "event_id": "81edd0e6-69c1-1b97-1f3f-c22bd63ff144"
+    },
+    {
+      "seed": 2026081429,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 6,
+      "event_index": 108,
+      "event_id": "fb2486de-74c0-ddc4-a298-f73c20ecfac8"
+    },
+    {
+      "seed": 2026081429,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 38,
+      "event_index": 298,
+      "event_id": "155dae22-6710-047d-e87b-e8d94b0921b5"
+    },
+    {
+      "seed": 2026081429,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 9,
+      "event_index": 145,
+      "event_id": "63be5ceb-acc6-4991-d46f-562de3ae413a"
+    },
+    {
+      "seed": 2026081429,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 245,
+      "event_id": "feb73de6-7fcf-f2b6-a50e-0df400d71d03"
+    },
+    {
+      "seed": 2026081430,
+      "scenario": "admin_probe",
+      "status": "selected",
+      "eligible_count": 2,
+      "event_index": 219,
+      "event_id": "de04007c-5399-c86f-6492-ef06296bbf1a"
+    },
+    {
+      "seed": 2026081430,
+      "scenario": "bruteforce",
+      "status": "selected",
+      "eligible_count": 47,
+      "event_index": 78,
+      "event_id": "b62d9354-08dc-cf45-4bd3-47a7d59417f9"
+    },
+    {
+      "seed": 2026081430,
+      "scenario": "command_probe",
+      "status": "selected",
+      "eligible_count": 4,
+      "event_index": 70,
+      "event_id": "85ce2319-b2d8-de9b-a177-365c69c5858c"
+    },
+    {
+      "seed": 2026081430,
+      "scenario": "path_traversal",
+      "status": "selected",
+      "eligible_count": 5,
+      "event_index": 157,
+      "event_id": "8531617f-9b7a-2536-fa53-34da3ccaae22"
+    }
+  ],
+  "input_sha256": {
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081401.csv": "98871ef3d871c1bd02db926caf9ea0e5d06241fbc63e6065c554cf98d6917fb6",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081401.jsonl": "fcdcb48100d4fc30903993972f765849eb9fa63b032def7a25de6975edb08778",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081402.csv": "7d998390b185545afd3587517eb5d7f78262689ea4af368b316054f3c70fd6c0",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081402.jsonl": "3c21a0a49071513a89107d0349825c187c69ec2f82774c3273c591d460e27e17",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081403.csv": "20536b634ee072cfbee2175f12ec6e90c1d202348882bcdf38a95538e56e6fd6",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081403.jsonl": "0f30cb5004e46bed0bda6e15b5aa2467319bc4fdf4a47fe7f5aa774d91a1a8c9",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081404.csv": "1c19b3891534effdd3f5054d64647fa56eafed52d191970c8bc59272d247df6a",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081404.jsonl": "17bb58021719b78825e8e35938e26885b5195036ddea11696c91d80d3d4cdf6f",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081405.csv": "53d75527a1fc1e7d59e02938946d611017fc0a9b7fabe8077e319721fb491572",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081405.jsonl": "1b93d500baf4fd668c55246b6ab38473b64465cf995858a301765c63dcff68a6",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081406.csv": "2b114fcdb5fc959d515ee56a1f18413215b6d7fa8917b9d8b7d67d8b73f5b72e",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081406.jsonl": "13013c71784bdbaf833048627f5bb0fbd11ab0659c0e65537f662d600dfbc740",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081407.csv": "82c084b15c8299bcb761dacf5e23544531f053943a4e1a97b5a1fac81eb83b64",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081407.jsonl": "012323bf8d8302869ca4338c579760d85751bf1351e543e7d541e4b9c8d90808",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081408.csv": "561e6787d3249198f9201a15e081cfb1f637f9906c1c2e91732e9332a03ab4f0",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081408.jsonl": "4520a9a8749434680f088481b425c8f0448d50434f530a67f5c4a31542752b1e",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081409.csv": "5d8ff8dfb985fd92d41f385bb6492805d23cd7f5f87faa66b6dec5dc99875fb1",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081409.jsonl": "2769dec3f6c8b7f0be2414eefd26f60106cd351045a83d39b0b1d2236ae33089",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081410.csv": "2308a20c9599d1b59990ba7efaab924b83808e7846eca8fb3ab23b31ba0d20d4",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081410.jsonl": "64764064e91f5c25deef8e3ebea0f4bb0208b22ce659d577059fbc3a199c0219",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081411.csv": "8a1b9f7f2155e50dd2c3c27dc01580cca4d1a9e2dffe86d4197ad701ceda27b2",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081411.jsonl": "4cdb970b8c3677262470a6db84331e1bd5cd1c607f2a7efa823fa46454359336",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081412.csv": "b9814f7adf671e2bb82b74f34b50fc2d6d143c64566cfcc2a5ca106abee08dd2",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081412.jsonl": "7aa768113d4c83fe7c825ba9e0695667747950e2c44a638f85dd7c7333ab4bb4",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081413.csv": "571e7aab8e78755a64e77b248f0a4b7ef3dfa127cd194ead8062a46993894986",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081413.jsonl": "d58141b4929388abe79ab7691d7306e91010047cdc7c45b3ead8b3474b0e32a3",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081414.csv": "0608f1cce97918066e8dbdfa600c36e287336a39e45fe3c3083b6d3564de8635",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081414.jsonl": "26d614da95edeb33e6342bbd8f0d05d826b0da2726b0d1e17306c89bed936474",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081415.csv": "cbd9152776070e7726eb74b11c362111bb4d44d9a81ee93166f6116e9d66c167",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081415.jsonl": "96af9236d03d90891448608c728cea2bba3d1f9ab09ed4fdfe65d085cd2ee63c",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081416.csv": "b4b77c55cc2ea3510de48a5e62af9d9b0a1989680050c53942ac84383d8724d9",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081416.jsonl": "f00fac1a6a3e0dfad8521502fbab8171d293710dfbaa850ed4daea5ac43027ff",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081417.csv": "9fd71dcd78a083bcb0c348f25c6e2d3311154f2f4e656cc44ae3c09c3e6319b1",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081417.jsonl": "b9ea0e756f56a8bf8d8241d6a095e603ed996a4257eb09644046ea9a5b3b153c",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081418.csv": "b7b672728a6419b997d5e4e5377493af3531261f8725b91c7aa298af5f4fcb44",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081418.jsonl": "658d7c9964e3c415d55d4f1e611c7cbbb487dd64b5bb6ccc39f4e372347a5810",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081419.csv": "1621f51f12d3f4d1935e69b1c541b61f8021b7e3b133303f6829594ab6e455ed",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081419.jsonl": "d2199e9d7f41cb9c28a016a6121bc604ff1d820232482fa6a660892215c7fe7a",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081420.csv": "0573cf08ea7a4d25ca39319c23547780065daa0b814b7b32986e47b04aa14ef7",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081420.jsonl": "937e39bb6783de8182e6c682e2bc532cd55fd7f725b0eff69837bbdbb922c4f5",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081421.csv": "7c2541ed6fb01cc69e03f9718e3ec0cec8af3e86cd65c7d4d1a8bea27e2d8759",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081421.jsonl": "5041ad68b79dbf48fcdb75297cf6fccdca479f0832e59ca2fa3847a28555b40c",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081422.csv": "5987e005f1737cf74de70025c697d42937a49ac1d9af476b092ebf291ccc1802",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081422.jsonl": "70b95618833a5ccb80b973e6f5a1634e3c8f6073a5fbc98ce77a5ed16c0493c8",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081423.csv": "274e1bb6e83088f4572c835ff6b1878912c94abf8a67312c738509e036ed516d",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081423.jsonl": "58448f0f384b8b27b7eaa15116869d6465e6da785048c94dc54f63d33d6980d1",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081424.csv": "6aacbc26463041dae8fd9ecc74f855ea388cba5d20e4095cbc93f83147ca015b",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081424.jsonl": "32ed3d62d0e49d335d1228349f4e81ca889b47887fe22871bf97584d22b4bd84",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081425.csv": "630d750344fe497b2647104da639323c882584c5d7f88b54151e2f1ba8dfa260",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081425.jsonl": "512404416591bfa751766b089da55fa1649976c0118ec07320c49db37c126918",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081426.csv": "45c8a62ec9edb6a2e6d2b17930daf5d28489ba2288bbbf23bb494c61eed9ba4a",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081426.jsonl": "003143831fbced4bf487ead842f3eeb71396336349976e1889a37710f2040681",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081427.csv": "5c997e94b6f4a423ea57a6eb2d663ce8e452646f675944260d7b1f83f6168be1",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081427.jsonl": "b8ac74aa339aa22faf382dfca277f4e5266d2d0db8872cbe8d6211a14ae88acd",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081428.csv": "a4f69892b3a2291396d0ecf9e2574ee1af1e828d4388462df56bd6da68d2edaf",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081428.jsonl": "9fe3a2e62a5112258aa21ce8ad44d84ef753931c71e92deea45b5e521127d99d",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081429.csv": "b59cf20539233ee25a5bc8b3f654be8db4370f1aa5aa65c862034d81429b239d",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081429.jsonl": "7a7b8c250f0cac6b9ebb775a7fc38bb28a3386244552f512632f32c5d3143766",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\truth_2026081430.csv": "d98fc7a8313f0ac533c33c28141439450c33d9701938496965bce6796a8ed879",
+    "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\Project_A_Phase5_Local_Codex_Kit\\local_lab\\results\\access_2026081430.jsonl": "784b7c5d8f55c70f16be4027c6e62903c681a6bb735b09d4b94d301718167738"
+  },
+  "arguments": {
+    "lab_dir": "Project_A_Phase5_Local_Codex_Kit/local_lab/results",
+    "per_scenario": 25,
+    "horizon": 5,
+    "lime_samples": 5000,
+    "quiet": true,
+    "selection": "stratified",
+    "selection_seed": 20261011,
+    "output": null,
+    "proof_matched": true
+  },
+  "selection_description": "one seeded randomized eligible true-positive alert per scenario and available workload",
+  "policy": {
+    "pid": "LOCAL_HTTP_GATEWAY",
+    "version": 1,
+    "rules": [
+      {
+        "rid": "D_ADMIN",
+        "priority": 100,
+        "effect": "DENY",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "admin_sensitive",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_TRAVERSAL",
+        "priority": 100,
+        "effect": "DENY",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "path_traversal",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_COMMAND",
+        "priority": 100,
+        "effect": "DENY",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "command_probe",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_BRUTEFORCE",
+        "priority": 100,
+        "effect": "DENY",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "auth_fail",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": "http_request",
+          "count_resource": "auth_fail",
+          "count_horizon": 5,
+          "count_op": ">=",
+          "count_threshold": 4,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_AUTH_FAIL_SINGLE",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "auth_fail",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_AUTH",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "auth",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_PUBLIC",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "public",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A_STATUS",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "http_request",
+          "resource_class": "status",
+          "subject_class": "remote_client"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      }
+    ],
+    "created_at": 0.0
+  },
+  "policy_sha256": "a7c837e43de530aefc8b8ebef8327edee5e6ca60fe4930cf2828a890d8712793",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "shap": "0.50.0",
+    "lime": "0.2.0.1"
+  }
+}

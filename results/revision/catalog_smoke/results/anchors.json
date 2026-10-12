@@ -1,0 +1,254 @@
+[
+  {
+    "case": 0,
+    "event_id": "2",
+    "scenario": "temporal_seq",
+    "target_class": "Violation",
+    "n_units": 4,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "horizon": 3,
+    "method": "anchors",
+    "seed": 11,
+    "core_count": 1,
+    "independent_audit_s": 0.0013460000045597553,
+    "native": {
+      "selected": [
+        "r:SEQ",
+        "e:2",
+        "e:0"
+      ],
+      "feature_indices": [
+        3,
+        2,
+        0
+      ],
+      "anchor": [
+        "r:SEQ = retained",
+        "e:2 = retained",
+        "e:0 = retained"
+      ],
+      "precision": 1.0,
+      "coverage": 0.1237,
+      "threshold": 0.95,
+      "seed": 11,
+      "init_us": 531.1,
+      "explanation_us": 374496.3,
+      "total_native_us": 375027.4,
+      "implementation": "alibi.AnchorTabular",
+      "background_distribution": "uniform_complete_binary_domain"
+    },
+    "native_s": 0.3803081000223756,
+    "fixed_set_proof_s": 0.00017279991880059242,
+    "total_s": 0.3804808999411762,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:0": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 1
+        },
+        "e:2": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 0,
+          "r:SEQ": 1
+        },
+        "r:SEQ": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 5,
+      "target": "Violation"
+    },
+    "status": "ok",
+    "selected": [
+      "e:0",
+      "e:2",
+      "r:SEQ"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 41602,
+    "canonical_queries": 16
+  },
+  {
+    "case": 0,
+    "event_id": "2",
+    "scenario": "temporal_seq",
+    "target_class": "Violation",
+    "n_units": 4,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "horizon": 3,
+    "method": "anchors",
+    "seed": 23,
+    "core_count": 1,
+    "independent_audit_s": 0.0013460000045597553,
+    "native": {
+      "selected": [
+        "e:0",
+        "r:SEQ",
+        "e:2"
+      ],
+      "feature_indices": [
+        0,
+        3,
+        2
+      ],
+      "anchor": [
+        "e:0 = retained",
+        "r:SEQ = retained",
+        "e:2 = retained"
+      ],
+      "precision": 1.0,
+      "coverage": 0.1243,
+      "threshold": 0.95,
+      "seed": 23,
+      "init_us": 333.1,
+      "explanation_us": 272701.0,
+      "total_native_us": 273034.1,
+      "implementation": "alibi.AnchorTabular",
+      "background_distribution": "uniform_complete_binary_domain"
+    },
+    "native_s": 0.27453979989513755,
+    "fixed_set_proof_s": 0.0001417000312358141,
+    "total_s": 0.27468149992637336,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:0": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 1
+        },
+        "e:2": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 0,
+          "r:SEQ": 1
+        },
+        "r:SEQ": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 5,
+      "target": "Violation"
+    },
+    "status": "ok",
+    "selected": [
+      "e:0",
+      "e:2",
+      "r:SEQ"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 31802,
+    "canonical_queries": 16
+  },
+  {
+    "case": 0,
+    "event_id": "2",
+    "scenario": "temporal_seq",
+    "target_class": "Violation",
+    "n_units": 4,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "horizon": 3,
+    "method": "anchors",
+    "seed": 47,
+    "core_count": 1,
+    "independent_audit_s": 0.0013460000045597553,
+    "native": {
+      "selected": [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        3
+      ],
+      "anchor": [
+        "e:0 = retained",
+        "e:2 = retained",
+        "r:SEQ = retained"
+      ],
+      "precision": 1.0,
+      "coverage": 0.1278,
+      "threshold": 0.95,
+      "seed": 47,
+      "init_us": 171.7,
+      "explanation_us": 308539.2,
+      "total_native_us": 308710.9,
+      "implementation": "alibi.AnchorTabular",
+      "background_distribution": "uniform_complete_binary_domain"
+    },
+    "native_s": 0.3107253999914974,
+    "fixed_set_proof_s": 0.00015829992480576038,
+    "total_s": 0.31088369991630316,
+    "proof": {
+      "sufficient": true,
+      "minimal": true,
+      "witnesses": {
+        "e:0": {
+          "e:0": 0,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 1
+        },
+        "e:2": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 0,
+          "r:SEQ": 1
+        },
+        "r:SEQ": {
+          "e:0": 1,
+          "e:1": 0,
+          "e:2": 1,
+          "r:SEQ": 0
+        }
+      },
+      "redundant_units": [],
+      "checks": 5,
+      "target": "Violation"
+    },
+    "status": "ok",
+    "selected": [
+      "e:0",
+      "e:2",
+      "r:SEQ"
+    ],
+    "sufficient": true,
+    "minimal": true,
+    "oracle_requests": 34002,
+    "canonical_queries": 16
+  }
+]

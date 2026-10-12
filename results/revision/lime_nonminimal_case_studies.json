@@ -1,0 +1,181 @@
+[
+  {
+    "measured_lime_row": {
+      "case": "temporal_seq",
+      "method": "LIME",
+      "seed": 23,
+      "num_samples": 128,
+      "kernel_width_scale": 0.5,
+      "background_probability": 0.25,
+      "local_training_score": 0.5753774781431273,
+      "status": "ok",
+      "weights": [
+        0.1931319477521646,
+        0.18287438971323702,
+        0.1724500112296582,
+        0.23124758648703864
+      ],
+      "ranking": [
+        "r:SEQ",
+        "e:0",
+        "e:1",
+        "e:2"
+      ],
+      "setup_s": 0.0013041000347584486,
+      "attribution_s": 0.02254869998432696,
+      "selection_certification_s": 0.0001946999691426754,
+      "total_s": 0.024047499988228083,
+      "sufficient": true,
+      "minimal": false,
+      "size": 4,
+      "selected": [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:SEQ"
+      ],
+      "valid_alternative_count": 1,
+      "full_domain_surrogate_mse": 0.07575267182610818
+    },
+    "trace": [
+      {
+        "eid": "0",
+        "ts": 0.0,
+        "action": "start",
+        "resource_class": "resource",
+        "subject_class": "user",
+        "attrs": {},
+        "malicious": null,
+        "attack_type": null
+      },
+      {
+        "eid": "1",
+        "ts": 1.0,
+        "action": "noise",
+        "resource_class": "resource",
+        "subject_class": "user",
+        "attrs": {},
+        "malicious": null,
+        "attack_type": null
+      },
+      {
+        "eid": "2",
+        "ts": 2.0,
+        "action": "act",
+        "resource_class": "resource",
+        "subject_class": "user",
+        "attrs": {},
+        "malicious": null,
+        "attack_type": null
+      }
+    ],
+    "policy": {
+      "pid": "temporal_seq",
+      "version": 1,
+      "rules": [
+        {
+          "rid": "SEQ",
+          "priority": 10,
+          "effect": "DENY",
+          "selector": {
+            "action": "act",
+            "resource_class": "*",
+            "subject_class": "*"
+          },
+          "guard": {
+            "comparisons": [],
+            "state_comparisons": [],
+            "seen_action": null,
+            "seen_resource": null,
+            "seen_horizon": 0,
+            "count_action": null,
+            "count_resource": null,
+            "count_horizon": 0,
+            "count_op": null,
+            "count_threshold": null,
+            "seq_actions": [
+              "start",
+              "act"
+            ],
+            "seq_horizon": 3,
+            "all_of": [],
+            "any_of": [],
+            "none_of": []
+          }
+        }
+      ],
+      "created_at": 0.0
+    },
+    "horizon": 3,
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ]
+    ],
+    "intrinsic_witnesses": {
+      "e:0": {
+        "e:0": 0,
+        "e:1": 0,
+        "e:2": 1,
+        "r:SEQ": 1
+      },
+      "e:2": {
+        "e:0": 1,
+        "e:1": 0,
+        "e:2": 0,
+        "r:SEQ": 1
+      },
+      "r:SEQ": {
+        "e:0": 1,
+        "e:1": 0,
+        "e:2": 1,
+        "r:SEQ": 0
+      }
+    },
+    "deletion_checks": [
+      {
+        "released_unit": "e:0",
+        "still_sufficient": false,
+        "counterexample_mask": {
+          "e:0": 0,
+          "e:1": 1,
+          "e:2": 1,
+          "r:SEQ": 1
+        }
+      },
+      {
+        "released_unit": "e:1",
+        "still_sufficient": true,
+        "counterexample_mask": null
+      },
+      {
+        "released_unit": "e:2",
+        "still_sufficient": false,
+        "counterexample_mask": {
+          "e:0": 1,
+          "e:1": 1,
+          "e:2": 0,
+          "r:SEQ": 1
+        }
+      },
+      {
+        "released_unit": "r:SEQ",
+        "still_sufficient": false,
+        "counterexample_mask": {
+          "e:0": 1,
+          "e:1": 1,
+          "e:2": 1,
+          "r:SEQ": 0
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+{"event_id":"restart_04:A:1","lateness_s":0.007564067840576172,"peer":["127.0.0.1",2487],"received_at":1791801838.7582638,"status":"accepted"}
+{"event_id":"restart_04:B:1","lateness_s":0.1642169952392578,"peer":["172.21.89.166",54276],"received_at":1791801839.1629422,"status":"accepted"}
+{"event_id":"restart_04:A:2","lateness_s":0.0020263195037841797,"peer":["127.0.0.1",2489],"received_at":1791801839.4072256,"status":"accepted"}

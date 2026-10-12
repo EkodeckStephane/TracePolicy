@@ -1,0 +1,28 @@
+{
+  "windows": {
+    "host": "0.0.0.0",
+    "hostname": "DESKTOP-5C8VKSH",
+    "pid": 24440,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "port": 10059,
+    "restored": false
+  },
+  "wsl": {
+    "hostname": "DESKTOP-5C8VKSH",
+    "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "interpreter": "/usr/bin/python3",
+    "pid": 303,
+    "time_before": 1791801506.3491561,
+    "time_after": 1791801506.3657546,
+    "reply": {
+      "ok": true,
+      "result": "connected"
+    }
+  },
+  "host_probe_start": 1791801502.7628512,
+  "host_probe_end": 1791801506.448445,
+  "gateway": "172.21.80.1",
+  "distro": "Ubuntu-24.04-Codex",
+  "independent_physical_hosts": false,
+  "independent_linux_vms": false
+}

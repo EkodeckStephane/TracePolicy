@@ -1,0 +1,44 @@
+{
+  "kind": "live_tcp_operation_lab",
+  "topology": "one_host_three_distinct_os_processes",
+  "sources": [
+    "A",
+    "B"
+  ],
+  "profiles": [
+    "ordered",
+    "reorder_duplicate",
+    "missing_record",
+    "late",
+    "wrong_version",
+    "restart"
+  ],
+  "repeats": 1,
+  "total_runs": 6,
+  "trust": [
+    "source identity",
+    "source clock",
+    "source sequence",
+    "policy schedule"
+  ],
+  "collection_scope": "explicitly instrumented read/exec/connect operations; setup and transport excluded",
+  "workload": "benign operations arranged to exercise a declared temporal deny policy",
+  "implementation_sha256": {
+    "experiments\\revision_distributed_lab.py": "f526f89abe1c10ce607f6bf96fc568f48460d890a647f8dc318c61bbd84db786",
+    "src\\revision_distributed.py": "928e2daf12b62688184918ba159b547493929852e97df57ffcbff60e57c37230",
+    "src\\trace_policy_engine.py": "66e509d42fd33e7a2cc7d8fdf8c8e3a6619bf5496e3a5222dd24ff9936674951"
+  },
+  "executable_source_snapshot": "C:\\Users\\User\\Documents\\Articles\\Bayem-Nkondock Help-Mission\\Projet-A\\revision_COSE_2026\\code\\results\\revision\\distributed_live_receipt_smoke\\source_snapshot\\code",
+  "expected_incomplete": [
+    "missing_record",
+    "late",
+    "wrong_version"
+  ],
+  "expected_complete": [
+    "ordered",
+    "reorder_duplicate",
+    "restart"
+  ],
+  "clock_synchronization_measured": false,
+  "network_faults": "controlled send-side injections"
+}

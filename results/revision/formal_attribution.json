@@ -1,0 +1,104 @@
+[
+  {
+    "case": "instant_violation",
+    "core_count": 1,
+    "attribution": {
+      "e:0": 0.0,
+      "e:1": 1.0,
+      "r:D": 1.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "conflict",
+    "core_count": 1,
+    "attribution": {
+      "e:0": 1.0,
+      "r:D": 1.0,
+      "r:A": 1.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "gap",
+    "core_count": 1,
+    "attribution": {
+      "e:0": 0.0,
+      "r:D": 0.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "temporal_seq",
+    "core_count": 1,
+    "attribution": {
+      "e:0": 1.0,
+      "e:1": 0.0,
+      "e:2": 1.0,
+      "r:SEQ": 1.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "multiple_rules",
+    "core_count": 2,
+    "attribution": {
+      "e:0": 1.0,
+      "r:D1": 0.5,
+      "r:D2": 0.5
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "multiple_events",
+    "core_count": 2,
+    "attribution": {
+      "e:0": 0.5,
+      "e:1": 0.5,
+      "e:2": 1.0,
+      "r:SEEN": 1.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "distractors",
+    "core_count": 1,
+    "attribution": {
+      "e:0": 0.0,
+      "e:1": 0.0,
+      "e:2": 1.0,
+      "r:D": 1.0,
+      "r:IRRELEVANT": 0.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "state_fixed_context",
+    "core_count": 1,
+    "attribution": {
+      "e:1": 1.0,
+      "r:STATE": 1.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  },
+  {
+    "case": "count_threshold",
+    "core_count": 1,
+    "attribution": {
+      "e:0": 1.0,
+      "e:1": 1.0,
+      "e:2": 1.0,
+      "r:COUNT": 1.0
+    },
+    "implementation": "exact finite-domain FFA definition adaptation",
+    "timing": "complete minimal-core enumeration is a prerequisite, not a free or separately timed baseline"
+  }
+]

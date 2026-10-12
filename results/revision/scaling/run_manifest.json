@@ -1,0 +1,23 @@
+{
+  "arguments": {
+    "min_units": 5,
+    "max_units": 18,
+    "repeats": 3,
+    "timeout_s": 60,
+    "lime_samples": 5000
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "shap": "0.50.0",
+    "lime": "0.2.0.1"
+  },
+  "case_family": "four events; one active deny; false-guard selector-compatible distractor rules",
+  "lime_background": "seeded uniform binary sample max(256,8*m) rows; force allzero/allone rows",
+  "status_counts": {
+    "ok": 126
+  }
+}
