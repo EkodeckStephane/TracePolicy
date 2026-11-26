@@ -1,0 +1,94 @@
+{
+  "case_result_records": 130,
+  "cases_with_direct_mode_ablation": 129,
+  "docker_observed_cases": 120,
+  "controlled_fixtures": 9,
+  "constructed_version_pairs": 1,
+  "by_source": {
+    "frozen_docker_alert": {
+      "cases": 120,
+      "modes": {
+        "E-only": {
+          "cases": 120,
+          "cases_with_any_nonempty_core": 120,
+          "cases_with_empty_core": 0,
+          "cases_with_multiple_minimal_cores": 16,
+          "core_count_total": 168,
+          "minimal_core_sizes": {
+            "min": 1,
+            "median": 1.0,
+            "max": 4
+          }
+        },
+        "R-only": {
+          "cases": 120,
+          "cases_with_any_nonempty_core": 120,
+          "cases_with_empty_core": 0,
+          "cases_with_multiple_minimal_cores": 0,
+          "core_count_total": 120,
+          "minimal_core_sizes": {
+            "min": 1,
+            "median": 1.0,
+            "max": 1
+          }
+        },
+        "E+R": {
+          "cases": 120,
+          "cases_with_any_nonempty_core": 120,
+          "cases_with_empty_core": 0,
+          "cases_with_multiple_minimal_cores": 16,
+          "core_count_total": 168,
+          "minimal_core_sizes": {
+            "min": 2,
+            "median": 2.0,
+            "max": 5
+          },
+          "cases_with_a_core_containing_both_types": 120
+        }
+      }
+    },
+    "controlled_fixture": {
+      "cases": 9,
+      "modes": {
+        "E-only": {
+          "cases": 9,
+          "cases_with_any_nonempty_core": 8,
+          "cases_with_empty_core": 1,
+          "cases_with_multiple_minimal_cores": 1,
+          "core_count_total": 10,
+          "minimal_core_sizes": {
+            "min": 0,
+            "median": 1.0,
+            "max": 3
+          }
+        },
+        "R-only": {
+          "cases": 9,
+          "cases_with_any_nonempty_core": 8,
+          "cases_with_empty_core": 1,
+          "cases_with_multiple_minimal_cores": 1,
+          "core_count_total": 10,
+          "minimal_core_sizes": {
+            "min": 0,
+            "median": 1.0,
+            "max": 2
+          }
+        },
+        "E+R": {
+          "cases": 9,
+          "cases_with_any_nonempty_core": 8,
+          "cases_with_empty_core": 1,
+          "cases_with_multiple_minimal_cores": 2,
+          "core_count_total": 11,
+          "minimal_core_sizes": {
+            "min": 0,
+            "median": 2.0,
+            "max": 4
+          },
+          "cases_with_a_core_containing_both_types": 8
+        }
+      }
+    }
+  },
+  "interpretation_limit": "Retrospective explanation-domain ablation; not external generalization or analyst utility."
+}

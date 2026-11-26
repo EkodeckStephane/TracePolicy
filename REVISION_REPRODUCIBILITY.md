@@ -8,6 +8,7 @@ Main environment:
 python -m pytest tests -q
 python experiments/revision_running_example.py
 python experiments/revision_explanation_benchmark.py
+python experiments/revision_joint_ablation.py
 python experiments/run_rq2_local_lab_explanations.py --selection stratified --selection-seed 20261011 --proof-matched --quiet
 python experiments/revision_scaling.py --proof-matched
 python experiments/revision_methods.py --ffa --out revision_audit/ffa_benchmark.json
@@ -17,6 +18,22 @@ python experiments/revision_extended_summary.py
 python experiments/revision_distributed_lab.py --help
 python scripts/verify_frozen_protocol_v2.py
 ```
+
+The joint ablation reproduces the exact event-only, rule-only and joint-domain analysis using the included 60 generated access/truth inputs. Outputs are written to `results/revision/joint_ablation_v1/`; the manifest contains input, script, and result hashes. It is a retrospective analysis of the selected Docker workload, not an external generalization or analyst-utility test.
+
+## LID-DS 2021 evaluation
+
+Raw dataset archives are not bundled. Place the separately acquired CVE-2020-23839 archive at `data/CVE-2020-23839.zip`, then run from the repository root:
+
+```bash
+python experiments/revision_lidds_outer_archive_audit.py data/CVE-2020-23839.zip --inner-crc --output results/lidds_cve_2020_23839/archive_manifest.json
+python experiments/revision_lidds_evaluation.py freeze --source data/CVE-2020-23839.zip --manifest results/lidds_cve_2020-23839/archive_manifest.json --output results/lidds_cve_2020-23839
+python experiments/revision_lidds_evaluation.py evaluate --source data/CVE-2020-23839.zip --manifest results/lidds_cve_2020_23839/archive_manifest.json --output results/lidds_cve_2020-23839
+python experiments/revision_lidds_evaluation.py labels --source data/CVE-2020-23839.zip --manifest results/lidds_cve_2020_23839/archive_manifest.json --output results/lidds_cve_2020_23839
+python experiments/revision_lidds_evaluation.py verify --source data/CVE-2020-23839.zip --manifest results/lidds_cve_2020_23839/archive_manifest.json --output results/lidds_cve_2020_23839
+```
+
+The frozen result is recording-level for one controlled scenario. It does not provide attack-onset recall or cross-scenario generalization. The staged process reads test labels only after the policy and predictions are frozen and hashed. Derived records and scope limitations are in `results/lidds_cve_2020_23839/`.
 
 Alibi environment:
 

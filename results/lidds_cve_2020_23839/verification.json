@@ -1,0 +1,10 @@
+{
+  "predictions_hash_matches": true,
+  "protocol_sha256": "cac8accd9a97e9ac6f429fbfe2ac93e6d92c61a7cc1068a97c726e7dccd9b1db",
+  "recording_label_counts_cover_test": true,
+  "source_archive_sha256": "93d75f271a6b470dc1e97d9705e9f0ab46f3fb05249aac569d90c79ee1b8f51d",
+  "test_completed_events": 26143034,
+  "test_labels_not_used_for_policy_selection": true,
+  "test_recordings": 880,
+  "verified": true
+}

@@ -1,0 +1,970 @@
+{
+  "dataset": "BETH canonical training/validation only",
+  "training_sha256": "18ceb80a7eb4b71296df13e3967e074a81ed5b80c2212b044c061ac81a1797e2",
+  "validation_sha256": "5a08ec47060af1cb8bb24ba632b5db0c2b1ac783aedc72693247b87c1170192e",
+  "test_partition_accessed": false,
+  "test_partition_hashed_or_opened": false,
+  "objective": "Detect the source label sus using a train/validation-supported same-process predecessor rule; report evil separately and do not infer evil from sus.",
+  "label_counts": {
+    "train": {
+      "(0, 0)": 761875,
+      "(1, 0)": 1269
+    },
+    "validation": {
+      "(0, 0)": 188181,
+      "(1, 0)": 786
+    }
+  },
+  "policy_construction": {
+    "base_actions": [
+      "close",
+      "openat",
+      "security_file_open",
+      "fstat",
+      "stat",
+      "access"
+    ],
+    "base_support_threshold": 20,
+    "candidate_sequence_rule": "DENY current action when immediately preceded by the specified event within the same host/process trace; priority 100 overrides base ALLOW priority 10.",
+    "selection_criteria": {
+      "current_action_must_be_in_training_base_allowlist": true,
+      "minimum_pair_rows_per_split": 5,
+      "minimum_pair_rows_combined": 20,
+      "minimum_sus_rows_per_split": 3,
+      "minimum_sus_fraction_each_split": 0.2,
+      "sequence_horizon": 2,
+      "rule_candidates": "intersection of pairs observed in both training and validation"
+    },
+    "selected_pairs": [
+      {
+        "previous_action": "lstat",
+        "current_action": "close",
+        "train_total": 20,
+        "train_sus": 4,
+        "train_sus_fraction": 0.2,
+        "validation_total": 7,
+        "validation_sus": 3,
+        "validation_sus_fraction": 0.42857142857142855
+      }
+    ],
+    "rules": [
+      {
+        "rid": "A0",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A1",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "openat",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A2",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "security_file_open",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A3",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "fstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A4",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "stat",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "A5",
+        "priority": 10,
+        "effect": "ALLOW",
+        "selector": {
+          "action": "access",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_SUS_SEQ0",
+        "priority": 100,
+        "effect": "DENY",
+        "selector": {
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [
+            "lstat",
+            "close"
+          ],
+          "seq_horizon": 2,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      },
+      {
+        "rid": "D_UNSEEN",
+        "priority": 0,
+        "effect": "DENY",
+        "selector": {
+          "action": "*",
+          "resource_class": "*",
+          "subject_class": "*"
+        },
+        "guard": {
+          "comparisons": [],
+          "state_comparisons": [],
+          "seen_action": null,
+          "seen_resource": null,
+          "seen_horizon": 0,
+          "count_action": null,
+          "count_resource": null,
+          "count_horizon": 0,
+          "count_op": null,
+          "count_threshold": null,
+          "seq_actions": [],
+          "seq_horizon": 0,
+          "all_of": [],
+          "any_of": [],
+          "none_of": []
+        }
+      }
+    ],
+    "policy_sha256": "3f3dea18a58aae6425ea7d5ee3c29c59c2522ab793adc21476444f8e7c33b1a5"
+  },
+  "validation_development_metrics": {
+    "sus": {
+      "P0": {
+        "tp": 277,
+        "fp": 12801,
+        "fn": 509,
+        "tn": 175380,
+        "precision": 0.02118060865575776,
+        "recall": 0.3524173027989822,
+        "f1": 0.03995960761684939,
+        "fpr": 0.0680249334417396
+      },
+      "P2": {
+        "tp": 280,
+        "fp": 12805,
+        "fn": 506,
+        "tn": 175376,
+        "precision": 0.021398547955674436,
+        "recall": 0.356234096692112,
+        "f1": 0.04037199913488573,
+        "fpr": 0.06804618957280491
+      }
+    },
+    "evil": {
+      "P0": {
+        "tp": 0,
+        "fp": 13078,
+        "fn": 0,
+        "tn": 175889,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": 0.06920785110627782
+      },
+      "P2": {
+        "tp": 0,
+        "fp": 13085,
+        "fn": 0,
+        "tn": 175882,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "fpr": 0.06924489461122842
+      }
+    }
+  },
+  "validation_sequence_fires": [
+    {
+      "row_id": 157137,
+      "host": "ip-10-100-1-129",
+      "process_id": "503",
+      "action": "close",
+      "sus": 0,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ip-10-100-1-129:157136",
+          "ts": 614.637685,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-129",
+            "process_id": "503"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ip-10-100-1-129:157137",
+          "ts": 614.639123,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-129",
+            "process_id": "503"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    },
+    {
+      "row_id": 39450,
+      "host": "ip-10-100-1-129",
+      "process_id": "837",
+      "action": "close",
+      "sus": 1,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ip-10-100-1-129:39448",
+          "ts": 138.814785,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-129",
+            "process_id": "837"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ip-10-100-1-129:39450",
+          "ts": 138.816362,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-129",
+            "process_id": "837"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    },
+    {
+      "row_id": 157197,
+      "host": "ip-10-100-1-165",
+      "process_id": "500",
+      "action": "close",
+      "sus": 0,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ip-10-100-1-165:157196",
+          "ts": 615.439019,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-165",
+            "process_id": "500"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ip-10-100-1-165:157197",
+          "ts": 615.44064,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-165",
+            "process_id": "500"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    },
+    {
+      "row_id": 68788,
+      "host": "ip-10-100-1-165",
+      "process_id": "835",
+      "action": "close",
+      "sus": 1,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ip-10-100-1-165:68781",
+          "ts": 146.069941,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-165",
+            "process_id": "835"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ip-10-100-1-165:68788",
+          "ts": 146.072365,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-165",
+            "process_id": "835"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    },
+    {
+      "row_id": 157269,
+      "host": "ip-10-100-1-169",
+      "process_id": "522",
+      "action": "close",
+      "sus": 0,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ip-10-100-1-169:157268",
+          "ts": 624.101536,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-169",
+            "process_id": "522"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ip-10-100-1-169:157269",
+          "ts": 624.10299,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-169",
+            "process_id": "522"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    },
+    {
+      "row_id": 47703,
+      "host": "ip-10-100-1-169",
+      "process_id": "817",
+      "action": "close",
+      "sus": 1,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ip-10-100-1-169:47668",
+          "ts": 141.465745,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-169",
+            "process_id": "817"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ip-10-100-1-169:47703",
+          "ts": 141.469793,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ip-10-100-1-169",
+            "process_id": "817"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    },
+    {
+      "row_id": 41122,
+      "host": "ubuntu",
+      "process_id": "7275",
+      "action": "close",
+      "sus": 0,
+      "evil": 0,
+      "trace": [
+        {
+          "eid": "beth-val:ubuntu:40308",
+          "ts": 138.883068,
+          "action": "lstat",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ubuntu",
+            "process_id": "7275"
+          },
+          "malicious": null,
+          "attack_type": null
+        },
+        {
+          "eid": "beth-val:ubuntu:41122",
+          "ts": 138.956471,
+          "action": "close",
+          "resource_class": "host_syscall",
+          "subject_class": "process",
+          "attrs": {
+            "host_name": "ubuntu",
+            "process_id": "7275"
+          },
+          "malicious": null,
+          "attack_type": null
+        }
+      ]
+    }
+  ],
+  "validation_sequence_fire_explanations": [
+    {
+      "row_id": 157137,
+      "sus": 0,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    },
+    {
+      "row_id": 39450,
+      "sus": 1,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    },
+    {
+      "row_id": 157197,
+      "sus": 0,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    },
+    {
+      "row_id": 68788,
+      "sus": 1,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    },
+    {
+      "row_id": 157269,
+      "sus": 0,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    },
+    {
+      "row_id": 47703,
+      "sus": 1,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    },
+    {
+      "row_id": 41122,
+      "sus": 0,
+      "evil": 0,
+      "explanation": {
+        "target_class": "Violation",
+        "event_positions": [
+          0,
+          1
+        ],
+        "rule_ids": [
+          "D_SUS_SEQ0"
+        ],
+        "witnesses": {
+          "e:0": {
+            "e:0": 0,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "e:1": {
+            "e:0": 1,
+            "e:1": 0,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 1,
+            "r:D_UNSEEN": 0
+          },
+          "r:D_SUS_SEQ0": {
+            "e:0": 1,
+            "e:1": 1,
+            "r:A0": 0,
+            "r:A1": 0,
+            "r:A2": 0,
+            "r:A3": 0,
+            "r:A4": 0,
+            "r:A5": 0,
+            "r:D_SUS_SEQ0": 0,
+            "r:D_UNSEEN": 0
+          }
+        },
+        "unit_count": 10,
+        "checks": 452,
+        "policy_version": 1
+      }
+    }
+  ],
+  "reference_index_divergences": 0,
+  "interpretation": "Validation labels were part of policy selection, so the reported validation metrics are development fit, not an untouched estimate. Test labels and predictors were not accessed by this run.",
+  "protocol_sha256": "12812c8803b9d901718be36c4a251b12a0af1d318889daca07200a6dfdd3a56c"
+}
