@@ -78,9 +78,40 @@
       "out_of_page_text": 0
     }
   ],
+  "environment_reconstruction": {
+    "clean_checkout": "C:\\Users\\User\\AppData\\Local\\Temp\\TracePolicy_phase0_clean_clone",
+    "commit": "6aa55280b36717cdb7473ff1c7442cfb2d77c973",
+    "local_venv_install": "incomplete: package-index network timed out before pandas==3.0.5 was obtained; direct PyPI also timed out",
+    "clean_runner_ci": {
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 45821874815,
+      "run_url": "https://github.com/EkodeckStephane/TracePolicy/actions/runs/45821874815",
+      "workflow_installs": [
+        "requirements-revision.txt",
+        "requirements-temporal-revision.txt"
+      ],
+      "workflow_runs": [
+        "pytest tests -q",
+        "scripts/verify_frozen_protocol_v2.py",
+        "scripts/verify_revision_evidence.py",
+        "experiments/revision_joint_ablation.py",
+        "results/revision/distributed_live_vps_campaign_20261012/run07/verify_campaign.py"
+      ]
+    },
+    "existing_local_environments": {
+      "revision_environment": "direct revision and temporal pins match; 67 tests pass; pip check reports only torch 2.13 requiring setuptools>=77.0.3 while setuptools 65.5.0 is installed",
+      "anchors_environment": "all requirements-anchors-revision pins match; pip check reports no broken requirements; pytest is not included in that environment"
+    },
+    "remaining_environment_gaps": [
+      "A local clean venv installation could not complete because the package index was unreachable from this session.",
+      "The legacy requirements.txt and Git-based requirements-lime.txt were not clean-installed in this phase.",
+      "The Torch/setuptools mismatch is outside the declared revision requirements; confirm whether any manuscript experiment imports Torch before changing it."
+    ]
+  },
   "not_reproduced_in_phase_0": [
-    "Full BETH, THEIA, Docker, distributed and other experimental campaigns; saved-output verifiers were used to avoid overwriting historical result artifacts.",
-    "LaTeX compilation from a clean clone; the current author-review PDFs and their source hashes were checked in the separate revision workspace.",
+    "Full BETH, THEIA, Docker and other experimental campaigns; saved-output verifiers were used to avoid overwriting historical result artifacts.",
+    "A local clean-via-PyPI install failed on network access; GitHub Actions provides the successful clean-runner installation for the CI dependency set. The current PDF was recompiled in the revision workspace, not from the code-only clone.",
     "Experiments requiring external raw datasets, omitted by design from the public repository."
   ],
   "interpretation": "The test and artifact verification state is reproducible for the checked repository snapshot. It does not establish scientific novelty, generalization, operational utility, or correctness of every theorem."
