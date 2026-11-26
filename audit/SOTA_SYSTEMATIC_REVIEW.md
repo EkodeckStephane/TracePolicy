@@ -1,12 +1,12 @@
 # SOTA review — current-source audit (in progress)
 
 **Audit date:** 2026-11-26
-**Scope of this increment:** full-text review of eight directly relevant primary works.
+**Scope of this increment:** full-text review of twelve directly relevant primary works.
 **Status:** preliminary; this is not a completed systematic review and does not establish novelty.
 
 ## Method and limits
 
-The full papers linked below were opened and examined beyond their abstracts, including the sections describing the problem, formal objects or system pipeline, evaluation, and stated limitations. The comparison is intentionally epistemic: **not established in the examined source** is recorded as *unestablished*, not as proof that a capability is absent. The selected works cover (i) policy-decision explanations, (ii) abductive policy analysis that changes both facts and rules, (iii) recent provenance-based intrusion detection and attribution, (iv) formal feature attribution/MUS–MCS, and (v) counterfactual IDS explanations. Further coverage remains necessary for additional formal XAI variants, policy debugging, versioned policy explanation, and distributed monitoring.
+The full papers linked below were opened and examined beyond their abstracts, including the sections describing the problem, formal objects or system pipeline, evaluation, and stated limitations. The comparison is intentionally epistemic: **not established in the examined source** is recorded as *unestablished*, not as proof that a capability is absent. The selected works cover policy explanation and abduction, formal feature attribution, static policy diagnosis, dynamic access-control policies, IDS alert explanation, provenance-based attack reconstruction, and distributed monitoring. Further coverage remains necessary for additional formal XAI and policy explanation variants and work specifically explaining decisions across policy versions.
 
 ## Primary full-text studies
 
@@ -66,6 +66,30 @@ This work gives a compositional formal framework for specifying and verifying te
 
 Primary source: [full Computer Journal paper, DOI 10.1093/comjnl/bxs102](https://doi.org/10.1093/comjnl/bxs102); author-hosted full text at [De Montfort University](https://www.tech.dmu.ac.uk/~fsiewe/papers/helge_siewe_2012.pdf).
 
+### Yuan et al. (2006), FIREMAN
+
+FIREMAN models firewall configurations as finite-state programs and applies BDD-based static analysis to detect policy violations and rule inconsistencies/inefficiencies across individual and distributed firewalls and network paths. The paper reports confirmed production misconfigurations. It is prior art for formal rule analysis and distributed policy debugging, while its object is static packet-space/path compliance rather than an explanation of a particular observed IDS trace decision through joint event/rule retention.
+
+Primary source: [full IEEE S&P 2006 paper, DOI 10.1109/SP.2006.16](https://doi.org/10.1109/SP.2006.16); author-hosted full text at [UC Davis](https://www.cs.princeton.edu/courses/archive/fall10/cos561/papers/FireMan06.pdf).
+
+### Hu, Ahn, and Kulkarni (2012), FAME firewall anomaly management
+
+FAME partitions packet space into disjoint regions associated with sets of firewall rules, thereby identifying multi-rule overlap, conflict and redundancy; it also supplies visual diagnosis and resolution strategies. The source directly collides with any broad claim that identifying interacting or redundant policy rules is new. Its diagnosis concerns static packet-space anomalies and rule resolution, not event evidence and preservation of one version-bound intrusion decision.
+
+Primary source: [full IEEE TDSC paper, DOI 10.1109/TDSC.2012.20](https://doi.org/10.1109/TDSC.2012.20), 9(3), 318–331; [author-hosted full text](https://sefcom.asu.edu/publications/detecting-resolving-firewall-tdsc2012.pdf).
+
+### Cheng et al. (2024), KAIROS
+
+KAIROS is a whole-system provenance PIDS whose temporal graph model scores anomalous system events and reconstructs compact attack-summary graphs. The authors explicitly treat attack reconstruction and human investigation as central design/evaluation dimensions and discuss dataset and metric limitations in PIDS evaluation. This is a direct collision with broad IDS explainability or attack-investigation claims. KAIROS explains/investigates activity through graph summaries; TracePolicy's possible distinction is a decision-preservation certificate over explicit event and policy-rule interventions. The outputs, assumptions and utility measures differ, so no comparative superiority follows.
+
+Primary source: [full IEEE S&P 2024 paper, DOI 10.1109/SP54263.2024.00005](https://doi.org/10.1109/SP54263.2024.00005), pp. 3533–3551; [authors' full text](https://tfjmp.org/publications/2024-sp.pdf).
+
+### Wu et al. (2023), Paradise
+
+Paradise presents a real-time, generalized, distributed provenance-based IDS. It represents process behavior in feature vectors and distributes independent detection work, addressing heterogeneous provenance collection and distributed monitoring. This establishes distributed PIDS as substantial prior art. It does not define a jointly sufficient minimal event/rule explanation for a versioned declarative policy decision. TracePolicy's cross-instance integration must therefore be described as a bounded systems demonstration, not as a new distributed IDS architecture or evidence of distributed attack-detection performance.
+
+Primary source: [full IEEE TDSC paper, DOI 10.1109/TDSC.2022.3160879](https://doi.org/10.1109/TDSC.2022.3160879), 20(2), 1624–1640; [author-hosted full text](https://darrelllong.github.io/pdfs/wu-paradise.pdf).
+
 ## Collision findings
 
 1. **Generic policy explanations are established prior art.** Marfia (2014) already provides abductive explanations for permission and denial decisions.
@@ -75,17 +99,18 @@ Primary source: [full Computer Journal paper, DOI 10.1093/comjnl/bxs102](https:/
 5. **Potentially differentiating conjunction:** explanations over a concrete observed event trace and a frozen/versioned decision policy, where both event units and policy-rule units are admissible interventions, with a checkable universal-sufficiency certificate and per-unit necessity witnesses. This is only a *candidate distinction*: its exact semantics, novelty against all neighboring work, nontrivial empirical value, and practical relevance remain unverified.
 6. **Formal feature attribution is not an equivalent baseline by default.** It averages membership across all abductive cores; TracePolicy's FFA-style computation inherits the cost of complete core enumeration and should be compared on that precise basis.
 7. **IDS counterfactual frameworks already target alert explanations.** The paper must distinguish its retained-evidence decision certificate from model-local boundary/counterfactual explanations, without claiming these are invalid or less useful.
+8. **Policy debugging is established prior art.** FIREMAN and FAME analyze misconfiguration, conflicts, shadowing/redundancy and rule interactions, including distributed firewall configurations. TracePolicy's bounded diagnosis cannot be claimed as the first formal policy diagnosis; its target is a trace-conditioned alert and declared versioned intervention domain.
+9. **Attack reconstruction and distributed PIDS are established capabilities.** KAIROS generates attack-summary graphs for investigation, and Paradise provides real-time distributed provenance-based detection. TracePolicy must delimit its explanation contract and one cross-instance systems demonstration from these broader detection/reconstruction capabilities.
 
 ## Required next comparisons
 
 - Inspect the actual manuscript definitions and theorems line by line against these papers; determine whether TracePolicy’s rule units are policy rules, operational detector rules, or both.
 - Audit the complete proof of every claimed certificate and distinguish preservation of the observed decision from causal attribution of the attack.
-- Examine full text for Anchors, SHAP/LIME, formal feature attribution and MUS/MCS; compare native output, intervention domain, sufficiency, minimality notion, and certification cost.
-- Complete source-level comparison for Anchors, SHAP/LIME, and additional counterfactual IDS explanation frameworks; the two formal texts above do not close this category.
-- Review policy debugging, provenance-based explanation, temporal/versioned policies, and distributed monitoring sources, including the sources already collected in `revision_audit/literature_evidence.md`.
+- Examine additional SHAP/LIME and formal-XAI/MUS-MCS full texts; compare native output, intervention domain, sufficiency, minimality notion, and certification cost. Anchors and one counterfactual IDS framework have been reviewed.
+- Review further policy debugging, provenance-based explanation, temporal/versioned policies, and distributed monitoring sources, including sources already collected in `revision_audit/literature_evidence.md`; the four new full texts narrow but do not exhaust these topics.
 - Search for work post-dating the manuscript’s current literature cutoff and confirm publication/version metadata from publisher or proceedings records.
 - Establish whether the contribution is substantial enough for the current Computers & Security submission policy; journal-fit remains an independent blocking issue in `SCIENTIFIC_GAP_REGISTER.csv`.
 
 ## Phase decision
 
-**NO-GO for closing Phase 2.** Six full texts are reviewed and they materially narrow the defensible novelty framing, but the prescribed topic coverage and full-text collision matrix are incomplete. No claim of originality or journal suitability is made by this increment.
+**NO-GO for closing Phase 2.** Twelve full texts are reviewed and they materially narrow the defensible novelty framing, but the prescribed topic coverage and full-text collision matrix are incomplete. No claim of originality or journal suitability is made by this increment.
