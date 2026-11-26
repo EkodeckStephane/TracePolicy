@@ -90,6 +90,18 @@ Paradise presents a real-time, generalized, distributed provenance-based IDS. It
 
 Primary source: [full IEEE TDSC paper, DOI 10.1109/TDSC.2022.3160879](https://doi.org/10.1109/TDSC.2022.3160879), 20(2), 1624–1640; [author-hosted full text](https://darrelllong.github.io/pdfs/wu-paradise.pdf).
 
+### Petritsch and Brucker (2011), versioned policy analysis and replay
+
+This framework stores policy versions and access-control logs together, including the active policy version, decision, obligations, and context attributes. It supports replaying a recorded request against another policy version and comparing the resulting decisions; the paper illustrates precisely this kind of cross-version re-evaluation. Policy version comparison and replay are therefore established prior art. The reviewed work does not define a subset-minimal joint intervention over the recorded trace and policy rules, nor a differential explanation certificate for why a decision changed. Those distinctions are candidate differences requiring direct formal and experimental comparison, rather than grounds for a broad novelty claim about version-aware explanation.
+
+Primary source: [full IEEE POLICY 2011 paper, DOI 10.1109/POLICY.2011.47](https://doi.org/10.1109/POLICY.2011.47), pp. 105–112; [author-hosted full text](https://logicalhacking.com/publications/brucker.ea-framework-2011/brucker.ea-framework-2011.pdf).
+
+### Ignatiev et al. (2020), abductive and contrastive explanation duality
+
+This full-text paper establishes a formal relationship between local abductive explanations (“why this prediction?”) and contrastive explanations (“what change would alter it?”): each family is the set of minimal hitting sets of the other, using the MUS/MCS duality. Consequently, minimal sufficient explanations and minimal change explanations, and their enumeration, are mature formal-XAI topics. TracePolicy must locate its contribution in the particular semantics of retained trace events and policy rules, its version binding, and any independently verified certificates; inclusion-minimality and MUS/MCS-style reasoning alone are not novel contributions.
+
+Primary source: [full Springer chapter, AIxIA 2020 proceedings (published 2021), DOI 10.1007/978-3-030-77091-4_21](https://doi.org/10.1007/978-3-030-77091-4_21), pp. 335–355; [author-hosted full text](https://alexeyignatiev.github.io/assets/pdf/inams-aiia20-preprint.pdf).
+
 ## Collision findings
 
 1. **Generic policy explanations are established prior art.** Marfia (2014) already provides abductive explanations for permission and denial decisions.
@@ -101,12 +113,15 @@ Primary source: [full IEEE TDSC paper, DOI 10.1109/TDSC.2022.3160879](https://do
 7. **IDS counterfactual frameworks already target alert explanations.** The paper must distinguish its retained-evidence decision certificate from model-local boundary/counterfactual explanations, without claiming these are invalid or less useful.
 8. **Policy debugging is established prior art.** FIREMAN and FAME analyze misconfiguration, conflicts, shadowing/redundancy and rule interactions, including distributed firewall configurations. TracePolicy's bounded diagnosis cannot be claimed as the first formal policy diagnosis; its target is a trace-conditioned alert and declared versioned intervention domain.
 9. **Attack reconstruction and distributed PIDS are established capabilities.** KAIROS generates attack-summary graphs for investigation, and Paradise provides real-time distributed provenance-based detection. TracePolicy must delimit its explanation contract and one cross-instance systems demonstration from these broader detection/reconstruction capabilities.
+10. **Policy-version replay and decision comparison predate TracePolicy.** Petritsch and Brucker bind log records to active policy versions and replay requests against alternative versions. The candidate distinction is a trace-and-rule intervention core or a certified explanation of the decision difference; its semantics and value still need direct comparison.
+11. **Formal abductive/contrastive duality is established.** Ignatiev et al. connect AXps and CXps through MUS/MCS and minimal hitting-set duality. TracePolicy's novelty cannot rest on minimal sufficient sets, subset-minimality, or this duality alone.
 
 ## Required next comparisons
 
 - Inspect the actual manuscript definitions and theorems line by line against these papers; determine whether TracePolicy’s rule units are policy rules, operational detector rules, or both.
 - Audit the complete proof of every claimed certificate and distinguish preservation of the observed decision from causal attribution of the attack.
 - Examine additional SHAP/LIME and formal-XAI/MUS-MCS full texts; compare native output, intervention domain, sufficiency, minimality notion, and certification cost. Anchors and one counterfactual IDS framework have been reviewed.
+- Compare TracePolicy's paired-version example and formal change explanation directly with Petritsch and Brucker (2011), including recorded context, policy version, replay, and decision-difference outputs.
 - Review further policy debugging, provenance-based explanation, temporal/versioned policies, and distributed monitoring sources, including sources already collected in `revision_audit/literature_evidence.md`; the four new full texts narrow but do not exhaust these topics.
 - Search for work post-dating the manuscript’s current literature cutoff and confirm publication/version metadata from publisher or proceedings records.
 - Establish whether the contribution is substantial enough for the current Computers & Security submission policy; journal-fit remains an independent blocking issue in `SCIENTIFIC_GAP_REGISTER.csv`.
