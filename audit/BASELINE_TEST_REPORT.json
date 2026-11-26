@@ -1,0 +1,75 @@
+{
+  "baseline_commit": "37221772b808afb429f246b8793edf78e95f2819",
+  "date": "2026-11-26",
+  "runtime": {
+    "python": "3.11.9",
+    "platform": "Windows x86_64",
+    "repository_pins_present": [
+      "numpy 2.4.6",
+      "pandas 3.0.5",
+      "scipy 1.17.1",
+      "scikit-learn 1.9.0",
+      "matplotlib 3.11.0",
+      "pytest 9.1.1"
+    ],
+    "missing_in_base_runtime": [
+      "pyarrow 26.0.0",
+      "duckdb 1.5.6",
+      "shap 0.50.0",
+      "lime 0.2.0.1",
+      "alibi 0.9.6",
+      "numba 0.68.0",
+      "llvmlite 0.50.0"
+    ]
+  },
+  "runs": [
+    {
+      "command": "python -m pytest tests -q",
+      "result": "PASS",
+      "passed": 60,
+      "skipped": 0
+    },
+    {
+      "command": "python -m pytest -q -ra",
+      "result": "PASS_WITH_SKIP",
+      "passed": 60,
+      "skipped": 1,
+      "skip": "tests/test_temporal_external.py skipped because pyarrow was absent"
+    },
+    {
+      "command": "python -m pytest -q -ra in a temporary system-site-packages virtual environment with pyarrow==26.0.0 and duckdb==1.5.6 installed",
+      "result": "PASS",
+      "passed": 67,
+      "skipped": 0
+    },
+    {
+      "command": "python scripts/verify_frozen_protocol_v2.py",
+      "result": "PASS",
+      "publication_files": 71,
+      "sha256_mismatches": 0
+    },
+    {
+      "command": "python scripts/verify_revision_evidence.py",
+      "result": "PASS",
+      "docker_anchors_outputs": 360,
+      "docker_ffa_outputs": 120,
+      "chronological_theia_outputs": 448,
+      "independently_checked_witnesses": 2276,
+      "complete_live_proofs": 15
+    },
+    {
+      "command": "python audit/verify_final_package.py in the author-review workspace",
+      "result": "PASS",
+      "manuscript_pages": 23,
+      "response_items": 18,
+      "undefined_references_or_citations": 0,
+      "out_of_page_text": 0
+    }
+  ],
+  "not_reproduced_in_phase_0": [
+    "Full experimental campaigns; verification scripts were run against preserved outputs to avoid overwriting historical result artifacts.",
+    "LaTeX compilation from a clean clone; the current author-review PDFs and their source hashes were checked in the separate revision workspace.",
+    "Experiments requiring external raw datasets, omitted by design from the public repository."
+  ],
+  "interpretation": "The test and artifact verification state is reproducible for the checked repository snapshot. It does not establish scientific novelty, generalization, operational utility, or correctness of every theorem."
+}
