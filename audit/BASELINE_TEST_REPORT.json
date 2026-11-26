@@ -58,6 +58,18 @@
       "complete_live_proofs": 15
     },
     {
+      "command": "revision COSE Python 3.11 environment: outer archive audit, LID-DS freeze, evaluate, labels, verify in results/lidds_cve_2020_23839_phase0_reproduction/",
+      "result": "PASS",
+      "source_archive_sha256": "93d75f271a6b470dc1e97d9705e9f0ab46f3fb05249aac569d90c79ee1b8f51d",
+      "source_archive_crc_and_nested_recording_crcs": "pass",
+      "nested_recording_archives": 1147,
+      "policy_objects_match_archived_freeze": true,
+      "prediction_sha256_matches_archived_run": "75b5fbe0090e2a8bfb55059e789ff75462819e66e7b3eb5e6f15ff3e436f93e0",
+      "label_metrics_match_except_runtime_and_protocol_hash": true,
+      "allowed_syscall_names_in_frozen_policies": 50,
+      "interpretation": "Reproduction of the previously examined scenario, not an independent validation."
+    },
+    {
       "command": "python audit/verify_final_package.py in the author-review workspace",
       "result": "PASS",
       "manuscript_pages": 23,
@@ -67,7 +79,7 @@
     }
   ],
   "not_reproduced_in_phase_0": [
-    "Full experimental campaigns; verification scripts were run against preserved outputs to avoid overwriting historical result artifacts.",
+    "Full BETH, THEIA, Docker, distributed and other experimental campaigns; saved-output verifiers were used to avoid overwriting historical result artifacts.",
     "LaTeX compilation from a clean clone; the current author-review PDFs and their source hashes were checked in the separate revision workspace.",
     "Experiments requiring external raw datasets, omitted by design from the public repository."
   ],

@@ -24,6 +24,8 @@ The extended comparison retains full selected traces, all outcomes, actual witne
 
 The exact domain-ablation outputs are in `results/revision/joint_ablation_v1/`; run `python experiments/revision_joint_ablation.py` from the repository root to reproduce them from the included synthetic local-lab inputs. The LID-DS code and derived result record are in `experiments/revision_lidds_*.py` and `results/lidds_cve_2020_23839/`. Reproduction requires a separately acquired scenario archive; the result README documents the staged freeze/evaluate/labels/verify process and limitations.
 
+The Phase 0 audit reran this already studied scenario into `results/lidds_cve_2020_23839_phase0_reproduction/` without replacing archived outputs. Its prediction hash matches the previous run; the frozen P0/P1 policies each allow 50 supported syscall names. This is a reproducibility check, not an independent validation. See `revision_audit/lidds_phase0_reproduction.json`.
+
 Formal attribution here is an exact adaptation of the membership-frequency definition, not the published anytime solver. Native Anchors output is never repaired; its sampled precision remains distinct from exact certification. Cache backends and NumPy environments differ, so the expanded campaign does not demonstrate timing superiority.
 
 ## Scope

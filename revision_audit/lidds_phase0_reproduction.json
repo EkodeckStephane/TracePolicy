@@ -1,0 +1,64 @@
+{
+  "baseline_code_commit": "37221772b808afb429f246b8793edf78e95f2819",
+  "reproduction_date": "2026-11-26",
+  "source": {
+    "dataset": "LID-DS 2021, CVE-2020-23839",
+    "archive_sha256": "93d75f271a6b470dc1e97d9705e9f0ab46f3fb05249aac569d90c79ee1b8f51d",
+    "archive_bytes": 1495561854,
+    "nested_recording_archives": 1147,
+    "split_recordings": {
+      "training": 210,
+      "validation": 57,
+      "test": 880
+    },
+    "archive_and_nested_crc": "pass",
+    "structure_errors": 0,
+    "raw_data_extracted": false
+  },
+  "reproduction": {
+    "output_directory": "results/lidds_cve_2020_23839_phase0_reproduction/",
+    "code_sha256_matches_public_baseline": true,
+    "policy_objects_identical_to_archived_run": true,
+    "policy_grid_selection": {
+      "LIDDS_P0": {
+        "selected_grid_size": 96,
+        "actual_allowed_action_count": 50,
+        "validation_alert_fraction": 0.0
+      },
+      "LIDDS_P1": {
+        "selected_grid_size": 96,
+        "actual_allowed_action_count": 50,
+        "predecessor_count": 5,
+        "validation_alert_fraction": 0.02203796235341604,
+        "one_percent_alert_budget_met": false
+      }
+    },
+    "policy_freeze": {
+      "previous_protocol_sha256": "cac8accd9a97e9ac6f429fbfe2ac93e6d92c61a7cc1068a97c726e7dccd9b1db",
+      "reproduced_protocol_sha256": "490a744439825074e1646900894e30cc9547f40a24e828deec70902ef1bb402c",
+      "difference_explained": "The only non-runtime protocol-field difference is the archive-manifest hash; the two archive manifests differ only in audited_utc. The frozen policy objects are identical."
+    },
+    "test_replay": {
+      "completed_syscall_exits": 26143034,
+      "prediction_sha256_matches_archived_run": "75b5fbe0090e2a8bfb55059e789ff75462819e66e7b3eb5e6f15ff3e436f93e0",
+      "recordings_alerted": {
+        "LIDDS_P0": 124,
+        "LIDDS_P1": 880
+      },
+      "test_json_read_after_frozen_prediction_hash": true
+    },
+    "labels": {
+      "NORMAL": 750,
+      "NORMAL_AND_ATTACK": 99,
+      "ATTACK": 21,
+      "IDLE": 10,
+      "LIDDS_P0_normal_recordings_alerted": "4/750",
+      "LIDDS_P0_attack_containing_recordings_alerted": "120/120",
+      "LIDDS_P1_normal_recordings_alerted": "750/750",
+      "LIDDS_P1_attack_containing_recordings_alerted": "120/120",
+      "label_metrics_match_archived_run_except_runtime_and_protocol_hash": true
+    },
+    "verification": "pass"
+  },
+  "scope": "Reproduction of the previously studied scenario; this is not an untouched independent validation. Exploit intervals do not support onset localization; metrics remain recording-level."
+}
