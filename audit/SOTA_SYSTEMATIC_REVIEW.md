@@ -1,12 +1,12 @@
 # SOTA review — current-source audit (in progress)
 
 **Audit date:** 2026-11-26
-**Scope of this increment:** full-text review of six directly relevant primary works.
+**Scope of this increment:** full-text review of eight directly relevant primary works.
 **Status:** preliminary; this is not a completed systematic review and does not establish novelty.
 
 ## Method and limits
 
-The full papers linked below were opened and examined beyond their abstracts, including the sections describing the problem, formal objects or system pipeline, evaluation, and stated limitations. The comparison is intentionally epistemic: **not established in the examined source** is recorded as *unestablished*, not as proof that a capability is absent. The selected works cover (i) policy-decision explanations, (ii) abductive policy analysis that changes both facts and rules, (iii) recent provenance-based intrusion detection and attribution, (iv) formal feature attribution/MUS–MCS, and (v) counterfactual IDS explanations. Further coverage remains necessary for formal XAI variants, Anchors, policy debugging, provenance, versioned policy explanation, and distributed monitoring.
+The full papers linked below were opened and examined beyond their abstracts, including the sections describing the problem, formal objects or system pipeline, evaluation, and stated limitations. The comparison is intentionally epistemic: **not established in the examined source** is recorded as *unestablished*, not as proof that a capability is absent. The selected works cover (i) policy-decision explanations, (ii) abductive policy analysis that changes both facts and rules, (iii) recent provenance-based intrusion detection and attribution, (iv) formal feature attribution/MUS–MCS, and (v) counterfactual IDS explanations. Further coverage remains necessary for additional formal XAI variants, policy debugging, versioned policy explanation, and distributed monitoring.
 
 ## Primary full-text studies
 
@@ -53,6 +53,18 @@ Primary source: [full SAT 2024 paper, DOI 10.4230/LIPIcs.SAT.2024.30](https://do
 This full-text conference chapter proposes explanations for IDS alerts using counterfactual instances and locally faithful decision boundaries to support operator review. It establishes that alert-level explanation and operator-facing reports predate TracePolicy. Its stated problem is model-oriented local explanation; the examined text does not define an intervention over versioned policy-rule units jointly with observed event positions, nor a universal sufficiency/minimality certificate for such a domain. This is a scope distinction, not a comparative quality result.
 
 Primary source: [full open-access chapter, DOI 10.1007/978-3-662-62746-4_9](https://doi.org/10.1007/978-3-662-62746-4_9), pp. 83–91.
+
+### Ribeiro, Singh, and Guestrin (2018), Anchors
+
+Anchors are local if-then rules intended to have high precision under a perturbation distribution: when an anchor holds, the black-box prediction is expected to remain the same with high probability. The paper gives a sampling-based algorithm with probability guarantees and evaluates the approach across domains, including a user study. Anchors therefore already supply local sufficient-condition explanations and empirical human-utility evidence. Their guarantee is distributional and local; it is not the universal deterministic preservation property over TracePolicy's declared finite event/rule intervention cube. The paper also discusses coverage, overly specific anchors, and perturbation-distribution realism. A comparison must separate native Anchors outputs from any exact post-certification/minimization, and must not transfer the source paper's user-study result to TracePolicy.
+
+Primary source: [full AAAI-18 paper, DOI 10.1609/aaai.v32i1.11491](https://doi.org/10.1609/aaai.v32i1.11491), pp. 1527–1535; [official AAAI PDF](https://cdn.aaai.org/ojs/11491/11491-13-15019-1-2-20201228.pdf).
+
+### Janicke, Cau, Siewe, and Zedan (2012), dynamic access-control policies
+
+This work gives a compositional formal framework for specifying and verifying temporal access-control policies, including history-based constraints and policies that evolve dynamically. It establishes that temporal policy semantics and policy evolution are prior formal-policy topics. It does not, in the examined paper, provide an explanation object that identifies a minimal jointly sufficient subset of an observed IDS trace and a frozen policy version. This is a boundary in the target object, not evidence that versioning itself is novel. A detailed comparison of its policy-evolution semantics with TracePolicy's versioned decision binding remains necessary before the versioning claim can be evaluated.
+
+Primary source: [full Computer Journal paper, DOI 10.1093/comjnl/bxs102](https://doi.org/10.1093/comjnl/bxs102); author-hosted full text at [De Montfort University](https://www.tech.dmu.ac.uk/~fsiewe/papers/helge_siewe_2012.pdf).
 
 ## Collision findings
 
