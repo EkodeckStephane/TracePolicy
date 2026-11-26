@@ -96,6 +96,12 @@ This framework stores policy versions and access-control logs together, includin
 
 Primary source: [full IEEE POLICY 2011 paper, DOI 10.1109/POLICY.2011.47](https://doi.org/10.1109/POLICY.2011.47), pp. 105–112; [author-hosted publication record](https://brucker.ch/publications/by-topic/) and [full text](https://logicalhacking.com/publications/brucker.ea-framework-2011/brucker.ea-framework-2011.pdf). The author-copy PDF's title block reverses the author order; the proceedings contents and Brucker's publication record identify Achim D. Brucker first and Helmut Petritsch second, which is used here.
 
+### Fisler et al. (2005), Margrave semantic policy differencing
+
+Margrave analyzes XACML access-control policies using multi-terminal binary decision diagrams. Its change-impact component compares two policy versions and identifies request contexts whose outcomes differ, including changes such as deny-to-permit; users can query the semantic difference and verify properties of the change. This is direct prior art for semantic version differencing and for enumerating the request contexts that explain where policy behavior changes. The output is a set/region of attribute requests with changed outcomes. The reviewed paper does not define a subset-minimal joint intervention over an observed temporal event trace and policy-rule units, with a sufficient target-decision certificate and deletion witnesses. TracePolicy's current core instead keeps one policy version fixed while varying the retained event and rule units of a concrete observed decision. The distinction is narrower than “explanations under versioned policies,” and its practical value requires direct comparison.
+
+Primary source: [full ICSE 2005 paper, DOI 10.1145/1062455.1062502](https://doi.org/10.1145/1062455.1062502), pp. 196–205; [Brown University publication page and full-text link](https://static.cs.brown.edu/~sk/Publications/Papers/Published/fkmt-verif-change-impact-xacml/); [author-hosted PDF](https://www.cs.cmu.edu/~mtschant/pubs/fkmt-verif-change-impact-xacml.pdf).
+
 ### Ignatiev et al. (2020), abductive and contrastive explanation duality
 
 This full-text paper establishes a formal relationship between local abductive explanations (“why this prediction?”) and contrastive explanations (“what change would alter it?”): each family is the set of minimal hitting sets of the other, using the MUS/MCS duality. Consequently, minimal sufficient explanations and minimal change explanations, and their enumeration, are mature formal-XAI topics. TracePolicy must locate its contribution in the particular semantics of retained trace events and policy rules, its version binding, and any independently verified certificates; inclusion-minimality and MUS/MCS-style reasoning alone are not novel contributions.
@@ -115,6 +121,7 @@ Primary source: [full Springer chapter, AIxIA 2020 proceedings (published 2021),
 9. **Attack reconstruction and distributed PIDS are established capabilities.** KAIROS generates attack-summary graphs for investigation, and Paradise provides real-time distributed provenance-based detection. TracePolicy must delimit its explanation contract and one cross-instance systems demonstration from these broader detection/reconstruction capabilities.
 10. **Policy-version replay and decision comparison predate TracePolicy.** Brucker and Petritsch bind log records to active policy versions and replay requests against alternative versions. The candidate distinction is a trace-and-rule intervention core or a certified explanation of the decision difference; its semantics and value still need direct comparison.
 11. **Formal abductive/contrastive duality is established.** Ignatiev et al. connect AXps and CXps through MUS/MCS and minimal hitting-set duality. TracePolicy's novelty cannot rest on minimal sufficient sets, subset-minimality, or this duality alone.
+12. **Semantic policy change-impact analysis is established.** Margrave computes request contexts whose access decisions differ between policy versions and permits queries over those differences. TracePolicy cannot claim that version comparison or identifying changed-decision contexts is new. Its current candidate distinction is a local explanation over the events and rules of one observed intrusion decision; it is not yet a differential explanation of why a policy update changed the decision.
 
 ## Required next comparisons
 
@@ -122,10 +129,11 @@ Primary source: [full Springer chapter, AIxIA 2020 proceedings (published 2021),
 - Audit the complete proof of every claimed certificate and distinguish preservation of the observed decision from causal attribution of the attack.
 - Examine additional SHAP/LIME and formal-XAI/MUS-MCS full texts; compare native output, intervention domain, sufficiency, minimality notion, and certification cost. Anchors and one counterfactual IDS framework have been reviewed.
 - Compare TracePolicy's paired-version example and formal change explanation directly with Brucker and Petritsch (2011), including recorded context, policy version, replay, and decision-difference outputs.
-- Review further policy debugging, provenance-based explanation, temporal/versioned policies, and distributed monitoring sources, including sources already collected in `revision_audit/literature_evidence.md`; the four new full texts narrow but do not exhaust these topics.
+- Compare the policy-version object and output directly with Margrave's semantic change-impact analysis, including its changed request regions, query operations, and attribute representation.
+- Review further policy debugging, provenance-based explanation, temporal/versioned policies, and distributed monitoring sources, including sources already collected in `revision_audit/literature_evidence.md`; the additional full texts narrow but do not exhaust these topics.
 - Search for work post-dating the manuscript’s current literature cutoff and confirm publication/version metadata from publisher or proceedings records.
 - Establish whether the contribution is substantial enough for the current Computers & Security submission policy; journal-fit remains an independent blocking issue in `SCIENTIFIC_GAP_REGISTER.csv`.
 
 ## Phase decision
 
-**NO-GO for closing Phase 2.** Twelve full texts are reviewed and they materially narrow the defensible novelty framing, but the prescribed topic coverage and full-text collision matrix are incomplete. No claim of originality or journal suitability is made by this increment.
+**NO-GO for closing Phase 2.** Fifteen full texts are reviewed and they materially narrow the defensible novelty framing, but the prescribed topic coverage and full-text collision matrix are incomplete. No claim of originality or journal suitability is made by this increment.
