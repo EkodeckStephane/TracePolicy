@@ -1,0 +1,5873 @@
+[
+  {
+    "case_id": "docker-0",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081401,
+    "event_index": 180,
+    "event_id": "2974cf63-4211-bb12-0857-fdd03f23683b",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-1",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081402,
+    "event_index": 122,
+    "event_id": "2b72eb93-cae7-e922-eed5-a9bece2efb93",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-2",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081403,
+    "event_index": 61,
+    "event_id": "84f60aef-5bbe-f906-2735-bb79f2a9f4b3",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-3",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081404,
+    "event_index": 266,
+    "event_id": "836707c4-0caf-8b55-d583-04e92fb911df",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-4",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081405,
+    "event_index": 242,
+    "event_id": "062dc8ce-3dcb-df60-4495-71b3b5a95f29",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-5",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081406,
+    "event_index": 76,
+    "event_id": "9c983b1a-ffb0-2a14-46ef-80abd3097144",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-6",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081407,
+    "event_index": 273,
+    "event_id": "065e8b51-7613-eadc-b952-c15ee5a7f6b7",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-7",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081408,
+    "event_index": 244,
+    "event_id": "f0ee23fd-895d-4f21-0497-1a9d178257f7",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-8",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081409,
+    "event_index": 97,
+    "event_id": "7c4966da-c8bc-ea82-7f75-6d5f5104ee4a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-9",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081410,
+    "event_index": 170,
+    "event_id": "daed2ec2-aee8-1497-f865-7e4e4083f54a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-10",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081411,
+    "event_index": 140,
+    "event_id": "185c0901-6d65-8fb0-dd81-08d8d0906d3d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-11",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081412,
+    "event_index": 191,
+    "event_id": "ed5f1584-678b-1017-e8fe-e58d6291fbeb",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-12",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081413,
+    "event_index": 175,
+    "event_id": "95028fd4-524c-edbb-d006-606fc47e2524",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-13",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081414,
+    "event_index": 143,
+    "event_id": "0ad81068-9443-3845-f8a3-334ca7e44556",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-14",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081415,
+    "event_index": 198,
+    "event_id": "ba1413ca-bb2e-df87-88d1-2c077680b6ae",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-15",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081416,
+    "event_index": 275,
+    "event_id": "f582487e-fc94-2e45-c0d0-9aad561fc74d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-16",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081417,
+    "event_index": 164,
+    "event_id": "bfd89351-57a6-165d-3d19-caf41ed6bf1e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-17",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081418,
+    "event_index": 282,
+    "event_id": "583b70f1-8bfa-9a88-0d2b-440ec8935c42",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-18",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081419,
+    "event_index": 11,
+    "event_id": "4697ab45-07d0-160e-cd0f-a9c4fd25c5c9",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-19",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081420,
+    "event_index": 264,
+    "event_id": "a85b6990-f908-85e7-d60f-90357014aa7e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-20",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081421,
+    "event_index": 203,
+    "event_id": "0183fdb6-cf8a-d9a6-1952-5e1315cd5adb",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-21",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081422,
+    "event_index": 2,
+    "event_id": "0ee6a7cb-81ea-42fa-955d-62b2870d971c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:2"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:2",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-22",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081423,
+    "event_index": 263,
+    "event_id": "f740df54-278c-5956-116d-cba4b9ef0b32",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-23",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081424,
+    "event_index": 18,
+    "event_id": "3552c722-78a2-8389-d3c0-b1851e8d3c41",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-24",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081425,
+    "event_index": 80,
+    "event_id": "a7e62536-d19c-22f3-34c3-e69666f944cb",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-25",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081426,
+    "event_index": 159,
+    "event_id": "dfef1011-0487-329e-0bf6-d11b69d2a6de",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-26",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081427,
+    "event_index": 237,
+    "event_id": "89905656-c4c7-9c18-4648-822d88e78c9c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-27",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081428,
+    "event_index": 111,
+    "event_id": "520c008f-df6d-b486-c53b-86eafb48a2a5",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-28",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081429,
+    "event_index": 108,
+    "event_id": "fb2486de-74c0-ddc4-a298-f73c20ecfac8",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-29",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "admin_probe",
+    "seed": 2026081430,
+    "event_index": 219,
+    "event_id": "de04007c-5399-c86f-6492-ef06296bbf1a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_ADMIN"
+        ],
+        "union": [
+          "e:4",
+          "r:D_ADMIN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-30",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081401,
+    "event_index": 77,
+    "event_id": "c9616dd8-f49d-66ac-ea8c-a71ea4c02110",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-31",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081402,
+    "event_index": 278,
+    "event_id": "32e2582a-5c4b-cb58-17e1-ace62fe63135",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-32",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081403,
+    "event_index": 180,
+    "event_id": "b822f805-66ff-74bb-6494-d289befa9746",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-33",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081404,
+    "event_index": 189,
+    "event_id": "5d25fc74-b566-04a0-e7f3-77f73e04b891",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-34",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081405,
+    "event_index": 180,
+    "event_id": "bf0efb91-b474-9486-4611-eb3f769b98e0",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-35",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081406,
+    "event_index": 242,
+    "event_id": "75b06b9b-dfdc-4e96-5745-6a7fa782b3ab",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-36",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081407,
+    "event_index": 271,
+    "event_id": "ab995aef-fe56-3c97-e4b2-d58b5b7c0254",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-37",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081408,
+    "event_index": 104,
+    "event_id": "55286460-b3fa-49ac-5823-ac9281890e81",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-38",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081409,
+    "event_index": 6,
+    "event_id": "631f9fa1-7883-1878-4c34-b60d53aaddf7",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-39",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081410,
+    "event_index": 179,
+    "event_id": "ff91a2cb-8a27-1d85-8c9e-2f18a880080f",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-40",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081411,
+    "event_index": 286,
+    "event_id": "5d14e52c-4dd4-0e95-a340-11c3e457d0d0",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-41",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081412,
+    "event_index": 231,
+    "event_id": "099f88da-29e8-a812-9cbd-1ef15b44a781",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-42",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081413,
+    "event_index": 62,
+    "event_id": "767ca174-0666-fdbc-642c-8c12611a05af",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-43",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081414,
+    "event_index": 261,
+    "event_id": "783a693b-1e90-4b08-72a1-3057ed73b787",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-44",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081415,
+    "event_index": 6,
+    "event_id": "d46366da-4a38-09ba-d924-37ce14a6037a",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-45",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081416,
+    "event_index": 215,
+    "event_id": "68bca159-acd9-de76-81bc-8346c1bb8f04",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-46",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081417,
+    "event_index": 139,
+    "event_id": "0105b755-a4c1-c890-72c9-04848345ebc7",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-47",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081418,
+    "event_index": 131,
+    "event_id": "71e8f3a9-abb0-5e9f-2082-bd5c32b1f507",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-48",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081419,
+    "event_index": 45,
+    "event_id": "d7178531-7046-a0b1-86d8-809b04fac8ff",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-49",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081420,
+    "event_index": 259,
+    "event_id": "f6d58e50-ab76-2843-3847-6f1e80734721",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-50",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081421,
+    "event_index": 25,
+    "event_id": "236544f3-7955-0d13-d23d-d40b93bf4af5",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-51",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081422,
+    "event_index": 283,
+    "event_id": "5b22fe84-1ac7-38ec-1908-b93b590e3275",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-52",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081423,
+    "event_index": 253,
+    "event_id": "6dc8479a-8397-41ec-c02c-297fef3bb7b4",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-53",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081424,
+    "event_index": 149,
+    "event_id": "4b7ad355-abf9-2c27-68c5-0b7f35e46ebf",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-54",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081425,
+    "event_index": 240,
+    "event_id": "0579ffac-b362-759b-2fef-e22b63ff6566",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-55",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081426,
+    "event_index": 257,
+    "event_id": "8f956e8d-b1b9-29b9-89a1-4b24ca5e31b8",
+    "horizon": 5,
+    "event_core_count": 4,
+    "rule_core_count": 1,
+    "joint_core_count": 4,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-56",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081427,
+    "event_index": 283,
+    "event_id": "a76bbfa1-7451-5b70-2172-39ea9eb566f5",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-57",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081428,
+    "event_index": 48,
+    "event_id": "42260332-f0a9-097b-de6d-dfd858463f27",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-58",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081429,
+    "event_index": 298,
+    "event_id": "155dae22-6710-047d-e87b-e8d94b0921b5",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-59",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "bruteforce",
+    "seed": 2026081430,
+    "event_index": 78,
+    "event_id": "b62d9354-08dc-cf45-4bd3-47a7d59417f9",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_BRUTEFORCE"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "r:D_BRUTEFORCE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 5,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-60",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081401,
+    "event_index": 294,
+    "event_id": "b95c7722-9e86-1e67-3fdc-b2607b00c70d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-61",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081402,
+    "event_index": 185,
+    "event_id": "4b47bc7d-279a-9681-7e6b-3720e45e5704",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-62",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081403,
+    "event_index": 15,
+    "event_id": "3b5d5976-a811-7522-698b-99cf338c90a9",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-63",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081404,
+    "event_index": 109,
+    "event_id": "1b370ab2-ab47-7117-0aa4-f3540b461956",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-64",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081405,
+    "event_index": 122,
+    "event_id": "f7292936-b7d5-d6ea-88d5-627191b17e7d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-65",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081406,
+    "event_index": 280,
+    "event_id": "0a94fb91-5ed3-7c82-7481-91c794f446c3",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-66",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081407,
+    "event_index": 116,
+    "event_id": "b7b5cbc0-b695-8b4d-1e08-7726a1af6ec1",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-67",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081408,
+    "event_index": 256,
+    "event_id": "794caa1f-69ad-cc19-c1ba-13b0a6c73f60",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-68",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081409,
+    "event_index": 260,
+    "event_id": "f4fccb0b-3c4c-a9fe-3da9-50eada5249c0",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-69",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081410,
+    "event_index": 181,
+    "event_id": "19a75894-785f-afa8-8772-64efdc5d236d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-70",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081411,
+    "event_index": 166,
+    "event_id": "152aea76-dacc-a89b-361b-1581f8a5c85c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-71",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081412,
+    "event_index": 298,
+    "event_id": "a39c0903-0771-22d3-ce91-5cea36071d9c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-72",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081413,
+    "event_index": 252,
+    "event_id": "ad40e6b7-d71f-7211-2907-48bb4a3f688b",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-73",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081414,
+    "event_index": 94,
+    "event_id": "7ef873ac-8df2-5b5f-6f86-9c92e5026069",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-74",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081415,
+    "event_index": 279,
+    "event_id": "f72d82fa-ba5a-13b6-f0c7-8ca2cc39d7c2",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-75",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081416,
+    "event_index": 185,
+    "event_id": "5d56e2de-58fa-f35c-ccbe-f67bbdd0ce8a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-76",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081417,
+    "event_index": 209,
+    "event_id": "e8670be8-eaf5-633f-07cd-f4ac34ddf56c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-77",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081418,
+    "event_index": 277,
+    "event_id": "4f4a9ed5-d23a-e203-a0be-7dcb535f2d7a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-78",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081419,
+    "event_index": 79,
+    "event_id": "24d5fa7a-b688-7e06-0e7c-54e978440a17",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-79",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081420,
+    "event_index": 205,
+    "event_id": "46a75dc2-757e-c43f-7b4a-20a40dcb5920",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-80",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081421,
+    "event_index": 183,
+    "event_id": "f5bc01a8-a83e-fbfb-8345-f6b7649d3947",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-81",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081422,
+    "event_index": 0,
+    "event_id": "85c2029f-998e-5911-9fc3-903474725f9a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:0"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:0",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-82",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081423,
+    "event_index": 298,
+    "event_id": "e342e7c2-c2d9-dccf-9d7a-7ae456d9309b",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-83",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081424,
+    "event_index": 270,
+    "event_id": "48338a7c-abcb-af2e-4e49-bfa8187a6261",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-84",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081425,
+    "event_index": 265,
+    "event_id": "2ce4cfe0-8e27-79a9-4fd7-d4cf901ab19e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-85",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081426,
+    "event_index": 250,
+    "event_id": "1c53ddb2-802e-a29a-5f5b-227f0af64799",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-86",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081427,
+    "event_index": 118,
+    "event_id": "1694ea10-88a8-9e8b-21cb-255edec74d8d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-87",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081428,
+    "event_index": 54,
+    "event_id": "a0941bbc-a988-00bf-8a75-8b4e3033ea95",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-88",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081429,
+    "event_index": 145,
+    "event_id": "63be5ceb-acc6-4991-d46f-562de3ae413a",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-89",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "command_probe",
+    "seed": 2026081430,
+    "event_index": 70,
+    "event_id": "85ce2319-b2d8-de9b-a177-365c69c5858c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_COMMAND"
+        ],
+        "union": [
+          "e:4",
+          "r:D_COMMAND"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-90",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081401,
+    "event_index": 120,
+    "event_id": "2efa23e7-2b5f-deb9-0479-01c0f7d9bd4e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-91",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081402,
+    "event_index": 111,
+    "event_id": "02f003cb-d706-e3c3-a182-62977f17edf8",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-92",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081403,
+    "event_index": 57,
+    "event_id": "c019d8be-3fb9-2747-e606-8ac7e9c4a8d1",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-93",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081404,
+    "event_index": 102,
+    "event_id": "5e7acd3d-65e3-0f6a-8a1d-d2ae4edf76d0",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-94",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081405,
+    "event_index": 218,
+    "event_id": "70e6edcb-daeb-171f-dbd1-9ae473407c5b",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-95",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081406,
+    "event_index": 260,
+    "event_id": "550304d7-9ade-a7c4-538f-c45922d46a0d",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-96",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081407,
+    "event_index": 49,
+    "event_id": "88e8597c-e839-20de-ef26-4f07c9529efc",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-97",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081408,
+    "event_index": 63,
+    "event_id": "bf6c68f4-1697-9889-8ef5-abd97e769807",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-98",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081409,
+    "event_index": 287,
+    "event_id": "96f0ee8e-7690-7436-9286-02da7ade2169",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-99",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081410,
+    "event_index": 204,
+    "event_id": "89c3d97e-22d3-738e-c852-6f23e5a3a405",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-100",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081411,
+    "event_index": 81,
+    "event_id": "93c3c720-f0ad-9a9c-91d0-553674049070",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-101",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081412,
+    "event_index": 77,
+    "event_id": "96a55d8e-9610-8813-91ea-12c140faeecf",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-102",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081413,
+    "event_index": 294,
+    "event_id": "cb980ed2-be51-476d-1492-8e6edde5134c",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-103",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081414,
+    "event_index": 177,
+    "event_id": "5a503fe7-e8a6-1edc-4c93-f120f4cd8b20",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-104",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081415,
+    "event_index": 190,
+    "event_id": "22ff504f-3277-7405-3506-a80122ea29f2",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-105",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081416,
+    "event_index": 18,
+    "event_id": "de7fef17-10c3-37b6-0c5f-d6eee156b26e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-106",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081417,
+    "event_index": 202,
+    "event_id": "513a4694-c73e-3ccc-494f-c7eef0d2065e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-107",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081418,
+    "event_index": 208,
+    "event_id": "eb636edf-8923-dea5-776f-10bb193669bc",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-108",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081419,
+    "event_index": 130,
+    "event_id": "22f40a1c-5f07-60f4-7723-00231b712c67",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-109",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081420,
+    "event_index": 27,
+    "event_id": "51a68eac-e63b-693a-a38d-73ab3c2f0a78",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-110",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081421,
+    "event_index": 67,
+    "event_id": "f82bbf3e-a8b3-e357-1371-4dbc72172fec",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-111",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081422,
+    "event_index": 133,
+    "event_id": "2ebac5a5-c744-cb44-57b1-576f8f1c837e",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-112",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081423,
+    "event_index": 154,
+    "event_id": "7e75a7bf-a744-ec1a-68c1-072450125ba2",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-113",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081424,
+    "event_index": 140,
+    "event_id": "8de50045-8937-2eed-d1a4-5599b9a036ed",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-114",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081425,
+    "event_index": 241,
+    "event_id": "d9812abd-a157-f85e-e4b5-69b4ceddb0f9",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-115",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081426,
+    "event_index": 269,
+    "event_id": "854063d0-0bc3-26f0-45ac-a0a2e18dc725",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-116",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081427,
+    "event_index": 222,
+    "event_id": "2fa97c19-1d16-d6c2-0b9b-dd9eb866a563",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-117",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081428,
+    "event_index": 52,
+    "event_id": "81edd0e6-69c1-1b97-1f3f-c22bd63ff144",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-118",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081429,
+    "event_index": 245,
+    "event_id": "feb73de6-7fcf-f2b6-a50e-0df400d71d03",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "docker-119",
+    "source": "frozen_docker_alert",
+    "factual": "Violation",
+    "scenario": "path_traversal",
+    "seed": 2026081430,
+    "event_index": 157,
+    "event_id": "8531617f-9b7a-2536-fa53-34da3ccaae22",
+    "horizon": 5,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:4"
+        ],
+        "rule_core": [
+          "r:D_TRAVERSAL"
+        ],
+        "union": [
+          "e:4",
+          "r:D_TRAVERSAL"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-instant_violation",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "instant_violation",
+    "horizon": 2,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1"
+        ],
+        "rule_core": [
+          "r:D"
+        ],
+        "union": [
+          "e:1",
+          "r:D"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-conflict",
+    "source": "controlled_fixture",
+    "factual": "Conflict",
+    "scenario": "conflict",
+    "horizon": 1,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:0"
+        ],
+        "rule_core": [
+          "r:D",
+          "r:A"
+        ],
+        "union": [
+          "e:0",
+          "r:A",
+          "r:D"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 3,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-gap",
+    "source": "controlled_fixture",
+    "factual": "Gap",
+    "scenario": "gap",
+    "horizon": 1,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [],
+        "rule_core": [],
+        "union": [],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 0,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-temporal_seq",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "temporal_seq",
+    "horizon": 3,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:SEQ"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "r:SEQ"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 3,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-multiple_rules",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "multiple_rules",
+    "horizon": 1,
+    "event_core_count": 1,
+    "rule_core_count": 2,
+    "joint_core_count": 2,
+    "unions": [
+      {
+        "event_core": [
+          "e:0"
+        ],
+        "rule_core": [
+          "r:D1"
+        ],
+        "union": [
+          "e:0",
+          "r:D1"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0"
+        ],
+        "rule_core": [
+          "r:D2"
+        ],
+        "union": [
+          "e:0",
+          "r:D2"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-multiple_events",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "multiple_events",
+    "horizon": 3,
+    "event_core_count": 2,
+    "rule_core_count": 1,
+    "joint_core_count": 2,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:SEEN"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "r:SEEN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 3,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:SEEN"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "r:SEEN"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 3,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-distractors",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "distractors",
+    "horizon": 3,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:2"
+        ],
+        "rule_core": [
+          "r:D"
+        ],
+        "union": [
+          "e:2",
+          "r:D"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-state_fixed_context",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "state_fixed_context",
+    "horizon": 1,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:1"
+        ],
+        "rule_core": [
+          "r:STATE"
+        ],
+        "union": [
+          "e:1",
+          "r:STATE"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 2,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "fixture-count_threshold",
+    "source": "controlled_fixture",
+    "factual": "Violation",
+    "scenario": "count_threshold",
+    "horizon": 3,
+    "event_core_count": 1,
+    "rule_core_count": 1,
+    "joint_core_count": 1,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:1",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:COUNT"
+        ],
+        "union": [
+          "e:0",
+          "e:1",
+          "e:2",
+          "r:COUNT"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 4,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": true,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  },
+  {
+    "case_id": "constructed-composability-counterexample",
+    "source": "constructed_semantic_witness",
+    "factual": "Violation",
+    "purpose": "falsify universal claim that every separate-core union is jointly sufficient",
+    "horizon": 3,
+    "event_core_count": 2,
+    "rule_core_count": 2,
+    "joint_core_count": 2,
+    "unions": [
+      {
+        "event_core": [
+          "e:0",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:DENY_AFTER_A"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "r:DENY_AFTER_A"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 3,
+        "equals_joint_minimal_core": true
+      },
+      {
+        "event_core": [
+          "e:0",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:DENY_AFTER_C"
+        ],
+        "union": [
+          "e:0",
+          "e:2",
+          "r:DENY_AFTER_C"
+        ],
+        "sufficient": false,
+        "inclusion_minimal": false,
+        "deletion_checks": 0,
+        "counterexample": {
+          "assignment": {
+            "e:0": 1,
+            "e:1": 0,
+            "e:2": 1,
+            "r:DENY_AFTER_A": 0,
+            "r:DENY_AFTER_C": 1
+          },
+          "resulting_class": "Gap",
+          "target_class": "Violation"
+        },
+        "equals_joint_minimal_core": false
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:DENY_AFTER_A"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "r:DENY_AFTER_A"
+        ],
+        "sufficient": false,
+        "inclusion_minimal": false,
+        "deletion_checks": 0,
+        "counterexample": {
+          "assignment": {
+            "e:0": 0,
+            "e:1": 1,
+            "e:2": 1,
+            "r:DENY_AFTER_A": 1,
+            "r:DENY_AFTER_C": 0
+          },
+          "resulting_class": "Gap",
+          "target_class": "Violation"
+        },
+        "equals_joint_minimal_core": false
+      },
+      {
+        "event_core": [
+          "e:1",
+          "e:2"
+        ],
+        "rule_core": [
+          "r:DENY_AFTER_C"
+        ],
+        "union": [
+          "e:1",
+          "e:2",
+          "r:DENY_AFTER_C"
+        ],
+        "sufficient": true,
+        "inclusion_minimal": true,
+        "deletion_checks": 3,
+        "equals_joint_minimal_core": true
+      }
+    ],
+    "all_unions_sufficient": false,
+    "some_union_sufficient": true,
+    "any_union_is_joint_minimal": true,
+    "sufficient_but_not_minimal_union_count": 0
+  }
+]

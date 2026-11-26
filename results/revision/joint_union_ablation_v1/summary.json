@@ -1,0 +1,45 @@
+{
+  "classification": "retrospective workload analysis plus a constructed semantic falsification witness",
+  "selection_seed": 20261011,
+  "semantics": "all cross-products of event-only and rule-only inclusion-minimal cores; each union tested under the full joint E+R intervention domain",
+  "oracle": "trace_policy_engine.reference_eval",
+  "groups": {
+    "frozen_docker_alert": {
+      "cases": 120,
+      "cases_with_separate_core_families": 120,
+      "cases_all_unions_sufficient": 120,
+      "cases_some_union_sufficient": 120,
+      "cases_any_union_is_joint_minimal": 120,
+      "union_candidates": 168,
+      "sufficient_unions": 168,
+      "insufficient_unions": 0,
+      "sufficient_but_nonminimal_unions": 0,
+      "undefined_unions": 0
+    },
+    "controlled_fixture": {
+      "cases": 9,
+      "cases_with_separate_core_families": 9,
+      "cases_all_unions_sufficient": 9,
+      "cases_some_union_sufficient": 9,
+      "cases_any_union_is_joint_minimal": 9,
+      "union_candidates": 11,
+      "sufficient_unions": 11,
+      "insufficient_unions": 0,
+      "sufficient_but_nonminimal_unions": 0,
+      "undefined_unions": 0
+    },
+    "constructed_semantic_witness": {
+      "cases": 1,
+      "cases_with_separate_core_families": 1,
+      "cases_all_unions_sufficient": 0,
+      "cases_some_union_sufficient": 1,
+      "cases_any_union_is_joint_minimal": 1,
+      "union_candidates": 4,
+      "sufficient_unions": 2,
+      "insufficient_unions": 2,
+      "sufficient_but_nonminimal_unions": 0,
+      "undefined_unions": 0
+    }
+  },
+  "interpretation_limit": "Observed workload-specific composability; no independent generalization or analyst utility claim."
+}
