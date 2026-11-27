@@ -5,6 +5,7 @@
 - Expanded the companion author manuscript's formal specification: temporal `Seen`, `Count`, and ordered-subsequence `Seq` semantics; effective windows; neutral-event treatment; guard composition; missing-value behavior; complete retention assignment space; intervention mapping; and state reconstruction.
 - Replaced ambiguous solver terminology with exhaustive decision-oracle search and clarified the inclusion-minimality proof.
 - Added an inductive proof of incremental decision equivalence under explicit initial-state, deterministic-transition, available-history, selector-completeness, immutable-policy, and supported-update assumptions. Defined the maximum effective temporal history `H`.
+- Audited and corrected the public formal-specification artifact: it had claimed an SAT/SMT backend and compiled monitor updates that the code does not implement. It now describes exhaustive masks (18-unit cap), bounded-window scans, cumulative state, update preconditions, and conditional equivalence. Its bibliography and build instructions are included; its PDF compiles to 17 pages with no unresolved references/citations or out-of-page text.
 - Ran the independent finite-domain model checker twice. The second run checked 94,160 policy/trace pairs, 1,401,136 retention assignments, 71,752 alert explanations with witnesses, 94,160 static-index cases, 188,320 incremental-prefix cases, and 948,160 selector-reduction masks. No discrepancy was found.
 - Re-ran 68 repository tests; all passed. The frozen protocol verifier reported 71 files and zero mismatches. The saved-evidence verifier independently checked 2,276 witness records. The joint-union verifier reproduced 168/168 Docker and 11/11 fixture unions as sufficient, with two insufficient crossed unions in the constructed witness.
 - Recompiled the companion manuscript (25 PDF pages including its title page; 24 numbered pages). Final packaging verification reports no out-of-page text or unresolved citations; response document covers all 18 reviewer points; cover letter is one page.
@@ -13,6 +14,8 @@
 ## Scope and caveats
 
 The model check independently confirms implementation behavior only over its finite generated domain: at most two rules, bounded trace length and value alphabet, empty initial state, and the supported guard forms included by the generator. It is not a proof for arbitrary policies, custom initial states, concurrent or distributed inputs, or all application integrations. The latest manuscript source remains in the companion author-review package; the public repository commit contains the checker and public audit evidence, not the manuscript PDF.
+
+The corrected formal-specification PDF is a separate public technical artifact, not a substitute for the submitted manuscript. Four minor overfull horizontal lines remain in the artifact source, but the PDF geometry check reports no text outside page bounds.
 
 The PDF compiles. A sub-point vertical overfull warning remains on a bibliography page, with no text outside page bounds in the PDF geometry audit. Cross-reference labels still request a rerun; verify log stability before the final submission package.
 

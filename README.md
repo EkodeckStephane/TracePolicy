@@ -24,17 +24,17 @@ The extended comparison retains full selected traces, all outcomes, actual witne
 
 The exact domain-ablation outputs are in `results/revision/joint_ablation_v1/`; run `python experiments/revision_joint_ablation.py` from the repository root to reproduce them from the included synthetic local-lab inputs. The LID-DS code and derived result record are in `experiments/revision_lidds_*.py` and `results/lidds_cve_2020_23839/`. Reproduction requires a separately acquired scenario archive; the result README documents the staged freeze/evaluate/labels/verify process and limitations.
 
-The Phase 0 audit reran this already studied scenario into `results/lidds_cve_2020_23839_phase0_reproduction/` without replacing archived outputs. Its prediction hash matches the previous run; the frozen P0/P1 policies each allow 50 supported syscall names. This is a reproducibility check, not an independent validation. See `revision_audit/lidds_phase0_reproduction.json`.
+The LID-DS reproduction is recorded in `results/lidds_cve_2020_23839_phase0_reproduction/`, preserving the archived result. Its prediction hash matches the earlier run; the frozen action-only and temporal policies each allow 50 supported syscall names. This establishes reproducibility for the studied scenario. See `revision_audit/lidds_phase0_reproduction.json`.
 
-Formal attribution here is an exact adaptation of the membership-frequency definition, not the published anytime solver. Native Anchors output is never repaired; its sampled precision remains distinct from exact certification. Cache backends and NumPy environments differ, so the expanded campaign does not demonstrate timing superiority.
+Formal attribution here is an exact adaptation of the membership-frequency definition, distinct from the published anytime solver. Native Anchors output is preserved; its sampled precision is reported separately from exact certification. Cache backends and NumPy environments differ, so the expanded campaign does not establish a timing advantage.
 
 ## Scope
 
-Implemented explanations replay a complete supplied prefix from an empty initial state with the default transition. Policy contents must remain immutable, including caller-owned nested values. Frozen dataclasses do not implement deep freezing. The exact backend rejects domains above18 event/rule units.
+Implemented explanations replay a complete supplied prefix from an empty initial state with the default transition. Policy contents must remain immutable, including caller-owned nested values; frozen dataclasses do not implement deep freezing. The exact backend supports up to 18 event/rule units.
 
 Indexed incremental decisions require sufficient retained history. Historical explanations additionally require complete-prefix archival/replay. Temporal guards scan retained windows; shared cached temporal summaries are not implemented. Explanation targets are detector decisions under declared interventions, not physical attack causality or analyst usefulness.
 
-The external MAGIC THEIA static projection is exploratory, loses chronology, and inherits upstream label-assisted training filtering. The separate chronological hosted THEIA derivative records acquisition, actor normalization, label identity, chronological split and prospective policy freeze in [its audit README](revision_audit/temporal_external/README.md). The engagement was familiar from static work, so this is cross-representation validation rather than an unseen dataset. Temporal P1 adds522,332false-positive event rows while recovering46REAPr-positive rows; its detection F1 is worse than P0. Explanation correctness does not establish detector improvement or positive predecessor necessity. CADETS P0 was fitted on its own training partition; its held-out results are not transfer of a Docker policy.
+The external MAGIC THEIA static projection is exploratory, loses chronology, and inherits upstream label-assisted training filtering. The separate chronological hosted THEIA derivative records acquisition, actor normalization, label identity, chronological split and prospective policy freeze in [its audit README](revision_audit/temporal_external/README.md). The engagement was familiar from static work, so this is cross-representation validation. Relative to the action-only policy, the temporal policy adds 522,332 false-positive event rows while recovering 46 REAPr-positive rows, and yields lower event-level F1. Explanation correctness characterizes decision preservation; the detector metrics separately characterize selectivity. CADETS was fitted on its own training partition; its held-out results are not a transfer test of a Docker policy.
 
 ## Provenance
 
@@ -47,3 +47,7 @@ External source datasets are acquired separately; virtual environments, editoria
 Jacques Narcisse Bayem (corresponding author), Nicolas Nkondock Mi Bahanag, Stéphane Gaël R. Ekodeck, Samson Priso Essawe Ndedi and Marcel Fouda Ndjodo. Author metadata remain in [CITATION.cff](CITATION.cff). This research branch does not imply journal acceptance or a submission made.
 
 The repository has not asserted a new software license in this revision. Third-party components retain their own attribution and terms.
+
+## Formal specification
+
+The implementation-aligned contract is in [`formal/TracePolicy_Formal_Specification.tex`](formal/TracePolicy_Formal_Specification.tex), with its bibliography in the same directory. Build it from `formal/` with `pdflatex`, `bibtex TracePolicy_Formal_Specification`, then two further `pdflatex` runs. The contract describes exhaustive retention-mask enumeration capped at 18 units; a SAT/SMT backend remains future work. Its proof claims are conditional on the stated semantics, while the independent model checker verifies only its recorded finite domain.

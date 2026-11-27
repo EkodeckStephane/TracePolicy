@@ -30,3 +30,11 @@ local_lab/results/pcap_*.pcap
 
 # Runtime process identifiers
 *.pid
+
+# LaTeX build products for the formal artifact
+formal/*.aux
+formal/*.bbl
+formal/*.blg
+formal/*.log
+formal/*.out
+formal/*.pdf
