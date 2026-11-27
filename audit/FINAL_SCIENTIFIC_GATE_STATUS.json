@@ -91,9 +91,13 @@
                              "status":  "NOT VERIFIED",
                              "evidence":  [
                                               "audit/POLICY_VERSION_DIFFERENTIAL_ANALYSIS.md",
-                                              "results/revision/policy_evolution_pairs_v1/summary.json"
+                                              "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md",
+                                              "experiments/revision_policy_differential.py",
+                                              "experiments/verify_policy_differential.py",
+                                              "results/revision/policy_evolution_differential_v1/paired_explanations.json",
+                                              "results/revision/policy_evolution_differential_v1/independent_verification.json"
                                           ],
-                             "reason":  "Paired replay is verified, but no differential explanation object or operational utility result exists."
+                             "reason":  "A paired event/edit AXp pilot was exhaustively enumerated and independently recomputed on three selected windows. It uses the same reference evaluator and edit constructor; no external generalization, direct Margrave/AXp comparison, or operational utility is established."
                          },
                   "G10":  {
                               "status":  "NOT VERIFIED",

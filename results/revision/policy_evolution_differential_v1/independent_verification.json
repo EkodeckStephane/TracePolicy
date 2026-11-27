@@ -1,0 +1,6 @@
+{
+  "cases_verified": 3,
+  "all_minimal_families_match": true,
+  "all_deletion_witnesses_valid": true,
+  "scope": "finite domains of the three selected windows; evaluator and edit constructor are shared"
+}

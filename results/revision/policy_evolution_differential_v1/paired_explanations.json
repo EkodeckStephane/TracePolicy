@@ -1,0 +1,263 @@
+[
+  {
+    "operation": "tighten_bruteforce_threshold",
+    "seed": 2026081401,
+    "event_index": 7,
+    "event_id": "076f740a-5700-0cb2-3bf7-8bd741d9329e",
+    "horizon": 5,
+    "target_ordered_alert_pair": [
+      "NoAlert",
+      "Violation"
+    ],
+    "edit_unit": "d:D_BRUTEFORCE.count_threshold",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "d:D_BRUTEFORCE.count_threshold"
+    ],
+    "intervention_assignments": 64,
+    "minimal_paired_explanation_family": [
+      {
+        "core": [
+          "e:2",
+          "e:3",
+          "e:4",
+          "d:D_BRUTEFORCE.count_threshold"
+        ],
+        "size": 4,
+        "deletion_witnesses": {
+          "e:2": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 0,
+              "e:3": 1,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "NoAlert",
+              "NoAlert"
+            ]
+          },
+          "e:3": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 1,
+              "e:3": 0,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "NoAlert",
+              "NoAlert"
+            ]
+          },
+          "e:4": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 1,
+              "e:3": 1,
+              "e:4": 0,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "Gap",
+              "Gap"
+            ]
+          },
+          "d:D_BRUTEFORCE.count_threshold": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 1,
+              "e:3": 1,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 0
+            },
+            "resulting_pair": [
+              "NoAlert",
+              "NoAlert"
+            ]
+          }
+        }
+      }
+    ],
+    "independent_generation_check": "exhaustively recomputed by experiments/verify_policy_differential.py; same reference evaluator, separate truth-table and powerset enumeration",
+    "scope": "representative first-difference windows from the same retrospective Docker corpus; not external validation"
+  },
+  {
+    "operation": "relax_bruteforce_threshold",
+    "seed": 2026081401,
+    "event_index": 8,
+    "event_id": "534e86a7-d1e2-4457-407a-3d18f5c1b5d3",
+    "horizon": 5,
+    "target_ordered_alert_pair": [
+      "Violation",
+      "NoAlert"
+    ],
+    "edit_unit": "d:D_BRUTEFORCE.count_threshold",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "d:D_BRUTEFORCE.count_threshold"
+    ],
+    "intervention_assignments": 64,
+    "minimal_paired_explanation_family": [
+      {
+        "core": [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "d:D_BRUTEFORCE.count_threshold"
+        ],
+        "size": 5,
+        "deletion_witnesses": {
+          "e:1": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 1,
+              "e:3": 1,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "NoAlert",
+              "NoAlert"
+            ]
+          },
+          "e:2": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 1,
+              "e:2": 0,
+              "e:3": 1,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "NoAlert",
+              "NoAlert"
+            ]
+          },
+          "e:3": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 1,
+              "e:2": 1,
+              "e:3": 0,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "NoAlert",
+              "NoAlert"
+            ]
+          },
+          "e:4": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 1,
+              "e:2": 1,
+              "e:3": 1,
+              "e:4": 0,
+              "d:D_BRUTEFORCE.count_threshold": 1
+            },
+            "resulting_pair": [
+              "Gap",
+              "Gap"
+            ]
+          },
+          "d:D_BRUTEFORCE.count_threshold": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 1,
+              "e:2": 1,
+              "e:3": 1,
+              "e:4": 1,
+              "d:D_BRUTEFORCE.count_threshold": 0
+            },
+            "resulting_pair": [
+              "Violation",
+              "Violation"
+            ]
+          }
+        }
+      }
+    ],
+    "independent_generation_check": "exhaustively recomputed by experiments/verify_policy_differential.py; same reference evaluator, separate truth-table and powerset enumeration",
+    "scope": "representative first-difference windows from the same retrospective Docker corpus; not external validation"
+  },
+  {
+    "operation": "remove_admin_deny_rule",
+    "seed": 2026081401,
+    "event_index": 96,
+    "event_id": "efa466b6-8275-bed8-dd96-80e90bbb85a3",
+    "horizon": 5,
+    "target_ordered_alert_pair": [
+      "Violation",
+      "Gap"
+    ],
+    "edit_unit": "d:D_ADMIN.presence",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "e:3",
+      "e:4",
+      "d:D_ADMIN.presence"
+    ],
+    "intervention_assignments": 64,
+    "minimal_paired_explanation_family": [
+      {
+        "core": [
+          "e:4",
+          "d:D_ADMIN.presence"
+        ],
+        "size": 2,
+        "deletion_witnesses": {
+          "e:4": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 0,
+              "e:3": 0,
+              "e:4": 0,
+              "d:D_ADMIN.presence": 1
+            },
+            "resulting_pair": [
+              "Gap",
+              "Gap"
+            ]
+          },
+          "d:D_ADMIN.presence": {
+            "retained_assignment": {
+              "e:0": 0,
+              "e:1": 0,
+              "e:2": 0,
+              "e:3": 0,
+              "e:4": 1,
+              "d:D_ADMIN.presence": 0
+            },
+            "resulting_pair": [
+              "Violation",
+              "Violation"
+            ]
+          }
+        }
+      }
+    ],
+    "independent_generation_check": "exhaustively recomputed by experiments/verify_policy_differential.py; same reference evaluator, separate truth-table and powerset enumeration",
+    "scope": "representative first-difference windows from the same retrospective Docker corpus; not external validation"
+  }
+]

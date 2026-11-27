@@ -23,4 +23,6 @@ jobs:
       - run: python experiments/revision_joint_ablation.py
       - run: python experiments/revision_union_ablation.py
       - run: python scripts/verify_joint_union_ablation.py
+      - run: python experiments/revision_policy_differential.py
+      - run: python experiments/verify_policy_differential.py
       - run: python results/revision/distributed_live_vps_campaign_20261012/run07/verify_campaign.py

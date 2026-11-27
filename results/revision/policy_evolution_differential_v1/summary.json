@@ -1,0 +1,8 @@
+{
+  "operation_count": 3,
+  "analysed_pairs": 3,
+  "target": "exact ordered pair (old-policy alert class, updated-policy alert class)",
+  "intervention_semantics": "common stutter neutralization of events in both policy branches; edit neutralization reverts new policy to old policy",
+  "all_factual_pairs_confirmed": true,
+  "scope_warning": "Exploratory pilot on three selected first-difference windows, not an independent benchmark or novelty demonstration."
+}
