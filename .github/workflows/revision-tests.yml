@@ -17,6 +17,7 @@ jobs:
             requirements-temporal-revision.txt
       - run: python -m pip install -r requirements-revision.txt -r requirements-temporal-revision.txt
       - run: python -m pytest tests -q
+      - run: python scripts/independent_semantics_modelcheck.py
       - run: python scripts/verify_frozen_protocol_v2.py
       - run: python scripts/verify_revision_evidence.py
       - run: python experiments/revision_joint_ablation.py
