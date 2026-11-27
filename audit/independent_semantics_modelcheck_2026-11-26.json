@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "horizon": 2,
+  "rule_forms": 48,
+  "policies": 1177,
+  "traces": 80,
+  "counts": {
+    "policy_trace_pairs": 94160,
+    "retention_masks": 1401136,
+    "alerts_certified": 71752,
+    "index_comparisons": 94160,
+    "incremental_prefix_comparisons": 188320,
+    "selector_reduction_masks": 948160
+  },
+  "oracle": "separate transition/guard/selector/priority implementation; no production evaluator calls",
+  "scope": "empty initial state; full length-one/two trace cube over two actions, resources, and subjects; eight length-three temporal traces; policies with at most two rules; all event/rule retention assignments"
+}
