@@ -20,6 +20,8 @@ The PDF compiles. A sub-point vertical overfull warning remains on a bibliograph
 
 Phase 3 remains **NO-GO for closure**. The definition gaps and the missing incremental proof have been addressed in the manuscript, and the finite independent semantic audit found no discrepancy. The novelty and structural significance of joint event–rule explanations remain unresolved; composability has only a bounded ablation and a constructed counterexample. No SAT/SMT backend, independent external holdout, analyst utility study, or realistic validated policy-evolution benchmark has been completed. Generalization and journal-specific fit remain NOT VERIFIED. The project-level decision remains **NO-GO**.
 
+The current official Elsevier journal profile states a moratorium on submissions featuring AI or ML as significant components and says submissions applying AI/ML techniques to system security will not be considered. TracePolicy is a rule-based formal explanation framework rather than a learned detector, but explainability/XAI is central to its framing and it evaluates SHAP, LIME, and formal attribution baselines. The scope of the moratorium for this specific manuscript therefore remains **NOT VERIFIED**; the ScienceDirect Guide for Authors link returned HTTP 403 in this audit. This policy question is an independent submission risk and requires a conservative editorial-fit assessment. [Official Computers & Security profile](https://shop.elsevier.com/journals/computers-and-security/0167-4048)
+
 ## Next continuation
 
 1. Independently audit every remaining formal theorem and proof against the current implementation, including edge cases outside the finite checker.
