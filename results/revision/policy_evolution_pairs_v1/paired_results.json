@@ -1,0 +1,138 @@
+[
+  {
+    "operation": "tighten_bruteforce_threshold",
+    "differing_window_count": 604,
+    "changed_rule_fields": [
+      {
+        "rule_id": "D_BRUTEFORCE",
+        "field": "count_threshold",
+        "before": 4,
+        "after": 3
+      }
+    ],
+    "seed": 2026081401,
+    "event_index": 7,
+    "event_id": "076f740a-5700-0cb2-3bf7-8bd741d9329e",
+    "horizon": 5,
+    "decision_before": "NoAlert",
+    "decision_after": "Violation",
+    "decision_pair_differs": true,
+    "minimal_core_families_independently_verified": true,
+    "old_version_joint_minimal_cores": [
+      [
+        "e:4",
+        "r:A_AUTH_FAIL_SINGLE"
+      ]
+    ],
+    "new_version_joint_minimal_cores": [
+      [
+        "e:2",
+        "e:3",
+        "e:4",
+        "r:D_BRUTEFORCE"
+      ]
+    ],
+    "core_family_intersection": [],
+    "core_family_symmetric_difference": [
+      [
+        "e:2",
+        "e:3",
+        "e:4",
+        "r:D_BRUTEFORCE"
+      ],
+      [
+        "e:4",
+        "r:A_AUTH_FAIL_SINGLE"
+      ]
+    ],
+    "classification": "retrospective paired replay; not a differential explanation"
+  },
+  {
+    "operation": "relax_bruteforce_threshold",
+    "differing_window_count": 693,
+    "changed_rule_fields": [
+      {
+        "rule_id": "D_BRUTEFORCE",
+        "field": "count_threshold",
+        "before": 4,
+        "after": 5
+      }
+    ],
+    "seed": 2026081401,
+    "event_index": 8,
+    "event_id": "534e86a7-d1e2-4457-407a-3d18f5c1b5d3",
+    "horizon": 5,
+    "decision_before": "Violation",
+    "decision_after": "NoAlert",
+    "decision_pair_differs": true,
+    "minimal_core_families_independently_verified": true,
+    "old_version_joint_minimal_cores": [
+      [
+        "e:1",
+        "e:2",
+        "e:3",
+        "e:4",
+        "r:D_BRUTEFORCE"
+      ]
+    ],
+    "new_version_joint_minimal_cores": [
+      [
+        "e:4",
+        "r:A_AUTH_FAIL_SINGLE"
+      ]
+    ],
+    "core_family_intersection": [],
+    "core_family_symmetric_difference": [
+      [
+        "e:1",
+        "e:2",
+        "e:3",
+        "e:4",
+        "r:D_BRUTEFORCE"
+      ],
+      [
+        "e:4",
+        "r:A_AUTH_FAIL_SINGLE"
+      ]
+    ],
+    "classification": "retrospective paired replay; not a differential explanation"
+  },
+  {
+    "operation": "remove_admin_deny_rule",
+    "differing_window_count": 179,
+    "changed_rule_fields": [
+      {
+        "rule_id": "D_ADMIN",
+        "field": "presence",
+        "before": "present",
+        "after": "removed"
+      }
+    ],
+    "seed": 2026081401,
+    "event_index": 96,
+    "event_id": "efa466b6-8275-bed8-dd96-80e90bbb85a3",
+    "horizon": 5,
+    "decision_before": "Violation",
+    "decision_after": "Gap",
+    "decision_pair_differs": true,
+    "minimal_core_families_independently_verified": true,
+    "old_version_joint_minimal_cores": [
+      [
+        "e:4",
+        "r:D_ADMIN"
+      ]
+    ],
+    "new_version_joint_minimal_cores": [
+      []
+    ],
+    "core_family_intersection": [],
+    "core_family_symmetric_difference": [
+      [],
+      [
+        "e:4",
+        "r:D_ADMIN"
+      ]
+    ],
+    "classification": "retrospective paired replay; not a differential explanation"
+  }
+]

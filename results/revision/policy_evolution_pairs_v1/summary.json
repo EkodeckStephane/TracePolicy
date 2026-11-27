@@ -1,0 +1,11 @@
+{
+  "operations": 3,
+  "operations_with_decision_change": 3,
+  "differing_windows_by_operation": {
+    "tighten_bruteforce_threshold": 604,
+    "relax_bruteforce_threshold": 693,
+    "remove_admin_deny_rule": 179
+  },
+  "selected_pairs_have_different_decisions": 3,
+  "interpretation_limit": "Retrospective updates on one frozen local-lab policy and corpus; results do not establish policy-update prevalence, external generalization, or analyst utility."
+}

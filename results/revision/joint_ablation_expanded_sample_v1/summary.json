@@ -1,0 +1,26 @@
+{
+  "cases": 239,
+  "by_scenario": {
+    "admin_probe": {
+      "cases": 60,
+      "union_sufficiency_failures": 0,
+      "cases_with_union_equal_to_joint_core": 60
+    },
+    "bruteforce": {
+      "cases": 60,
+      "union_sufficiency_failures": 0,
+      "cases_with_union_equal_to_joint_core": 60
+    },
+    "command_probe": {
+      "cases": 59,
+      "union_sufficiency_failures": 0,
+      "cases_with_union_equal_to_joint_core": 59
+    },
+    "path_traversal": {
+      "cases": 60,
+      "union_sufficiency_failures": 0,
+      "cases_with_union_equal_to_joint_core": 60
+    }
+  },
+  "interpretation_limit": "Retrospective stratified sample of eligible positive alerts in this frozen corpus; no external generalization claim."
+}
