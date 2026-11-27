@@ -62,3 +62,13 @@ Keep all G0–G15 at `NOT VERIFIED` until the relevant artifacts are examined. U
 ## Phase transition rule
 
 No phase is called complete because it was planned or because a response was drafted. Each phase must record actual commands, files, hashes, results, limits, and its GO/NO-GO decision. Historical output remains immutable; new campaigns use versioned protocols and new output directories.
+
+## Continuation update — 27 November 2026
+
+The public revision branch now includes the expanded retrospective composability sample and paired policy-version replay. At commit `3609cac7ad1277678005d0847fe8b271c3330831`, the GitHub Actions revision workflow completed successfully.
+
+- **Phase 5 — partial.** The initial 120-case sample was supplemented with a fixed-seed sample of 239 alert windows from 120 nonempty workload/scenario strata. All 335 event/rule core unions were sufficient and every case included a union equal to a joint minimal core. This strengthens the evidence that the current Docker policy workload does not show an empirical advantage for joint enumeration. The semantic counterexample remains valid; an external, alert-independent evaluation is outstanding.
+- **Phase 9 — partial.** Three fixed edits to the Docker policy changed decisions on 604, 693 and 179 five-event windows. One differing window per edit has per-version core families independently verified. This is paired replay, not a differential explanation. The empty core for the post-removal `Gap` decision makes the limitation explicit: the changed policy element is not identified by explaining that decision alone.
+- **Manuscript artifact.** The companion LaTeX source now includes the expanded composability result. MiKTeX failed to rebuild the PDF because it cannot write its user configuration file, including after an initialization attempt. The existing PDF therefore predates that source update; the author archive must not be frozen as submission-ready until the source and PDF are reconciled.
+
+Current decision remains **NO-GO**. The principal outstanding work is a formal differential explanation object with explicit edit interventions, evaluation on independent and realistic policy changes, originality assessment against the closest literature, external validation, and a reproducible manuscript build.
