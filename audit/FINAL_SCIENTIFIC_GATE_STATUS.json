@@ -23,10 +23,11 @@
                              "status":  "NOT VERIFIED",
                              "evidence":  [
                                               "audit/SOTA_SYSTEMATIC_REVIEW.md",
+                                              "audit/SOTA_COMPARISON_MATRIX.csv",
                                               "audit/SEMANTIC_COLLISION_ANALYSIS.md",
-                                              "audit/SOTA_COMPARISON_MATRIX.csv"
+                                              "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md"
                                           ],
-                             "reason":  "The event/rule intervention object remains a candidate distinction without established scientific significance."
+                             "reason":  "Artelt et al. already compare explanations across model adaptations; the paired TracePolicy output is a constrained pair-valued AXp. Its distinct theoretical or operational contribution is not established."
                          },
                   "G2":  {
                              "status":  "NOT VERIFIED",
@@ -95,9 +96,11 @@
                                               "experiments/revision_policy_differential.py",
                                               "experiments/verify_policy_differential.py",
                                               "results/revision/policy_evolution_differential_v1/paired_explanations.json",
-                                              "results/revision/policy_evolution_differential_v1/independent_verification.json"
+                                              "results/revision/policy_evolution_differential_v1/independent_verification.json",
+                                              "audit/SOTA_SYSTEMATIC_REVIEW.md",
+                                              "audit/SEMANTIC_COLLISION_ANALYSIS.md"
                                           ],
-                             "reason":  "A paired event/edit AXp pilot was exhaustively enumerated and independently recomputed on three selected windows. It uses the same reference evaluator and edit constructor; no external generalization, direct Margrave/AXp comparison, or operational utility is established."
+                             "reason":  "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Artelt et al. provide close update-explanation prior art; no direct baseline, external generalization, or task utility is established."
                          },
                   "G10":  {
                               "status":  "NOT VERIFIED",

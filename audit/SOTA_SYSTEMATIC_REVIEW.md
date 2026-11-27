@@ -1,7 +1,7 @@
 # SOTA review — current-source audit (in progress)
 
 **Audit date:** 2026-11-26
-**Scope of this increment:** full-text review of twelve directly relevant primary works.
+**Scope of this increment:** full-text review of thirteen directly relevant primary works.
 **Status:** preliminary; this is not a completed systematic review and does not establish novelty.
 
 ## Method and limits
@@ -102,6 +102,14 @@ Margrave analyzes XACML access-control policies using multi-terminal binary deci
 
 Primary source: [full ICSE 2005 paper, DOI 10.1145/1062455.1062502](https://doi.org/10.1145/1062455.1062502), pp. 196–205; [Brown University publication page and full-text link](https://static.cs.brown.edu/~sk/Publications/Papers/Published/fkmt-verif-change-impact-xacml/); [author-hosted PDF](https://www.cs.cmu.edu/~mtschant/pubs/fkmt-verif-change-impact-xacml.pdf).
 
+### Artelt et al. (2023), contrasting explanations for model adaptations
+
+Artelt et al. explicitly study explanation across an old and an adapted decision model. Their framework compares local contrasting explanations under both models to identify cases where underlying reasoning changed, including cases where predictions agree; it also proposes selecting affected input regions and constraining adaptation to preserve explanations. The paper's concrete method compares counterfactuals and pertinent positives over model-input features, with experiments on adapted classifiers and regression models. This is close prior art for explanation differences under system updates and directly narrows any claim that explaining a decision-system change is itself new.
+
+TracePolicy's pilot instead defines an exact ordered pair of policy alert classes and a universal-sufficiency/minimality problem over a common event-retention intervention plus explicit atomic policy edits. The reviewed Artelt et al. text does not establish that exact output contract or temporal event/policy-edit intervention. This difference is a candidate boundary only: TracePolicy's pair-valued target can be encoded as a generic AXp, and its pilot has no direct baseline, so distinct scientific value remains unproved.
+
+Primary full text: [Springer Nature open-access article, DOI 10.1007/s11063-022-10826-5](https://doi.org/10.1007/s11063-022-10826-5), *Neural Processing Letters* 55, 5273–5297 (2023); [full-text HTML](https://link.springer.com/article/10.1007/s11063-022-10826-5).
+
 ### Ignatiev et al. (2020), abductive and contrastive explanation duality
 
 This full-text paper establishes a formal relationship between local abductive explanations (“why this prediction?”) and contrastive explanations (“what change would alter it?”): each family is the set of minimal hitting sets of the other, using the MUS/MCS duality. Consequently, minimal sufficient explanations and minimal change explanations, and their enumeration, are mature formal-XAI topics. TracePolicy must locate its contribution in the particular semantics of retained trace events and policy rules, its version binding, and any independently verified certificates; inclusion-minimality and MUS/MCS-style reasoning alone are not novel contributions.
@@ -122,6 +130,7 @@ Primary source: [full Springer chapter, AIxIA 2020 proceedings (published 2021),
 10. **Policy-version replay and decision comparison predate TracePolicy.** Brucker and Petritsch bind log records to active policy versions and replay requests against alternative versions. The candidate distinction is a trace-and-rule intervention core or a certified explanation of the decision difference; its semantics and value still need direct comparison.
 11. **Formal abductive/contrastive duality is established.** Ignatiev et al. connect AXps and CXps through MUS/MCS and minimal hitting-set duality. TracePolicy's novelty cannot rest on minimal sufficient sets, subset-minimality, or this duality alone.
 12. **Semantic policy change-impact analysis is established.** Margrave computes request contexts whose access decisions differ between policy versions and permits queries over those differences. TracePolicy cannot claim that version comparison or identifying changed-decision contexts is new. Its current candidate distinction is a local explanation over the events and rules of one observed intrusion decision; it is not yet a differential explanation of why a policy update changed the decision.
+13. **Explanation comparison across system updates predates TracePolicy's pilot.** Artelt et al. compare contrasting explanations under old and adapted models, identify changed reasoning, select affected regions, and constrain updates to preserve explanations. The paired event/edit certificate is a different output contract, but its pair-valued target reduces to generic AXp and no comparative utility is shown; novelty is unresolved.
 
 ## Required next comparisons
 
@@ -130,6 +139,7 @@ Primary source: [full Springer chapter, AIxIA 2020 proceedings (published 2021),
 - Examine additional SHAP/LIME and formal-XAI/MUS-MCS full texts; compare native output, intervention domain, sufficiency, minimality notion, and certification cost. Anchors and one counterfactual IDS framework have been reviewed.
 - Compare TracePolicy's paired-version example and formal change explanation directly with Brucker and Petritsch (2011), including recorded context, policy version, replay, and decision-difference outputs.
 - Compare the policy-version object and output directly with Margrave's semantic change-impact analysis, including its changed request regions, query operations, and attribute representation.
+- Compare the paired event/edit AXp pilot with Artelt et al. (2023), including exact explanandum, feature/edit interventions, minimality, selection of changed cases, and the explanation-persistence objective.
 - Review further policy debugging, provenance-based explanation, temporal/versioned policies, and distributed monitoring sources, including sources already collected in `revision_audit/literature_evidence.md`; the additional full texts narrow but do not exhaust these topics.
 - Search for work post-dating the manuscript’s current literature cutoff and confirm publication/version metadata from publisher or proceedings records.
 - Establish whether the contribution is substantial enough for the current Computers & Security submission policy; journal-fit remains an independent blocking issue in `SCIENTIFIC_GAP_REGISTER.csv`.
