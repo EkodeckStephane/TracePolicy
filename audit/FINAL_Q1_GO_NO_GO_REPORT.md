@@ -54,3 +54,7 @@ Deux portes vÃ©rifiÃ©es sur leur pÃ©rimÃ¨tre limitÃ© ne compensent pas les porte
 3. ExÃ©cuter un protocole gelÃ© sur un holdout indÃ©pendant avec politiques rÃ©alistes et comparaison Ã©quitable; conserver les rÃ©sultats dÃ©favorables.
 4. Terminer lâ€™audit des preuves, de C01â€“C13, des rÃ©fÃ©rences, des dÃ©pendances transitives et de la reproduction en clone propre.
 5. Confirmer auprÃ¨s de la revue que le cadrage actuel relÃ¨ve bien de son pÃ©rimÃ¨tre Ã©ditorial avant dÃ©pÃ´t.
+
+## Mise à jour du contrôle éditorial
+
+La page officielle Elsevier confirme le moratoire de la revue sur les soumissions où l'IA/ML constitue une composante significative. TracePolicy décrit un détecteur déterministe à règles explicites, mais la contribution centrale reste l'explicabilité en détection d'intrusion. Faute de précision publique sur ce cas limite, G15 demeure NOT VERIFIED; l'audit détaillé et la source sont dans udit/JOURNAL_SCOPE_GATE_2026-11-27.md. Le Guide for Authors ScienceDirect a renvoyé HTTP 403 et l'équipe éditoriale n'a pas été contactée. Cette mise à jour complète la section G15 ci-dessus.

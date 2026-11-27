@@ -110,7 +110,7 @@
                                                "../audit/final_pdf_verification.json",
                                                "audit/SCIENTIFIC_GAP_REGISTER.csv"
                                            ],
-                              "reason":  "Recent manuscript, response, result, and archive files align, but full C01Ã¢â‚¬â€œC13 dependency closure is not complete."
+                              "reason":  "Recent manuscript, response, result, and archive files align, but full C01ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“C13 dependency closure is not complete."
                           },
                   "G12":  {
                               "status":  "NOT VERIFIED",
@@ -143,10 +143,10 @@
                   "G15":  {
                               "status":  "NOT VERIFIED",
                               "evidence":  [
-                                               "audit/SCIENTIFIC_GAP_REGISTER.csv",
-                                               "audit/CONTINUATION_AUDIT_2026-11-27.md"
+                                               "audit/JOURNAL_SCOPE_GATE_2026-11-27.md",
+                                               "audit/SCIENTIFIC_GAP_REGISTER.csv"
                                            ],
-                              "reason":  "The journal moratorium\u0027s applicability and current Guide for Authors remain unconfirmed."
+                              "reason":  "Elsevier confirms a moratorium on submissions with significant AI/ML components. The manuscript uses explicit policies rather than a learned predictor, but the journal has not confirmed whether its central XAI-for-IDS contribution is exempt."
                           }
               },
     "blocking_gates":  [
