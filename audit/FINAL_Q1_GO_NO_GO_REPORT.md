@@ -55,6 +55,10 @@ Deux portes vérifiées sur leur périmètre limité ne compensent pas les porte
 4. Terminer l’audit des preuves, de C01–C13, des références, des dépendances transitives et de la reproduction en clone propre.
 5. Confirmer auprès de la revue que le cadrage actuel relève bien de son périmètre éditorial avant dépôt.
 
-## Mise � jour du contr�le �ditorial
+## Mise à jour du contrôle éditorial et du paquet final
 
-La page officielle Elsevier confirme le moratoire de la revue sur les soumissions o� l'IA/ML constitue une composante significative. TracePolicy d�crit un d�tecteur d�terministe � r�gles explicites, mais la contribution centrale reste l'explicabilit� en d�tection d'intrusion. Faute de pr�cision publique sur ce cas limite, G15 demeure NOT VERIFIED; l'audit d�taill� et la source sont dans udit/JOURNAL_SCOPE_GATE_2026-11-27.md. Le Guide for Authors ScienceDirect a renvoy� HTTP 403 et l'�quipe �ditoriale n'a pas �t� contact�e. Cette mise � jour compl�te la section G15 ci-dessus.
+La page officielle Elsevier confirme le moratoire de la revue sur les soumissions où l'IA/ML constitue une composante significative. TracePolicy décrit un détecteur déterministe à règles explicites, mais la contribution centrale reste l'explicabilité en détection d'intrusion. Faute de précision publique sur ce cas limite, G15 demeure NOT VERIFIED; l'audit détaillé et la source sont dans `audit/JOURNAL_SCOPE_GATE_2026-11-27.md`. Le Guide for Authors ScienceDirect a renvoyé HTTP 403 et l'équipe éditoriale n'a pas été contactée.
+
+Le commit `f5f09345bcd66b90bc77af043c67d540543588d3` identifie le snapshot scientifique des résultats expérimentaux résumés ici. Les commits `d553a8c` et `d589c0a` ajoutent les rapports de décision et l'analyse du périmètre éditorial. La CI `45984073757` sur `d589c0a` est réussie.
+
+Le paquet auteur reconstruit après ces ajouts contient 1 979 membres, dont 1 974 empreintes couvertes par le manifeste; vérification : zéro erreur CRC et zéro divergence de manifeste. SHA-256 de l'archive : `f35b8d547266f4bc16bac898dac9ecbc9b076b898405ffce36b84d7aa8c2875d`.
