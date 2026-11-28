@@ -20,6 +20,7 @@ jobs:
       - run: python scripts/independent_semantics_modelcheck.py
       - run: python scripts/verify_frozen_protocol_v2.py
       - run: python scripts/verify_revision_evidence.py
+      - run: python audit/verify_lime_sensitivity_reproduction.py
       - run: python experiments/revision_joint_ablation.py
       - run: python experiments/revision_union_ablation.py
       - run: python scripts/verify_joint_union_ablation.py
