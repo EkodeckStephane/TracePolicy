@@ -1,0 +1,46 @@
+{
+  "decision": "PASS_REPRODUCED_WITHIN_FROZEN_ENVIRONMENT",
+  "scope": "same frozen fixtures, implementation, dependencies, and random seeds; fresh output directory",
+  "old_and_new_lime_configurations": 486,
+  "statuses": {
+    "ok": 486
+  },
+  "runs_per_fixture": 54,
+  "nonminimal_count": 1,
+  "nonminimal_configuration": {
+    "case": "temporal_seq",
+    "seed": 23,
+    "num_samples": 128,
+    "kernel_width_scale": 0.5,
+    "background_probability": 0.25,
+    "selected": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "size": 4,
+    "sufficient": true,
+    "minimal": false,
+    "local_training_score": 0.5753774781431273,
+    "full_domain_surrogate_mse": 0.07575267182610818
+  },
+  "all_row_level_stable_fields_match": true,
+  "all_nine_csv_summary_rows_recomputed": true,
+  "counterexample_deletion_witnesses_rechecked_against_fresh_domain": 4,
+  "hashes": {
+    "source_script": "d0c45569cf1f28133d48329148c2f7ebabf22397f11cef28095ec5de3ba0276a",
+    "historical_benchmark": "65057959a9652fdb16ad5ce53a6f82c2b09f6fa8d5d4665c92889382d6b5959c",
+    "fresh_benchmark": "a39eb4698f0d9a8862fe03f5948653bb16bbe4d9e31b66c14004f9901a566dd6",
+    "historical_case_study": "14da991bdf1bce84d56db8c52c29f2bbe665ad729c1cf051f41fa8a8e6fc377c",
+    "historical_summary": "7684cd17e98dbbb211722f2942eb97905dd1f6c0569c0c7d32301bc5beb94cad",
+    "fresh_domain_audit": "86639cb7a966e94cf268dad35018c3b484a0d9c0960fc40c71cd14761b0d57ca",
+    "fresh_environment": "6d9cf16d40e3e246507eab905fbc73cc6b8a960607baf9780324ca9dcb44d107"
+  },
+  "limitations": [
+    "This is exact computational reproduction, not independent implementation replication.",
+    "The nine fixtures are controlled and do not establish behavior on independent security instances.",
+    "LIME outputs depend on the recorded implementation and environment; wall-clock times are excluded from equality checks."
+  ]
+}
+
