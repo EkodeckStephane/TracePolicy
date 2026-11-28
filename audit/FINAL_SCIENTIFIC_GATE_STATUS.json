@@ -155,9 +155,10 @@
       "status": "NOT VERIFIED",
       "evidence": [
         "audit/JOURNAL_SCOPE_GATE_2026-11-27.md",
-        "audit/SCIENTIFIC_GAP_REGISTER.csv"
+        "audit/SCIENTIFIC_GAP_REGISTER.csv",
+        "audit/JOURNAL_MORATORIUM_ASSESSMENT_2026-11-28.md"
       ],
-      "reason": "Elsevier confirms a moratorium on submissions with significant AI/ML components. The manuscript uses explicit policies rather than a learned predictor, but the journal has not confirmed whether its central XAI-for-IDS contribution is exempt."
+      "reason": "Elsevier's current moratorium covers submissions featuring AI/ML as significant components. TracePolicy's decision oracle is a deterministic explicit policy, but the manuscript's KernelSHAP/LIME comparisons are substantive; the public wording and prior editor letter do not settle eligibility for a new submission. Written editorial clarification is required."
     }
   },
   "blocking_gates": [
