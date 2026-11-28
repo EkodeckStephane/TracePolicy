@@ -7,15 +7,15 @@
 
 The fresh run matched all 486 historical configurations on every stable output field. All 486 completed successfully: nine controlled fixtures, 54 configurations per fixture. The nine rows in the recorded sensitivity summary were recalculated from row-level output and matched.
 
-Exactly one output was sufficient but nonminimal: `temporal_seq`, seed 23, 128 samples, kernel-width scale 0.5, background retention probability 0.25. It selected the four units `{e:0,e:1,e:2,r:SEQ}`; the exact full-domain audit confirms that `e:1` is redundant. The stored deletion checks for all four selected units were re-evaluated against the fresh truth table, including their counterexample masks.
+Exactly one output was sufficient but nonminimal: `temporal_seq`, seed 23, 128 samples, kernel-width scale 0.5, background retention probability 0.25. It selected `{e:0,e:1,e:2,r:SEQ}`; the exhaustive intervention audit confirms that `e:1` is redundant. The saved deletion checks for all four selected units were re-evaluated against the fresh truth table, including their counterexample masks.
 
 ## Reproduction
 
-Using the project environment and the frozen inputs:
+From the repository root, use the Python 3.11 revision environment created from `requirements-revision.txt`:
 
-```powershell
-environment\Scripts\python.exe experiments\revision_explanation_benchmark.py --output results/revision/lime_reproduction_2026-11-28
-environment\Scripts\python.exe audit\verify_lime_sensitivity_reproduction.py
+```bash
+python experiments/revision_explanation_benchmark.py --output results/revision/lime_reproduction_2026-11-28
+python audit/verify_lime_sensitivity_reproduction.py
 ```
 
 The run manifest records Python 3.11.9, LIME 0.2.0.1, NumPy 2.4.6, SciPy 1.17.1, scikit-learn 1.9.0, and SHAP 0.50.0. The verification JSON records hashes for the script, historical inputs, fresh outputs, case study and environment.
