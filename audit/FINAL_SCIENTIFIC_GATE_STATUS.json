@@ -2,9 +2,9 @@
   "audit_date": "2026-11-28",
   "repository": {
     "branch": "revision/cose-2026-review",
-    "commit": "4733b71799bb45be78ec64814a52498cf43d91bd",
-    "ci_run": "46147138346",
-    "ci_conclusion": "in_progress"
+    "commit": "c7d9422ff11bb9da1c51e62f9dd1bb32dcfa40fc",
+    "ci_run": "46147345059",
+    "ci_conclusion": "success"
   },
   "decision": "NO-GO",
   "unconditional_scientific_go": false,
