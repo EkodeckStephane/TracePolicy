@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "operation": "tighten_bruteforce_threshold",
+      "factual_pair": [
+        "NoAlert",
+        "Violation"
+      ],
+      "assignments": 64,
+      "non_target_conflicts": 60,
+      "minimal_hitting_sets": [
+        [
+          "e:2",
+          "e:3",
+          "e:4",
+          "d:D_BRUTEFORCE.count_threshold"
+        ]
+      ],
+      "matches_tracepolicy_complete_family": true
+    },
+    {
+      "operation": "relax_bruteforce_threshold",
+      "factual_pair": [
+        "Violation",
+        "NoAlert"
+      ],
+      "assignments": 64,
+      "non_target_conflicts": 62,
+      "minimal_hitting_sets": [
+        [
+          "e:1",
+          "e:2",
+          "e:3",
+          "e:4",
+          "d:D_BRUTEFORCE.count_threshold"
+        ]
+      ],
+      "matches_tracepolicy_complete_family": true
+    },
+    {
+      "operation": "remove_admin_deny_rule",
+      "factual_pair": [
+        "Violation",
+        "Gap"
+      ],
+      "assignments": 64,
+      "non_target_conflicts": 48,
+      "minimal_hitting_sets": [
+        [
+          "e:4",
+          "d:D_ADMIN.presence"
+        ]
+      ],
+      "matches_tracepolicy_complete_family": true
+    }
+  ],
+  "all_complete_families_match": true,
+  "algorithm": "generic AXp as minimal hitting sets of non-target completion conflicts",
+  "limitations": [
+    "Shares the frozen reference evaluator, intervention semantics, and representative selection.",
+    "This is an algorithmic baseline check, not an independent semantic oracle.",
+    "Exact agreement confirms the generic AXp reduction; it does not establish novelty or utility.",
+    "No native Margrave execution is included."
+  ]
+}

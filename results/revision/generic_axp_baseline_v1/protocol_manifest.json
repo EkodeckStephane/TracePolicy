@@ -1,0 +1,8 @@
+{
+  "input_pilot_sha256": "f04da58364f031ca427a353468c5703b04e9efc8caccc00b4cfb2b3722911474",
+  "script_sha256": "adbff320fed253a4f22eb40f6b0ffe63d6358bb5ee266e661b9bf482e6628a7d",
+  "source_verifier_sha256": "2d8ee69cc6b9df12553427cc3e77460baeb81646a8f967098bb945dfeb6c383c",
+  "result_sha256": "d47c49793e57571f2433cfba69575ec10a0a1854abeb871f95a24f59aaaf7b3f",
+  "cases": 3,
+  "output": "results/revision/generic_axp_baseline_v1/generic_axp_results.json"
+}
