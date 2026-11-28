@@ -1,182 +1,187 @@
 {
-  "audit_date": "2026-11-28",
-  "repository": {
-    "branch": "revision/cose-2026-review",
-    "commit": "19adbc06f033dd29d8196d16f3e553e50c212fcb",
-    "ci_run": "46149125670",
-    "ci_conclusion": "success"
-  },
-  "decision": "NO-GO",
-  "unconditional_scientific_go": false,
-  "submission_ready": false,
-  "gates": {
-    "G0": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "../response/Response_to_Reviewer_1.pdf",
-        "../audit/REVIEW_MATRIX.md",
-        "../audit/REVIEWER_RESOLUTION_REPORT.md"
-      ],
-      "reason": "Eighteen responses are prepared, but novelty and evaluation concerns remain open."
-    },
-    "G1": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/SOTA_SYSTEMATIC_REVIEW.md",
-        "audit/SOTA_COMPARISON_MATRIX.csv",
-        "audit/SEMANTIC_COLLISION_ANALYSIS.md",
-        "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md",
-        "audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md"
-      ],
-      "reason": "Margrave already represents ordered old/new policy outcomes over request contexts, and the paired TracePolicy output reduces to a constrained pair-valued AXp. The local event/edit intervention semantics have no demonstrated policy-specific theorem or diagnostic advantage."
-    },
-    "G2": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/FORMAL_VERIFICATION_REPORT.md",
-        "audit/independent_semantics_modelcheck_2026-11-26.json"
-      ],
-      "reason": "Finite-domain verification passed, but a complete independent proof and edge-case audit remains unfinished."
-    },
-    "G3": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/COMPOSABILITY_ANALYSIS.md",
-        "results/revision/joint_ablation_expanded_sample_v1/summary.json"
-      ],
-      "reason": "All 335 sampled unions were sufficient; the constructed counterexample does not establish practical frequency or utility."
-    },
-    "G4": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/COMPOSABILITY_ANALYSIS.md",
-        "audit/SEMANTIC_COLLISION_ANALYSIS.md",
-        "audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md"
-      ],
-      "reason": "The exact criterion reduces to generic joint-core containment; no useful policy-class characterization is proved."
-    },
-    "G5": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/SOTA_SYSTEMATIC_REVIEW.md",
-        "audit/SOTA_COMPARISON_MATRIX.csv"
-      ],
-      "reason": "Full-text coverage and fair native-versus-certified comparison remain incomplete."
-    },
-    "G6": {
-      "status": "PASS",
-      "evidence": [
-        "experiments/revision_joint_ablation_expanded_sample.py",
-        "experiments/revision_union_ablation.py",
-        "results/revision/joint_ablation_expanded_sample_v1/summary.json",
-        "../manuscript/TracePolicy_COSE.tex"
-      ],
-      "reason": "The four configurations and all sampled separate-core union candidates were evaluated against the complete joint intervention domain and reported in the manuscript."
-    },
-    "G7": {
-      "status": "PASS",
-      "evidence": [
-        "../manuscript/TracePolicy_COSE.tex",
-        "results/revision/scaling_proofmatched/scaling_summary.csv",
-        "src/trace_policy_engine.py"
-      ],
-      "reason": "The exact implementation cap and controlled 5-18-unit, 126-run cost study delimit the claim to the measured scope."
-    },
-    "G8": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/SCIENTIFIC_GAP_REGISTER.csv",
-        "../audit/CONTINUATION_STATE_AND_RISK_PROTOCOL_2026-11-24.md",
-        "audit/WAZUH_ATTACK_DATA_CANDIDATE_SCREEN_2026-11-28.md"
-      ],
-      "reason": "No untouched independent confirmatory holdout for the claimed scope is established. Wazuh/Attack Data screening found no compatible pre-existing trace for the versioned rule changes examined."
-    },
-    "G9": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/POLICY_VERSION_DIFFERENTIAL_ANALYSIS.md",
-        "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md",
-        "experiments/revision_policy_differential.py",
-        "experiments/verify_policy_differential.py",
-        "results/revision/policy_evolution_differential_v1/paired_explanations.json",
-        "results/revision/policy_evolution_differential_v1/independent_verification.json",
-        "audit/SOTA_SYSTEMATIC_REVIEW.md",
-        "audit/SEMANTIC_COLLISION_ANALYSIS.md",
-        "audit/WAZUH_ATTACK_DATA_CANDIDATE_SCREEN_2026-11-28.md"
-      ],
-      "reason": "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Margrave has direct pair-valued change-impact output and AXp theory covers minimal sufficient sets; no direct fair comparison, independent generalization, or task utility is established. Wazuh v4.14.11 rule candidates were screened, but the available Attack Data samples do not exercise the edited rules; the Defender rule change is rendering-only."
-    },
-    "G10": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/SCIENTIFIC_GAP_REGISTER.csv",
-        "../audit/distributed_live_execution.md"
-      ],
-      "reason": "Distributed perturbation coverage and analyst utility remain incomplete."
-    },
-    "G11": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "../audit/claim_evidence_matrix.csv",
-        "../audit/final_pdf_verification.json",
-        "audit/SCIENTIFIC_GAP_REGISTER.csv"
-      ],
-      "reason": "Recent manuscript, response, results, PDF verification, and archive align; full C01-C13 dependency closure remains incomplete."
-    },
-    "G12": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "../bundle_info.json",
-        "../bundle_verification.json",
-        "../audit/artifact_manifest.json",
-        "../audit/standalone_reproduction_check.json"
-      ],
-      "reason": "The exact commit, CI, and archive manifest are verified; clean-clone full reproduction and transitive environment locking remain open."
-    },
-    "G13": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "../audit/reference_verification.json",
-        "audit/SOTA_SYSTEMATIC_REVIEW.md",
-        "audit/SCIENTIFIC_GAP_REGISTER.csv"
-      ],
-      "reason": "A subset of close references received full-text checks; exhaustive current-bibliography verification is incomplete."
-    },
-    "G14": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/COMPOSABILITY_ANALYSIS.md",
-        "audit/POLICY_VERSION_DIFFERENTIAL_ANALYSIS.md",
-        "../audit/FINAL_CONTINUATION_ADDENDUM_2026-11-27.md"
-      ],
-      "reason": "The recent non-advantage and empty-core findings are reported, but the complete negative-results register has not been audited."
-    },
-    "G15": {
-      "status": "NOT VERIFIED",
-      "evidence": [
-        "audit/JOURNAL_SCOPE_GATE_2026-11-27.md",
-        "audit/SCIENTIFIC_GAP_REGISTER.csv",
-        "audit/JOURNAL_MORATORIUM_ASSESSMENT_2026-11-28.md"
-      ],
-      "reason": "Elsevier's current moratorium covers submissions featuring AI/ML as significant components. TracePolicy's decision oracle is a deterministic explicit policy, but the manuscript's KernelSHAP/LIME comparisons are substantive; the public wording and prior editor letter do not settle eligibility for a new submission. Written editorial clarification is required."
-    }
-  },
-  "blocking_gates": [
-    "G0",
-    "G1",
-    "G2",
-    "G3",
-    "G4",
-    "G5",
-    "G8",
-    "G9",
-    "G10",
-    "G11",
-    "G12",
-    "G13",
-    "G14",
-    "G15"
-  ],
-  "report": "audit/FINAL_Q1_GO_NO_GO_REPORT.md",
-  "latest_addendum": "audit/CONTINUATION_ADDENDUM_2026-11-28_WAZUH.md"
+    "audit_date":  "2026-11-28",
+    "repository":  {
+                       "branch":  "revision/cose-2026-review",
+                       "commit":  "b574010b55a9bfec166e2d4473f66c6c26281798",
+                       "ci_run":  "46149943809",
+                       "ci_conclusion":  "success"
+                   },
+    "decision":  "NO-GO",
+    "unconditional_scientific_go":  false,
+    "submission_ready":  false,
+    "gates":  {
+                  "G0":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "../response/Response_to_Reviewer_1.pdf",
+                                              "../audit/REVIEW_MATRIX.md",
+                                              "../audit/REVIEWER_RESOLUTION_REPORT.md"
+                                          ],
+                             "reason":  "Eighteen responses are prepared, but novelty and evaluation concerns remain open."
+                         },
+                  "G1":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/SOTA_SYSTEMATIC_REVIEW.md",
+                                              "audit/SOTA_COMPARISON_MATRIX.csv",
+                                              "audit/SEMANTIC_COLLISION_ANALYSIS.md",
+                                              "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md",
+                                              "audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md"
+                                          ],
+                             "reason":  "Margrave already represents ordered old/new policy outcomes over request contexts, and the paired TracePolicy output reduces to a constrained pair-valued AXp. The local event/edit intervention semantics have no demonstrated policy-specific theorem or diagnostic advantage."
+                         },
+                  "G2":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/FORMAL_VERIFICATION_REPORT.md",
+                                              "audit/independent_semantics_modelcheck_2026-11-26.json",
+                                              "audit/FORMAL_CLAIM_SCOPE_AUDIT_2026-11-28.md"
+                                          ],
+                             "reason":  "The elementary finite-set proofs are coherent under the stated retention assumptions, and the finite model checker passes. Full proof-to-code, selector and update-path edge-case auditing remains incomplete; generic AXp correctness does not establish scientific novelty."
+                         },
+                  "G3":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/COMPOSABILITY_ANALYSIS.md",
+                                              "results/revision/joint_ablation_expanded_sample_v1/summary.json"
+                                          ],
+                             "reason":  "All 335 sampled unions were sufficient; the constructed counterexample does not establish practical frequency or utility."
+                         },
+                  "G4":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/COMPOSABILITY_ANALYSIS.md",
+                                              "audit/SEMANTIC_COLLISION_ANALYSIS.md",
+                                              "audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md"
+                                          ],
+                             "reason":  "The exact criterion reduces to generic joint-core containment; no useful policy-class characterization is proved."
+                         },
+                  "G5":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/SOTA_SYSTEMATIC_REVIEW.md",
+                                              "audit/SOTA_COMPARISON_MATRIX.csv"
+                                          ],
+                             "reason":  "Full-text coverage and fair native-versus-certified comparison remain incomplete."
+                         },
+                  "G6":  {
+                             "status":  "PASS",
+                             "evidence":  [
+                                              "experiments/revision_joint_ablation_expanded_sample.py",
+                                              "experiments/revision_union_ablation.py",
+                                              "results/revision/joint_ablation_expanded_sample_v1/summary.json",
+                                              "../manuscript/TracePolicy_COSE.tex"
+                                          ],
+                             "reason":  "The four configurations and all sampled separate-core union candidates were evaluated against the complete joint intervention domain and reported in the manuscript."
+                         },
+                  "G7":  {
+                             "status":  "PASS",
+                             "evidence":  [
+                                              "../manuscript/TracePolicy_COSE.tex",
+                                              "results/revision/scaling_proofmatched/scaling_summary.csv",
+                                              "src/trace_policy_engine.py"
+                                          ],
+                             "reason":  "The exact implementation cap and controlled 5-18-unit, 126-run cost study delimit the claim to the measured scope."
+                         },
+                  "G8":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/SCIENTIFIC_GAP_REGISTER.csv",
+                                              "../audit/CONTINUATION_STATE_AND_RISK_PROTOCOL_2026-11-24.md",
+                                              "audit/WAZUH_ATTACK_DATA_CANDIDATE_SCREEN_2026-11-28.md"
+                                          ],
+                             "reason":  "No untouched independent confirmatory holdout for the claimed scope is established. Wazuh/Attack Data screening found no compatible pre-existing trace for the versioned rule changes examined."
+                         },
+                  "G9":  {
+                             "status":  "NOT VERIFIED",
+                             "evidence":  [
+                                              "audit/POLICY_VERSION_DIFFERENTIAL_ANALYSIS.md",
+                                              "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md",
+                                              "experiments/revision_policy_differential.py",
+                                              "experiments/verify_policy_differential.py",
+                                              "results/revision/policy_evolution_differential_v1/paired_explanations.json",
+                                              "results/revision/policy_evolution_differential_v1/independent_verification.json",
+                                              "audit/SOTA_SYSTEMATIC_REVIEW.md",
+                                              "audit/SEMANTIC_COLLISION_ANALYSIS.md",
+                                              "audit/WAZUH_ATTACK_DATA_CANDIDATE_SCREEN_2026-11-28.md"
+                                          ],
+                             "reason":  "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Margrave has direct pair-valued change-impact output and AXp theory covers minimal sufficient sets; no direct fair comparison, independent generalization, or task utility is established. The Wazuh candidates lacked compatible traces or changed only rendering."
+                         },
+                  "G10":  {
+                              "status":  "NOT VERIFIED",
+                              "evidence":  [
+                                               "audit/SCIENTIFIC_GAP_REGISTER.csv",
+                                               "../audit/distributed_live_execution.md"
+                                           ],
+                              "reason":  "Distributed perturbation coverage and analyst utility remain incomplete."
+                          },
+                  "G11":  {
+                              "status":  "NOT VERIFIED",
+                              "evidence":  [
+                                               "../audit/claim_evidence_matrix.csv",
+                                               "../audit/final_pdf_verification.json",
+                                               "audit/SCIENTIFIC_GAP_REGISTER.csv",
+                                               "audit/CLAIM_VALIDATION_REPORT.md",
+                                               "audit/SCIENTIFIC_DEPENDENCY_GRAPH.md"
+                                           ],
+                              "reason":  "A C01-C13 dependency graph has been added and mapped to current evidence. Independent source-level closure of all edges, assumptions, manuscript claims, and raw experiment artifacts remains incomplete."
+                          },
+                  "G12":  {
+                              "status":  "NOT VERIFIED",
+                              "evidence":  [
+                                               "../bundle_info.json",
+                                               "../bundle_verification.json",
+                                               "../audit/artifact_manifest.json",
+                                               "../audit/standalone_reproduction_check.json",
+                                               "../audit/FINAL_CONTINUATION_ADDENDUM_2026-11-28.md"
+                                           ],
+                              "reason":  "The c7d9422 scientific snapshot and CI run 46147345059 are verified; the refreshed author archive has 1,997 manifest-covered files, three submitted-reference matches, zero CRC errors, and zero manifest disagreements. Clean-clone full reproduction and transitive environment locking remain open."
+                          },
+                  "G13":  {
+                              "status":  "NOT VERIFIED",
+                              "evidence":  [
+                                               "../audit/reference_verification.json",
+                                               "audit/SOTA_SYSTEMATIC_REVIEW.md",
+                                               "audit/SCIENTIFIC_GAP_REGISTER.csv"
+                                           ],
+                              "reason":  "A subset of close references received full-text checks; exhaustive current-bibliography verification is incomplete."
+                          },
+                  "G14":  {
+                              "status":  "NOT VERIFIED",
+                              "evidence":  [
+                                               "audit/COMPOSABILITY_ANALYSIS.md",
+                                               "audit/POLICY_VERSION_DIFFERENTIAL_ANALYSIS.md",
+                                               "../audit/FINAL_CONTINUATION_ADDENDUM_2026-11-27.md"
+                                           ],
+                              "reason":  "The recent non-advantage and empty-core findings are reported, but the complete negative-results register has not been audited."
+                          },
+                  "G15":  {
+                              "status":  "NOT VERIFIED",
+                              "evidence":  [
+                                               "audit/JOURNAL_SCOPE_GATE_2026-11-27.md",
+                                               "audit/SCIENTIFIC_GAP_REGISTER.csv",
+                                               "audit/JOURNAL_MORATORIUM_ASSESSMENT_2026-11-28.md"
+                                           ],
+                              "reason":  "Elsevier\u0027s current moratorium covers submissions featuring AI/ML as significant components. TracePolicy\u0027s decision oracle is a deterministic explicit policy, but the manuscript\u0027s KernelSHAP/LIME comparisons are substantive; the public wording and prior editor letter do not settle eligibility for a new submission. Written editorial clarification is required."
+                          }
+              },
+    "blocking_gates":  [
+                           "G0",
+                           "G1",
+                           "G2",
+                           "G3",
+                           "G4",
+                           "G5",
+                           "G8",
+                           "G9",
+                           "G10",
+                           "G11",
+                           "G12",
+                           "G13",
+                           "G14",
+                           "G15"
+                       ],
+    "report":  "audit/FINAL_Q1_GO_NO_GO_REPORT.md",
+    "latest_addendum":  "audit/FINAL_CONTINUATION_ADDENDUM_2026-11-28.md"
 }
+
