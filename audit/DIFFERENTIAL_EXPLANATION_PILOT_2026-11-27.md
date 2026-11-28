@@ -36,6 +36,8 @@ Margrave already computes policy-version change regions over request attributes,
 
 Only the first differing window for each of three edits was analyzed. The policies are one local-lab policy, the trace source is the same retrospective Docker corpus, and the windows are selected because their decisions differ. No independent policy family, untouched holdout, native Margrave comparison, analyst evaluation, or multi-edit interaction is covered. The event/edit interventions and the atomic edit granularity need further semantics for interacting edits, state initialization, and distributed logs.
 
+Margrave's change-analysis decision diagram also uses ordered pairs of old/new policy results as terminals and represents the request contexts associated with each pair. Thus the pilot's exact before/after pair is not a new output construction. Its candidate distinction is the local subset-minimal certificate over a concrete temporal trace and explicit reversible edit units. This relation is analyzed in `audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md`; no native Margrave experiment is claimed.
+
 ## Decision
 
 This pilot strengthens the formal feasibility of a paired explanation and supplies a concrete case where it carries edit information that single-version cores omit. It does **not** close G1, G3, G5, G8, or G9. The novelty gate remains NOT VERIFIED pending a theorem or empirically validated property beyond the generic AXp mapping, a fair direct baseline, and independent realistic policy-change evaluation. Do not add the pilot as a principal manuscript contribution until those conditions are addressed; do not describe three examples as generalization.

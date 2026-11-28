@@ -1,9 +1,9 @@
 {
-  "audit_date": "2026-11-27",
+  "audit_date": "2026-11-28",
   "repository": {
     "branch": "revision/cose-2026-review",
-    "commit": "8380241b2b7b80f9f747207947423b86f7ef27a3",
-    "ci_run": "45999278422",
+    "commit": "f7ef287654dd62b585e401169ed3311fd7b2d661",
+    "ci_run": "46000134811",
     "ci_conclusion": "success"
   },
   "decision": "NO-GO",
@@ -25,9 +25,10 @@
         "audit/SOTA_SYSTEMATIC_REVIEW.md",
         "audit/SOTA_COMPARISON_MATRIX.csv",
         "audit/SEMANTIC_COLLISION_ANALYSIS.md",
-        "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md"
+        "audit/DIFFERENTIAL_EXPLANATION_PILOT_2026-11-27.md",
+        "audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md"
       ],
-      "reason": "Artelt et al. already compare explanations across model adaptations; the paired TracePolicy output is a constrained pair-valued AXp. Its distinct theoretical or operational contribution is not established."
+      "reason": "Margrave already represents ordered old/new policy outcomes over request contexts, and the paired TracePolicy output reduces to a constrained pair-valued AXp. The local event/edit intervention semantics have no demonstrated policy-specific theorem or diagnostic advantage."
     },
     "G2": {
       "status": "NOT VERIFIED",
@@ -49,7 +50,8 @@
       "status": "NOT VERIFIED",
       "evidence": [
         "audit/COMPOSABILITY_ANALYSIS.md",
-        "audit/SEMANTIC_COLLISION_ANALYSIS.md"
+        "audit/SEMANTIC_COLLISION_ANALYSIS.md",
+        "audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md"
       ],
       "reason": "The exact criterion reduces to generic joint-core containment; no useful policy-class characterization is proved."
     },
@@ -100,7 +102,7 @@
         "audit/SOTA_SYSTEMATIC_REVIEW.md",
         "audit/SEMANTIC_COLLISION_ANALYSIS.md"
       ],
-      "reason": "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Artelt et al. provide close update-explanation prior art; no direct baseline, external generalization, or task utility is established."
+      "reason": "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Margrave has direct pair-valued change-impact output and AXp theory covers minimal sufficient sets; no direct fair comparison, independent generalization, or task utility is established."
     },
     "G10": {
       "status": "NOT VERIFIED",
