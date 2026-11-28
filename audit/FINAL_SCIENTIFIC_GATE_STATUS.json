@@ -2,9 +2,9 @@
   "audit_date": "2026-11-28",
   "repository": {
     "branch": "revision/cose-2026-review",
-    "commit": "c6fb027fba1102768015a5dda1bf322bd6cefc34",
-    "ci_run": "46142868690",
-    "ci_conclusion": "success"
+    "commit": "4733b71799bb45be78ec64814a52498cf43d91bd",
+    "ci_run": "46147138346",
+    "ci_conclusion": "in_progress"
   },
   "decision": "NO-GO",
   "unconditional_scientific_go": false,
@@ -86,9 +86,10 @@
       "status": "NOT VERIFIED",
       "evidence": [
         "audit/SCIENTIFIC_GAP_REGISTER.csv",
-        "../audit/CONTINUATION_STATE_AND_RISK_PROTOCOL_2026-11-24.md"
+        "../audit/CONTINUATION_STATE_AND_RISK_PROTOCOL_2026-11-24.md",
+        "audit/WAZUH_ATTACK_DATA_CANDIDATE_SCREEN_2026-11-28.md"
       ],
-      "reason": "No untouched independent confirmatory holdout for the claimed scope is established."
+      "reason": "No untouched independent confirmatory holdout for the claimed scope is established. Wazuh/Attack Data screening found no compatible pre-existing trace for the versioned rule changes examined."
     },
     "G9": {
       "status": "NOT VERIFIED",
@@ -100,9 +101,10 @@
         "results/revision/policy_evolution_differential_v1/paired_explanations.json",
         "results/revision/policy_evolution_differential_v1/independent_verification.json",
         "audit/SOTA_SYSTEMATIC_REVIEW.md",
-        "audit/SEMANTIC_COLLISION_ANALYSIS.md"
+        "audit/SEMANTIC_COLLISION_ANALYSIS.md",
+        "audit/WAZUH_ATTACK_DATA_CANDIDATE_SCREEN_2026-11-28.md"
       ],
-      "reason": "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Margrave has direct pair-valued change-impact output and AXp theory covers minimal sufficient sets; no direct fair comparison, independent generalization, or task utility is established."
+      "reason": "The paired event/edit AXp pilot is exhaustively verified on three selected windows. Margrave has direct pair-valued change-impact output and AXp theory covers minimal sufficient sets; no direct fair comparison, independent generalization, or task utility is established. Wazuh v4.14.11 rule candidates were screened, but the available Attack Data samples do not exercise the edited rules; the Defender rule change is rendering-only."
     },
     "G10": {
       "status": "NOT VERIFIED",
@@ -174,5 +176,6 @@
     "G14",
     "G15"
   ],
-  "report": "audit/FINAL_Q1_GO_NO_GO_REPORT.md"
-}\n
+  "report": "audit/FINAL_Q1_GO_NO_GO_REPORT.md",
+  "latest_addendum": "audit/CONTINUATION_ADDENDUM_2026-11-28_WAZUH.md"
+}
