@@ -15,13 +15,35 @@ def test_allow_deny_conflict_gap_and_priority():
     deny_low=Rule('DL',1,DENY,Selector('read','public','user'))
     deny_same=Rule('DS',10,DENY,Selector('read','public','user'))
     p=PolicyVersion('p',1,(allow,deny_low))
-    assert reference_eval([e],p).alert_class==NOALERT
+    result=reference_eval([e],p)
+    assert result.alert_class==NOALERT
+    assert result.decision==ALLOW
     p2=PolicyVersion('p',2,(allow,deny_same))
-    assert reference_eval([e],p2).alert_class==CONFLICT
+    result=reference_eval([e],p2)
+    assert result.alert_class==CONFLICT
+    assert result.decision==DENY
     p3=PolicyVersion('p',3,(deny_same,))
-    assert reference_eval([e],p3).alert_class==VIOLATION
+    result=reference_eval([e],p3)
+    assert result.alert_class==VIOLATION
+    assert result.decision==DENY
     p4=PolicyVersion('p',4,())
-    assert reference_eval([e],p4).alert_class==GAP
+    result=reference_eval([e],p4)
+    assert result.alert_class==GAP
+    assert result.decision==DENY
+
+
+def test_neutralized_event_keeps_its_temporal_position():
+    first=ev(1,'read','public')
+    middle=Event.stutter_like(ev(2,'exec','system'))
+    current=ev(3,'connect','network')
+    trace=[first,middle,current]
+    seq=Guard(seq_actions=('read','connect'),seq_horizon=2)
+    count=Guard(count_action='read',count_horizon=2,count_op='>=',count_threshold=1)
+    assert not seq.eval(trace)
+    assert not count.eval(trace)
+    # Removing the neutralized position moves `read` into both windows.
+    assert seq.eval([first,current])
+    assert count.eval([first,current])
 
 
 def test_state_seen_count_seq_and_boolean_guards():
