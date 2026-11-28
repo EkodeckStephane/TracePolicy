@@ -9,6 +9,7 @@
 - Repository: <https://github.com/SigmaHQ/sigma>
 - Branch: `master`
 - Screened commit: `ddf1d4f87fd283513ac1dbf7e178c8a4064047df` (2026-11-28)
+- Specification release: Sigma v2.1.0 (latest published release at the screen date; confirmed from the official release endpoint)
 - Rule repository license notice: Sigma specification is public domain; rules are subject to Detection Rule License (DRL) 1.1. DRL 1.1 permits use, modification, redistribution and sublicensing subject to attribution, a URI, and license notice when sharing rules; match outputs must retain rule-author attribution. Sample telemetry licensing remains a separate item to verify per artifact.
 - Regression-data index at the frozen commit: <https://github.com/SigmaHQ/sigma/tree/ddf1d4f87fd283513ac1dbf7e178c8a4064047df/regression_data>
 
@@ -16,7 +17,7 @@
 
 The official Sigma specification defines event detection rules and a separate correlation-rule format. The latter includes event-count, value-count, temporal and ordered-temporal correlation types with group-by fields and time spans. The Sigma repository also contains regression cases backed by EVTX and JSON/NDJSON samples, and its documented CI checks expected match counts. The public Git history provides versioned rule changes.
 
-These properties make Sigma more promising for realistic detection-rule evolution than the hand-authored Docker policy alone. It offers identifiable rule versions, rule IDs, explicit temporal correlation constructs, and event samples suitable for replay.
+These properties make Sigma more promising for realistic detection-rule evolution than the hand-authored Docker policy alone. It offers identifiable rule versions, rule IDs, explicit temporal correlation constructs, and event samples suitable for replay. The documented regression workflow, however, evaluates individual rules against rule-associated samples; it does not provide a differential replay benchmark for correlation rules or interacting policy edits.
 
 ## Blocking limitations before admission
 
@@ -24,8 +25,9 @@ These properties make Sigma more promising for realistic detection-rule evolutio
 2. DRL 1.1 requires attribution, source URI and license notice when sharing rule content, and author attribution in match outputs. Any sample telemetry may have separate terms. A benchmark must preserve per-rule metadata and verify each sample's provenance and license before redistribution.
 3. Sigma is a format, not a single reference execution engine. Conversion pipelines and backend semantics affect matching. A benchmark must pin the specification version, converter, pipeline, backend/query engine, and time-correlation semantics.
 4. TracePolicy's current Python policy semantics are not a Sigma interpreter. An adapter over a restricted subset would need a formal mapping and differential tests against the pinned Sigma engine; otherwise the benchmark measures a new model, not existing Sigma semantics.
-5. Correlation policies operate over event streams and time windows; trace segmentation, window anchoring, ordering, grouping and missing events must be fixed before evaluating policy edits.
-6. Historical revisions that introduce or update regression cases cannot be paired naively with those same cases. The selection procedure must require event samples committed before the policy change under study and replay each unchanged sample under both versions.
+5. The Sigma correlation specification warns that backends may support only part of a requested correlation's semantics, including event ordering and time-window handling. Correlation policies operate over event streams and time windows; trace segmentation, window anchoring, ordering, grouping and missing events must be fixed before evaluating policy edits.
+6. The documented regression workflow does not establish a ready-to-run temporal-correlation engine over the repository's per-rule samples. A temporal extension needs its own reference implementation and verification against the pinned rule specification.
+7. Historical revisions that introduce or update regression cases cannot be paired naively with those same cases. The selection procedure must require event samples committed before the policy change under study and replay each unchanged sample under both versions.
 
 ## Prospective selection protocol (not yet executed)
 
@@ -35,13 +37,15 @@ These properties make Sigma more promising for realistic detection-rule evolutio
 4. Use a pinned native or reference Sigma-compatible engine to evaluate the same pre-existing stream under both policy versions. Preserve all input events; separately define event-retention and rule-edit interventions. Record window boundaries and grouping keys.
 5. Compare full event-only, rule-edit-only, naive union and joint event/edit explanations against a shared oracle. Include an independent generic AXp enumerator and report native outputs separately from the certified/minimized outputs.
 6. Treat the paired result as a retrospective policy-history benchmark. Keep all tests rule-linked in a separate descriptive stratum. A confirmatory generalization claim requires held-out rule families or telemetry not used to create or revise the tested rules.
-7. Publish only permitted identifiers, hashes, derived metrics and scripts; obtain and document permission/license interpretations before packaging source rule text or raw event files.
+7. Compare full event-only, rule-edit-only, naive union and joint event/edit explanations against a shared oracle. Include an independent generic AXp enumerator and report native outputs separately from the certified/minimized outputs.
+8. Treat the paired result as a retrospective policy-history benchmark. Keep all tests rule-linked in a separate descriptive stratum. A confirmatory generalization claim requires held-out rule families or telemetry not used to create or revise the tested rules.
+9. Publish only permitted identifiers, hashes, derived metrics and scripts; preserve required rule attribution and verify sample-specific terms before packaging source rule text or raw event files.
 
 ## Admission decision
 
-**Candidate screen: PASS. Benchmark admission: NOT VERIFIED.** Sigma history and regression assets appear to support a concrete follow-up protocol, but the source's rule/test coupling, rule license, engine semantics and adapter validity remain unresolved. No experiment, dataset extraction, or generalization result is claimed in this screen.
+**Candidate screen: PASS. Benchmark admission: NOT VERIFIED.** Sigma history and regression assets support a follow-up policy-version study, but rule/test coupling, sample-specific terms, correlation execution, and adapter validity remain unresolved. No experiment, dataset extraction, or generalization result is claimed in this screen.
 
-**Gate effect:** G9 remains NOT VERIFIED; G8 remains OPEN until licensing and clean reproduction are addressed; G5 remains NOT VERIFIED. The current study retains its NO-GO status.
+**Gate effect:** G9 remains NOT VERIFIED; G8 remains OPEN pending sample-term review and clean reproduction; G5 remains NOT VERIFIED. The current study retains its NO-GO status.
 
 ## Primary sources
 
