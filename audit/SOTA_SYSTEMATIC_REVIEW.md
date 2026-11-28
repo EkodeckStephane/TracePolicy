@@ -1,7 +1,7 @@
 # SOTA review — current-source audit (in progress)
 
-**Audit date:** 2026-11-26
-**Scope of this increment:** full-text review of thirteen directly relevant primary works.
+**Audit date:** 2026-11-28
+**Scope of this increment:** full-text review of sixteen directly relevant primary works.
 **Status:** preliminary; this is not a completed systematic review and does not establish novelty.
 
 ## Method and limits
