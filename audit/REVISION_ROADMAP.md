@@ -1,6 +1,6 @@
 # TracePolicy scientific revision roadmap
 
-Baseline: public branch `revision/cose-2026-review`, commit `37221772b808afb429f246b8793edf78e95f2819` (verified against GitHub on 2026-11-26). The manuscript and reviewer package are local companion artifacts, not contained in this code-only GitHub snapshot. The project is therefore at **NO-GO** for an unconditional scientific submission decision.
+Baseline: public branch `revision/cose-2026-review`, latest documentation head `c5bf806` (2026-11-28). The tested scientific snapshot is `c6fb027fba1102768015a5dda1bf322bd6cefc34` (CI run `46142868690`, success). The manuscript and reviewer package are local companion artifacts, not contained in this code-only GitHub snapshot. The project remains **NO-GO** for an unconditional scientific submission decision.
 
 ## Phase 0 — baseline freeze: completed for the reviewed snapshot
 
@@ -62,6 +62,15 @@ Keep all G0–G15 at `NOT VERIFIED` until the relevant artifacts are examined. U
 ## Phase transition rule
 
 No phase is called complete because it was planned or because a response was drafted. Each phase must record actual commands, files, hashes, results, limits, and its GO/NO-GO decision. Historical output remains immutable; new campaigns use versioned protocols and new output directories.
+
+## Continuation update — 28 November 2026
+
+- **Phase 2 — originality collision expanded.** Full-text review now explicitly records Margrave's ordered old/new policy-outcome pairs over request contexts and generic AXp/CXp foundations. The paired event/edit pilot is formally a constrained AXp over a pair-valued target; this mapping is documented in `audit/DIRECT_BASELINE_MAPPING_MARGRAVE_AXP_2026-11-28.md`. No native Margrave run or novelty claim is made. G1 remains NOT VERIFIED.
+- **Phase 9 — candidate distinction narrowed.** The only remaining candidate distinction is the event/edit intervention domain over temporal traces and a local retention certificate. Its practical diagnostic value and policy-specific theoretical contribution remain unproved; G9 remains NOT VERIFIED.
+- **Artifacts.** The manuscript, response and cover letter PDFs were rechecked (25/6/1 pages; no out-of-page text; 18 reviewer points; no unresolved citations). The author archive has 1,991 members, 1,986 manifest-covered hashes, zero CRC errors and zero manifest disagreements; SHA-256 `2238f228944a5d27d6c2e8c166a23ecadc173b59a4e550e93bb7e7ee601cb30b`.
+- **Immediate next work.** Implement and verify a generic exact AXp enumeration on the frozen paired pilot cases, compare complete explanation families and certificates, then decide whether Margrave admits a semantics-preserving encoding. Continue with independent realistic policy edits only after their source, semantics and selection protocol are frozen. This comparison can establish baseline equivalence and fairness, not originality by itself.
+
+The current decision remains **NO-GO**. Documentation commit `c5bf80623bc58e2d343d9493fd82039750c4e665` passed CI run `46143359791`; the scientific-code snapshot `c6fb027fba1102768015a5dda1bf322bd6cefc34` also passed CI run `46142868690`.
 
 ## Continuation update — 27 November 2026
 
