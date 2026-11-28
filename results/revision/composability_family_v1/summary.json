@@ -1,0 +1,69 @@
+{
+  "closed_form_target_indicator": "x_B AND OR_i(x_Ai AND r_i)",
+  "interpretation": "Within this restricted class, only branch-matched event/rule core unions are sufficient. The failure rate rises as 1 - 1/n. This is a semantic instance of monotone-DNF explanation structure; it does not estimate frequency or diagnostic utility in operational data.",
+  "limitations": [
+    "Constructed family; no empirical prevalence claim.",
+    "Uses the project reference evaluator and independent mask-table enumerator, not a second policy implementation.",
+    "The Boolean characterization is adjacent to generic AXp and monotone-DNF theory; novelty remains unestablished."
+  ],
+  "policy_class": "equal-priority guarded-deny alternatives with one shared current event",
+  "protocol": "exhaustive finite retention masks; fixed event sequence and policy family",
+  "results": [
+    {
+      "all_crossed_unions_have_a_joint_counterexample": true,
+      "all_matching_unions_are_joint_minimal": true,
+      "branches": 2,
+      "crossed_union_failure_rate": 0.5,
+      "event_only_minimal_cores": 2,
+      "explanatory_units": 5,
+      "insufficient_crossed_unions": 2,
+      "joint_assignments_checked": 32,
+      "joint_minimal_cores": 2,
+      "rule_only_minimal_cores": 2,
+      "separated_core_unions_checked": 4,
+      "sufficient_unions": 2
+    },
+    {
+      "all_crossed_unions_have_a_joint_counterexample": true,
+      "all_matching_unions_are_joint_minimal": true,
+      "branches": 3,
+      "crossed_union_failure_rate": 0.6666666666666666,
+      "event_only_minimal_cores": 3,
+      "explanatory_units": 7,
+      "insufficient_crossed_unions": 6,
+      "joint_assignments_checked": 128,
+      "joint_minimal_cores": 3,
+      "rule_only_minimal_cores": 3,
+      "separated_core_unions_checked": 9,
+      "sufficient_unions": 3
+    },
+    {
+      "all_crossed_unions_have_a_joint_counterexample": true,
+      "all_matching_unions_are_joint_minimal": true,
+      "branches": 4,
+      "crossed_union_failure_rate": 0.75,
+      "event_only_minimal_cores": 4,
+      "explanatory_units": 9,
+      "insufficient_crossed_unions": 12,
+      "joint_assignments_checked": 512,
+      "joint_minimal_cores": 4,
+      "rule_only_minimal_cores": 4,
+      "separated_core_unions_checked": 16,
+      "sufficient_unions": 4
+    },
+    {
+      "all_crossed_unions_have_a_joint_counterexample": true,
+      "all_matching_unions_are_joint_minimal": true,
+      "branches": 5,
+      "crossed_union_failure_rate": 0.8,
+      "event_only_minimal_cores": 5,
+      "explanatory_units": 11,
+      "insufficient_crossed_unions": 20,
+      "joint_assignments_checked": 2048,
+      "joint_minimal_cores": 5,
+      "rule_only_minimal_cores": 5,
+      "separated_core_unions_checked": 25,
+      "sufficient_unions": 5
+    }
+  ]
+}
