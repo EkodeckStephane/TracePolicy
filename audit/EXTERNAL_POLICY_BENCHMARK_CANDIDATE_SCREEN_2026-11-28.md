@@ -9,7 +9,7 @@
 - Repository: <https://github.com/SigmaHQ/sigma>
 - Branch: `master`
 - Screened commit: `ddf1d4f87fd283513ac1dbf7e178c8a4064047df` (2026-11-28)
-- Rule repository license notice: Sigma specification is public domain; rules are subject to Detection Rule License (DRL) 1.1. Do not copy rule text or sample telemetry into TracePolicy until its reuse and redistribution terms are reviewed.
+- Rule repository license notice: Sigma specification is public domain; rules are subject to Detection Rule License (DRL) 1.1. DRL 1.1 permits use, modification, redistribution and sublicensing subject to attribution, a URI, and license notice when sharing rules; match outputs must retain rule-author attribution. Sample telemetry licensing remains a separate item to verify per artifact.
 - Regression-data index at the frozen commit: <https://github.com/SigmaHQ/sigma/tree/ddf1d4f87fd283513ac1dbf7e178c8a4064047df/regression_data>
 
 ## Fit to the research question
@@ -21,7 +21,7 @@ These properties make Sigma more promising for realistic detection-rule evolutio
 ## Blocking limitations before admission
 
 1. The regression samples are attached to their rules and selected to verify those rules. Their positive-match expectation creates rule/test coupling and cannot be treated as an untouched external test set.
-2. The rule repository's DRL 1.1 applies to rule content. The benchmark must retain source commit and rule identifiers and hashes while resolving whether derived policy encodings, test excerpts, and redistributed samples are permitted.
+2. DRL 1.1 requires attribution, source URI and license notice when sharing rule content, and author attribution in match outputs. Any sample telemetry may have separate terms. A benchmark must preserve per-rule metadata and verify each sample's provenance and license before redistribution.
 3. Sigma is a format, not a single reference execution engine. Conversion pipelines and backend semantics affect matching. A benchmark must pin the specification version, converter, pipeline, backend/query engine, and time-correlation semantics.
 4. TracePolicy's current Python policy semantics are not a Sigma interpreter. An adapter over a restricted subset would need a formal mapping and differential tests against the pinned Sigma engine; otherwise the benchmark measures a new model, not existing Sigma semantics.
 5. Correlation policies operate over event streams and time windows; trace segmentation, window anchoring, ordering, grouping and missing events must be fixed before evaluating policy edits.
@@ -49,4 +49,4 @@ These properties make Sigma more promising for realistic detection-rule evolutio
 - Sigma regression test documentation: <https://github.com/SigmaHQ/sigma/blob/ddf1d4f87fd283513ac1dbf7e178c8a4064047df/regression_data/README.md>
 - Sigma rule specification 2.1.0: <https://github.com/SigmaHQ/sigma-specification/blob/main/specification/sigma-rules-specification.md>
 - Sigma correlation specification 2.1.0: <https://github.com/SigmaHQ/sigma-specification/blob/main/specification/sigma-correlation-rules-specification.md>
-- Detection Rule License 1.1: <https://github.com/SigmaHQ/Detection-Rule-License>
+- Detection Rule License 1.1: <https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md>
