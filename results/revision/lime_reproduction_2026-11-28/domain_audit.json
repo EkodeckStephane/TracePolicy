@@ -1,0 +1,1169 @@
+[
+  {
+    "case": "instant_violation",
+    "target": "Violation",
+    "units": [
+      "e:0",
+      "e:1",
+      "r:D"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:1",
+        "r:D"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  },
+  {
+    "case": "conflict",
+    "target": "Conflict",
+    "units": [
+      "e:0",
+      "r:D",
+      "r:A"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:0",
+        "r:A",
+        "r:D"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1
+        ],
+        "target": "NoAlert"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1
+        ],
+        "target": "Conflict"
+      }
+    ]
+  },
+  {
+    "case": "gap",
+    "target": "Gap",
+    "units": [
+      "e:0",
+      "r:D"
+    ],
+    "all_minimal_cores": [
+      []
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1
+        ],
+        "target": "Gap"
+      }
+    ]
+  },
+  {
+    "case": "temporal_seq",
+    "target": "Violation",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEQ"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:0",
+        "e:2",
+        "r:SEQ"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  },
+  {
+    "case": "multiple_rules",
+    "target": "Violation",
+    "units": [
+      "e:0",
+      "r:D1",
+      "r:D2"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:0",
+        "r:D1"
+      ],
+      [
+        "e:0",
+        "r:D2"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  },
+  {
+    "case": "multiple_events",
+    "target": "Violation",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:SEEN"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:0",
+        "e:2",
+        "r:SEEN"
+      ],
+      [
+        "e:1",
+        "e:2",
+        "r:SEEN"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  },
+  {
+    "case": "distractors",
+    "target": "Violation",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:D",
+      "r:IRRELEVANT"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:2",
+        "r:D"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": "Violation"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  },
+  {
+    "case": "state_fixed_context",
+    "target": "Violation",
+    "units": [
+      "e:1",
+      "r:STATE"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:1",
+        "r:STATE"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  },
+  {
+    "case": "count_threshold",
+    "target": "Violation",
+    "units": [
+      "e:0",
+      "e:1",
+      "e:2",
+      "r:COUNT"
+    ],
+    "all_minimal_cores": [
+      [
+        "e:0",
+        "e:1",
+        "e:2",
+        "r:COUNT"
+      ]
+    ],
+    "masks": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": "Gap"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": "Violation"
+      }
+    ]
+  }
+]
