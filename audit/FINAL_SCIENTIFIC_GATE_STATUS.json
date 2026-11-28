@@ -2,8 +2,8 @@
     "audit_date":  "2026-11-28",
     "repository":  {
                        "branch":  "revision/cose-2026-review",
-                       "commit":  "b574010b55a9bfec166e2d4473f66c6c26281798",
-                       "ci_run":  "46149943809",
+                       "commit":  "c32c396da3b33b7834bc271c46d2131b3bf31aff",
+                       "ci_run":  "46151825833",
                        "ci_conclusion":  "success"
                    },
     "decision":  "NO-GO",
@@ -15,9 +15,10 @@
                              "evidence":  [
                                               "../response/Response_to_Reviewer_1.pdf",
                                               "../audit/REVIEW_MATRIX.md",
-                                              "../audit/REVIEWER_RESOLUTION_REPORT.md"
+                                              "../audit/REVIEWER_RESOLUTION_REPORT.md",
+                                              "audit/LIME_SENSITIVITY_REPRODUCTION_2026-11-28.md"
                                           ],
-                             "reason":  "Eighteen responses are prepared, but novelty and evaluation concerns remain open."
+                             "reason":  "R1.3 sensitivity evidence is now reproduced and verified on the nine controlled fixtures. Overall G0 remains open because R1.18 novelty is OPEN and 12 other reviewer items remain partial."
                          },
                   "G1":  {
                              "status":  "NOT VERIFIED",
